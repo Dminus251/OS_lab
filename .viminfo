@@ -11,36 +11,52 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/wiat2
+~MSle0~/end_time
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1712588188,,"q"
 :wq
-|2,0,1712588012,,"wq"
+|2,0,1712928042,,"wq"
+:q
+|2,0,1712928026,,"q"
+:134
+|2,0,1712925808,,"134"
+:105
+|2,0,1712923764,,"105"
+:set nu
+|2,0,1712922672,,"set nu"
+:96
+|2,0,1712922666,,"96"
+:Wq
+|2,0,1712922373,,"Wq"
+:90
+|2,0,1712922368,,"90"
+:52
+|2,0,1712921121,,"52"
+:unset nu
+|2,0,1712920075,,"unset nu"
 :q!
-|2,0,1712587983,,"q!"
+|2,0,1712919944,,"q!"
+:WQ
+|2,0,1712918776,,"WQ"
+:w
+|2,0,1712918426,,"w"
+:W
+|2,0,1712918420,,"W"
 :Q!
 |2,0,1712586747,,"Q!"
 :60
 |2,0,1712578140,,"60"
-:Wq
-|2,0,1712573765,,"Wq"
 :Q
 |2,0,1712564415,,"Q"
-:set nu
-|2,0,1712560593,,"set nu"
 :Set nu
 |2,0,1712560590,,"Set nu"
 :wait
 |2,0,1712488536,,"wait"
 :wait2
 |2,0,1712488534,,"wait2"
-:w
-|2,0,1712487404,,"w"
 :ㅈ
 |2,0,1712487290,,"ㅈ"
 :set nuo
@@ -75,14 +91,48 @@ $
 |2,0,1712223404,,"wt nu"
 :int
 |2,0,1712214898,,"int"
-:W
-|2,0,1712211603,,"W"
 :set nui
 |2,0,1711956077,,"set nui"
 :147
 |2,0,1711949580,,"147"
 
 # Search String History (newest to oldest):
+? @$
+|2,1,1712928024,,"@$"
+?/end_time
+|2,1,1712925174,47,"end_time"
+?/policies
+|2,1,1712923583,47,"policies"
+?/operator
+|2,1,1712923121,47,"operator"
+?/arrival_list
+|2,1,1712922551,47,"arrival_list"
+?/options.j
+|2,1,1712922509,47,"options.j"
+?/Here
+|2,1,1712922206,47,"Here"
+?/FIFO
+|2,1,1712922114,47,"FIFO"
+?/ARG
+|2,1,1712921148,47,"ARG"
+?/jobnum
+|2,1,1712920367,47,"jobnum"
+?/-a
+|2,1,1712920137,47,"-a"
+?/jlist
+|2,1,1712920082,47,"jlist"
+?/arrival
+|2,1,1712920041,47,"arrival"
+?/jobs
+|2,1,1712919884,47,"jobs"
+?/print('S
+|2,1,1712919443,47,"print('S"
+?/policy
+|2,1,1712919435,47,"policy"
+?/options
+|2,1,1712918477,47,"options"
+?/options.solve
+|2,1,1712918459,47,"options.solve"
 ?/wiat2
 |2,1,1712642683,47,"wiat2"
 ?/wait2
@@ -323,8 +373,6 @@ $
 |2,1,1711609869,47,"ARCHn"
 ?/PLAT
 |2,1,1711609843,47,"PLAT"
-? @$
-|2,1,1711601496,,"@$"
 ?/TARGET
 |2,1,1711087926,47,"TARGET"
 ?/ACTIVE_
@@ -355,277 +403,415 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	  //***********새로 추가된 부분. xstate로 status 값을 복사**********
-	  // copyout(pde_t *pgdir, uint va, void *p, uint len)와 같이 정의됨
-	  // p 주소의 len 길이만큼을 복사해서 pgdir의 va에 넣는다.
-	  // 따라서 인자로 받은 status 주소의 int 크기만큼 복사해서 curproc의 xstate에 복사함.
-	  // 만약 올바른 값이 아니라면 -1을 리턴
-|3,0,0,1,5,0,1712585863,"  //***********새로 추가된 부분. xstate로 status 값을 복사**********","  // copyout(pde_t *pgdir, uint va, void *p, uint len)와 같이 정의됨","  // p 주소의 len 길이만큼을 복사해서 pgdir의 va에 넣는다.","  // 따라서 인자로 받은 status 주소의 int 크기만큼 복사해서 curproc의 xstate에 복사함.","  // 만약 올바른 값이 아니라면 -1을 리턴"
+""0	LINE	0
+	            t += runtime
+|3,1,0,1,1,0,1712928024,"            t += runtime"
 "1	LINE	0
-	    //sleep(curproc, &ptable.lock);  //DOC: wait-sleep
-|3,0,1,1,1,0,1712587311,"    //sleep(curproc, &ptable.lock);  //DOC: wait-sleep"
+	            t += runtime
+|3,0,1,1,1,0,1712925589,"            t += runtime"
 "2	LINE	0
-	    //}
-|3,0,2,1,1,0,1712587309,"    //}"
+	            turnaround = t + runtime
+|3,0,2,1,1,0,1712925483,"            turnaround = t + runtime"
 "3	LINE	0
-	    //if (*status == 0) {
-|3,0,3,1,1,0,1712587307,"    //if (*status == 0) {"
+	            # 시간 t를 작업의 도착 시간으로 조정, 이전 작업이 끝난 시간보다 도착 시간이 늦을 경우
+|3,0,3,1,1,0,1712925431,"            # 시간 t를 작업의 도착 시간으로 조정, 이전 작업이 끝난 시간보다 도착 시간이 늦을 경우"
 "4	LINE	0
-	  //***********새로 추가된 부분. xstate로 status 값을 복사**********
-	  // copyout(pde_t *pgdir, uint va, void *p, uint len)와 같이 정의됨
-	  // p 주소의 len 길이만큼을 복사해서 pgdir의 va에 넣는다.
-	  // 만약 올바른 값이 아니라면 -1을 리턴
-	  // Wait for children to exit.  (See wakeup1 call in proc_exit.)
-|3,0,4,1,5,0,1712587300,"  //***********새로 추가된 부분. xstate로 status 값을 복사**********","  // copyout(pde_t *pgdir, uint va, void *p, uint len)와 같이 정의됨","  // p 주소의 len 길이만큼을 복사해서 pgdir의 va에 넣는다.","  // 만약 올바른 값이 아니라면 -1을 리턴","  // Wait for children to exit.  (See wakeup1 call in proc_exit.)"
+	                # 시간 t를 작업의 도착 시간으로 조정, 이전 작업이 끝난 시간보다 도착 시간이 늦을 경우
+|3,0,4,1,1,0,1712925425,"                # 시간 t를 작업의 도착 시간으로 조정, 이전 작업이 끝난 시간보다 도착 시간이 늦을 경우"
 "5	LINE	0
-	  // 따라서 인자로 받은 status 주소의 int 크기만큼 복사해서 curproc의 xstate에 복사함.
-|3,0,5,1,1,0,1712586775,"  // 따라서 인자로 받은 status 주소의 int 크기만큼 복사해서 curproc의 xstate에 복사함."
+	
+|3,0,5,1,1,0,1712925416,""
 "6	LINE	0
-	  
-|3,0,6,1,1,0,1712586756,"  "
+	            end_time = thetime + job[1]
+|3,0,6,1,1,0,1712925176,"            end_time = thetime + job[1]"
 "7	LINE	0
-		  //return -1;
-|3,0,7,1,1,0,1712586755,"	  //return -1;"
+	            i += 1
+|3,0,7,1,1,0,1712924555,"            i += 1"
 "8	LINE	0
-	  //if (copyout(curproc->pgdir, curproc->xstate, &status, sizeof(int)) < 0)
-|3,0,8,1,1,0,1712586755,"  //if (copyout(curproc->pgdir, curproc->xstate, &status, sizeof(int)) < 0)"
+	        i = 1 
+|3,0,8,1,1,0,1712924528,"        i = 1 "
 "9	LINE	0
-	  //***********새로 추가된 부분. xstate로 status 값을 복사**********
-	  // copyout(pde_t *pgdir, uint va, void *p, uint len)와 같이 정의됨
-	  // p 주소의 len 길이만큼을 복사해서 pgdir의 va에 넣는다.
-	  // 따라서 인자로 받은 status 주소의 int 크기만큼 복사해서 curproc의 xstate에 복사함.
-	  // 만약 올바른 값이 아니라면 -1을 리턴
-|3,0,9,1,5,0,1712586754,"  //***********새로 추가된 부분. xstate로 status 값을 복사**********","  // copyout(pde_t *pgdir, uint va, void *p, uint len)와 같이 정의됨","  // p 주소의 len 길이만큼을 복사해서 pgdir의 va에 넣는다.","  // 따라서 인자로 받은 status 주소의 int 크기만큼 복사해서 curproc의 xstate에 복사함.","  // 만약 올바른 값이 아니라면 -1을 리턴"
-""-	CHAR	0
-	을
-|3,1,36,0,1,0,1712587805,"을"
+	
+|3,0,9,1,1,0,1712923707,""
+"-	CHAR	0
+	e
+|3,0,36,0,1,0,1712924821,"e"
 
 # File marks:
-'0  195  13  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,48,195,13,1712642746,"~/lab1.bak/xv6edk2/xv6/proc.c"
-'1  426  17  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,49,426,17,1712588188,"~/lab1.bak/xv6edk2/xv6/proc.c"
-'2  426  17  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,50,426,17,1712588188,"~/lab1.bak/xv6edk2/xv6/proc.c"
-'3  287  18  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,51,287,18,1712588012,"~/lab1.bak/xv6edk2/xv6/proc.c"
-'4  287  18  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,52,287,18,1712588012,"~/lab1.bak/xv6edk2/xv6/proc.c"
-'5  287  18  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,53,287,18,1712588012,"~/lab1.bak/xv6edk2/xv6/proc.c"
-'6  287  18  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,54,287,18,1712588012,"~/lab1.bak/xv6edk2/xv6/proc.c"
-'7  54  0  ~/lab1.bak/xv6edk2/xv6/proc.h
-|4,55,54,0,1712588001,"~/lab1.bak/xv6edk2/xv6/proc.h"
-'8  286  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,56,286,0,1712587983,"~/lab1.bak/xv6edk2/xv6/proc.c"
-'9  286  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,57,286,0,1712587983,"~/lab1.bak/xv6edk2/xv6/proc.c"
+'0  1  22  ~/.gitignore
+|4,48,1,22,1712928042,"~/.gitignore"
+'1  8  0  ~/.git
+|4,49,8,0,1712928026,"~/.git"
+'2  1  13  ~/.gitignore
+|4,50,1,13,1712928012,"~/.gitignore"
+'3  1  0  ~/.gitignore
+|4,51,1,0,1712928002,"~/.gitignore"
+'4  1  0  ~/.gitignore
+|4,52,1,0,1712928002,"~/.gitignore"
+'5  28  3  ~/homework1/Goal_of_homework1
+|4,53,28,3,1712927994,"~/homework1/Goal_of_homework1"
+'6  172  4  ~/homework1/origin.py
+|4,54,172,4,1712927957,"~/homework1/origin.py"
+'7  140  29  ~/homework1/scheduler.py
+|4,55,140,29,1712926566,"~/homework1/scheduler.py"
+'8  144  11  ~/homework1/scheduler.py
+|4,56,144,11,1712926377,"~/homework1/scheduler.py"
+'9  144  11  ~/homework1/scheduler.py
+|4,57,144,11,1712926377,"~/homework1/scheduler.py"
 
 # Jumplist (newest first):
--'  195  13  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,195,13,1712642746,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  426  17  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,426,17,1712642680,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  426  17  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,426,17,1712588188,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  289  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,289,0,1712588138,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  289  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,289,0,1712588138,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  287  18  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,287,18,1712588078,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  287  18  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,287,18,1712588078,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  287  18  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,287,18,1712588012,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  286  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,286,0,1712588003,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  286  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,286,0,1712588003,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  286  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,286,0,1712588003,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  54  0  ~/lab1.bak/xv6edk2/xv6/proc.h
-|4,39,54,0,1712588001,"~/lab1.bak/xv6edk2/xv6/proc.h"
--'  54  0  ~/lab1.bak/xv6edk2/xv6/proc.h
-|4,39,54,0,1712588001,"~/lab1.bak/xv6edk2/xv6/proc.h"
--'  54  0  ~/lab1.bak/xv6edk2/xv6/proc.h
-|4,39,54,0,1712588001,"~/lab1.bak/xv6edk2/xv6/proc.h"
--'  54  0  ~/lab1.bak/xv6edk2/xv6/proc.h
-|4,39,54,0,1712588001,"~/lab1.bak/xv6edk2/xv6/proc.h"
--'  54  0  ~/lab1.bak/xv6edk2/xv6/proc.h
-|4,39,54,0,1712588001,"~/lab1.bak/xv6edk2/xv6/proc.h"
--'  54  0  ~/lab1.bak/xv6edk2/xv6/proc.h
-|4,39,54,0,1712588001,"~/lab1.bak/xv6edk2/xv6/proc.h"
--'  54  0  ~/lab1.bak/xv6edk2/xv6/proc.h
-|4,39,54,0,1712588001,"~/lab1.bak/xv6edk2/xv6/proc.h"
--'  54  0  ~/lab1.bak/xv6edk2/xv6/proc.h
-|4,39,54,0,1712588001,"~/lab1.bak/xv6edk2/xv6/proc.h"
--'  286  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,286,0,1712587983,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  286  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,286,0,1712587983,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  234  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,234,0,1712587973,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  234  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,234,0,1712587973,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  234  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,234,0,1712587973,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  234  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,234,0,1712587973,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  234  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,234,0,1712587973,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  232  48  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,232,48,1712587972,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  231  6  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,231,6,1712587972,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  232  48  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,232,48,1712587972,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  231  6  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,231,6,1712587972,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  232  48  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,232,48,1712587972,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  231  6  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,231,6,1712587972,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  232  48  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,232,48,1712587972,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  231  6  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,231,6,1712587972,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  232  48  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,232,48,1712587972,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  231  6  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,231,6,1712587972,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  601  17  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,601,17,1712587970,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  601  17  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,601,17,1712587970,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  601  17  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,601,17,1712587970,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  601  17  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,601,17,1712587970,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  601  17  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,601,17,1712587970,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  425  59  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,425,59,1712587969,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  425  59  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,425,59,1712587969,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  425  59  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,425,59,1712587969,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  425  59  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,425,59,1712587969,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  425  59  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,425,59,1712587969,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  417  4  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,417,4,1712587967,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  417  4  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,417,4,1712587967,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  417  4  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,417,4,1712587967,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  417  4  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,417,4,1712587967,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  417  4  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,417,4,1712587967,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  292  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,292,0,1712587786,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  292  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,292,0,1712587786,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  292  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,292,0,1712587786,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  292  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,292,0,1712587786,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  292  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,292,0,1712587786,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  281  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,281,0,1712587783,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  281  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,281,0,1712587783,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  281  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,281,0,1712587783,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  281  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,281,0,1712587783,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  281  0  ~/lab1.bak/xv6edk2/xv6/proc.c
-|4,39,281,0,1712587783,"~/lab1.bak/xv6edk2/xv6/proc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  63  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,63,0,1712587781,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  62  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,62,0,1712587470,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  62  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,62,0,1712587470,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  62  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,62,0,1712587470,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  62  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,62,0,1712587470,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  62  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,62,0,1712587470,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  62  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,62,0,1712587470,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
--'  62  0  ~/lab1.bak/xv6edk2/xv6/sysproc.c
-|4,39,62,0,1712587470,"~/lab1.bak/xv6edk2/xv6/sysproc.c"
+-'  1  22  ~/.gitignore
+|4,39,1,22,1712928042,"~/.gitignore"
+-'  8  0  ~/.git
+|4,39,8,0,1712928026,"~/.git"
+-'  8  0  ~/.git
+|4,39,8,0,1712928026,"~/.git"
+-'  1  13  ~/.gitignore
+|4,39,1,13,1712928012,"~/.gitignore"
+-'  1  13  ~/.gitignore
+|4,39,1,13,1712928012,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1712928002,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1712928002,"~/.gitignore"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  28  3  ~/homework1/Goal_of_homework1
+|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  172  4  ~/homework1/origin.py
+|4,39,172,4,1712927957,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  37  0  ~/homework1/origin.py
+|4,39,37,0,1712927891,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
+-'  3  0  ~/homework1/origin.py
+|4,39,3,0,1712927886,"~/homework1/origin.py"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1712928041	0
+	"	1	22
+	^	1	23
+	.	2	0
+	+	1	23
+	+	2	0
+
+> ~/homework1/Goal_of_homework1
+	*	1712927993	0
+	"	28	3
+	^	34	46
+	.	34	43
+	+	27	0
+	+	1	0
+	+	1	40
+	+	4	0
+	+	28	0
+	+	4	59
+	+	27	0
+	+	34	43
+
+> ~/homework1/origin.py
+	*	1712927957	0
+	"	172	4
+	.	3	0
+	+	2	0
+	+	3	0
+
+> ~/homework1/scheduler.py
+	*	1712926554	0
+	"	140	29
+	^	134	12
+	.	134	12
+	+	63	4
+	+	55	11
+	+	56	60
+	+	60	32
+	+	58	8
+	+	57	29
+	+	63	4
+	+	45	110
+	+	52	0
+	+	64	12
+	+	63	0
+	+	58	0
+	+	61	47
+	+	91	27
+	+	53	74
+	+	56	38
+	+	53	63
+	+	96	0
+	+	111	24
+	+	148	23
+	+	96	0
+	+	94	0
+	+	105	22
+	+	110	0
+	+	118	0
+	+	82	86
+	+	89	105
+	+	82	66
+	+	89	65
+	+	94	0
+	+	92	0
+	+	94	39
+	+	94	74
+	+	94	49
+	+	94	68
+	+	94	60
+	+	64	0
+	+	94	39
+	+	94	31
+	+	94	42
+	+	94	34
+	+	94	4
+	+	94	3
+	+	94	7
+	+	94	8
+	+	94	10
+	+	94	12
+	+	94	15
+	+	81	41
+	+	86	66
+	+	81	61
+	+	86	68
+	+	92	0
+	+	94	0
+	+	105	23
+	+	98	0
+	+	99	52
+	+	101	0
+	+	101	53
+	+	103	37
+	+	102	55
+	+	104	0
+	+	101	3
+	+	102	3
+	+	103	3
+	+	104	3
+	+	100	72
+	+	113	30
+	+	116	38
+	+	117	125
+	+	115	12
+	+	119	17
+	+	117	161
+	+	115	12
+	+	117	154
+	+	115	0
+	+	117	113
+	+	119	0
+	+	117	99
+	+	116	67
+	+	117	134
+	+	116	0
+	+	132	12
+	+	136	0
+	+	135	142
+	+	135	0
+	+	135	35
+	+	135	34
+	+	136	0
+	+	135	34
+	+	136	0
+	+	133	52
+	+	137	40
+	+	138	0
+	+	140	0
+	+	139	23
+	+	140	40
+	+	145	0
+	+	120	0
+	+	134	12
+
+> ~/homework1/ostep-homework/cpu-sched/scheduler.py
+	*	1712910869	0
+	"	1	0
+
+> ~/homework1/helloworld.py
+	*	1712910789	0
+	"	1	21
+	^	1	22
+	.	1	21
+	+	1	21
+
+> ~/lab2/xv6edk2/README.md
+	*	1712715479	0
+	"	1	0
 
 > ~/lab1.bak/xv6edk2/xv6/proc.c
 	*	1712642745	0
@@ -1456,52 +1642,4 @@ $
 
 > ~/stage/edk2/Conf/BuildEnv.sh
 	*	1711970127	0
-	"	1	0
-
-> ~/stage/edk2/xv6edk2/xv6/hello.c
-	*	1711961124	0
-	"	4	0
-	^	4	1
-	.	4	0
-	+	6	1
-	+	5	0
-	+	4	0
-
-> ~/stage/xv6edk2/xv6/Makefile
-	*	1711960892	0
-	"	188	8
-	^	188	9
-	.	188	8
-	+	188	7
-	+	261	8
-	+	188	8
-
-> ~/stage/edk2/xv6edk2/xv6/_hello
-	*	1711960173	0
-	"	5	0
-	^	5	1
-	.	5	0
-	+	6	1
-	+	4	0
-	+	5	0
-
-> ~/stage/xv6edk2/xv6/_hello
-	*	1711959467	0
-	"	5	0
-	^	5	1
-	.	5	0
-	+	6	1
-	+	4	0
-	+	5	0
-
-> ~/stage/xv6edk2/xv6/xv6.img
-	*	1711958313	0
-	"	1	0
-
-> ~/stage/xv6edk2/MyLoaderPkg/MyLoaderPkg.dsc
-	*	1711958168	0
-	"	1	0
-
-> /usr/share/ovmf/OVMF.fd
-	*	1711957973	0
 	"	1	0

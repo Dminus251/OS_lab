@@ -1,0 +1,35 @@
+밑은 수정하기 전 scheduler.py의 실행, 출력 예시
+yyk@localhost:~/homework1$ ./scheduler.py -l 29,15,10 -p SJF -c
+세 작업의 수행 시간을 29, 15, 10로 주고, policy는 SJF 사용(j 옵션의 default가 3>이므로 세 개를 줬음)
+************************************************************
+ARG policy SJF
+ARG jlist 29,15,10
+
+Here is the job list, with the run time of each job:
+  Job 0 ( length = 29.0 )
+  Job 1 ( length = 15.0 )
+  Job 2 ( length = 10.0 )
+
+
+** Solutions **
+
+Execution trace:
+  [ time   0 ] Run job 2 for 10.00 secs ( DONE at 10.00 )
+  [ time  10 ] Run job 1 for 15.00 secs ( DONE at 25.00 )
+  [ time  25 ] Run job 0 for 29.00 secs ( DONE at 54.00 )
+
+Final statistics:
+  Job   2 -- Response: 0.00  Turnaround 10.00  Wait 0.00
+  Job   1 -- Response: 10.00  Turnaround 25.00  Wait 10.00
+  Job   0 -- Response: 25.00  Turnaround 54.00  Wait 25.00
+
+  Average -- Response: 11.67  Turnaround 29.67  Wait 11.67
+************************************************************
+Goal
+
+STCF (preemptive SJF) policy 지원
+
+1) 따라서 arrival time을 추가할 수 있어야 함
+2) arrival time이 없을 경우 기존과 동일하게 동작
+   = 모두 시간 0에 도착한다고 가정
+

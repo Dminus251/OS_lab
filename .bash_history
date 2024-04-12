@@ -1,283 +1,3 @@
-vi sysproc.c
-vi syscall.c
-vi syscall.h
-vi syscall.c
-ls
-vi x86.h 
-vi usys.S 
-vi syscall.h
-clear
-ls
-vi proc.c
-vi usys.S 
-clear
-ls
-vi sysproc.c
-clear
-vi syscall.c
-ls
-vi syscall.c
-vi syscall.cgcchks71
-clear
-ls
-rm -rf lab2
-cp -r backups lab2
-cd lab2/xv6edk2/
-ls
-cd xv6/
-vi sysproc.c
-vi syscall.h
-vi defs.h
-vi user.h
-vi sysproc.c
-vi syscall.h
-vi defs.h
-vi user.h
-cd ~
-ls
-rm -rf lab2
-cp -r backups/ lab2
-ls
-cd lab2/xv6edk2/xv6/
-vi syscall.h
-vi defs.h
-vi user.h
-vi defs.h
-vi user.h
-vi syscall.c
-vi proc.c
-vi sysproc.c
-vi proc.c
-vi syscall.c
-vi sysproc.c
-vi defs.h
-vi user.h
-clear
-vi proc.c
-vi defs.h
-vi user.h
-vi proc.c
-vi defs.h
-vi user.h
-vi defs.h
-vi syscall.c
-vi sysproc.c
-vi usys.S
-vi syscall.c
-vi proc.h
-clear
-vi proc.c
-vi proc.h
-vi proc.c
-vi sysproc.c
-vi proc.c
-vi proc.h
-vi proc.c
-vi syscall.c
-vi sysproc.c
-vi proc.c
-vi sysproc.c
-vi proc.h
-vi sysproc.c
-vi syscall.c
-vi syscall.h
-vi syscall.c
-vi x86.h
-vi syscall.c
-vi proc.h
-vi syscall.c
-vi mmu.h
-vi syscall.c
-vi defs.h
-vi syscall.c
-vi syscall.h
-vi syscall.c
-vi syscall.h
-vi sysproc.c
-vi sysproc.h
-vi usys.S
-vi sysproc.c
-vi proc.c
-vi sysproc.c
-vi proc.h
-vi sysproc.c
-vi proc.c
-vi sysproc.c
-vi proc.h
-vi syscall.c
-vi proc.c
-vi sysproc.c 
-vi sysproc.c
-clear
-vi syscall.c
-vi proc.c
-vi sysproc.c
-vi proc.c
-vi proc.h
-vi proc.c
-vi proc.h
-vi proc.c
-vi sysproc.c
-vi user.h
-vi syscall.h
-vi syscall.c
-vi user.h
-vi sysproc.c
-vi syscall.c
-vi sysproc.c
-vi proc.c
-vi syscall.c
-vi sysproc.c
-vi proc.c
-vi sysproc.c
-vi proc.c
-vi sysproc.c
-clear
-vi syscall.h
-vi defs.h
-vi proc.c
-vi exe.c
-vi exec.c
-vi vm.c
-vi exec.c
-vi proc.c
-vi proc.h
-vi proc.c
-vi syscall.h
-vi defs.h
-vi user.h
-vi proc.c
-vi sysproc.c
-vi syscall.c
-vi usys.S
-cd ~
-ls
-cp -r lab2 lab2.bak
-cd lab
-cd lab2
-clear
-ls
-cd xv6edk2
-ls
-cd xv6/
-ls
-ls )*
-ls _*
-cd ../image/
-claer
-ls
-cd ../
-clear
-ls
-cd xv6/
-ls
-ls ker*
-clear
-cd ../
-ls
-cd MyLoaderPkg/
-ls
-cd ../../
-ls
-cd xv6edk2/
-ls
-cd xv6/
-ls
-clear
-ls
-cd ../
-ls
-cd ../
-ls
-cd edk2
-ls
-cd Build/
-clear
-ls
-cd ../../
-cd xv6edk2/MyLoaderPkg/
-ls
-vi MyLoaderPkg.dsc
-cd ~/edk2
-cd ../
-ls
-cd ../edk2/
-source edksetup.sh 
-build
-source edksetup.sh
-ls
-clear
-source edksetup.sh
-ls
-cat edksetup.sh 
-clear
-source edksetup.sh 
-vi edksetup.sh 
-ls
-cd Build/
-ls
-cd ../
-ls
-vi Conf/target.txt 
-cd ~
-ls
-cd lab2/edk2/
-vi Conf/target.txt 
-source edksetup.sh
-clear
-ls
-cd ../
-source edksetup.sh
-cd edk2
-ls
-source edksetup.sh 
-cd BaseTools/
-ls
-cd ~/lab2/edk2/
-make -C BaseTools
-source edksetup.sh 
-cd BaseTools/
-ls
-cd ~
-ls
-cd lab1
-ls
-cd xv6edk2/
-ls
-./run.sh 
-ls
-./run.sh 
-clear
-ks
-cd ../edk2/
-ls
-cd Build/
-ls
-cd ../
-ls
-clear
-ls
-cd xv6edk2/
-ls
-cd image/
-ls
-cd xv6
-cd ../xv6/
-ls
-make kernelmemfs
-ls k*
-cp kernelmemfs ../image/kernel
-cd ../../
-cd xv6edk2/
-./run.sh 
-CLEAR
-clear
-cd ~
-ls
-cp -r lab1 lab1.bak
-cd lab1.bak/
-ls
-cd xv6edk2/
 ls
 ./run.sh 
 ls
@@ -1998,3 +1718,283 @@ ls
 cd xv6/
 ls
 vi proc.c
+ls
+cd lab1.bak
+cd ../
+rm -rf lab2
+mv -r lab1.bak lab2
+mv lab1.bak lab2
+ls
+clear
+git remote
+git add .
+git commit -m "complete lab2"
+git push origin
+git push origin main
+clear
+ls
+git add .
+git commit -m "lab2"
+git add .
+git commit -m "lab2"
+clear
+git add .
+git commit -m "lab2"
+cd backups/
+git status
+git add .
+git commit -m "lab2"
+cd ../
+cd lab2
+git add .
+cd ../
+cd lab1
+git add .
+cd ../
+git commit -m "lab2"
+cd backups/edk2/
+git status
+git add .
+git commit -m "lab2"
+cd ../../lab1/
+clear
+ls
+cd edk2/
+git status
+ls -a
+git add .
+git commit -m "lab2"
+cd ../
+ls
+cd xv6-public/
+git add .
+git commit -m "commit"
+clear
+cd ../../
+clear
+ls
+ls -a
+rm .git
+rm -r .git
+clear
+ls
+rm -rfy .git
+rm -rf .git
+ls -a
+cd backups/
+rm -rf .git
+ls
+cd edk2/
+rm -rf .git
+cd ../xv6
+cd ../xv6-public/
+rm -rf .git
+ls
+cd ../xv6edk2/
+ls
+ls -a
+rm -rf .git
+cd MyLoaderPkg/
+ls -a
+cd ../
+clear
+ls
+cd ../
+ls
+cd lab1/
+ls
+rm -rf .git
+cd edk2/
+rm -rf .git
+cd ../
+cd xv6-public/
+rm -rf .git
+cd ../xv6edk2/
+rm -rf .git
+cd ../
+ls
+cd ../lab2
+clear
+ls
+ls -a
+rm -rf .git
+cd edk2/
+rm -rf .git
+cd ../xv6-public/
+rm -rf .git
+cd ../xv6edk2/
+rm -rf .git
+clear
+cd ../../
+ls
+git init
+git remote
+git add .
+cd lab1/edk2/xv6edk2/
+rm -rf .git
+ls
+cd xv6/
+ls -a | grep git
+cd ../../
+ls
+clear
+ls
+ls -a | grep git
+cd ../
+ls
+rm -rf .git
+cd xv6-public/
+rm -rf .git
+cd ../xv6edk2/
+rm -rf .git
+cd ~/lab2
+ls
+rm -rf .git
+cd edk2/
+rm -rf .git
+cd ../xv6-public/
+rm -rf .git
+cd ../xv6edk2/
+rm -rf .git
+cd ~
+clear
+ls
+tree -a . | grep .git
+rm -rf backups
+clear
+ls
+rm -rf backups
+tree -a . | grep .git
+clear
+ls
+ls -a
+rm -rf .git
+tree -a . | grep .git
+clear
+ls
+tree -a . | grep *.git*
+tree -a . | grep *.git
+tree -a . | grep .git
+clear
+ls
+cd lab1
+ls
+ls -a
+cd edk2/
+ls -a
+cd ../xv6-public/
+ls -a
+clear
+ls -a | grep git
+cd ../
+ls
+cd xv6edk2/
+ls
+ls -a
+tree -a . | grep git
+cd ../
+tree -a . | grep git
+clear
+ls
+tree .
+clear
+tree -a . | grep git
+clear
+ls
+cd edk2/
+tree -a . | grep git
+ls
+cd xv6edk2/
+tree -a . | grep git
+cd ~
+clear
+ls
+cd lab2/
+ls -a
+cd edk2/
+ls -a
+cd ../xv6-public/
+ls
+ls -a
+cd ../edk2/
+clear
+ls
+ls -a
+cd xv6edk2/
+ls -a | grep git
+rm -rf .git
+cd ~
+git init
+git add .
+git remote add https://github.com/Dminus251/OS_lab.git
+git remote add origin https://github.com/Dminus251/OS_lab.git
+git commit -m "lab2"
+git push origin
+git push origin main
+git 
+git checkout -b main
+git add .
+git commit -m "lab2"
+git push origin main
+git checkout master
+git push origin master
+clear
+ls
+git branch
+git checkout main
+git merge masterls
+ls
+git branch
+git checkout master
+git pull origin master
+git checkout main
+git reset --hard master
+git push origin main --force
+git status
+clear
+git branch
+git branch -d master
+git branch
+git push origin --delete master
+ls
+clear
+cd lab
+cd lab2
+ls
+cd xv6edk2/
+ls
+vi README.md 
+claer
+ls
+pwd
+ifconfig
+clear
+ls
+mkdir homework1
+cd homework1/
+git clone https://github.com/remzi-arpacidusseau/ostep-homework/
+vi helloworld.py
+./h
+ls
+./helloworld.py
+sudo chmod 755 helloworld.py 
+./helloworld.py 
+clear
+./helloworld.py 
+vi helloworld.py 
+./helloworld.py 
+clear
+./helloworld.py 
+vi helloworld.py 
+./helloworld.py 
+ls
+cd ostep-homework/
+ls
+cd cpu-sched
+vi scheduler.py 
+cp scheduler.py ../../
+cd ../../
+ls
+clear
+./scheduler.py 
+vi scheduler.py 
