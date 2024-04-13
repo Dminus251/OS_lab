@@ -11,48 +11,94 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/end_time
+~MSle0~/added
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1712928042,,"wq"
+|2,0,1713012034,,"wq"
+:Wq
+|2,0,1713012032,,"Wq"
 :q
-|2,0,1712928026,,"q"
+|2,0,1713012021,,"q"
+:'<,'>q
+|2,0,1713004418,,"'<,'>q"
+:Q
+|2,0,1713004417,,"Q"
+:q!
+|2,0,1713004076,,"q!"
+:set nu
+|2,0,1713002619,,"set nu"
+:221
+|2,0,1712999399,,"221"
+:Set nu
+|2,0,1712998297,,"Set nu"
+:150
+|2,0,1712997470,,"150"
+:WQ
+|2,0,1712993835,,"WQ"
+:149
+|2,0,1712993772,,"149"
+:186
+|2,0,1712993581,,"186"
+:192
+|2,0,1712993560,,"192"
+:ㅈㅂ
+|2,0,1712992014,,"ㅈㅂ"
+:w
+|2,0,1712988640,,"w"
+:set nui
+|2,0,1712984144,,"set nui"
+:180
+|2,0,1712983341,,"180"
+:200
+|2,0,1712983336,,"200"
+:206
+|2,0,1712982896,,"206"
+:'<,'>20
+|2,0,1712982891,,"'<,'>20"
+:184
+|2,0,1712982247,,"184"
+:182
+|2,0,1712933347,,"182"
+:235
+|2,0,1712931708,,"235"
+:211
+|2,0,1712931676,,"211"
+:230
+|2,0,1712931655,,"230"
+:203
+|2,0,1712931457,,"203"
+:202
+|2,0,1712931448,,"202"
+:178
+|2,0,1712930504,,"178"
+:175
+|2,0,1712929373,,"175"
+:166
+|2,0,1712929338,,"166"
+:198
+|2,0,1712929313,,"198"
 :134
 |2,0,1712925808,,"134"
 :105
 |2,0,1712923764,,"105"
-:set nu
-|2,0,1712922672,,"set nu"
 :96
 |2,0,1712922666,,"96"
-:Wq
-|2,0,1712922373,,"Wq"
 :90
 |2,0,1712922368,,"90"
 :52
 |2,0,1712921121,,"52"
 :unset nu
 |2,0,1712920075,,"unset nu"
-:q!
-|2,0,1712919944,,"q!"
-:WQ
-|2,0,1712918776,,"WQ"
-:w
-|2,0,1712918426,,"w"
 :W
 |2,0,1712918420,,"W"
 :Q!
 |2,0,1712586747,,"Q!"
 :60
 |2,0,1712578140,,"60"
-:Q
-|2,0,1712564415,,"Q"
-:Set nu
-|2,0,1712560590,,"Set nu"
 :wait
 |2,0,1712488536,,"wait"
 :wait2
@@ -71,8 +117,6 @@ $
 |2,0,1712483957,,"53"
 :82
 |2,0,1712474316,,"82"
-:'<,'>q
-|2,0,1712473523,,"'<,'>q"
 :!
 |2,0,1712473169,,"!"
 :exit
@@ -91,18 +135,78 @@ $
 |2,0,1712223404,,"wt nu"
 :int
 |2,0,1712214898,,"int"
-:set nui
-|2,0,1711956077,,"set nui"
 :147
 |2,0,1711949580,,"147"
 
 # Search String History (newest to oldest):
 ? @$
-|2,1,1712928024,,"@$"
+|2,1,1713012020,,"@$"
+?/added
+|2,1,1713004413,47,"added"
+?/print('**
+|2,1,1713004380,47,"print('**"
+?/appended
+|2,1,1713002671,47,"appended"
+?/runlist is
+|2,1,1713002329,47,"runlist is"
+?/e1
+|2,1,1713000603,47,"e1"
+?/if runli
+|2,1,1713000332,47,"if runli"
+?/Solutions
+|2,1,1712999347,47,"Solutions"
+?/arrival_time
+|2,1,1712999228,47,"arrival_time"
+?/runli
+|2,1,1712998304,47,"runli"
+?/runlsit
+|2,1,1712998301,47,"runlsit"
+?/runlist
+|2,1,1712998294,47,"runlist"
+?/print('w
+|2,1,1712994636,47,"print('w"
+?/for
+|2,1,1712990429,47,"for"
+?/hello
+|2,1,1712989406,47,"hello"
+?/sorted
+|2,1,1712989079,47,"sorted"
+? \<1\>
+|2,1,1712988638,,"\\<1\\>"
+?/jobnum
+|2,1,1712987950,47,"jobnum"
+?/cur
+|2,1,1712987865,47,"cur"
+?/wait
+|2,1,1712987139,47,"wait"
+?/lastran
+|2,1,1712986821,47,"lastran"
+?/Done
+|2,1,1712984247,47,"Done"
+?/RR
+|2,1,1712983039,47,"RR"
+?/ㄲㄲ
+|2,1,1712982450,47,"ㄲㄲ"
+?/available
+|2,1,1712978282,47,"available"
+?/responseSum
+|2,1,1712931827,47,"responseSum"
+?/watiSum
+|2,1,1712931766,47,"watiSum"
+?/job
+|2,1,1712929578,47,"job"
+?/EE
+|2,1,1712928983,47,"EE"
+?/policies
+|2,1,1712928977,47,"policies"
+?/[2]
+|2,1,1712928971,47,"[2]"
+?/길이
+|2,1,1712928343,47,"길이"
+?/polici
+|2,1,1712928304,47,"polici"
 ?/end_time
 |2,1,1712925174,47,"end_time"
-?/policies
-|2,1,1712923583,47,"policies"
 ?/operator
 |2,1,1712923121,47,"operator"
 ?/arrival_list
@@ -115,8 +219,6 @@ $
 |2,1,1712922114,47,"FIFO"
 ?/ARG
 |2,1,1712921148,47,"ARG"
-?/jobnum
-|2,1,1712920367,47,"jobnum"
 ?/-a
 |2,1,1712920137,47,"-a"
 ?/jlist
@@ -147,8 +249,6 @@ $
 |2,1,1712586914,47,"eixt2"
 ?/wati2
 |2,1,1712586227,47,"wati2"
-?/wait
-|2,1,1712586006,47,"wait"
 ?/sleep
 |2,1,1712584311,47,"sleep"
 ?/i
@@ -165,8 +265,6 @@ $
 |2,1,1712564429,47,"EXTRA"
 ?/UPRO
 |2,1,1712564386,47,"UPRO"
-?/hello
-|2,1,1712564371,47,"hello"
 ?/edk2
 |2,1,1712491171,47,"edk2"
 ?/xv
@@ -403,273 +501,408 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	            t += runtime
-|3,1,0,1,1,0,1712928024,"            t += runtime"
+"0	CHAR	0
+	 
+|3,0,0,0,1,0,1713012020," "
 "1	LINE	0
-	            t += runtime
-|3,0,1,1,1,0,1712925589,"            t += runtime"
+	                        print(joblist[i], ' is appended')
+|3,0,1,1,1,0,1713004351,"                        print(joblist[i], ' is appended')"
 "2	LINE	0
-	            turnaround = t + runtime
-|3,0,2,1,1,0,1712925483,"            turnaround = t + runtime"
+	                    if joblist[i][1] > 0: #실행 시간이 0이면 추가하지 않음
+|3,0,2,1,1,0,1713004349,"                    if joblist[i][1] > 0: #실행 시간이 0이면 추가하지 않음"
 "3	LINE	0
-	            # 시간 t를 작업의 도착 시간으로 조정, 이전 작업이 끝난 시간보다 도착 시간이 늦을 경우
-|3,0,3,1,1,0,1712925431,"            # 시간 t를 작업의 도착 시간으로 조정, 이전 작업이 끝난 시간보다 도착 시간이 늦을 경우"
+	                       decreased_jobcount += 1
+|3,0,3,1,1,0,1713004256,"                       decreased_jobcount += 1"
 "4	LINE	0
-	                # 시간 t를 작업의 도착 시간으로 조정, 이전 작업이 끝난 시간보다 도착 시간이 늦을 경우
-|3,0,4,1,1,0,1712925425,"                # 시간 t를 작업의 도착 시간으로 조정, 이전 작업이 끝난 시간보다 도착 시간이 늦을 경우"
+	            decreased_jobcount = 0
+|3,0,4,1,1,0,1713004243,"            decreased_jobcount = 0"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1712925416,""
+	                print(i, 'outside')
+|3,0,5,1,1,0,1713004078,"                print(i, 'outside')"
 "6	LINE	0
-	            end_time = thetime + job[1]
-|3,0,6,1,1,0,1712925176,"            end_time = thetime + job[1]"
+	                #index 내의 job에 대해, 도착 시간이 현재 시간 이하일 경우 runlist에 추가
+|3,0,6,1,1,0,1713004074,"                #index 내의 job에 대해, 도착 시간이 현재 시간 이하일 경우 runlist에 추가"
 "7	LINE	0
-	            i += 1
-|3,0,7,1,1,0,1712924555,"            i += 1"
+	                    print('runlist is empty.')
+	                    print('i is ', i)
+|3,0,7,1,2,0,1713002534,"                    print('runlist is empty.')","                    print('i is ', i)"
 "8	LINE	0
-	        i = 1 
-|3,0,8,1,1,0,1712924528,"        i = 1 "
+	                i = 0
+|3,0,8,1,1,0,1713002454,"                i = 0"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1712923707,""
-"-	CHAR	0
-	e
-|3,0,36,0,1,0,1712924821,"e"
+	            #print('joblist: ', joblist, ' runlist: ',runlist)
+|3,0,9,1,1,0,1713002435,"            #print('joblist: ', joblist, ' runlist: ',runlist)"
+""-	CHAR	0
+	*
+|3,1,36,0,1,0,1713012032,"*"
 
 # File marks:
-'0  1  22  ~/.gitignore
-|4,48,1,22,1712928042,"~/.gitignore"
+'0  2  11  ~/.gitignore
+|4,48,2,11,1713012034,"~/.gitignore"
 '1  8  0  ~/.git
-|4,49,8,0,1712928026,"~/.git"
-'2  1  13  ~/.gitignore
-|4,50,1,13,1712928012,"~/.gitignore"
+|4,49,8,0,1713012021,"~/.git"
+'2  1  0  ~/.gitignore
+|4,50,1,0,1713012018,"~/.gitignore"
 '3  1  0  ~/.gitignore
-|4,51,1,0,1712928002,"~/.gitignore"
-'4  1  0  ~/.gitignore
-|4,52,1,0,1712928002,"~/.gitignore"
-'5  28  3  ~/homework1/Goal_of_homework1
-|4,53,28,3,1712927994,"~/homework1/Goal_of_homework1"
-'6  172  4  ~/homework1/origin.py
-|4,54,172,4,1712927957,"~/homework1/origin.py"
-'7  140  29  ~/homework1/scheduler.py
-|4,55,140,29,1712926566,"~/homework1/scheduler.py"
-'8  144  11  ~/homework1/scheduler.py
-|4,56,144,11,1712926377,"~/homework1/scheduler.py"
-'9  144  11  ~/homework1/scheduler.py
-|4,57,144,11,1712926377,"~/homework1/scheduler.py"
+|4,51,1,0,1713012018,"~/.gitignore"
+'4  175  43  ~/homework1/scheduler.py
+|4,52,175,43,1713004426,"~/homework1/scheduler.py"
+'5  38  18  ~/homework1/test.txt
+|4,53,38,18,1713004419,"~/homework1/test.txt"
+'6  38  18  ~/homework1/test.txt
+|4,54,38,18,1713004416,"~/homework1/test.txt"
+'7  175  43  ~/homework1/scheduler.py
+|4,55,175,43,1713004408,"~/homework1/scheduler.py"
+'8  1  0  ~/homework1/test.txt
+|4,56,1,0,1713004367,"~/homework1/test.txt"
+'9  1  0  ~/homework1/test.txt
+|4,57,1,0,1713004367,"~/homework1/test.txt"
 
 # Jumplist (newest first):
--'  1  22  ~/.gitignore
-|4,39,1,22,1712928042,"~/.gitignore"
--'  8  0  ~/.git
-|4,39,8,0,1712928026,"~/.git"
--'  8  0  ~/.git
-|4,39,8,0,1712928026,"~/.git"
--'  1  13  ~/.gitignore
-|4,39,1,13,1712928012,"~/.gitignore"
--'  1  13  ~/.gitignore
-|4,39,1,13,1712928012,"~/.gitignore"
+-'  2  11  ~/.gitignore
+|4,39,2,11,1713012034,"~/.gitignore"
 -'  1  0  ~/.gitignore
-|4,39,1,0,1712928002,"~/.gitignore"
+|4,39,1,0,1713012023,"~/.gitignore"
+-'  8  0  ~/.git
+|4,39,8,0,1713012021,"~/.git"
+-'  8  0  ~/.git
+|4,39,8,0,1713012021,"~/.git"
 -'  1  0  ~/.gitignore
-|4,39,1,0,1712928002,"~/.gitignore"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  28  3  ~/homework1/Goal_of_homework1
-|4,39,28,3,1712927994,"~/homework1/Goal_of_homework1"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  172  4  ~/homework1/origin.py
-|4,39,172,4,1712927957,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  37  0  ~/homework1/origin.py
-|4,39,37,0,1712927891,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
--'  3  0  ~/homework1/origin.py
-|4,39,3,0,1712927886,"~/homework1/origin.py"
+|4,39,1,0,1713012018,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1713012018,"~/.gitignore"
+-'  175  43  ~/homework1/scheduler.py
+|4,39,175,43,1713004426,"~/homework1/scheduler.py"
+-'  175  43  ~/homework1/scheduler.py
+|4,39,175,43,1713004426,"~/homework1/scheduler.py"
+-'  175  43  ~/homework1/scheduler.py
+|4,39,175,43,1713004426,"~/homework1/scheduler.py"
+-'  175  43  ~/homework1/scheduler.py
+|4,39,175,43,1713004426,"~/homework1/scheduler.py"
+-'  175  43  ~/homework1/scheduler.py
+|4,39,175,43,1713004426,"~/homework1/scheduler.py"
+-'  175  43  ~/homework1/scheduler.py
+|4,39,175,43,1713004426,"~/homework1/scheduler.py"
+-'  175  43  ~/homework1/scheduler.py
+|4,39,175,43,1713004426,"~/homework1/scheduler.py"
+-'  175  43  ~/homework1/scheduler.py
+|4,39,175,43,1713004426,"~/homework1/scheduler.py"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004419,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  38  18  ~/homework1/test.txt
+|4,39,38,18,1713004416,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  28  18  ~/homework1/test.txt
+|4,39,28,18,1713004414,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  1  0  ~/homework1/test.txt
+|4,39,1,0,1713004413,"~/homework1/test.txt"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1712928041	0
-	"	1	22
-	^	1	23
-	.	2	0
+	*	1713012033	0
+	"	2	11
+	^	2	12
+	.	2	11
 	+	1	23
 	+	2	0
+	+	2	11
+
+> ~/homework1/scheduler.py
+	*	1713004420	0
+	"	175	43
+	^	175	50
+	.	175	49
+	+	214	42
+	+	214	0
+	+	214	54
+	+	214	0
+	+	214	34
+	+	182	0
+	+	214	0
+	+	191	0
+	+	208	100
+	+	209	0
+	+	208	44
+	+	192	0
+	+	194	0
+	+	208	57
+	+	191	0
+	+	190	24
+	+	191	0
+	+	190	24
+	+	186	20
+	+	190	58
+	+	207	69
+	+	202	68
+	+	238	12
+	+	229	11
+	+	230	3
+	+	231	7
+	+	229	4
+	+	173	40
+	+	174	3
+	+	173	84
+	+	192	54
+	+	193	0
+	+	182	0
+	+	173	34
+	+	169	26
+	+	182	26
+	+	179	0
+	+	179	36
+	+	169	29
+	+	176	63
+	+	176	25
+	+	176	24
+	+	176	15
+	+	179	0
+	+	176	0
+	+	169	0
+	+	182	0
+	+	176	69
+	+	176	0
+	+	177	24
+	+	178	53
+	+	221	56
+	+	214	0
+	+	180	0
+	+	211	24
+	+	221	16
+	+	210	69
+	+	197	0
+	+	180	51
+	+	180	22
+	+	168	0
+	+	169	15
+	+	166	16
+	+	218	86
+	+	221	12
+	+	221	15
+	+	218	51
+	+	221	0
+	+	166	0
+	+	220	36
+	+	221	0
+	+	169	0
+	+	167	0
+	+	168	0
+	+	167	11
+	+	217	63
+	+	216	0
+	+	174	50
+	+	174	39
+	+	172	0
+	+	169	23
+	+	181	0
+	+	172	33
+	+	169	0
+	+	169	33
+	+	169	0
+	+	168	33
+	+	171	54
+	+	178	46
+	+	170	31
+	+	171	35
+	+	168	0
+	+	178	0
+	+	176	20
+	+	177	24
+	+	179	24
+	+	174	0
+	+	176	0
+	+	174	46
+	+	175	49
+
+> ~/homework1/test.txt
+	*	1713004418	0
+	"	38	18
+
+> ~/homework1/origin.py
+	*	1713000351	0
+	"	172	4
+	.	3	0
+	+	2	0
+	+	3	0
+
+> ~/homework1/s
+	*	1712995338	0
+	"	1	0
+
+> ~/homework1/scheduler.py.bak_RR
+	*	1712986288	0
+	"	208	20
+	.	169	0
+	+	167	0
+	+	168	0
+	+	169	0
+
+> ~/homework1/scheduler.py.bak_R
+	*	1712983409	0
+	"	1	0
 
 > ~/homework1/Goal_of_homework1
 	*	1712927993	0
@@ -684,119 +917,6 @@ $
 	+	4	59
 	+	27	0
 	+	34	43
-
-> ~/homework1/origin.py
-	*	1712927957	0
-	"	172	4
-	.	3	0
-	+	2	0
-	+	3	0
-
-> ~/homework1/scheduler.py
-	*	1712926554	0
-	"	140	29
-	^	134	12
-	.	134	12
-	+	63	4
-	+	55	11
-	+	56	60
-	+	60	32
-	+	58	8
-	+	57	29
-	+	63	4
-	+	45	110
-	+	52	0
-	+	64	12
-	+	63	0
-	+	58	0
-	+	61	47
-	+	91	27
-	+	53	74
-	+	56	38
-	+	53	63
-	+	96	0
-	+	111	24
-	+	148	23
-	+	96	0
-	+	94	0
-	+	105	22
-	+	110	0
-	+	118	0
-	+	82	86
-	+	89	105
-	+	82	66
-	+	89	65
-	+	94	0
-	+	92	0
-	+	94	39
-	+	94	74
-	+	94	49
-	+	94	68
-	+	94	60
-	+	64	0
-	+	94	39
-	+	94	31
-	+	94	42
-	+	94	34
-	+	94	4
-	+	94	3
-	+	94	7
-	+	94	8
-	+	94	10
-	+	94	12
-	+	94	15
-	+	81	41
-	+	86	66
-	+	81	61
-	+	86	68
-	+	92	0
-	+	94	0
-	+	105	23
-	+	98	0
-	+	99	52
-	+	101	0
-	+	101	53
-	+	103	37
-	+	102	55
-	+	104	0
-	+	101	3
-	+	102	3
-	+	103	3
-	+	104	3
-	+	100	72
-	+	113	30
-	+	116	38
-	+	117	125
-	+	115	12
-	+	119	17
-	+	117	161
-	+	115	12
-	+	117	154
-	+	115	0
-	+	117	113
-	+	119	0
-	+	117	99
-	+	116	67
-	+	117	134
-	+	116	0
-	+	132	12
-	+	136	0
-	+	135	142
-	+	135	0
-	+	135	35
-	+	135	34
-	+	136	0
-	+	135	34
-	+	136	0
-	+	133	52
-	+	137	40
-	+	138	0
-	+	140	0
-	+	139	23
-	+	140	40
-	+	145	0
-	+	120	0
-	+	134	12
 
 > ~/homework1/ostep-homework/cpu-sched/scheduler.py
 	*	1712910869	0
@@ -1610,36 +1730,3 @@ $
 > ~/stage/xv6edk2/xv6/syscall.h
 	*	1712043045	0
 	"	4	12
-
-> ~/stage/edk2/xv6edk2/MyLoaderPkg/MyLoaderPkg.dsc
-	*	1711970727	0
-	"	39	0
-	^	38	9
-	.	38	8
-	+	38	0
-	+	37	2
-	+	38	8
-
-> ~/stage/edk2/xv6edk2/xv6/Makefile
-	*	1711970542	0
-	"	286	3
-	^	261	9
-	.	261	8
-	+	188	7
-	+	261	8
-
-> ~/stage/edk2/Conf/target.txt
-	*	1711970135	0
-	"	20	0
-	.	20	0
-	+	20	59
-	+	21	21
-	+	20	58
-	+	21	0
-	+	20	1
-	+	21	0
-	+	20	0
-
-> ~/stage/edk2/Conf/BuildEnv.sh
-	*	1711970127	0
-	"	1	0
