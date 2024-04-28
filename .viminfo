@@ -11,32 +11,70 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/added
+~MSle0~/forktest
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1713012034,,"wq"
-:Wq
-|2,0,1713012032,,"Wq"
+|2,0,1714280764,,"wq"
 :q
-|2,0,1713012021,,"q"
-:'<,'>q
-|2,0,1713004418,,"'<,'>q"
-:Q
-|2,0,1713004417,,"Q"
-:q!
-|2,0,1713004076,,"q!"
+|2,0,1714280645,,"q"
 :set nu
-|2,0,1713002619,,"set nu"
+|2,0,1714279732,,"set nu"
+:q!
+|2,0,1714275237,,"q!"
+:Q
+|2,0,1714274006,,"Q"
+:exit
+|2,0,1713837270,,"exit"
+:wait2
+|2,0,1713837267,,"wait2"
+:w
+|2,0,1713523954,,"w"
+:122
+|2,0,1713521456,,"122"
+:Set nu
+|2,0,1713520865,,"Set nu"
+:146
+|2,0,1713337671,,"146"
+:150
+|2,0,1713335075,,"150"
+:'<,'>::Q
+|2,0,1713334422,,"'<,'>::Q"
+:Wq
+|2,0,1713334212,,"Wq"
+:'<,'>
+|2,0,1713333617,,"'<,'>"
+:'<,'>q
+|2,0,1713332201,,"'<,'>q"
+:!
+|2,0,1713332196,,"!"
+:168
+|2,0,1713331893,,"168"
+:218
+|2,0,1713269877,,"218"
+:218]
+|2,0,1713269876,,"218]"
+:219
+|2,0,1713269746,,"219"
+:204
+|2,0,1713260765,,"204"
+:104
+|2,0,1713151768,,"104"
+:113
+|2,0,1713150847,,"113"
+:130
+|2,0,1713150823,,"130"
+:110
+|2,0,1713150798,,"110"
+:121
+|2,0,1713150766,,"121"
+:Q!
+|2,0,1713146196,,"Q!"
 :221
 |2,0,1712999399,,"221"
-:Set nu
-|2,0,1712998297,,"Set nu"
-:150
-|2,0,1712997470,,"150"
 :WQ
 |2,0,1712993835,,"WQ"
 :149
@@ -47,8 +85,6 @@ $
 |2,0,1712993560,,"192"
 :ㅈㅂ
 |2,0,1712992014,,"ㅈㅂ"
-:w
-|2,0,1712988640,,"w"
 :set nui
 |2,0,1712984144,,"set nui"
 :180
@@ -95,14 +131,10 @@ $
 |2,0,1712920075,,"unset nu"
 :W
 |2,0,1712918420,,"W"
-:Q!
-|2,0,1712586747,,"Q!"
 :60
 |2,0,1712578140,,"60"
 :wait
 |2,0,1712488536,,"wait"
-:wait2
-|2,0,1712488534,,"wait2"
 :ㅈ
 |2,0,1712487290,,"ㅈ"
 :set nuo
@@ -117,10 +149,6 @@ $
 |2,0,1712483957,,"53"
 :82
 |2,0,1712474316,,"82"
-:!
-|2,0,1712473169,,"!"
-:exit
-|2,0,1712472893,,"exit"
 :106
 |2,0,1712467729,,"106"
 :exit2
@@ -139,22 +167,116 @@ $
 |2,0,1711949580,,"147"
 
 # Search String History (newest to oldest):
+?/forktest
+|2,1,1714280639,47,"forktest"
+?/swtch
+|2,1,1714279770,47,"swtch"
+?/swt
+|2,1,1714279762,47,"swt"
+?/swtch(
+|2,1,1714279737,47,"swtch("
+?/thread:
+|2,1,1714279295,47,"thread:"
+?/kkkkkkkkkkkkkkk
+|2,1,1714279208,47,"kkkkkkkkkkkkkkk"
+?/_fork
+|2,1,1714277303,47,"_fork"
+?/scheduler
+|2,1,1714276416,47,"scheduler"
+?/fork
+|2,1,1714275661,47,"fork"
+?/create
+|2,1,1714275243,47,"create"
+?/createk:set nu
+|2,1,1714275056,47,"createk:set nu"
+?/uthread
+|2,1,1714273530,47,"uthread"
+?/wait2
+|2,1,1713837278,47,"wait2"
+?/exit2
+|2,1,1713837277,47,"exit2"
+?/wait
+|2,1,1713837235,47,"wait"
+?/2
+|2,1,1713837023,47,"2"
+?/zombie
+|2,1,1713836946,47,"zombie"
+?/scheduler(
+|2,1,1713836466,47,"scheduler("
+?/UNUSED
+|2,1,1713836234,47,"UNUSED"
+? \<thetime_edited\>
+|2,1,1713526734,,"\\<thetime_edited\\>"
+?/lastran
+|2,1,1713524022,47,"lastran"
+?/Exec
+|2,1,1713337737,47,"Exec"
+?/print
+|2,1,1713337721,47,"print"
+?/Solutions
+|2,1,1713337704,47,"Solutions"
+?/options
+|2,1,1713337677,47,"options"
+?/appended
+|2,1,1713335483,47,"appended"
+?/time
+|2,1,1713334922,47,"time"
+?/thetime
+|2,1,1713334900,47,"thetime"
+?/is
+|2,1,1713334679,47,"is"
+?/error
+|2,1,1713334052,47,"error"
+?/popped
+|2,1,1713334005,47,"popped"
+?/joblist
+|2,1,1713332270,47,"joblist"
+?/sorted
+|2,1,1713332259,47,"sorted"
+? \<0\>
+|2,1,1713331734,,"\\<0\\>"
+?/responseSum
+|2,1,1713269642,47,"responseSum"
+?/policy
+|2,1,1713269467,47,"policy"
+?/turnaround
+|2,1,1713262058,47,"turnaround"
+?/RR
+|2,1,1713261083,47,"RR"
+?/&&&&&&&&&
+|2,1,1713260915,47,"&&&&&&&&&"
+?/Solution
+|2,1,1713260890,47,"Solution"
+?/response
+|2,1,1713260397,47,"response"
+?/current_time
+|2,1,1713150871,47,"current_time"
+?/completed
+|2,1,1713150809,47,"completed"
+?/alist
+|2,1,1713150362,47,"alist"
+?/FIFO
+|2,1,1713149166,47,"FIFO"
+?/First
+|2,1,1713148108,47,"First"
+?/At
+|2,1,1713148099,47,"At"
+?/jobnum
+|2,1,1713147821,47,"jobnum"
+?/de
+|2,1,1713145710,47,"de"
 ? @$
 |2,1,1713012020,,"@$"
 ?/added
 |2,1,1713004413,47,"added"
 ?/print('**
 |2,1,1713004380,47,"print('**"
-?/appended
-|2,1,1713002671,47,"appended"
 ?/runlist is
 |2,1,1713002329,47,"runlist is"
 ?/e1
 |2,1,1713000603,47,"e1"
 ?/if runli
 |2,1,1713000332,47,"if runli"
-?/Solutions
-|2,1,1712999347,47,"Solutions"
 ?/arrival_time
 |2,1,1712999228,47,"arrival_time"
 ?/runli
@@ -169,28 +291,16 @@ $
 |2,1,1712990429,47,"for"
 ?/hello
 |2,1,1712989406,47,"hello"
-?/sorted
-|2,1,1712989079,47,"sorted"
 ? \<1\>
 |2,1,1712988638,,"\\<1\\>"
-?/jobnum
-|2,1,1712987950,47,"jobnum"
 ?/cur
 |2,1,1712987865,47,"cur"
-?/wait
-|2,1,1712987139,47,"wait"
-?/lastran
-|2,1,1712986821,47,"lastran"
 ?/Done
 |2,1,1712984247,47,"Done"
-?/RR
-|2,1,1712983039,47,"RR"
 ?/ㄲㄲ
 |2,1,1712982450,47,"ㄲㄲ"
 ?/available
 |2,1,1712978282,47,"available"
-?/responseSum
-|2,1,1712931827,47,"responseSum"
 ?/watiSum
 |2,1,1712931766,47,"watiSum"
 ?/job
@@ -215,8 +325,6 @@ $
 |2,1,1712922509,47,"options.j"
 ?/Here
 |2,1,1712922206,47,"Here"
-?/FIFO
-|2,1,1712922114,47,"FIFO"
 ?/ARG
 |2,1,1712921148,47,"ARG"
 ?/-a
@@ -229,20 +337,12 @@ $
 |2,1,1712919884,47,"jobs"
 ?/print('S
 |2,1,1712919443,47,"print('S"
-?/policy
-|2,1,1712919435,47,"policy"
-?/options
-|2,1,1712918477,47,"options"
 ?/options.solve
 |2,1,1712918459,47,"options.solve"
 ?/wiat2
 |2,1,1712642683,47,"wiat2"
-?/wait2
-|2,1,1712588138,47,"wait2"
 ?/parent
 |2,1,1712588012,47,"parent"
-?/exit2
-|2,1,1712587973,47,"exit2"
 ?/exit
 |2,1,1712587967,47,"exit"
 ?/eixt2
@@ -305,8 +405,6 @@ $
 |2,1,1712473858,47,"eixgt2"
 ?/exot2
 |2,1,1712473130,47,"exot2"
-?/print
-|2,1,1712471711,47,"print"
 ?/SYS_fork
 |2,1,1712468817,47,"SYS_fork"
 ?/user.h
@@ -469,30 +567,6 @@ $
 |2,1,1711609872,47,"ARCH"
 ?/ARCHn
 |2,1,1711609869,47,"ARCHn"
-?/PLAT
-|2,1,1711609843,47,"PLAT"
-?/TARGET
-|2,1,1711087926,47,"TARGET"
-?/ACTIVE_
-|2,1,1711087919,47,"ACTIVE_"
-?/OUT
-|2,1,1711087341,47,"OUT"
-?/build
-|2,1,1711087330,47,"build"
-?/ACIVE_
-|2,1,1711086535,47,"ACIVE_"
-?/THREAD_NUMBER
-|2,1,1711086470,47,"THREAD_NUMBER"
-?/NUMBER
-|2,1,1711086464,47,"NUMBER"
-?/compiler
-|2,1,1711086451,47,"compiler"
-?/vs
-|2,1,1711086409,47,"vs"
-?/vs2019
-|2,1,1711086408,47,"vs2019"
-?/TOOL_CHA
-|2,1,1711086374,47,"TOOL_CHA"
 
 # Expression History (newest to oldest):
 
@@ -501,266 +575,592 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	 
-|3,0,0,0,1,0,1713012020," "
-"1	LINE	0
-	                        print(joblist[i], ' is appended')
-|3,0,1,1,1,0,1713004351,"                        print(joblist[i], ' is appended')"
+"0	LINE	0
+	            thetime_edited = thetime if thetime > joblist[0][2] else joblist[0][2]
+|3,0,0,1,1,0,1713526358,"            thetime_edited = thetime if thetime > joblist[0][2] else joblist[0][2]"
+""1	LINE	0
+		.text
+	
+		/*
+	         * save the old thread's registers,
+	         * restore the new thread's registers.
+	         */
+	
+		.globl thread_switch
+	thread_switch:
+		/* YOUR CODE HERE */
+	
+		ret    /* return to ra */
+|3,1,1,1,12,0,1714280753,"	.text","","	/*","         * save the old thread's registers,","         * restore the new thread's registers.","         */","","	.globl thread_switch","thread_switch:","	/* YOUR CODE HERE */","","	ret    /* return to ra */"
 "2	LINE	0
-	                    if joblist[i][1] > 0: #실행 시간이 0이면 추가하지 않음
-|3,0,2,1,1,0,1713004349,"                    if joblist[i][1] > 0: #실행 시간이 0이면 추가하지 않음"
+	                    response[joblist[0][0]] = 0 #첫 job이니까 반환 시간은 당연히 0
+|3,0,2,1,1,0,1713526356,"                    response[joblist[0][0]] = 0 #첫 job이니까 반환 시간은 당연히 0"
 "3	LINE	0
-	                       decreased_jobcount += 1
-|3,0,3,1,1,0,1713004256,"                       decreased_jobcount += 1"
+	                   
+|3,0,3,1,1,0,1713526281,"                   "
 "4	LINE	0
-	            decreased_jobcount = 0
-|3,0,4,1,1,0,1713004243,"            decreased_jobcount = 0"
+	
+|3,0,4,1,1,0,1713524357,""
 "5	LINE	0
-	                print(i, 'outside')
-|3,0,5,1,1,0,1713004078,"                print(i, 'outside')"
+	                    thetime_edited = joblist[0][2]
+	                    i = joblist.pop(0)
+	                    arrived.append(i)
+|3,0,5,1,3,0,1713524298,"                    thetime_edited = joblist[0][2]","                    i = joblist.pop(0)","                    arrived.append(i)"
 "6	LINE	0
-	                #index 내의 job에 대해, 도착 시간이 현재 시간 이하일 경우 runlist에 추가
-|3,0,6,1,1,0,1713004074,"                #index 내의 job에 대해, 도착 시간이 현재 시간 이하일 경우 runlist에 추가"
+	                for i in joblist: #도착한 job은 arrived[]에 추가, joblist에선 pop
+	                    if i[2] <= thetime_edited:
+	                        arrived.appned(i)
+	                        joblist.pop(0) #어차피 joblist는 도착 시간 오름차순이니까 pop(0)하면 남은 job들 중 가장 빨리 도착한 게 지워짐
+|3,0,6,1,4,0,1713524290,"                for i in joblist: #도착한 job은 arrived[]에 추가, joblist에선 pop","                    if i[2] <= thetime_edited:","                        arrived.appned(i)","                        joblist.pop(0) #어차피 joblist는 도착 시간 오름차순이니까 pop(0)하면 남은 job들 중 가장 빨리 도착한 게 지워짐"
 "7	LINE	0
-	                    print('runlist is empty.')
-	                    print('i is ', i)
-|3,0,7,1,2,0,1713002534,"                    print('runlist is empty.')","                    print('i is ', i)"
+	            #for job in joblist:
+|3,0,7,1,1,0,1713524006,"            #for job in joblist:"
 "8	LINE	0
-	                i = 0
-|3,0,8,1,1,0,1713002454,"                i = 0"
+	                else:
+|3,0,8,1,1,0,1713523682,"                else:"
 "9	LINE	0
-	            #print('joblist: ', joblist, ' runlist: ',runlist)
-|3,0,9,1,1,0,1713002435,"            #print('joblist: ', joblist, ' runlist: ',runlist)"
-""-	CHAR	0
-	*
-|3,1,36,0,1,0,1713012032,"*"
+	
+|3,0,9,1,1,0,1713523682,""
+"-	CHAR	0
+	]
+|3,0,36,0,1,0,1713526294,"]"
 
 # File marks:
-'0  2  11  ~/.gitignore
-|4,48,2,11,1713012034,"~/.gitignore"
-'1  8  0  ~/.git
-|4,49,8,0,1713012021,"~/.git"
-'2  1  0  ~/.gitignore
-|4,50,1,0,1713012018,"~/.gitignore"
-'3  1  0  ~/.gitignore
-|4,51,1,0,1713012018,"~/.gitignore"
-'4  175  43  ~/homework1/scheduler.py
-|4,52,175,43,1713004426,"~/homework1/scheduler.py"
-'5  38  18  ~/homework1/test.txt
-|4,53,38,18,1713004419,"~/homework1/test.txt"
-'6  38  18  ~/homework1/test.txt
-|4,54,38,18,1713004416,"~/homework1/test.txt"
-'7  175  43  ~/homework1/scheduler.py
-|4,55,175,43,1713004408,"~/homework1/scheduler.py"
-'8  1  0  ~/homework1/test.txt
-|4,56,1,0,1713004367,"~/homework1/test.txt"
-'9  1  0  ~/homework1/test.txt
-|4,57,1,0,1713004367,"~/homework1/test.txt"
+'0  25  42  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,48,25,42,1714280764,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+'1  162  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,49,162,0,1714280645,"~/lab3/xv6edk2/xv6/Makefile"
+'2  1  0  ~/lab3/xv6edk2/xv6/Ma
+|4,50,1,0,1714280634,"~/lab3/xv6edk2/xv6/Ma"
+'3  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,51,1,0,1714280630,"~/lab3/xv6edk2/xv6/proc.c"
+'4  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,52,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+'5  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,53,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+'6  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,54,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+'7  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,55,29,2,1714280008,"~/lab3/xv6edk2/xv6/swtch.S"
+'8  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,56,29,2,1714279929,"~/lab3/xv6edk2/xv6/swtch.S"
+'9  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,57,29,2,1714279929,"~/lab3/xv6edk2/xv6/swtch.S"
 
 # Jumplist (newest first):
--'  2  11  ~/.gitignore
-|4,39,2,11,1713012034,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1713012023,"~/.gitignore"
--'  8  0  ~/.git
-|4,39,8,0,1713012021,"~/.git"
--'  8  0  ~/.git
-|4,39,8,0,1713012021,"~/.git"
--'  1  0  ~/.gitignore
-|4,39,1,0,1713012018,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1713012018,"~/.gitignore"
--'  175  43  ~/homework1/scheduler.py
-|4,39,175,43,1713004426,"~/homework1/scheduler.py"
--'  175  43  ~/homework1/scheduler.py
-|4,39,175,43,1713004426,"~/homework1/scheduler.py"
--'  175  43  ~/homework1/scheduler.py
-|4,39,175,43,1713004426,"~/homework1/scheduler.py"
--'  175  43  ~/homework1/scheduler.py
-|4,39,175,43,1713004426,"~/homework1/scheduler.py"
--'  175  43  ~/homework1/scheduler.py
-|4,39,175,43,1713004426,"~/homework1/scheduler.py"
--'  175  43  ~/homework1/scheduler.py
-|4,39,175,43,1713004426,"~/homework1/scheduler.py"
--'  175  43  ~/homework1/scheduler.py
-|4,39,175,43,1713004426,"~/homework1/scheduler.py"
--'  175  43  ~/homework1/scheduler.py
-|4,39,175,43,1713004426,"~/homework1/scheduler.py"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004419,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  38  18  ~/homework1/test.txt
-|4,39,38,18,1713004416,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  28  18  ~/homework1/test.txt
-|4,39,28,18,1713004414,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
--'  1  0  ~/homework1/test.txt
-|4,39,1,0,1713004413,"~/homework1/test.txt"
+-'  25  42  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,25,42,1714280764,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,1,0,1714280748,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  162  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,162,0,1714280645,"~/lab3/xv6edk2/xv6/Makefile"
+-'  162  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,162,0,1714280645,"~/lab3/xv6edk2/xv6/Makefile"
+-'  264  35  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,264,35,1714280639,"~/lab3/xv6edk2/xv6/Makefile"
+-'  196  9  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,196,9,1714280639,"~/lab3/xv6edk2/xv6/Makefile"
+-'  264  35  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,264,35,1714280639,"~/lab3/xv6edk2/xv6/Makefile"
+-'  196  9  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,196,9,1714280639,"~/lab3/xv6edk2/xv6/Makefile"
+-'  1  0  ~/lab3/xv6edk2/xv6/Ma
+|4,39,1,0,1714280634,"~/lab3/xv6edk2/xv6/Ma"
+-'  1  0  ~/lab3/xv6edk2/xv6/Ma
+|4,39,1,0,1714280634,"~/lab3/xv6edk2/xv6/Ma"
+-'  1  0  ~/lab3/xv6edk2/xv6/Ma
+|4,39,1,0,1714280634,"~/lab3/xv6edk2/xv6/Ma"
+-'  1  0  ~/lab3/xv6edk2/xv6/Ma
+|4,39,1,0,1714280634,"~/lab3/xv6edk2/xv6/Ma"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280630,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280630,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280630,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280630,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280630,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280630,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280630,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280630,"~/lab3/xv6edk2/xv6/proc.c"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  29  2  ~/lab3/xv6edk2/xv6/swtch.S
+|4,39,29,2,1714280146,"~/lab3/xv6edk2/xv6/swtch.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/usys.S
+|4,39,1,0,1714280098,"~/lab3/xv6edk2/xv6/usys.S"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
+-'  1  0  ~/lab3/xv6edk2/xv6/proc.c
+|4,39,1,0,1714280020,"~/lab3/xv6edk2/xv6/proc.c"
 
 # History of marks within files (newest to oldest):
+
+> ~/lab3/xv6edk2/xv6/uthread_switch.S
+	*	1714280763	0
+	"	25	42
+	^	25	43
+	.	25	42
+	+	1	6
+	+	25	42
+
+> ~/lab3/xv6edk2/xv6/Makefile
+	*	1714280643	0
+	"	162	0
+	^	196	10
+	.	196	9
+	+	166	0
+	+	196	9
+
+> ~/lab3/xv6edk2/xv6/Ma
+	*	1714280633	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/proc.c
+	*	1714280148	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/swtch.S
+	*	1714280102	0
+	"	29	2
+
+> ~/lab3/xv6edk2/xv6/usys.S
+	*	1714280027	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/defs.h
+	*	1714279770	0
+	"	126	3
+
+> ~/lab3/xv6edk2/xv6/uthread.c
+	*	1714277536	0
+	"	112	0
+	^	110	1
+	.	103	0
+	+	110	0
+	+	102	22
+	+	103	0
+
+> ~/lab3/xv6edk2/xv6/proc.h
+	*	1714276497	0
+	"	59	0
+
+> ~/lab3/xv6edk2/xv6/uthreadc
+	*	1714275043	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/uthread
+	*	1714275041	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/u
+	*	1714274452	0
+	"	1	0
+
+> ~/lab2/xv6edk2/xv6/proc.c
+	*	1713837278	0
+	"	379	15
+	^	388	27
+	.	388	26
+	+	280	0
+	+	280	2
+	+	280	62
+	+	280	57
+	+	280	17
+	+	280	0
+	+	280	62
+	+	280	0
+	+	280	2
+	+	280	4
+	+	280	6
+	+	280	8
+	+	280	4
+	+	280	7
+	+	280	2
+	+	280	1
+	+	280	3
+	+	280	5
+	+	280	7
+	+	280	9
+	+	280	4
+	+	280	2
+	+	280	3
+	+	280	25
+	+	280	0
+	+	280	41
+	+	280	3
+	+	280	19
+	+	280	0
+	+	280	3
+	+	280	5
+	+	280	0
+	+	280	4
+	+	280	29
+	+	280	0
+	+	280	30
+	+	66	0
+	+	280	27
+	+	280	0
+	+	280	29
+	+	280	37
+	+	280	0
+	+	280	2
+	+	280	0
+	+	279	16
+	+	322	0
+	+	322	3
+	+	322	0
+	+	281	0
+	+	287	0
+	+	286	26
+	+	285	70
+	+	279	0
+	+	323	0
+	+	430	0
+	+	375	0
+	+	379	3
+	+	379	0
+	+	426	0
+	+	377	18
+	+	380	12
+	+	387	52
+	+	390	0
+	+	386	2
+	+	387	26
+	+	56	0
+	+	388	43
+	+	387	46
+	+	388	26
+
+> ~/lab2/xv6edk2/xv6/usys.S
+	*	1713837256	0
+	"	33	13
+	^	33	14
+	.	33	13
+	+	32	14
+	+	33	13
+
+> ~/lab1/xv6edk2/xv6/proc.c
+	*	1713837242	0
+	"	232	26
+
+> ~/lab1/xv6edk2/xv6/syscall.c
+	*	1713837229	0
+	"	139	0
+
+> ~/lab1/xv6edk2/xv6/usys.S
+	*	1713837180	0
+	"	1	0
+
+> ~/lab1/xv6edk2/xv6/syscall.h
+	*	1713837168	0
+	"	1	0
+
+> ~/lab2/xv6edk2/xv6/proc.h
+	*	1713836458	0
+	"	31	2
+	^	52	13
+	.	52	12
+	+	51	58
+	+	54	12
+	+	53	58
+	+	52	12
+
+> ~/homework1/scheduler.py
+	*	1713527389	0
+	"	149	36
+	^	149	37
+	.	149	36
+	+	151	0
+	+	102	35
+	+	151	82
+	+	151	0
+	+	103	70
+	+	103	0
+	+	103	70
+	+	141	0
+	+	96	89
+	+	97	0
+	+	103	32
+	+	114	12
+	+	103	12
+	+	109	34
+	+	114	26
+	+	151	0
+	+	114	0
+	+	111	12
+	+	114	0
+	+	111	78
+	+	104	23
+	+	115	33
+	+	115	40
+	+	115	68
+	+	115	0
+	+	141	130
+	+	151	20
+	+	115	37
+	+	115	89
+	+	151	43
+	+	115	48
+	+	115	0
+	+	115	24
+	+	115	36
+	+	115	0
+	+	115	32
+	+	115	38
+	+	115	0
+	+	115	127
+	+	141	22
+	+	151	19
+	+	151	0
+	+	151	22
+	+	151	0
+	+	143	0
+	+	105	0
+	+	110	0
+	+	112	53
+	+	113	0
+	+	112	85
+	+	114	0
+	+	140	21
+	+	126	38
+	+	121	0
+	+	141	0
+	+	121	0
+	+	121	36
+	+	126	16
+	+	115	0
+	+	117	19
+	+	118	23
+	+	119	27
+	+	120	3
+	+	121	0
+	+	141	0
+	+	136	20
+	+	138	20
+	+	134	0
+	+	130	38
+	+	133	58
+	+	129	22
+	+	128	77
+	+	133	26
+	+	134	44
+	+	136	119
+	+	229	11
+	+	136	127
+	+	135	43
+	+	133	51
+	+	132	45
+	+	133	147
+	+	136	109
+	+	125	94
+	+	125	0
+	+	122	36
+	+	137	27
+	+	122	56
+	+	123	41
+	+	122	144
+	+	124	27
+	+	140	58
+	+	126	112
+	+	150	20
+	+	144	40
+	+	143	26
+	+	144	44
+	+	143	138
+	+	149	36
+	j	222	23
+
+> ~/homework1/origin.py
+	*	1713520994	0
+	"	160	0
+	.	3	0
+	+	2	0
+	+	3	0
+
+> ~/homework1/test2.py
+	*	1713450005	0
+	"	230	0
+	^	230	0
+	.	229	13
+	+	229	13
+
+> ~/homework1/hsiory.txt
+	*	1713449917	0
+	"	1	0
+
+> ~/homework1/test
+	*	1713449886	0
+	"	1	0
+	^	1	15
+	.	1	14
+	+	1	14
+
+> ~/homework1/s
+	*	1713335860	0
+	"	1	0
+
+> ~/homework1/scheduler.py.bak
+	*	1713259147	0
+	"	96	20
+	.	96	0
+	+	2	0
+	+	96	0
 
 > ~/.gitignore
 	*	1713012033	0
@@ -771,126 +1171,9 @@ $
 	+	2	0
 	+	2	11
 
-> ~/homework1/scheduler.py
-	*	1713004420	0
-	"	175	43
-	^	175	50
-	.	175	49
-	+	214	42
-	+	214	0
-	+	214	54
-	+	214	0
-	+	214	34
-	+	182	0
-	+	214	0
-	+	191	0
-	+	208	100
-	+	209	0
-	+	208	44
-	+	192	0
-	+	194	0
-	+	208	57
-	+	191	0
-	+	190	24
-	+	191	0
-	+	190	24
-	+	186	20
-	+	190	58
-	+	207	69
-	+	202	68
-	+	238	12
-	+	229	11
-	+	230	3
-	+	231	7
-	+	229	4
-	+	173	40
-	+	174	3
-	+	173	84
-	+	192	54
-	+	193	0
-	+	182	0
-	+	173	34
-	+	169	26
-	+	182	26
-	+	179	0
-	+	179	36
-	+	169	29
-	+	176	63
-	+	176	25
-	+	176	24
-	+	176	15
-	+	179	0
-	+	176	0
-	+	169	0
-	+	182	0
-	+	176	69
-	+	176	0
-	+	177	24
-	+	178	53
-	+	221	56
-	+	214	0
-	+	180	0
-	+	211	24
-	+	221	16
-	+	210	69
-	+	197	0
-	+	180	51
-	+	180	22
-	+	168	0
-	+	169	15
-	+	166	16
-	+	218	86
-	+	221	12
-	+	221	15
-	+	218	51
-	+	221	0
-	+	166	0
-	+	220	36
-	+	221	0
-	+	169	0
-	+	167	0
-	+	168	0
-	+	167	11
-	+	217	63
-	+	216	0
-	+	174	50
-	+	174	39
-	+	172	0
-	+	169	23
-	+	181	0
-	+	172	33
-	+	169	0
-	+	169	33
-	+	169	0
-	+	168	33
-	+	171	54
-	+	178	46
-	+	170	31
-	+	171	35
-	+	168	0
-	+	178	0
-	+	176	20
-	+	177	24
-	+	179	24
-	+	174	0
-	+	176	0
-	+	174	46
-	+	175	49
-
 > ~/homework1/test.txt
 	*	1713004418	0
 	"	38	18
-
-> ~/homework1/origin.py
-	*	1713000351	0
-	"	172	4
-	.	3	0
-	+	2	0
-	+	3	0
-
-> ~/homework1/s
-	*	1712995338	0
-	"	1	0
 
 > ~/homework1/scheduler.py.bak_RR
 	*	1712986288	0
@@ -1449,81 +1732,6 @@ $
 	+	28	0
 	+	32	39
 
-> ~/lab2/xv6edk2/xv6/proc.c
-	*	1712305932	0
-	"	281	0
-	^	388	27
-	.	388	26
-	+	280	0
-	+	280	2
-	+	280	62
-	+	280	57
-	+	280	17
-	+	280	0
-	+	280	62
-	+	280	0
-	+	280	2
-	+	280	4
-	+	280	6
-	+	280	8
-	+	280	4
-	+	280	7
-	+	280	2
-	+	280	1
-	+	280	3
-	+	280	5
-	+	280	7
-	+	280	9
-	+	280	4
-	+	280	2
-	+	280	3
-	+	280	25
-	+	280	0
-	+	280	41
-	+	280	3
-	+	280	19
-	+	280	0
-	+	280	3
-	+	280	5
-	+	280	0
-	+	280	4
-	+	280	29
-	+	280	0
-	+	280	30
-	+	66	0
-	+	280	27
-	+	280	0
-	+	280	29
-	+	280	37
-	+	280	0
-	+	280	2
-	+	280	0
-	+	279	16
-	+	322	0
-	+	322	3
-	+	322	0
-	+	281	0
-	+	287	0
-	+	286	26
-	+	285	70
-	+	279	0
-	+	323	0
-	+	430	0
-	+	375	0
-	+	379	3
-	+	379	0
-	+	426	0
-	+	377	18
-	+	380	12
-	+	387	52
-	+	390	0
-	+	386	2
-	+	387	26
-	+	56	0
-	+	388	43
-	+	387	46
-	+	388	26
-
 > ~/lab1/xv6edk2/xv6/Makefile
 	*	1712305653	0
 	"	272	6
@@ -1555,14 +1763,6 @@ $
 > ~/lab2/xv6edk2/MyLoaderPkg/MyLoaderPkg.dsc
 	*	1712303644	0
 	"	38	0
-
-> ~/lab2/xv6edk2/xv6/usys.S
-	*	1712303361	0
-	"	33	13
-	^	33	14
-	.	33	13
-	+	32	14
-	+	33	13
 
 > ~/lab2/xv6edk2/xv6/syscall.c
 	*	1712303347	0
@@ -1632,101 +1832,8 @@ $
 	+	23	21
 	+	24	20
 
-> ~/lab2/xv6edk2/xv6/proc.h
-	*	1712303102	0
-	"	57	0
-	^	52	13
-	.	52	12
-	+	51	58
-	+	54	12
-	+	53	58
-	+	52	12
-
 > ~/lab2/xv6edk2/xv6/exec.c
 	*	1712302744	0
 	"	76	7
 	.	87	5
 	+	87	5
-
-> ~/lab2/xv6edk2/xv6/vm.c
-	*	1712302436	0
-	"	392	0
-
-> ~/lab2/xv6edk2/xv6/exe.c
-	*	1712302410	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/sysproc.h
-	*	1712297218	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/mmu.h
-	*	1712296441	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/x86.h
-	*	1712296422	0
-	"	65	0
-
-> ~/syscall.cgcchks71
-	*	1712290863	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/traps.h
-	*	1712222426	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/trap.c
-	*	1712222400	0
-	"	15	0
-
-> ~/lab2/xv6edk2/xv6/trapasm.S
-	*	1712222355	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/ulib.c
-	*	1712221577	0
-	"	89	0
-
-> ~/lab2/xv6edk2/xv6/ser.h
-	*	1712221552	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/user.c
-	*	1712221545	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/usys.
-	*	1712221435	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/usys.c
-	*	1712220939	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/sdyscall.h
-	*	1712217370	0
-	"	1	0
-
-> ~/lab2/xv6edk2/xv6/def.h
-	*	1712211962	0
-	"	1	0
-
-> ~/stage/edk2/xv6edk2/xv6/proc.c
-	*	1712211320	0
-	"	307	0
-
-> ~/stage/xv6edk2/xv6/proc.c
-	*	1712043095	0
-	"	424	13
-	^	424	16
-	.	424	13
-	+	424	13
-
-> ~/stage/xv6edk2/xv6/sysproc.c
-	*	1712043055	0
-	"	27	0
-
-> ~/stage/xv6edk2/xv6/syscall.h
-	*	1712043045	0
-	"	4	12
