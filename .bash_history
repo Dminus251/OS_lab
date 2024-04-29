@@ -1,111 +1,3 @@
-scp yyk@172.26.216.110:
-clera
-clear
-ip addr
-clear
-ifconfig
-scp 172.26.216.110:OS
-ls | grep OS
-clear
-scp OS.tar.gz yyk@192.168.9.204
-scp OS.tar.gz yyk@192.168.9.204:C:\Users\yeoyoungkyu
-clear
-ifconfig
-clear
-cd tar/
-ls
-clear
-pwd
-ls
-cd ../
-sudo su -
-clear
-ls
-cd yyk/lab1.bak/
-ls
-cd xv6edk2/
-ls
-cd xv6/
-clear
-ls
-cd fmt
-ls
-cd ../
-clear
-ls
-cd tar/
-ls
-ifconfig
-ls
-cd lab1.bak/
-ls
-cd xv6edk2/
-ls
-cd xv6/
-ls
-vi proc.c
-ls
-cd lab1.bak
-cd ../
-rm -rf lab2
-mv -r lab1.bak lab2
-mv lab1.bak lab2
-ls
-clear
-git remote
-git add .
-git commit -m "complete lab2"
-git push origin
-git push origin main
-clear
-ls
-git add .
-git commit -m "lab2"
-git add .
-git commit -m "lab2"
-clear
-git add .
-git commit -m "lab2"
-cd backups/
-git status
-git add .
-git commit -m "lab2"
-cd ../
-cd lab2
-git add .
-cd ../
-cd lab1
-git add .
-cd ../
-git commit -m "lab2"
-cd backups/edk2/
-git status
-git add .
-git commit -m "lab2"
-cd ../../lab1/
-clear
-ls
-cd edk2/
-git status
-ls -a
-git add .
-git commit -m "lab2"
-cd ../
-ls
-cd xv6-public/
-git add .
-git commit -m "commit"
-clear
-cd ../../
-clear
-ls
-ls -a
-rm .git
-rm -r .git
-clear
-ls
-rm -rfy .git
-rm -rf .git
 ls -a
 cd backups/
 rm -rf .git
@@ -1998,3 +1890,111 @@ cd ../../../lab2/
 cd xv6edk2/xv6/
 vi usys.S
 vi proc.c
+ls
+cd lab3
+ls
+cd xv6edk2/
+ls
+clear
+cd xv6/
+ls
+clear
+ls *th*
+vi modified_uthread.c 
+ls *.S
+vi uthread_switch.S 
+vi modified_uthread.c 
+vi uthread_switch.S 
+vi modified_uthread.c 
+vi lapic.c
+vi modified_uthread.c 
+vi trap.c
+vi proc.c
+clear
+vi modified_uthread.c 
+vi trap.c
+vi modified_uthread.c 
+vi trap.c
+vi proc.h
+vi trap.c
+vi x86.h
+vi trap.c
+vi proc.c
+vi proc.h
+vi trap.c
+vi proc.c
+vi trapc.
+vi trap.c
+vi uthread_switch.S 
+vi trap.c
+vi proc.c
+vi m
+vi modified_uthread.c 
+vi trap.c
+vi uthread_switch.S 
+vi modified_uthread.c 
+vi trap.c
+clear
+vi trap.c
+vi modified_uthread.c 
+vi trap.c
+vi modified_uthread.c 
+vi uthread.c
+vi modified_uthread.c 
+vi proc.h
+vi proc.c
+vi m
+vi modified_uthread.c 
+cd ~
+ls -a
+git remote
+git branch
+git add .
+git commit -m "lab3 최신화"
+git push origin main
+l
+ls
+git add .
+git commit -m "lab3 최신화"
+git remote
+git checkout
+git log
+git add .
+git push origin main
+git remote
+git remote -V
+clear
+git remote -v
+git add .
+git commit -m "lab3 최신화"
+git log
+git checkout731035736551c0a96f80ef40e3dab04df2b162ab
+git checkout 731035736551c0a96f80ef40e3dab04df2b162ab
+git add .
+git commit -m "latest"
+git branch
+git branch main
+git checkout main
+git add .
+git commit -m "lab3 최신화"
+git push origin main
+git branch
+git log
+git commit -m "최신화"
+git add .
+git commit -m "최신화"
+ls
+cd lab3
+ls
+cd xv6edk2/
+cd xv6/
+vi trap.c
+clear
+ls
+git log
+git branch
+ls
+clear
+vi uthread.c
+cp uthread.c modified_uthread.c
+vi modified_uthread.c 
