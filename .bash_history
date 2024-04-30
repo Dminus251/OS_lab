@@ -1,49 +1,3 @@
-ls -a
-cd backups/
-rm -rf .git
-ls
-cd edk2/
-rm -rf .git
-cd ../xv6
-cd ../xv6-public/
-rm -rf .git
-ls
-cd ../xv6edk2/
-ls
-ls -a
-rm -rf .git
-cd MyLoaderPkg/
-ls -a
-cd ../
-clear
-ls
-cd ../
-ls
-cd lab1/
-ls
-rm -rf .git
-cd edk2/
-rm -rf .git
-cd ../
-cd xv6-public/
-rm -rf .git
-cd ../xv6edk2/
-rm -rf .git
-cd ../
-ls
-cd ../lab2
-clear
-ls
-ls -a
-rm -rf .git
-cd edk2/
-rm -rf .git
-cd ../xv6-public/
-rm -rf .git
-cd ../xv6edk2/
-rm -rf .git
-clear
-cd ../../
 ls
 git init
 git remote
@@ -1998,3 +1952,49 @@ clear
 vi uthread.c
 cp uthread.c modified_uthread.c
 vi modified_uthread.c 
+cd lab3/xv6edk2/xv6/
+vi modified_uthread.c 
+vi proc.h
+vi trap.c
+vi modified_uthread.c 
+vi trap.c
+ls
+cd lab3
+ls
+cd xv6edk2/
+vi trap.c
+cd xv6/
+vi trap.c
+vi modified_uthread.c 
+cd ~
+ls
+rm -rf lab3.bak
+git add .
+git commit -m "lab3 최신화"
+git push origin main
+cd lab2
+cd ../lab3
+clear
+cd xv6edk2/xv6/
+vi uthread.c
+vi uthread_switch.S 
+vi uthread.c
+vi uthread_switch.S
+vi uthread.c
+vi uthrear_S
+vi uthread_S
+vi uthread_switch.S 
+vi uthread.c
+vi uthread_switch.S 
+cd lab3/xv6edk2/xv6/
+ls
+vi uthread.c
+clear
+ls *uth*
+vi uthread_switch.S
+vi uthread.c
+vi uthread_switch.S
+vi Makefile 
+clear
+make kernelmemfs
+vi trap.c

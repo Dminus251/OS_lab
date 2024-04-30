@@ -1,25 +1,18 @@
 	.text
 
-/* Switch from current_thread to next_thread. Make next_thread
- * the current_thread, and set next_thread to 0.
- * Use eax as a temporary register, which should be caller saved.
- */
 	.globl thread_switch
 thread_switch:
-	/* YOUR CODE HERE */
 		
-	pushal				//Store current thread 
+	pushal	//PUSH: saving current_thread
 	
-	movl current_thread, %eax	//Load addr of current thread
-   	movl %esp, (%eax)		// save esp reg in sp of thread
+	movl current_thread, %eax	//current_thread의 주소를 %eax에 로드
+   	movl %esp, (%eax)		// %esp를 current_thread->sp에 저장
 		
-	movl next_thread, %eax		//load addr of nextthread
-	movl (%eax), %esp		//load sp of thread in esp reg
+	movl next_thread, %eax		//마찬가지
+	movl (%eax), %esp		//마찬가지
+	
+	movl %eax, current_thread	//next_threa의 시작 주소가 있는 %eax값을 다시 current_thread로
 
-	movl %eax, current_thread	//next thread -> current thread
+	popal	//POP: restoring next_thread
 
-	movl $0x0, next_thread		//next_thread = 0
-
-	popal				//restore reg from stack
-
-	ret				/* pop return address from stack */
+	ret			/* return to ra*/	
