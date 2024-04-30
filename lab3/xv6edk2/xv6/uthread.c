@@ -14,21 +14,16 @@ typedef struct thread thread_t, *thread_p;
 typedef struct mutex mutex_t, *mutex_p;
 
 struct thread {
-  int        sp;               
-  char stack[STACK_SIZE];       
+  int        sp;                /* saved stack pointer */
+  char stack[STACK_SIZE];       /* the thread's stack */
   int        state;             /* FREE, RUNNING, RUNNABLE */
 };
-static thread_t all_thread[MAX_THREAD]; // thread_t타입의 배열 선언
+static thread_t all_thread[MAX_THREAD];
 thread_p  current_thread;
 thread_p  next_thread;
 extern void thread_switch(void);
 
-void 
-thread_init(void)
-{
-  current_thread = &all_thread[0];
-  current_thread->state = RUNNING;
-}
+
 
 static void 
 thread_schedule(void)
@@ -62,6 +57,15 @@ thread_schedule(void)
 }
 
 void 
+thread_init(void)
+{
+  current_thread = &all_thread[0];
+  current_thread->state = RUNNING;
+  uint a = (unsigned int)&thread_schedule;
+  uthread_init(a); //***********modified. new system call.
+}
+
+void 
 thread_create(void (*func)())
 {
   thread_p t;
@@ -90,7 +94,7 @@ mythread(void)
   printf(1, "my thread running\n");
   for (i = 0; i < 100; i++) {
     printf(1, "my thread 0x%x\n", (int) current_thread);
-    thread_yield();
+    //thread_yield(); *************** modified.
   }
   printf(1, "my thread: exit\n");
   current_thread->state = FREE;

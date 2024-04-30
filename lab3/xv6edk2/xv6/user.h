@@ -25,7 +25,7 @@ int sleep(int);
 int uptime(void);
 int exit2(int status);
 int wait2(int *status);
-
+int uthread_init(int address);
 
 // ulib.c
 int stat(char*, struct stat*);

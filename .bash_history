@@ -1,155 +1,3 @@
-cd ../
-tree -a . | grep git
-clear
-ls
-tree .
-clear
-tree -a . | grep git
-clear
-ls
-cd edk2/
-tree -a . | grep git
-ls
-cd xv6edk2/
-tree -a . | grep git
-cd ~
-clear
-ls
-cd lab2/
-ls -a
-cd edk2/
-ls -a
-cd ../xv6-public/
-ls
-ls -a
-cd ../edk2/
-clear
-ls
-ls -a
-cd xv6edk2/
-ls -a | grep git
-rm -rf .git
-cd ~
-git init
-git add .
-git remote add https://github.com/Dminus251/OS_lab.git
-git remote add origin https://github.com/Dminus251/OS_lab.git
-git commit -m "lab2"
-git push origin
-git push origin main
-git 
-git checkout -b main
-git add .
-git commit -m "lab2"
-git push origin main
-git checkout master
-git push origin master
-clear
-ls
-git branch
-git checkout main
-git merge masterls
-ls
-git branch
-git checkout master
-git pull origin master
-git checkout main
-git reset --hard master
-git push origin main --force
-git status
-clear
-git branch
-git branch -d master
-git branch
-git push origin --delete master
-ls
-clear
-cd lab
-cd lab2
-ls
-cd xv6edk2/
-ls
-vi README.md 
-claer
-ls
-pwd
-ifconfig
-clear
-ls
-mkdir homework1
-cd homework1/
-git clone https://github.com/remzi-arpacidusseau/ostep-homework/
-vi helloworld.py
-./h
-ls
-./helloworld.py
-sudo chmod 755 helloworld.py 
-./helloworld.py 
-clear
-./helloworld.py 
-vi helloworld.py 
-./helloworld.py 
-clear
-./helloworld.py 
-vi helloworld.py 
-./helloworld.py 
-ls
-cd ostep-homework/
-ls
-cd cpu-sched
-vi scheduler.py 
-cp scheduler.py ../../
-cd ../../
-ls
-clear
-./scheduler.py 
-vi scheduler.py 
-ls
-cd homework1/
-ls
-vi scheduler.py 
-./scheduler.py 
-vi scheduler.py 
-./scheduler.py -l 10,15,20
-./scheduler.py -l 10,15,20 -p FIFO
-./scheduler.py -l 10,15,20 -p SJF
-./scheduler.py -l 21,15,20 -p SJF
-./scheduler.py -l 21,15,20 -p RR
-vi scheduler.py 
-./scheduler.py -c
-clear
-./scheduler.py -c
-./scheduler.py -l 29,15,10 -p SJF -c
-vi scheduler.py 
-./scheduler.py -l 29,15,10 -p SJF -c
-vi scheduler.py 
-./scheduler.py -l 29,15,10 -p SJF -c
-vi scheduler.py 
-ls
-vi scheduler.py 
-vi Goal_of_homework1
-clear
-ls
-cp scheduler.py origin.py
-vi scheduler.py 
-scheduler.py -a 5
-./scheduler.py -a 5
-vi scheduler.py 
-./scheduler.py -a 5
-vi scheduler.py 
-./scheduler.py -a 5
-clear
-ls
-rm helloworld.py 
-rm -rf ostep-homework/
-vi Goal_of_homework1 
-vi scheduler.py 
-clear
-ls
-vi origin.py 
-vi scheduler.py 
-vi origin.py 
-vi scheduler.py 
 ./scheduler.py -a 5,10,11
 vi scheduler.py 
 vi scheduler.py 4
@@ -1998,3 +1846,155 @@ cd xv6edk2/
 cd xv6/
 ls modified_uthread.c 
 vi modified_uthread.c 
+ls
+clear
+cd lab3/
+ls
+cd xv6edk2/
+cd xv6/
+vi trap.c
+vi usys.S
+vi syscall.c
+vi syscall.h
+vi syscall.c
+vi sysproc.c
+vi proc.c
+vi defs.h
+cd ~
+git remote
+git add .
+git commit -m "define lab3 syscall"
+git push origin main
+vi trap.c
+cd lab3/xv6edk2/xv6/
+vi trap.c
+vi modified_uthread.c 
+ls
+cd lab3
+cd xv6edk2/xv6/
+clear
+ls
+vi trap.c
+make kernelmemfs
+vi proc.c
+make kernelmemfs
+vi proc.c
+make kernelmemfs
+vi sysproc.c
+make kernelmemfs
+clear
+vi modified_uthread.c 
+ls modified_uthread.c 
+vi Makefile 
+vi sysproc.c
+vi trap.c
+vi modified_uthread.c 
+make kernelmemfs
+vi syscall.h
+vi proc.c
+vi uthread.c
+make kernelmemfs
+vi uthread.c
+cd ~/lab2/xv6edk2/xv6/
+clear
+ls
+ls t*
+vi test.c
+cd ~/lab3/xv6edk2/xv6/
+ls uth*
+ls -l uth*
+ls modified_uthread.*
+ls -; modified_uthread.*
+ls -l modified_uthread.*
+clear
+ls *uth*
+vi Makefile 
+clear
+cp uthread.c uthread.c.bak
+mv modified_uthread.c modified_uthread.c
+mv modified_uthread.c uthread.c
+vi Makefile 
+vi uthread.c
+make kernelmemfs
+vi ~/lab2/xv6edk2/xv6/test.c
+vi ~/lab2/xv6edk2/xv6/test.d
+vi ~/lab2/xv6edk2/xv6/test.o
+vi ~/lab2/xv6edk2/xv6/Makefile 
+vi Makefile 
+make kernelmemfs
+vi Makefile 
+clear
+ls *uth*
+vi ~/lab2/xv6edk2/xv6/test.o
+vi ~/lab2/xv6edk2/xv6/test.c
+clear
+make kernelmemfs
+vi uthread.c
+clear
+make kernelmemfs
+vi syscall.h
+vi syscall.c
+vi usys.S
+vi user.h
+clear
+make kernelmemfs
+vi uthread.c
+make kernelmemfs
+vi thread.c
+vi uthread.c
+clear
+vi uthread.c
+make kernelmemfs
+vi uthread.c
+clear
+make kernelmemfs
+vi uthread.c
+clear
+make kernelmemfs
+vi uthread.c
+make kernelmemfs
+vi uthread.c
+vi proc.h
+vi uthread.c
+make kernelmemfs
+clear
+make kernelmemfs
+vi uthread.c
+clear
+vi uthread.c
+vi proc.h
+vi uthread.c
+make kernelmemfs
+vi uthread.c
+clear
+make kernelmemfs
+vi thread.c
+vi utread.c
+vi uthread.c
+cd ~/homework1/
+ls
+rm origin.py 
+cd ~/lab3/xv6edk2/xv6/
+vi uthread.c
+clear
+make kernelmemfs
+vi uthread.c
+clear
+make kernelmemfs
+vi uthread.c
+make kernelmemfs
+vi uthread.c
+clear
+vi sysproc.c
+vi proc.c
+vi proc.h
+vi proc.c
+vi sysproc.c
+vi trap.c
+vi proc.c
+vi trap.c
+vi proc.c
+vi uthread.c
+vi trap.c
+clear
+vi uthread.c

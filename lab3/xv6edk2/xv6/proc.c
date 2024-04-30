@@ -276,6 +276,9 @@ exit(void)
 int
 uthread_init(int address){
 	//require to implement
+  struct proc *curproc = myproc();
+  curproc->scheduler = address;
+  return 0;
 }
 
 //******************************************

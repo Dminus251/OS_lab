@@ -24,7 +24,8 @@ sys_exit(void)
 
 int sys_uthread_init(void)
 {
-	//require to implement
+  uthread_init();
+  return 0;
 }
 
 int

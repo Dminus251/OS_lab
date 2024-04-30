@@ -15,6 +15,8 @@ extern uint vectors[];  // in vectors.S: array of 256 entry pointers
 struct spinlock tickslock;
 uint ticks;
 
+extern void thread_switch(void); //************** modified
+
 void
 tvinit(void)
 {
@@ -57,7 +59,7 @@ trap(struct trapframe *tf)
     }
     lapiceoi();
 //******************   new code   ****************
-
+    thread_switch()
 
 
 //******************   new code   ****************

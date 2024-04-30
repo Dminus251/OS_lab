@@ -269,6 +269,7 @@ EXTRA=\
 	_hello.c\
 	_lab2.c\
 	_test.c\
+	_uthread.c\
 
 dist:
 	rm -rf dist
