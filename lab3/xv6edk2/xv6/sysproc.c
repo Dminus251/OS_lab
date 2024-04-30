@@ -22,6 +22,11 @@ sys_exit(void)
   return 0;  // not reached
 }
 
+int sys_uthread_init(void)
+{
+	//require to implement
+}
+
 int
 sys_exit2(void) 
 {

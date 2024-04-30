@@ -1,69 +1,3 @@
-ls
-git init
-git remote
-git add .
-cd lab1/edk2/xv6edk2/
-rm -rf .git
-ls
-cd xv6/
-ls -a | grep git
-cd ../../
-ls
-clear
-ls
-ls -a | grep git
-cd ../
-ls
-rm -rf .git
-cd xv6-public/
-rm -rf .git
-cd ../xv6edk2/
-rm -rf .git
-cd ~/lab2
-ls
-rm -rf .git
-cd edk2/
-rm -rf .git
-cd ../xv6-public/
-rm -rf .git
-cd ../xv6edk2/
-rm -rf .git
-cd ~
-clear
-ls
-tree -a . | grep .git
-rm -rf backups
-clear
-ls
-rm -rf backups
-tree -a . | grep .git
-clear
-ls
-ls -a
-rm -rf .git
-tree -a . | grep .git
-clear
-ls
-tree -a . | grep *.git*
-tree -a . | grep *.git
-tree -a . | grep .git
-clear
-ls
-cd lab1
-ls
-ls -a
-cd edk2/
-ls -a
-cd ../xv6-public/
-ls -a
-clear
-ls -a | grep git
-cd ../
-ls
-cd xv6edk2/
-ls
-ls -a
-tree -a . | grep git
 cd ../
 tree -a . | grep git
 clear
@@ -1998,3 +1932,69 @@ vi Makefile
 clear
 make kernelmemfs
 vi trap.c
+cd lab3/xv6edk2/xv6/
+vi trap.c
+vi trap.c.swp
+ls trap*
+ls *trap*
+vi trap.c
+vi .trap.c.swp
+rm .trap.c.swp 
+vi trap.c
+make kernelmemfs
+vi uthread_switch.S 
+clear
+make kernelmemfs
+ls -al *kernel*
+cp kernelmemfs ../image/kernel
+cd ../../
+ls
+cd edk2/
+source edksetup.sh 
+cd ../xv6edk2/
+vi ./run.sh 
+qemu-system-x86_64 -bios /usr/share/ovmf/OVMF.fd         -drive if=ide,file=fat:rw:image,index=0,media=disk         -m 2048 -smp 1          -serial mon:stdio         -vga std
+cd xv6/
+vi uthread_switch.S 
+make kernelmemfs
+cp kernelmemfs ../image/kernel
+cd ../../edk2/
+source edksetup.sh 
+cd ../xv6edk2/
+clear
+vi run.sh 
+qemu-system-x86_64 -bios /usr/share/ovmf/OVMF.fd         -drive if=ide,file=fat:rw:image,index=0,media=disk         -m 2048 -smp 1          -serial mon:stdio         -vga std
+clear
+ls
+cd xv6/
+ls -a *uthread_s*
+rm uthread_switch.o
+make kernelmemfs
+cp kernelmemfs ../image/kernel
+cd ../../edk2/
+ls
+source edksetup.sh 
+cd ../
+cd xv6edk2/
+clear
+vi ./run.sh 
+qemu-system-x86_64 -bios /usr/share/ovmf/OVMF.fd         -drive if=ide,file=fat:rw:image,index=0,media=disk         -m 2048 -smp 1          -serial mon:stdio         -vga std
+clear
+cd xv6/
+vi uthread_S
+vi uthread_switch.S 
+cd ~
+ls
+git add .
+git remote
+git branhc
+git branhch
+git branch
+git commit -m "completing lab3 part1"
+git push origin main
+cd lab3/
+ls
+cd xv6edk2/
+cd xv6/
+ls modified_uthread.c 
+vi modified_uthread.c 

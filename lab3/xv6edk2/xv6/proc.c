@@ -273,6 +273,11 @@ exit(void)
   panic("zombie exit");
 }
 
+int
+uthread_init(int address){
+	//require to implement
+}
+
 //******************************************
 //************   new  **********************
 //************ eixt2() *********************

@@ -122,6 +122,7 @@ void            wakeup(void*);
 void            yield(void);
 void		exit2(int status);
 int		wait2(int *satus);
+int		uthread_init(int address);
 
 // swtch.S
 void            swtch(struct context**, struct context*);
