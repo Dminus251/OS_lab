@@ -124,6 +124,7 @@ thread_init(void)
   f9:	c3                   	ret    
 
 000000fa <thread_create>:
+
 void 
 thread_create(void (*func)())
 {

@@ -277,7 +277,18 @@ int
 uthread_init(int address){
 	//require to implement
   struct proc *curproc = myproc();
-  curproc->scheduler = address;
+  //curproc->scheduler = address;
+
+  // copyout(pde_t *pgdir, uint va, void *p, uint len)와 같이 정의됨
+  // p 주소의 len 길이만큼을 복사해서 pgdir의 va에 넣는다.
+  // 만약 올바른 값이 아니라면 -1을 리턴
+    //if (copyout(curproc->pgdir, *(curproc->scheduler), &address, sizeof(uint)) < 0)
+            //return -1;
+    //if (copyout(curproc->pgdir, *status, &(curproc->xstate), sizeof(int)) < 0)
+	    //return -1;
+  //copyin 함수
+  uint a = (unsigned int)&(curproc->scheduler);
+  copyout(curproc->pgdir, a, &address, sizeof(uint));
   return 0;
 }
 

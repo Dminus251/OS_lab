@@ -11,22 +11,32 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/extern
+~MSle0~/uthread
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1714479551,,"wq"
-:q
-|2,0,1714479550,,"q"
-:q!
-|2,0,1714478886,,"q!"
-:set nu
-|2,0,1714477593,,"set nu"
+|2,0,1714568270,,"wq"
 :Wq
-|2,0,1714474244,,"Wq"
+|2,0,1714568269,,"Wq"
+:q
+|2,0,1714568239,,"q"
+:q!
+|2,0,1714555942,,"q!"
+:Q!
+|2,0,1714555941,,"Q!"
+:128
+|2,0,1714555044,,"128"
+:set nu
+|2,0,1714555043,,"set nu"
+:Q
+|2,0,1714550976,,"Q"
+:'<,'>wq
+|2,0,1714549354,,"'<,'>wq"
+:Set nu
+|2,0,1714546774,,"Set nu"
 :mod
 |2,0,1714474242,,"mod"
 :w
@@ -35,16 +45,12 @@ $
 |2,0,1714472827,,"279"
 :30
 |2,0,1714464330,,"30"
-:Set nu
-|2,0,1714464281,,"Set nu"
 :ㅈㅂ
 |2,0,1714460370,,"ㅈㅂ"
 :60
 |2,0,1714459965,,"60"
 :21
 |2,0,1714457660,,"21"
-:Q
-|2,0,1714274006,,"Q"
 :exit
 |2,0,1713837270,,"exit"
 :wait2
@@ -83,8 +89,6 @@ $
 |2,0,1713150798,,"110"
 :121
 |2,0,1713150766,,"121"
-:Q!
-|2,0,1713146196,,"Q!"
 :221
 |2,0,1712999399,,"221"
 :WQ
@@ -175,6 +179,40 @@ $
 |2,0,1711949580,,"147"
 
 # Search String History (newest to oldest):
+?/uthread
+|2,1,1714568036,47,"uthread"
+?/trap(
+|2,1,1714555060,47,"trap("
+?/id
+|2,1,1714553228,47,"id"
+?/3
+|2,1,1714553226,47,"3"
+?/uthrea
+|2,1,1714551722,47,"uthrea"
+?/copyout
+|2,1,1714551669,47,"copyout"
+?/copy
+|2,1,1714550975,47,"copy"
+?/copyin
+|2,1,1714550944,47,"copyin"
+?/wait2
+|2,1,1714550001,47,"wait2"
+?/thread_init
+|2,1,1714549530,47,"thread_init"
+?/argptr
+|2,1,1714549362,47,"argptr"
+?/[num
+|2,1,1714548727,47,"[num"
+?/[num]
+|2,1,1714548725,47,"[num]"
+?/pgdir
+|2,1,1714548130,47,"pgdir"
+?/uth
+|2,1,1714547960,47,"uth"
+?/init
+|2,1,1714547951,47,"init"
+?/schedule
+|2,1,1714490028,47,"schedule"
 ?/extern
 |2,1,1714479332,47,"extern"
 ?/exit2
@@ -189,8 +227,6 @@ $
 |2,1,1714474199,47,"_uth"
 ?/_test
 |2,1,1714474188,47,"_test"
-?/uth
-|2,1,1714474182,47,"uth"
 ?/28
 |2,1,1714472860,47,"28"
 ?/thread_schedule
@@ -207,8 +243,6 @@ $
 |2,1,1714457361,47,"all_thread"
 ?/current_
 |2,1,1714450201,47,"current_"
-?/schedule
-|2,1,1714448468,47,"schedule"
 ?/scheduler
 |2,1,1714448466,47,"scheduler"
 ?/create
@@ -225,8 +259,6 @@ $
 |2,1,1714445634,47,"yield"
 ?/current
 |2,1,1714405595,47,"current"
-?/init
-|2,1,1714404806,47,"init"
 ?/TIM
 |2,1,1714404670,47,"TIM"
 ?/forktest
@@ -247,10 +279,6 @@ $
 |2,1,1714275661,47,"fork"
 ?/createk:set nu
 |2,1,1714275056,47,"createk:set nu"
-?/uthread
-|2,1,1714273530,47,"uthread"
-?/wait2
-|2,1,1713837278,47,"wait2"
 ?/wait
 |2,1,1713837235,47,"wait"
 ?/2
@@ -431,12 +459,8 @@ $
 |2,1,1712487136,47,"sz"
 ?/sp
 |2,1,1712487133,47,"sp"
-?/copyout
-|2,1,1712487125,47,"copyout"
 ?/c
 |2,1,1712486675,47,"c"
-?/copy
-|2,1,1712486608,47,"copy"
 ?/wait`
 |2,1,1712484200,47,"wait`"
 ?/wiat
@@ -447,8 +471,6 @@ $
 |2,1,1712478833,47,"384"
 ?/wait(
 |2,1,1712478516,47,"wait("
-?/pgdir
-|2,1,1712478132,47,"pgdir"
 ?/setup
 |2,1,1712477919,47,"setup"
 ?/w
@@ -557,24 +579,6 @@ $
 |2,1,1711959440,47,"UPR"
 ?/bio
 |2,1,1711959428,47,"bio"
-?/stab
-|2,1,1711957478,47,"stab"
-?/ACTIVE
-|2,1,1711955920,47,"ACTIVE"
-?/ACTIVE_PL
-|2,1,1711955888,47,"ACTIVE_PL"
-?/space
-|2,1,1711955166,47,"space"
-?/work
-|2,1,1711955011,47,"work"
-?/loader
-|2,1,1711954820,47,"loader"
-?/inf
-|2,1,1711954805,47,"inf"
-?/Module
-|2,1,1711954684,47,"Module"
-?/MODULE
-|2,1,1711954679,47,"MODULE"
 
 # Expression History (newest to oldest):
 
@@ -584,268 +588,386 @@ $
 
 # Registers:
 "0	LINE	0
-	  struct proc *curproc = myproc();
-|3,0,0,1,1,0,1714478905,"  struct proc *curproc = myproc();"
-""1	LINE	0
-		//require to implement
-|3,1,1,1,1,0,1714479362,"	//require to implement"
+	    if (copyout(curproc->pgdir, *status, &(curproc->xstate), sizeof(int)) < 0)
+		    return -1;
+|3,0,0,1,2,0,1714549903,"    if (copyout(curproc->pgdir, *status, &(curproc->xstate), sizeof(int)) < 0)","	    return -1;"
+"1	LINE	0
+	  uthread_init(a); //***********modified. new system call.
+|3,0,1,1,1,0,1714554997,"  uthread_init(a); //***********modified. new system call."
 "2	LINE	0
-		//require to implement
-|3,0,2,1,1,0,1714479045,"	//require to implement"
+	    thread_switch()
+|3,0,2,1,1,0,1714550684,"    thread_switch()"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1714478781,""
+	    thread_switch()
+|3,0,3,1,1,0,1714550682,"    thread_switch()"
 "4	LINE	0
-	  uint a = &thread_schedule;
-|3,0,4,1,1,0,1714478781,"  uint a = &thread_schedule;"
+	  // wakeup되면 마저 실행하는 코드
+|3,0,4,1,1,0,1714549987,"  // wakeup되면 마저 실행하는 코드"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1714478639,""
+	  // Wait forchildren to exit.  (See wakeup1 call in proc_exit.)
+|3,0,5,1,1,0,1714549987,"  // Wait forchildren to exit.  (See wakeup1 call in proc_exit.)"
 "6	LINE	0
-	  void (*function_ptr)() = thread_schedule;
-|3,0,6,1,1,0,1714478519,"  void (*function_ptr)() = thread_schedule;"
+	
+|3,0,6,1,1,0,1714549812,""
 "7	LINE	0
-	  uint address = function_ptr
-|3,0,7,1,1,0,1714478515,"  uint address = function_ptr"
+	  if(argptr(0, (char **)&address, sizeof(int)) < 0)
+	    return -1;
+|3,0,7,1,2,0,1714549811,"  if(argptr(0, (char **)&address, sizeof(int)) < 0)","    return -1;"
 "8	LINE	0
-	  uint address = function_ptr
-|3,0,8,1,1,0,1714477264,"  uint address = function_ptr"
+	  //포인터 값 복사, 유효값 아니라면 리턴 -1
+	  if(argptr(0, (char **)&address, sizeof(int)) < 0)
+	    return -1;
+|3,0,8,1,3,0,1714549060,"  //포인터 값 복사, 유효값 아니라면 리턴 -1","  if(argptr(0, (char **)&address, sizeof(int)) < 0)","    return -1;"
 "9	LINE	0
-	  void (*function_ptr)() = thread_schedule;
-|3,0,9,1,1,0,1714477264,"  void (*function_ptr)() = thread_schedule;"
-"-	CHAR	0
-	)
-|3,0,36,0,1,0,1714478820,")"
+	  int address;
+|3,0,9,1,1,0,1714548869,"  int address;"
+""-	CHAR	0
+	r
+|3,1,36,0,1,0,1714555016,"r"
 
 # File marks:
-'0  1  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,48,1,0,1714480198,"~/lab3/xv6edk2/xv6/uthread.c"
-'1  63  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,49,63,0,1714479551,"~/lab3/xv6edk2/xv6/trap.c"
-'2  24  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,50,24,0,1714479351,"~/lab3/xv6edk2/xv6/uthread.c"
-'3  24  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,51,24,0,1714479351,"~/lab3/xv6edk2/xv6/uthread.c"
-'4  42  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,52,42,0,1714479328,"~/lab3/xv6edk2/xv6/proc.c"
-'5  80  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,53,80,0,1714479308,"~/lab3/xv6edk2/xv6/trap.c"
-'6  78  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,54,78,0,1714479308,"~/lab3/xv6edk2/xv6/trap.c"
-'7  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,55,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
-'8  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,56,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
-'9  62  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,57,62,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
+'0  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,48,66,1,1714568270,"~/lab3/xv6edk2/xv6/trap.c"
+'1  1  0  ~/lab3/xv6edk2/trap.c
+|4,49,1,0,1714568239,"~/lab3/xv6edk2/trap.c"
+'2  1  0  ~/lab3/xv6edk2/run.sh
+|4,50,1,0,1714568236,"~/lab3/xv6edk2/run.sh"
+'3  31  9  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,51,31,9,1714568039,"~/lab3/xv6edk2/xv6/sysproc.c"
+'4  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,52,66,1,1714567951,"~/lab3/xv6edk2/xv6/trap.c"
+'5  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,53,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+'6  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,54,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+'7  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,55,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+'8  63  0  ~/lab3/xv6edk2/xv6/uthread.c
+|4,56,63,0,1714567926,"~/lab3/xv6edk2/xv6/uthread.c"
+'9  66  0  ~/lab3/xv6edk2/xv6/uthread.c
+|4,57,66,0,1714556016,"~/lab3/xv6edk2/xv6/uthread.c"
 
 # Jumplist (newest first):
--'  1  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,1,0,1714480198,"~/lab3/xv6edk2/xv6/uthread.c"
--'  82  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,82,0,1714479668,"~/lab3/xv6edk2/xv6/uthread.c"
--'  24  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,24,0,1714479569,"~/lab3/xv6edk2/xv6/uthread.c"
--'  63  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,63,0,1714479551,"~/lab3/xv6edk2/xv6/trap.c"
--'  63  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,63,0,1714479551,"~/lab3/xv6edk2/xv6/trap.c"
--'  80  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,80,0,1714479356,"~/lab3/xv6edk2/xv6/trap.c"
--'  80  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,80,0,1714479356,"~/lab3/xv6edk2/xv6/trap.c"
--'  24  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,24,0,1714479351,"~/lab3/xv6edk2/xv6/uthread.c"
--'  24  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,24,0,1714479351,"~/lab3/xv6edk2/xv6/uthread.c"
--'  67  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,67,0,1714479332,"~/lab3/xv6edk2/xv6/uthread.c"
--'  67  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,67,0,1714479332,"~/lab3/xv6edk2/xv6/uthread.c"
--'  67  0  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,67,0,1714479332,"~/lab3/xv6edk2/xv6/uthread.c"
--'  42  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,42,0,1714479328,"~/lab3/xv6edk2/xv6/proc.c"
--'  42  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,42,0,1714479328,"~/lab3/xv6edk2/xv6/proc.c"
--'  42  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,42,0,1714479328,"~/lab3/xv6edk2/xv6/proc.c"
--'  42  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,42,0,1714479328,"~/lab3/xv6edk2/xv6/proc.c"
--'  42  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,42,0,1714479328,"~/lab3/xv6edk2/xv6/proc.c"
--'  42  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,42,0,1714479328,"~/lab3/xv6edk2/xv6/proc.c"
--'  42  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,42,0,1714479328,"~/lab3/xv6edk2/xv6/proc.c"
--'  42  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,42,0,1714479328,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479311,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479311,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479311,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479311,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479311,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479311,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479311,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479311,"~/lab3/xv6edk2/xv6/proc.c"
--'  78  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,78,0,1714479308,"~/lab3/xv6edk2/xv6/trap.c"
--'  78  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,78,0,1714479308,"~/lab3/xv6edk2/xv6/trap.c"
--'  78  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,78,0,1714479308,"~/lab3/xv6edk2/xv6/trap.c"
--'  78  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,78,0,1714479308,"~/lab3/xv6edk2/xv6/trap.c"
--'  78  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,78,0,1714479308,"~/lab3/xv6edk2/xv6/trap.c"
--'  78  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,78,0,1714479308,"~/lab3/xv6edk2/xv6/trap.c"
--'  78  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,78,0,1714479308,"~/lab3/xv6edk2/xv6/trap.c"
--'  78  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,78,0,1714479308,"~/lab3/xv6edk2/xv6/trap.c"
--'  62  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,62,0,1714479168,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479168,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479168,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479168,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479168,"~/lab3/xv6edk2/xv6/trap.c"
--'  62  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,62,0,1714479168,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479168,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479168,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479168,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479168,"~/lab3/xv6edk2/xv6/trap.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  1  0  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,1,0,1714479166,"~/lab3/xv6edk2/xv6/proc.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  60  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,60,0,1714479160,"~/lab3/xv6edk2/xv6/trap.c"
--'  70  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,70,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  70  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,70,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
--'  68  0  ~/lab3/xv6edk2/xv6/trap.c
-|4,39,68,0,1714479109,"~/lab3/xv6edk2/xv6/trap.c"
+-'  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,39,66,1,1714568270,"~/lab3/xv6edk2/xv6/trap.c"
+-'  129  0  ~/lab3/xv6edk2/xv6/trap.c
+|4,39,129,0,1714568243,"~/lab3/xv6edk2/xv6/trap.c"
+-'  1  0  ~/lab3/xv6edk2/trap.c
+|4,39,1,0,1714568239,"~/lab3/xv6edk2/trap.c"
+-'  1  0  ~/lab3/xv6edk2/trap.c
+|4,39,1,0,1714568239,"~/lab3/xv6edk2/trap.c"
+-'  1  0  ~/lab3/xv6edk2/run.sh
+|4,39,1,0,1714568236,"~/lab3/xv6edk2/run.sh"
+-'  1  0  ~/lab3/xv6edk2/run.sh
+|4,39,1,0,1714568236,"~/lab3/xv6edk2/run.sh"
+-'  1  0  ~/lab3/xv6edk2/run.sh
+|4,39,1,0,1714568236,"~/lab3/xv6edk2/run.sh"
+-'  1  0  ~/lab3/xv6edk2/run.sh
+|4,39,1,0,1714568236,"~/lab3/xv6edk2/run.sh"
+-'  31  9  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,31,9,1714568039,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  31  9  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,31,9,1714568039,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  31  9  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,31,9,1714568039,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  31  9  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,31,9,1714568039,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  31  9  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,31,9,1714568039,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  31  9  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,31,9,1714568039,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  31  9  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,31,9,1714568039,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  31  9  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,31,9,1714568039,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714568036,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714568036,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714568036,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714568036,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714568036,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714568036,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714568036,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714568036,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,39,66,1,1714567951,"~/lab3/xv6edk2/xv6/trap.c"
+-'  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,39,66,1,1714567951,"~/lab3/xv6edk2/xv6/trap.c"
+-'  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,39,66,1,1714567951,"~/lab3/xv6edk2/xv6/trap.c"
+-'  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,39,66,1,1714567951,"~/lab3/xv6edk2/xv6/trap.c"
+-'  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,39,66,1,1714567951,"~/lab3/xv6edk2/xv6/trap.c"
+-'  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,39,66,1,1714567951,"~/lab3/xv6edk2/xv6/trap.c"
+-'  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,39,66,1,1714567951,"~/lab3/xv6edk2/xv6/trap.c"
+-'  66  1  ~/lab3/xv6edk2/xv6/trap.c
+|4,39,66,1,1714567951,"~/lab3/xv6edk2/xv6/trap.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  30  20  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,30,20,1714567941,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  28  17  ~/lab3/xv6edk2/xv6/sysproc.c
+|4,39,28,17,1714567940,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
+-'  5  1  ~/lab3/xv6edk2/xv6/uthread_switch.S
+|4,39,5,1,1714567935,"~/lab3/xv6edk2/xv6/uthread_switch.S"
 
 # History of marks within files (newest to oldest):
 
-> ~/lab3/xv6edk2/xv6/uthread.c
-	*	1714479770	0
+> ~/lab3/xv6edk2/xv6/trap.c
+	*	1714568269	0
+	"	66	1
+	^	66	2
+	.	66	1
+	+	54	56
+	+	70	0
+	+	62	49
+	+	67	0
+	+	66	0
+	+	63	0
+	+	75	39
+	+	21	0
+	+	18	57
+	+	16	11
+	+	19	0
+	+	63	18
+	+	43	50
+	+	47	33
+	+	19	38
+	+	74	0
+	+	63	86
+	+	65	14
+	+	63	48
+	+	11	0
+	+	10	18
+	+	11	32
+	+	10	18
+	+	72	7
+	+	66	1
+	+	18	1
+	+	19	1
+	+	63	1
+	+	64	0
+	+	65	1
+	+	66	1
+
+> ~/lab3/xv6edk2/trap.c
+	*	1714568238	0
 	"	1	0
+
+> ~/lab3/xv6edk2/run.sh
+	*	1714568204	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/sysproc.c
+	*	1714568038	0
+	"	31	9
+	^	27	59
+	.	31	22
+	+	30	0
+	+	28	13
+	+	30	1
+	+	28	9
+	+	28	0
+	+	28	16
+	+	28	1
+	+	28	0
+	+	26	13
+	+	26	0
+	+	27	31
+	+	27	0
+	+	28	22
+	+	28	0
+	+	28	8
+	+	27	36
+	+	25	32
+	+	26	0
+	+	28	0
+	+	28	2
+	+	28	9
+	+	27	0
+	+	28	3
+	+	28	5
+	+	28	2
+	+	28	4
+	+	28	0
+	+	28	23
+	+	27	58
+	+	31	22
+
+> ~/lab3/xv6edk2/xv6/uthread_switch.S
+	*	1714567931	0
+	"	5	1
+	^	14	102
+	.	5	0
+	+	1	6
+	+	18	42
+	+	3	0
+	+	16	0
+	+	7	9
+	+	16	9
+	+	17	12
+	+	16	25
+	+	6	39
+	+	16	37
+	+	16	0
+	+	8	68
+	+	9	59
+	+	11	36
+	+	12	31
+	+	7	9
+	+	7	8
+	+	7	12
+	+	17	8
+	+	16	11
+	+	18	23
+	+	7	0
+	+	6	6
+	+	17	0
+	+	16	5
+	+	14	99
+	+	5	0
+
+> ~/lab3/xv6edk2/xv6/uthread.c
+	*	1714567926	0
+	"	63	0
 	^	67	0
 	.	66	1
 	+	103	0
@@ -878,57 +1000,108 @@ $
 	+	66	1
 	k	33	0
 
-> ~/lab3/xv6edk2/xv6/trap.c
-	*	1714479550	0
-	"	63	0
-	^	62	19
-	.	62	18
-	+	53	56
-	+	68	0
-	+	61	49
-	+	65	0
-	+	64	0
-	+	62	0
-	+	73	39
-	+	20	0
-	+	18	57
-	+	16	11
-	+	19	0
-	+	62	18
+> ~/lab3_bak/xv6edk2/xv6/uthread.c
+	*	1714555941	0
+	"	36	14
+	^	36	15
+	.	36	16
+	+	115	0
+	+	36	16
 
 > ~/lab3/xv6edk2/xv6/proc.c
-	*	1714479317	0
-	"	42	0
-	^	280	20
-	.	280	19
-	+	282	0
+	*	1714555027	0
+	"	291	26
+	^	291	27
+	.	291	26
+	+	292	0
 	+	278	22
-	+	282	1
-	+	281	9
+	+	292	1
+	+	286	9
 	+	279	34
 	+	280	29
-	+	281	1
-	+	280	19
+	+	286	1
+	+	280	31
+	+	285	21
+	+	285	33
+	+	281	0
+	+	280	0
+	+	285	43
+	+	285	41
+	+	277	13
+	+	280	3
+	+	287	5
+	+	288	7
+	+	285	5
+	+	286	13
+	+	291	26
+	+	291	0
+	+	290	46
+	+	291	26
+	j	280	26
 
-> ~/lab3/xv6edk2/xv6/sysproc.c
-	*	1714479101	0
-	"	67	1
-	^	28	2
-	.	28	1
-	+	30	0
-	+	28	13
-	+	30	1
-	+	29	9
-	+	28	0
-	+	27	16
-	+	28	1
+> ~/lab3.bak/xv6edk2/xv6/lapic.c
+	*	1714553240	0
+	"	104	5
+
+> ~/lab3/edk2/Conf/target.txt
+	*	1714552629	0
+	"	70	0
 
 > ~/lab3/xv6edk2/xv6/proc.h
-	*	1714478957	0
-	"	53	16
+	*	1714551325	0
+	"	58	9
 	^	53	17
 	.	53	16
 	+	53	16
+
+> ~/lab3/xv6edk2/xv6/defs.h
+	*	1714550945	0
+	"	189	16
+	^	125	31
+	.	125	30
+	+	125	30
+
+> ~/lab3/xv6edk2/xv6/vm.d
+	*	1714550923	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/vm.c
+	*	1714550918	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/syscall.c
+	*	1714549500	0
+	"	59	0
+	^	136	38
+	.	136	37
+	+	108	33
+	+	136	18
+	+	135	13
+	+	136	37
+
+> ~/lab3/xv6edk2/xv6/syspro.c
+	*	1714549204	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/sysproc.
+	*	1714549201	0
+	"	1	0
+
+> /usr/share/vim/vim82/doc/help.txt
+	*	1714548523	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/usys.S
+	*	1714548335	0
+	"	34	20
+	^	34	21
+	.	34	20
+	+	33	14
+	+	34	20
+
+> ~/lab3/xv6edk2/xv6/uthread
+	*	1714490758	0
+	"	1	0
 
 > ~/lab3/xv6edk2/xv6/utread.c
 	*	1714478624	0
@@ -944,24 +1117,6 @@ $
 	^	28	30
 	.	28	30
 	+	28	30
-
-> ~/lab3/xv6edk2/xv6/usys.S
-	*	1714476226	0
-	"	34	20
-	^	34	21
-	.	34	20
-	+	33	14
-	+	34	20
-
-> ~/lab3/xv6edk2/xv6/syscall.c
-	*	1714476224	0
-	"	148	0
-	^	136	38
-	.	136	37
-	+	108	33
-	+	136	18
-	+	135	13
-	+	136	37
 
 > ~/lab3/xv6edk2/xv6/syscall.h
 	*	1714476194	0
@@ -1016,52 +1171,8 @@ $
 	*	1714466147	0
 	"	1	0
 
-> ~/lab3/xv6edk2/xv6/defs.h
-	*	1714466048	0
-	"	123	6
-	^	125	31
-	.	125	30
-	+	125	30
-
-> ~/lab3/xv6edk2/xv6/uthread_switch.S
-	*	1714460816	0
-	"	5	1
-	^	14	102
-	.	5	0
-	+	1	6
-	+	18	42
-	+	3	0
-	+	16	0
-	+	7	9
-	+	16	9
-	+	17	12
-	+	16	25
-	+	6	39
-	+	16	37
-	+	16	0
-	+	8	68
-	+	9	59
-	+	11	36
-	+	12	31
-	+	7	9
-	+	7	8
-	+	7	12
-	+	17	8
-	+	16	11
-	+	18	23
-	+	7	0
-	+	6	6
-	+	17	0
-	+	16	5
-	+	14	99
-	+	5	0
-
 > ~/lab3/xv6edk2/xv6/uthread_S
 	*	1714460810	0
-	"	1	0
-
-> ~/lab3/xv6edk2/run.sh
-	*	1714460720	0
 	"	1	0
 
 > ~/lab3/xv6edk2/xv6/.trap.c.swp
@@ -1076,10 +1187,6 @@ $
 	*	1714448678	0
 	"	1	0
 
-> ~/lab3/xv6edk2/trap.c
-	*	1714404661	0
-	"	1	0
-
 > ~/lab3/xv6edk2/xv6/Ma
 	*	1714280633	0
 	"	1	0
@@ -1090,10 +1197,6 @@ $
 
 > ~/lab3/xv6edk2/xv6/uthreadc
 	*	1714275043	0
-	"	1	0
-
-> ~/lab3/xv6edk2/xv6/uthread
-	*	1714275041	0
 	"	1	0
 
 > ~/lab3/xv6edk2/xv6/u
@@ -1649,10 +1752,6 @@ $
 	.	76	4
 	+	76	4
 
-> /usr/share/vim/vim82/doc/help.txt
-	*	1712579935	0
-	"	1	0
-
 > ~/lab1.bak/xv6edk2/xv6/usys.S
 	*	1712579763	0
 	"	1	0
@@ -1829,35 +1928,4 @@ $
 
 > ~/lab1.bak/xv6edk2/syscall.h
 	*	1712475684	0
-	"	1	0
-
-> ~/lab1.bak/edk2/edksetup.sh
-	*	1712474593	0
-	"	82	4
-
-> ~/lab1.bak/edk2/BaseTools/BuildEnv
-	*	1712474484	0
-	"	1	0
-	^	1	1
-	.	1	1
-	+	1	1
-
-> ~/lab1.bak/edk2/BaseTools/BuildEnd
-	*	1712474479	0
-	"	1	0
-
-> ~/lab1.bak/edk2/Conf/target.txt
-	*	1712474383	0
-	"	20	0
-
-> ~/lab1.bak/xv6edk2/sysproc.c
-	*	1712473739	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/MyLoaderPkg/MyLoaderPkg.dsc
-	*	1712473732	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/xv6/sysrpcoc.
-	*	1712473136	0
 	"	1	0

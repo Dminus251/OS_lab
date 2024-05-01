@@ -8,14 +8,15 @@
 #include "traps.h"
 #include "spinlock.h"
 #include "i8254.h"
-
+typedef void (*scheduler_func)();
 // Interrupt descriptor table (shared by all CPUs).
 struct gatedesc idt[256];
 extern uint vectors[];  // in vectors.S: array of 256 entry pointers
 struct spinlock tickslock;
 uint ticks;
 
-extern void thread_switch(void); //************** modified
+//extern void thread_switch(void); //************** modified
+//uint address; //************** modified
 
 void
 tvinit(void)
@@ -39,11 +40,11 @@ idtinit(void)
 void
 trap(struct trapframe *tf)
 {
-  if(tf->trapno == T_SYSCALL){
+  if(tf->trapno == T_SYSCALL){ //시스템 콜 처리
     if(myproc()->killed)
       exit();
     myproc()->tf = tf;
-    syscall();
+    syscall(); //usys.S에 정의됨
     if(myproc()->killed)
       exit();
     return;
@@ -59,14 +60,16 @@ trap(struct trapframe *tf)
     }
     lapiceoi();
 //******************   new code   ****************
-    thread_switch()
-
-
+//       if(myproc() && myproc()->state == RUNNING){
+//       scheduler_func func = (scheduler_func)myproc()->scheduler;
+//        func(); 
+//	}
 //******************   new code   ****************
 
 
 
     break;
+       
   case T_IRQ0 + IRQ_IDE:
     ideintr();
     lapiceoi();
