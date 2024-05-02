@@ -286,9 +286,14 @@ uthread_init(int address){
             //return -1;
     //if (copyout(curproc->pgdir, *status, &(curproc->xstate), sizeof(int)) < 0)
 	    //return -1;
-  //copyin 함수
-  uint a = (unsigned int)&(curproc->scheduler);
-  copyout(curproc->pgdir, a, &address, sizeof(uint));
+
+
+
+  //uint a = (unsigned int)&(curproc->scheduler);
+  //copyout(curproc->pgdir, a, &address, sizeof(uint));
+  //cprintf("!!!! a is %d", a);
+  curproc->scheduler = address;
+  cprintf("!!!! scheduler is %d\n", curproc->scheduler);
   return 0;
 }
 

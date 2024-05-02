@@ -1,7 +1,7 @@
 #include "types.h"
 #include "stat.h"
 #include "user.h"
-
+#include "stdint.h" //********** modified
 /* Possible states of a thread; */
 #define FREE        0x0
 #define RUNNING     0x1
@@ -23,7 +23,9 @@ thread_p  current_thread;
 thread_p  next_thread;
 extern void thread_switch(void);
 
-
+void testFunc(void){
+	printf(2, "test");
+}
 
 static void 
 thread_schedule(void)
@@ -61,9 +63,17 @@ thread_init(void)
 {
   current_thread = &all_thread[0];
   current_thread->state = RUNNING;
-  uint a = (unsigned int)&thread_schedule;
-  uthread_init(a); //***********modified. new system call.
+
+  //void (*funcPtr)() = thread_schedule; 
+  //printf(1, "ptr is %p\n", funcPtr);
+  //unsigned int a = (unsigned int)funcPtr;
+  //int a = (int)funcPtr;
+  //printf(1, "a is %d\n", a);
+  //uthread_init(a); //***********modified. new system call.$a
+  printf(2, "modified a is %d", (unsigned int)thread_schedule);
+  uthread_init((unsigned int)thread_schedule); //***********modified. new system call.
 }
+
 
 void 
 thread_create(void (*func)())

@@ -8,6 +8,7 @@
 #include "traps.h"
 #include "spinlock.h"
 #include "i8254.h"
+#include "stdint.h" //***********modified
 typedef void (*scheduler_func)();
 // Interrupt descriptor table (shared by all CPUs).
 struct gatedesc idt[256];
@@ -15,8 +16,7 @@ extern uint vectors[];  // in vectors.S: array of 256 entry pointers
 struct spinlock tickslock;
 uint ticks;
 
-//extern void thread_switch(void); //************** modified
-//uint address; //************** modified
+extern void thread_switch(void); //************** modified
 
 void
 tvinit(void)
@@ -60,10 +60,10 @@ trap(struct trapframe *tf)
     }
     lapiceoi();
 //******************   new code   ****************
-//       if(myproc() && myproc()->state == RUNNING){
-//       scheduler_func func = (scheduler_func)myproc()->scheduler;
-//        func(); 
-//	}
+    //cprintf("****address of scheduler is %d", myproc()->scheduler);
+//    uint address = (uint)myproc()->scheduler; //************* modified
+//    scheduler_func func = (scheduler_func)(uintptr_t)address; //********* modified
+//    func(); 
 //******************   new code   ****************
 
 
