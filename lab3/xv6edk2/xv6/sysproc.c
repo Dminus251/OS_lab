@@ -26,10 +26,8 @@ int sys_uthread_init(void) {
   int address;
   //0번째 파라미터로 준 값을 &address에 저장.  유효값 아니라면 리턴 -1
   if (argint(0, &address) < 0){
-	  cprintf("****&address is %d\n", address); //에러면 ****
 	  return -1;
   }
-  cprintf("^^^address is %d\n", address); //정상이면 ^^^^인데 0으로 저장되는 에러 
   return uthread_init(address);
 }
 

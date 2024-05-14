@@ -11,54 +11,60 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/print
+~MSle0~/cachesize
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1714632390,,"wq"
 :q
-|2,0,1714632338,,"q"
+|2,0,1715674459,,"q"
+:wq
+|2,0,1715674128,,"wq"
+:w
+|2,0,1715674025,,"w"
+:q!
+|2,0,1715673874,,"q!"
 :set nu
-|2,0,1714631509,,"set nu"
+|2,0,1715671776,,"set nu"
+:ㅈㅂ
+|2,0,1714650727,,"ㅈㅂ"
+:66
+|2,0,1714649558,,"66"
+:Q!
+|2,0,1714640380,,"Q!"
+:'<,'>
+|2,0,1714639775,,"'<,'>"
+:'<,'>wq
+|2,0,1714639683,,"'<,'>wq"
+:'<
+|2,0,1714639619,,"'<"
+:Q
+|2,0,1714633596,,"Q"
+:Set nu
+|2,0,1714633126,,"Set nu"
 :47
 |2,0,1714631438,,"47"
-:q!
-|2,0,1714631385,,"q!"
 :68
 |2,0,1714630924,,"68"
-:Q
-|2,0,1714630921,,"Q"
 :Wq
 |2,0,1714630629,,"Wq"
 :'<,'>q!
 |2,0,1714629621,,"'<,'>q!"
 :'<,'>q
 |2,0,1714621417,,"'<,'>q"
-:w
-|2,0,1714621415,,"w"
-:Set nu
-|2,0,1714620720,,"Set nu"
 :exit
 |2,0,1714620151,,"exit"
 :64
 |2,0,1714616804,,"64"
-:Q!
-|2,0,1714616728,,"Q!"
 :128
 |2,0,1714555044,,"128"
-:'<,'>wq
-|2,0,1714549354,,"'<,'>wq"
 :mod
 |2,0,1714474242,,"mod"
 :279
 |2,0,1714472827,,"279"
 :30
 |2,0,1714464330,,"30"
-:ㅈㅂ
-|2,0,1714460370,,"ㅈㅂ"
 :60
 |2,0,1714459965,,"60"
 :21
@@ -73,8 +79,6 @@ $
 |2,0,1713335075,,"150"
 :'<,'>::Q
 |2,0,1713334422,,"'<,'>::Q"
-:'<,'>
-|2,0,1713333617,,"'<,'>"
 :!
 |2,0,1713332196,,"!"
 :168
@@ -187,8 +191,34 @@ $
 |2,0,1711949580,,"147"
 
 # Search String History (newest to oldest):
+?/cachesize
+|2,1,1715671881,47,"cachesize"
+?/LRU
+|2,1,1715671829,47,"LRU"
+?/yield
+|2,1,1714650667,47,"yield"
+?/struct
+|2,1,1714648952,47,"struct"
 ?/print
-|2,1,1714632349,47,"print"
+|2,1,1714639102,47,"print"
+?/modified
+|2,1,1714635058,47,"modified"
+?/1000000
+|2,1,1714634523,47,"1000000"
+?/thread_yield
+|2,1,1714634460,47,"thread_yield"
+?/panic
+|2,1,1714633781,47,"panic"
+?/mod
+|2,1,1714633435,47,"mod"
+?/switch
+|2,1,1714633121,47,"switch"
+?/uthread
+|2,1,1714633089,47,"uthread"
+?/UPROG
+|2,1,1714633080,47,"UPROG"
+?/Tmr
+|2,1,1714632476,47,"Tmr"
 ?/kill
 |2,1,1714630344,47,"kill"
 ?/printf
@@ -199,10 +229,6 @@ $
 |2,1,1714621300,47,"argin"
 ?/`
 |2,1,1714620726,47,"`"
-?/uthread
-|2,1,1714620082,47,"uthread"
-?/yield
-|2,1,1714616776,47,"yield"
 ? @$
 |2,1,1714616727,,"@$"
 ?/myproc
@@ -281,8 +307,6 @@ $
 |2,1,1714447892,47,"create"
 ?/myth
 |2,1,1714447730,47,"myth"
-?/switch
-|2,1,1714447715,47,"switch"
 ?/mythread
 |2,1,1714447695,47,"mythread"
 ?/thread_create
@@ -469,8 +493,6 @@ $
 |2,1,1712580295,47,"argint"
 ?/arg
 |2,1,1712580185,47,"arg"
-?/struct
-|2,1,1712578126,47,"struct"
 ?/UPRO
 |2,1,1712564386,47,"UPRO"
 ?/edk2
@@ -499,8 +521,6 @@ $
 |2,1,1712477919,47,"setup"
 ?/w
 |2,1,1712477324,47,"w"
-?/UPROG
-|2,1,1712473902,47,"UPROG"
 ?/eixgt2
 |2,1,1712473858,47,"eixgt2"
 ?/exot2
@@ -571,22 +591,6 @@ $
 |2,1,1712220023,47,"SYS"
 ?/struct proc
 |2,1,1712217773,47,"struct proc"
-?/int wait2
-|2,1,1712217386,47,"int wait2"
-?/tf
-|2,1,1712216235,47,"tf"
-?/trapframe
-|2,1,1712216212,47,"trapframe"
-?/name
-|2,1,1712215182,47,"name"
-?/int arg
-|2,1,1712214911,47,"int arg"
-?/SYS_
-|2,1,1712214598,47,"SYS_"
-?/syscall(vo
-|2,1,1712214225,47,"syscall(vo"
-?/sys_wait
-|2,1,1712213974,47,"sys_wait"
 
 # Expression History (newest to oldest):
 
@@ -596,563 +600,628 @@ $
 
 # Registers:
 "0	LINE	0
-	  //uthread_init(a); //***********modified. new system call.
-|3,0,0,1,1,0,1714631637,"  //uthread_init(a); //***********modified. new system call."
-"1	LINE	0
-	  cprintf(
-|3,0,1,1,1,0,1714632313,"  cprintf("
+	    cprintf("hello world");							   
+|3,0,0,1,1,0,1714633224,"    cprintf(\"hello world\");							   "
+""1	LINE	0
+	# -s: 랜덤 시드값 설정. default: 0
+|3,1,1,1,1,0,1715674047,"# -s: 랜덤 시드값 설정. default: 0"
 "2	LINE	0
-	  //
-|3,0,2,1,1,0,1714632120,"  //"
+	1486
+<# -p: policy. default: FIFO, 다음 중 선택: FIFO, LRU, OPT, UNOPT, RAND, CLOCK parser.add_option('-p', '--policy', default='FIFO',    help='replacement policy: FIFO, LRU, OPT, UNOPT, RAND, CLOCK',                action='store', type='string', dest='policy') parser.add_option('-b', '--clockbits', default=2,      help='for CLOCK policy, how many clock bits to use',                          action='store', type='int', dest='clockbits') parser.add_option('-C', '--cachesize', default='3',    help='size of the page cache, in pages',                                      action='store', type='string', dest='cachesize') parser.add_option('-m', '--maxpage', default='10',     help='if randomly generating page accesses, this is the max page number',     action='store', type='string', dest='maxpage') parser.add_option('-s', '--seed', default='0',         help='random number seed',                                                    action='store', type='string', dest='seed') parser.add_option('-N', '--notrace', default=False,    help='do not print out a detailed trace',                                     action='store_true', dest='notrace') parser.add_option('-c', '--compute', default=False,    help='compute answers for me',                                                action='store_true', dest='solve') (options, args) = parser.parse_args() print('ARG addresses', options.addresses) print('ARG addressfile', options.addressfile) print('ARG numaddrs', options.numaddrs)
+|3,0,2,1,1,0,1715673866,>1485
+|<"# -p: policy. default: FIFO, 다음 중 선택: FIFO, LRU, OPT, UNOPT, RAND, CLOCK parser.add_option('-p', '--policy', default='FIFO',    help='replacement policy: FIFO, LRU, OPT, UNOPT, RAND, CLOCK',                action='store', type='string', dest='policy') parser.add_option('-b', '--clockbits', default=2,      help='for CLOCK policy, how many clock bits to use',                          action='store', type='int', dest='clockbits') parser.add_option('-C', '--cachesize', default='3
+|<',    help='size of the page cache, in pages',                                      action='store', type='string', dest='cachesize') parser.add_option('-m', '--maxpage', default='10',     help='if randomly generating page accesses, this is the max page number',     action='store', type='string', dest='maxpage') parser.add_option('-s', '--seed', default='0',         help='random number seed',                                                    action='store', type='string', dest='seed') 
+|<parser.add_option('-N', '--notrace', default=False,    help='do not print out a detailed trace',                                     action='store_true', dest='notrace') parser.add_option('-c', '--compute', default=False,    help='compute answers for me',                                                action='store_true', dest='solve') (options, args) = parser.parse_args() print('ARG addresses', options.addresses) print('ARG addressfile', options.addressfile) print('ARG numaddrs', opti
+|<ons.numaddrs)"
 "3	LINE	0
-	  //copyin 함수
-|3,0,3,1,1,0,1714632120,"  //copyin 함수"
+	    cprintf("%d", address);
+|3,0,3,1,1,0,1714649714,"    cprintf(\"%d\", address);"
 "4	LINE	0
-	static void 
-	thread_schedule(void)
-	{
-	  thread_p t;
-	
-	  /* Find another runnable thread. */
-	  next_thread = 0;
-	  for (t = all_thread; t < all_thread + MAX_THREAD; t++) {
-	    if (t->state == RUNNABLE && t != current_thread) {
-	      next_thread = t;
-	      break;
-	    }
-	  }
-	
-	  if (t >= all_thread + MAX_THREAD && current_thread->state == RUNNABLE) {
-	    /* The current thread is the only runnable thread; run it. */
-	    next_thread = current_thread;
-	  }
-	
-	  if (next_thread == 0) {
-	    printf(2, "thread_schedule: no runnable threads\n");
-	    exit();
-	  }
-	
-	  if (current_thread != next_thread) {         /* switch threads?  */
-	    next_thread->state = RUNNING;
-	    thread_switch();
-	  } else
-	    next_thread = 0;
-	}
-	
-	void 
-	thread_init(void)
-	{
-	  current_thread = &all_thread[0];
-	  current_thread->state = RUNNING;
-	
-	  void (*funcPtr)() = thread_schedule; 
-	  printf(1, "ptr is %p\n", funcPtr);
-	  //unsigned int a = (unsigned int)funcPtr;
-	  int a = (int)funcPtr;
-	  printf(1, "a is %d\n", a);
-	  //uthread_init(a); //***********modified. new system call.
-	}
-	
-|3,0,4,1,45,0,1714631446,"static void ","thread_schedule(void)","{","  thread_p t;","","  /* Find another runnable thread. */","  next_thread = 0;","  for (t = all_thread; t < all_thread + MAX_THREAD; t++) {","    if (t->state == RUNNABLE && t != current_thread) {","      next_thread = t;","      break;","    }","  }","","  if (t >= all_thread + MAX_THREAD && current_thread->state == RUNNABLE) {",>67
-|<"    /* The current thread is the only runnable thread; run it. */","    next_thread = current_thread;","  }","","  if (next_thread == 0) {","    printf(2, \"thread_schedule: no runnable threads\\n\");","    exit();","  }","","  if (current_thread != next_thread) {         /* switch threads?  */","    next_thread->state = RUNNING;","    thread_switch();","  } else","    next_thread = 0;","}","","void ","thread_init(void)","{","  current_thread = &all_thread[0];",>36
-|<"  current_thread->state = RUNNING;","","  void (*funcPtr)() = thread_schedule; ","  printf(1, \"ptr is %p\\n\", funcPtr);","  //unsigned int a = (unsigned int)funcPtr;","  int a = (int)funcPtr;","  printf(1, \"a is %d\\n\", a);","  //uthread_init(a); //***********modified. new system call.","}",""
+	    scheduler_func func = (scheduler_func)(uintptr_t)func; //********* modified
+|3,0,4,1,1,0,1714649514,"    scheduler_func func = (scheduler_func)(uintptr_t)func; //********* modified"
 "5	LINE	0
-	static void 
-	thread_schedule(void)
-	{
-	  thread_p t;
-	
-	  /* Find another runnable thread. */
-	  next_thread = 0;
-	  for (t = all_thread; t < all_thread + MAX_THREAD; t++) {
-	    if (t->state == RUNNABLE && t != current_thread) {
-	      next_thread = t;
-	      break;
-	    }
-	  }
-	
-	  if (t >= all_thread + MAX_THREAD && current_thread->state == RUNNABLE) {
-	    /* The current thread is the only runnable thread; run it. */
-	    next_thread = current_thread;
-	  }
-	
-	  if (next_thread == 0) {
-	    printf(2, "thread_schedule: no runnable threads\n");
-	    exit();
-	  }
-	
-	  if (current_thread != next_thread) {         /* switch threads?  */
-	    next_thread->state = RUNNING;
-	    thread_switch();
-	  } else
-	    next_thread = 0;
-	}
-	
-	void 
-	thread_init(void)
-	{
-	  current_thread = &all_thread[0];
-	  current_thread->state = RUNNING;
-	
-	  void (*funcPtr)() = thread_schedule; 
-	  printf(1, "ptr is %p\n", funcPtr);
-	  //unsigned int a = (unsigned int)funcPtr;
-	  int a = (int)funcPtr;
-	  printf(1, "a is %d\n", a);
-	  //uthread_init(a); //***********modified. new system call.
-	}
-	
-|3,0,5,1,45,0,1714631392,"static void ","thread_schedule(void)","{","  thread_p t;","","  /* Find another runnable thread. */","  next_thread = 0;","  for (t = all_thread; t < all_thread + MAX_THREAD; t++) {","    if (t->state == RUNNABLE && t != current_thread) {","      next_thread = t;","      break;","    }","  }","","  if (t >= all_thread + MAX_THREAD && current_thread->state == RUNNABLE) {",>67
-|<"    /* The current thread is the only runnable thread; run it. */","    next_thread = current_thread;","  }","","  if (next_thread == 0) {","    printf(2, \"thread_schedule: no runnable threads\\n\");","    exit();","  }","","  if (current_thread != next_thread) {         /* switch threads?  */","    next_thread->state = RUNNING;","    thread_switch();","  } else","    next_thread = 0;","}","","void ","thread_init(void)","{","  current_thread = &all_thread[0];",>36
-|<"  current_thread->state = RUNNING;","","  void (*funcPtr)() = thread_schedule; ","  printf(1, \"ptr is %p\\n\", funcPtr);","  //unsigned int a = (unsigned int)funcPtr;","  int a = (int)funcPtr;","  printf(1, \"a is %d\\n\", a);","  //uthread_init(a); //***********modified. new system call.","}",""
+	    //func();
+|3,0,5,1,1,0,1714649484,"    //func();"
 "6	LINE	0
-	static void 
-	thread_schedule(void)
-	{
-	  thread_p t;
-	
-	  /* Find another runnable thread. */
-	  next_thread = 0;
-	  for (t = all_thread; t < all_thread + MAX_THREAD; t++) {
-	    if (t->state == RUNNABLE && t != current_thread) {
-	      next_thread = t;
-	      break;
-	    }
-	  }
-	
-	  if (t >= all_thread + MAX_THREAD && current_thread->state == RUNNABLE) {
-	    /* The current thread is the only runnable thread; run it. */
-	    next_thread = current_thread;
-	  }
-	
-	  if (next_thread == 0) {
-	    printf(2, "thread_schedule: no runnable threads\n");
-	    exit();
-	  }
-	
-	  if (current_thread != next_thread) {         /* switch threads?  */
-	    next_thread->state = RUNNING;
-	    thread_switch();
-	  } else
-	    next_thread = 0;
-	}
-	
-	void 
-	thread_init(void)
-	{
-	  current_thread = &all_thread[0];
-	  current_thread->state = RUNNING;
-	
-	  void (*funcPtr)() = thread_schedule; 
-	  printf(1, "ptr is %p\n", funcPtr);
-	  
-	  //unsigned int a = (unsigned int)funcPtr;
-	  int a = (int)funcPtr;
-	  printf(1, "a is %d\n", a);
-	  //uthread_init(a); //***********modified. new system call.
-	}
-|3,0,6,1,45,0,1714631106,"static void ","thread_schedule(void)","{","  thread_p t;","","  /* Find another runnable thread. */","  next_thread = 0;","  for (t = all_thread; t < all_thread + MAX_THREAD; t++) {","    if (t->state == RUNNABLE && t != current_thread) {","      next_thread = t;","      break;","    }","  }","","  if (t >= all_thread + MAX_THREAD && current_thread->state == RUNNABLE) {",>67
-|<"    /* The current thread is the only runnable thread; run it. */","    next_thread = current_thread;","  }","","  if (next_thread == 0) {","    printf(2, \"thread_schedule: no runnable threads\\n\");","    exit();","  }","","  if (current_thread != next_thread) {         /* switch threads?  */","    next_thread->state = RUNNING;","    thread_switch();","  } else","    next_thread = 0;","}","","void ","thread_init(void)","{","  current_thread = &all_thread[0];",>36
-|<"  current_thread->state = RUNNING;","","  void (*funcPtr)() = thread_schedule; ","  printf(1, \"ptr is %p\\n\", funcPtr);","  ","  //unsigned int a = (unsigned int)funcPtr;","  int a = (int)funcPtr;","  printf(1, \"a is %d\\n\", a);","  //uthread_init(a); //***********modified. new system call.","}"
+	    //scheduler_func func = (scheduler_func)(uintptr_t)func; //********* modified
+|3,0,6,1,1,0,1714649481,"    //scheduler_func func = (scheduler_func)(uintptr_t)func; //********* modified"
 "7	LINE	0
-	  void (*funPtr)() = thread_schedule;
-|3,0,7,1,1,0,1714630530,"  void (*funPtr)() = thread_schedule;"
+	    //func = (void (*)())address;
+|3,0,7,1,1,0,1714649478,"    //func = (void (*)())address;"
 "8	LINE	0
-	  printf(1, "address is %p\n", (void*)funPtr);
-	  printf(2, "address is %p\n", (void*)funPtr);
-|3,0,8,1,2,0,1714630500,"  printf(1, \"address is %p\\n\", (void*)funPtr);","  printf(2, \"address is %p\\n\", (void*)funPtr);"
+	    //unsigned int address = myproc()->scheduler; //************* modified
+|3,0,8,1,1,0,1714649474,"    //unsigned int address = myproc()->scheduler; //************* modified"
 "9	LINE	0
-	  printf(1, "a is %x\n", a);
-	  printf(1, "a is %u\n", a);
-	  printf(1, "a is %p\n", a);
-|3,0,9,1,3,0,1714630129,"  printf(1, \"a is %x\\n\", a);","  printf(1, \"a is %u\\n\", a);","  printf(1, \"a is %p\\n\", a);"
-""-	CHAR	0
-	,
-|3,1,36,0,1,0,1714632389,","
+	    struct
+|3,0,9,1,1,0,1714649211,"    struct"
+"-	CHAR	0
+	 
+|3,0,36,0,1,0,1715673927," "
 
 # File marks:
-'0  296  10  ~/lab3/xv6edk2/xv6/proc.c
-|4,48,296,10,1714632390,"~/lab3/xv6edk2/xv6/proc.c"
-'1  296  10  ~/lab3/xv6edk2/xv6/proc.c
-|4,49,296,10,1714632366,"~/lab3/xv6edk2/xv6/proc.c"
-'2  73  22  ~/lab3/xv6edk2/xv6/uthread.c
-|4,50,73,22,1714632338,"~/lab3/xv6edk2/xv6/uthread.c"
-'3  296  11  ~/lab3/xv6edk2/xv6/proc.c
-|4,51,296,11,1714632323,"~/lab3/xv6edk2/xv6/proc.c"
-'4  296  11  ~/lab3/xv6edk2/xv6/proc.c
-|4,52,296,11,1714632323,"~/lab3/xv6edk2/xv6/proc.c"
-'5  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,53,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
-'6  296  37  ~/lab3/xv6edk2/xv6/proc.c
-|4,54,296,37,1714632279,"~/lab3/xv6edk2/xv6/proc.c"
-'7  296  37  ~/lab3/xv6edk2/xv6/proc.c
-|4,55,296,37,1714632279,"~/lab3/xv6edk2/xv6/proc.c"
-'8  296  37  ~/lab3/xv6edk2/xv6/proc.c
-|4,56,296,37,1714632279,"~/lab3/xv6edk2/xv6/proc.c"
-'9  296  37  ~/lab3/xv6edk2/xv6/proc.c
-|4,57,296,37,1714632279,"~/lab3/xv6edk2/xv6/proc.c"
+'0  79  29  ~/homework2/paging-policy.py
+|4,48,79,29,1715674459,"~/homework2/paging-policy.py"
+'1  79  29  ~/homework2/paging-policy.py
+|4,49,79,29,1715674128,"~/homework2/paging-policy.py"
+'2  80  0  ~/homework2/paging-policy.py
+|4,50,80,0,1715673874,"~/homework2/paging-policy.py"
+'3  58  0  ~/homework2/paging-policy.py
+|4,51,58,0,1715673874,"~/homework2/paging-policy.py"
+'4  80  0  ~/homework2/paging-policy.py
+|4,52,80,0,1715673874,"~/homework2/paging-policy.py"
+'5  58  0  ~/homework2/paging-policy.py
+|4,53,58,0,1715673874,"~/homework2/paging-policy.py"
+'6  151  13  ~/homework2/paging-policy.py
+|4,54,151,13,1715671966,"~/homework2/paging-policy.py"
+'7  158  13  ~/homework2/paging-policy.py
+|4,55,158,13,1715671966,"~/homework2/paging-policy.py"
+'8  129  13  ~/homework2/paging-policy.py
+|4,56,129,13,1715671966,"~/homework2/paging-policy.py"
+'9  136  13  ~/homework2/paging-policy.py
+|4,57,136,13,1715671966,"~/homework2/paging-policy.py"
 
 # Jumplist (newest first):
--'  296  10  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,10,1714632390,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  10  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,10,1714632366,"~/lab3/xv6edk2/xv6/proc.c"
--'  680  5  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,680,5,1714632356,"~/lab3/xv6edk2/xv6/proc.c"
--'  680  5  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,680,5,1714632356,"~/lab3/xv6edk2/xv6/proc.c"
--'  678  9  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,678,9,1714632355,"~/lab3/xv6edk2/xv6/proc.c"
--'  678  9  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,678,9,1714632355,"~/lab3/xv6edk2/xv6/proc.c"
--'  674  5  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,674,5,1714632352,"~/lab3/xv6edk2/xv6/proc.c"
--'  674  5  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,674,5,1714632352,"~/lab3/xv6edk2/xv6/proc.c"
--'  295  11  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,295,11,1714632349,"~/lab3/xv6edk2/xv6/proc.c"
--'  295  11  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,295,11,1714632349,"~/lab3/xv6edk2/xv6/proc.c"
--'  73  22  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,73,22,1714632338,"~/lab3/xv6edk2/xv6/uthread.c"
--'  73  22  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,73,22,1714632338,"~/lab3/xv6edk2/xv6/uthread.c"
--'  73  22  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,73,22,1714632338,"~/lab3/xv6edk2/xv6/uthread.c"
--'  73  22  ~/lab3/xv6edk2/xv6/uthread.c
-|4,39,73,22,1714632338,"~/lab3/xv6edk2/xv6/uthread.c"
--'  296  11  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,11,1714632323,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  11  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,11,1714632323,"~/lab3/xv6edk2/xv6/proc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  29  31  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,29,31,1714632290,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632282,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  296  37  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,37,1714632279,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  37  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,37,1714632279,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  37  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,37,1714632279,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  37  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,37,1714632279,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  8  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,8,1714632217,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  8  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,8,1714632217,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  8  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,8,1714632217,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  8  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,8,1714632217,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632214,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632208,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632208,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632208,"~/lab3/xv6edk2/xv6/proc.c"
--'  297  2  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,297,2,1714632208,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  56  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,56,1714632204,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  56  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,56,1714632204,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  56  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,56,1714632204,"~/lab3/xv6edk2/xv6/proc.c"
--'  296  56  ~/lab3/xv6edk2/xv6/proc.c
-|4,39,296,56,1714632204,"~/lab3/xv6edk2/xv6/proc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
--'  33  30  ~/lab3/xv6edk2/xv6/sysproc.c
-|4,39,33,30,1714632203,"~/lab3/xv6edk2/xv6/sysproc.c"
+-'  79  29  ~/homework2/paging-policy.py
+|4,39,79,29,1715674459,"~/homework2/paging-policy.py"
+-'  79  29  ~/homework2/paging-policy.py
+|4,39,79,29,1715674128,"~/homework2/paging-policy.py"
+-'  80  0  ~/homework2/paging-policy.py
+|4,39,80,0,1715673875,"~/homework2/paging-policy.py"
+-'  80  0  ~/homework2/paging-policy.py
+|4,39,80,0,1715673875,"~/homework2/paging-policy.py"
+-'  58  0  ~/homework2/paging-policy.py
+|4,39,58,0,1715673874,"~/homework2/paging-policy.py"
+-'  58  0  ~/homework2/paging-policy.py
+|4,39,58,0,1715673874,"~/homework2/paging-policy.py"
+-'  151  13  ~/homework2/paging-policy.py
+|4,39,151,13,1715673722,"~/homework2/paging-policy.py"
+-'  129  13  ~/homework2/paging-policy.py
+|4,39,129,13,1715673722,"~/homework2/paging-policy.py"
+-'  151  13  ~/homework2/paging-policy.py
+|4,39,151,13,1715673722,"~/homework2/paging-policy.py"
+-'  129  13  ~/homework2/paging-policy.py
+|4,39,129,13,1715673722,"~/homework2/paging-policy.py"
+-'  158  13  ~/homework2/paging-policy.py
+|4,39,158,13,1715671966,"~/homework2/paging-policy.py"
+-'  136  13  ~/homework2/paging-policy.py
+|4,39,136,13,1715671966,"~/homework2/paging-policy.py"
+-'  158  13  ~/homework2/paging-policy.py
+|4,39,158,13,1715671966,"~/homework2/paging-policy.py"
+-'  136  13  ~/homework2/paging-policy.py
+|4,39,136,13,1715671966,"~/homework2/paging-policy.py"
+-'  177  36  ~/homework2/paging-policy.py
+|4,39,177,36,1715671897,"~/homework2/paging-policy.py"
+-'  184  36  ~/homework2/paging-policy.py
+|4,39,184,36,1715671897,"~/homework2/paging-policy.py"
+-'  155  36  ~/homework2/paging-policy.py
+|4,39,155,36,1715671897,"~/homework2/paging-policy.py"
+-'  162  36  ~/homework2/paging-policy.py
+|4,39,162,36,1715671897,"~/homework2/paging-policy.py"
+-'  177  36  ~/homework2/paging-policy.py
+|4,39,177,36,1715671897,"~/homework2/paging-policy.py"
+-'  184  36  ~/homework2/paging-policy.py
+|4,39,184,36,1715671897,"~/homework2/paging-policy.py"
+-'  155  36  ~/homework2/paging-policy.py
+|4,39,155,36,1715671897,"~/homework2/paging-policy.py"
+-'  162  36  ~/homework2/paging-policy.py
+|4,39,162,36,1715671897,"~/homework2/paging-policy.py"
+-'  162  36  ~/homework2/paging-policy.py
+|4,39,162,36,1715671895,"~/homework2/paging-policy.py"
+-'  175  52  ~/homework2/paging-policy.py
+|4,39,175,52,1715671881,"~/homework2/paging-policy.py"
+-'  161  38  ~/homework2/paging-policy.py
+|4,39,161,38,1715671881,"~/homework2/paging-policy.py"
+-'  182  52  ~/homework2/paging-policy.py
+|4,39,182,52,1715671881,"~/homework2/paging-policy.py"
+-'  168  38  ~/homework2/paging-policy.py
+|4,39,168,38,1715671881,"~/homework2/paging-policy.py"
+-'  153  52  ~/homework2/paging-policy.py
+|4,39,153,52,1715671881,"~/homework2/paging-policy.py"
+-'  139  38  ~/homework2/paging-policy.py
+|4,39,139,38,1715671881,"~/homework2/paging-policy.py"
+-'  160  52  ~/homework2/paging-policy.py
+|4,39,160,52,1715671881,"~/homework2/paging-policy.py"
+-'  146  38  ~/homework2/paging-policy.py
+|4,39,146,38,1715671881,"~/homework2/paging-policy.py"
+-'  175  52  ~/homework2/paging-policy.py
+|4,39,175,52,1715671881,"~/homework2/paging-policy.py"
+-'  161  38  ~/homework2/paging-policy.py
+|4,39,161,38,1715671881,"~/homework2/paging-policy.py"
+-'  182  52  ~/homework2/paging-policy.py
+|4,39,182,52,1715671881,"~/homework2/paging-policy.py"
+-'  168  38  ~/homework2/paging-policy.py
+|4,39,168,38,1715671881,"~/homework2/paging-policy.py"
+-'  153  52  ~/homework2/paging-policy.py
+|4,39,153,52,1715671881,"~/homework2/paging-policy.py"
+-'  139  38  ~/homework2/paging-policy.py
+|4,39,139,38,1715671881,"~/homework2/paging-policy.py"
+-'  160  52  ~/homework2/paging-policy.py
+|4,39,160,52,1715671881,"~/homework2/paging-policy.py"
+-'  146  38  ~/homework2/paging-policy.py
+|4,39,146,38,1715671881,"~/homework2/paging-policy.py"
+-'  160  52  ~/homework2/paging-policy.py
+|4,39,160,52,1715671881,"~/homework2/paging-policy.py"
+-'  146  38  ~/homework2/paging-policy.py
+|4,39,146,38,1715671881,"~/homework2/paging-policy.py"
+-'  141  19  ~/homework2/paging-policy.py
+|4,39,141,19,1715671848,"~/homework2/paging-policy.py"
+-'  148  19  ~/homework2/paging-policy.py
+|4,39,148,19,1715671848,"~/homework2/paging-policy.py"
+-'  119  19  ~/homework2/paging-policy.py
+|4,39,119,19,1715671848,"~/homework2/paging-policy.py"
+-'  126  19  ~/homework2/paging-policy.py
+|4,39,126,19,1715671848,"~/homework2/paging-policy.py"
+-'  141  19  ~/homework2/paging-policy.py
+|4,39,141,19,1715671848,"~/homework2/paging-policy.py"
+-'  148  19  ~/homework2/paging-policy.py
+|4,39,148,19,1715671848,"~/homework2/paging-policy.py"
+-'  119  19  ~/homework2/paging-policy.py
+|4,39,119,19,1715671848,"~/homework2/paging-policy.py"
+-'  126  19  ~/homework2/paging-policy.py
+|4,39,126,19,1715671848,"~/homework2/paging-policy.py"
+-'  126  19  ~/homework2/paging-policy.py
+|4,39,126,19,1715671848,"~/homework2/paging-policy.py"
+-'  138  19  ~/homework2/paging-policy.py
+|4,39,138,19,1715671847,"~/homework2/paging-policy.py"
+-'  145  19  ~/homework2/paging-policy.py
+|4,39,145,19,1715671847,"~/homework2/paging-policy.py"
+-'  116  19  ~/homework2/paging-policy.py
+|4,39,116,19,1715671847,"~/homework2/paging-policy.py"
+-'  123  19  ~/homework2/paging-policy.py
+|4,39,123,19,1715671847,"~/homework2/paging-policy.py"
+-'  138  19  ~/homework2/paging-policy.py
+|4,39,138,19,1715671847,"~/homework2/paging-policy.py"
+-'  145  19  ~/homework2/paging-policy.py
+|4,39,145,19,1715671847,"~/homework2/paging-policy.py"
+-'  116  19  ~/homework2/paging-policy.py
+|4,39,116,19,1715671847,"~/homework2/paging-policy.py"
+-'  123  19  ~/homework2/paging-policy.py
+|4,39,123,19,1715671847,"~/homework2/paging-policy.py"
+-'  123  19  ~/homework2/paging-policy.py
+|4,39,123,19,1715671847,"~/homework2/paging-policy.py"
+-'  137  20  ~/homework2/paging-policy.py
+|4,39,137,20,1715671846,"~/homework2/paging-policy.py"
+-'  144  20  ~/homework2/paging-policy.py
+|4,39,144,20,1715671846,"~/homework2/paging-policy.py"
+-'  115  20  ~/homework2/paging-policy.py
+|4,39,115,20,1715671846,"~/homework2/paging-policy.py"
+-'  122  20  ~/homework2/paging-policy.py
+|4,39,122,20,1715671846,"~/homework2/paging-policy.py"
+-'  137  20  ~/homework2/paging-policy.py
+|4,39,137,20,1715671846,"~/homework2/paging-policy.py"
+-'  144  20  ~/homework2/paging-policy.py
+|4,39,144,20,1715671846,"~/homework2/paging-policy.py"
+-'  115  20  ~/homework2/paging-policy.py
+|4,39,115,20,1715671846,"~/homework2/paging-policy.py"
+-'  122  20  ~/homework2/paging-policy.py
+|4,39,122,20,1715671846,"~/homework2/paging-policy.py"
+-'  122  20  ~/homework2/paging-policy.py
+|4,39,122,20,1715671846,"~/homework2/paging-policy.py"
+-'  61  87  ~/homework2/paging-policy.py
+|4,39,61,87,1715671845,"~/homework2/paging-policy.py"
+-'  52  87  ~/homework2/paging-policy.py
+|4,39,52,87,1715671845,"~/homework2/paging-policy.py"
+-'  61  87  ~/homework2/paging-policy.py
+|4,39,61,87,1715671845,"~/homework2/paging-policy.py"
+-'  52  87  ~/homework2/paging-policy.py
+|4,39,52,87,1715671845,"~/homework2/paging-policy.py"
+-'  52  87  ~/homework2/paging-policy.py
+|4,39,52,87,1715671845,"~/homework2/paging-policy.py"
+-'  180  50  ~/homework2/paging-policy.py
+|4,39,180,50,1715671844,"~/homework2/paging-policy.py"
+-'  187  50  ~/homework2/paging-policy.py
+|4,39,187,50,1715671844,"~/homework2/paging-policy.py"
+-'  165  50  ~/homework2/paging-policy.py
+|4,39,165,50,1715671844,"~/homework2/paging-policy.py"
+-'  180  50  ~/homework2/paging-policy.py
+|4,39,180,50,1715671844,"~/homework2/paging-policy.py"
+-'  187  50  ~/homework2/paging-policy.py
+|4,39,187,50,1715671844,"~/homework2/paging-policy.py"
+-'  158  50  ~/homework2/paging-policy.py
+|4,39,158,50,1715671844,"~/homework2/paging-policy.py"
+-'  165  50  ~/homework2/paging-policy.py
+|4,39,165,50,1715671844,"~/homework2/paging-policy.py"
+-'  165  50  ~/homework2/paging-policy.py
+|4,39,165,50,1715671844,"~/homework2/paging-policy.py"
+-'  172  26  ~/homework2/paging-policy.py
+|4,39,172,26,1715671840,"~/homework2/paging-policy.py"
+-'  143  26  ~/homework2/paging-policy.py
+|4,39,143,26,1715671840,"~/homework2/paging-policy.py"
+-'  150  26  ~/homework2/paging-policy.py
+|4,39,150,26,1715671840,"~/homework2/paging-policy.py"
+-'  165  26  ~/homework2/paging-policy.py
+|4,39,165,26,1715671840,"~/homework2/paging-policy.py"
+-'  172  26  ~/homework2/paging-policy.py
+|4,39,172,26,1715671840,"~/homework2/paging-policy.py"
+-'  143  26  ~/homework2/paging-policy.py
+|4,39,143,26,1715671840,"~/homework2/paging-policy.py"
+-'  150  26  ~/homework2/paging-policy.py
+|4,39,150,26,1715671840,"~/homework2/paging-policy.py"
+-'  150  26  ~/homework2/paging-policy.py
+|4,39,150,26,1715671840,"~/homework2/paging-policy.py"
+-'  181  41  ~/homework2/paging-policy.py
+|4,39,181,41,1715671829,"~/homework2/paging-policy.py"
+-'  188  41  ~/homework2/paging-policy.py
+|4,39,188,41,1715671829,"~/homework2/paging-policy.py"
+-'  159  41  ~/homework2/paging-policy.py
+|4,39,159,41,1715671829,"~/homework2/paging-policy.py"
+-'  166  41  ~/homework2/paging-policy.py
+|4,39,166,41,1715671829,"~/homework2/paging-policy.py"
+-'  181  41  ~/homework2/paging-policy.py
+|4,39,181,41,1715671829,"~/homework2/paging-policy.py"
+-'  188  41  ~/homework2/paging-policy.py
+|4,39,188,41,1715671829,"~/homework2/paging-policy.py"
+-'  159  41  ~/homework2/paging-policy.py
+|4,39,159,41,1715671829,"~/homework2/paging-policy.py"
+-'  166  41  ~/homework2/paging-policy.py
+|4,39,166,41,1715671829,"~/homework2/paging-policy.py"
+-'  166  41  ~/homework2/paging-policy.py
+|4,39,166,41,1715671829,"~/homework2/paging-policy.py"
+-'  1  0  ~/homework2/paging-policy.py
+|4,39,1,0,1715671824,"~/homework2/paging-policy.py"
+-'  1  0  ~/homework2/paging-policy.py
+|4,39,1,0,1715671824,"~/homework2/paging-policy.py"
 
 # History of marks within files (newest to oldest):
 
-> ~/lab3/xv6edk2/xv6/proc.c
-	*	1714632390	0
-	"	296	10
-	^	296	3
-	.	296	10
-	+	297	0
-	+	278	22
-	+	297	1
-	+	286	9
-	+	279	34
-	+	280	29
-	+	286	1
-	+	280	31
-	+	285	21
-	+	285	33
-	+	281	0
-	+	280	0
-	+	285	43
-	+	285	41
-	+	277	13
-	+	280	3
-	+	287	5
-	+	288	7
-	+	285	5
-	+	286	13
-	+	293	26
-	+	293	0
-	+	292	46
-	+	293	53
-	+	294	28
-	+	292	3
-	+	293	3
-	+	292	0
-	+	291	0
-	+	294	3
-	+	297	3
-	+	296	56
-	+	297	2
-	+	296	37
-	+	295	0
-	+	296	10
-	j	280	26
+> ~/homework2/paging-policy.py
+	*	1715674458	0
+	"	79	29
+	^	79	30
+	.	79	29
+	+	160	51
+	+	161	38
+	+	177	36
+	+	52	50
+	+	55	181
+	+	64	183
+	+	61	47
+	+	70	64
+	+	80	82
+	+	80	261
+	+	80	440
+	+	80	622
+	+	80	802
+	+	80	979
+	+	80	1149
+	+	80	1317
+	+	80	1355
+	+	80	1397
+	+	80	1443
+	+	80	0
+	+	77	0
+	+	80	0
+	+	51	32
+	+	54	68
+	+	58	53
+	+	57	69
+	+	60	81
+	+	63	62
+	+	66	41
+	+	70	0
+	+	71	0
+	+	73	0
+	+	69	42
+	+	76	60
+	+	79	29
+
+> ~/homework2/vm-beyondphys-policy/README.md
+	*	1715671267	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/uthread_switch.S
+	*	1714651336	0
+	"	5	1
+	^	14	102
+	.	5	0
+	+	1	6
+	+	18	42
+	+	3	0
+	+	16	0
+	+	7	9
+	+	16	9
+	+	17	12
+	+	16	25
+	+	6	39
+	+	16	37
+	+	16	0
+	+	8	68
+	+	9	59
+	+	11	36
+	+	12	31
+	+	7	9
+	+	7	8
+	+	7	12
+	+	17	8
+	+	16	11
+	+	18	23
+	+	7	0
+	+	6	6
+	+	17	0
+	+	16	5
+	+	14	99
+	+	5	0
+
+> ~/lab3/xv6edk2/xv6/proc.h
+	*	1714650979	0
+	"	58	9
+	^	53	17
+	.	53	16
+	+	53	16
+
+> ~/lab3/xv6edk2/xv6/user.h
+	*	1714650967	0
+	"	26	4
+	^	28	30
+	.	28	30
+	+	28	30
 
 > ~/lab3/xv6edk2/xv6/uthread.c
-	*	1714632333	0
-	"	73	22
-	^	73	22
-	.	73	21
-	+	78	31
-	+	78	43
-	+	78	0
-	+	78	17
-	+	78	41
-	+	78	1
-	+	78	19
-	+	78	18
-	+	78	29
-	+	78	0
-	+	78	19
-	+	78	35
-	+	78	14
-	+	78	42
+	*	1714650727	0
+	"	68	37
+	^	68	40
+	.	68	40
+	+	72	29
+	+	72	0
+	+	72	19
+	+	72	35
+	+	72	14
+	+	72	42
 	+	4	40
-	+	78	0
-	+	78	13
-	+	78	29
-	+	78	11
-	+	78	14
-	+	78	41
-	+	78	93
-	+	78	11
-	+	78	0
-	+	78	53
-	+	78	74
-	+	78	53
-	+	78	71
-	+	78	77
-	+	78	72
-	+	78	75
-	+	78	0
-	+	78	33
-	+	78	35
-	+	78	16
-	+	78	8
-	+	78	1
-	+	78	30
-	+	78	1
-	+	78	19
-	+	78	33
-	+	78	52
-	+	78	0
-	+	78	82
-	+	78	0
-	+	78	51
-	+	78	17
-	+	78	0
-	+	78	17
-	+	78	0
-	+	78	17
-	+	78	0
-	+	78	35
-	+	78	0
-	+	78	25
-	+	78	17
-	+	78	0
-	+	78	40
-	+	78	35
-	+	78	56
-	+	78	0
-	+	78	35
-	+	78	3
-	+	78	43
-	+	78	17
-	+	78	0
-	+	78	2
-	+	78	0
-	+	78	2
-	+	78	0
-	+	78	19
-	+	78	21
-	+	78	37
-	+	78	44
-	+	78	9
-	+	78	27
-	+	78	0
-	+	78	2
-	+	78	0
-	+	78	10
-	+	78	37
-	+	78	39
-	+	78	35
-	+	78	27
-	+	78	3
-	+	78	10
-	+	78	26
-	+	78	14
-	+	78	0
-	+	114	0
+	+	72	0
+	+	72	13
+	+	72	29
+	+	72	11
+	+	72	14
+	+	72	41
+	+	72	93
+	+	72	11
+	+	72	0
+	+	72	53
+	+	72	74
+	+	72	53
+	+	72	71
+	+	72	77
+	+	72	72
+	+	72	75
+	+	72	0
+	+	72	33
+	+	72	35
+	+	72	16
+	+	72	8
+	+	72	1
+	+	72	30
+	+	72	1
+	+	72	19
+	+	72	33
+	+	72	52
+	+	72	0
+	+	72	82
+	+	72	0
+	+	72	51
+	+	72	17
+	+	72	0
+	+	72	17
+	+	72	0
+	+	72	17
+	+	72	0
+	+	72	35
+	+	72	0
+	+	72	25
+	+	72	17
+	+	72	0
+	+	72	40
+	+	72	35
+	+	72	56
+	+	72	0
+	+	72	35
+	+	72	3
+	+	72	43
+	+	72	17
+	+	72	0
+	+	72	2
+	+	72	0
+	+	72	2
+	+	72	0
+	+	72	19
+	+	72	21
+	+	72	37
+	+	72	44
+	+	72	9
+	+	72	27
+	+	72	0
+	+	72	2
+	+	72	0
+	+	72	10
+	+	72	37
+	+	72	39
+	+	72	35
+	+	72	27
+	+	72	3
+	+	72	10
+	+	72	26
+	+	72	14
+	+	72	0
+	+	108	0
 	+	30	0
 	+	67	3
-	+	68	3
-	+	70	3
-	+	71	3
-	+	74	43
+	+	67	43
 	+	27	19
 	+	30	0
 	+	28	1
-	+	73	21
+	+	67	21
+	+	108	0
+	+	89	0
+	+	67	3
+	+	26	1
+	+	27	1
+	+	28	1
+	+	67	58
+	+	101	62
+	+	102	56
+	+	67	92
+	+	68	40
+
+> ~/lab3/xv6edk2/xv6/trap.c
+	*	1714650633	0
+	"	69	1
+	^	69	2
+	.	69	1
+	+	19	1
+	+	20	1
+	+	64	1
+	+	64	0
+	+	64	1
+	+	19	0
+	+	20	0
+	+	18	0
+	+	64	0
+	+	64	1
+	+	64	0
+	+	64	3
+	+	64	4
+	+	64	41
+	+	64	56
+	+	64	0
+	+	20	0
+	+	21	3
+	+	20	55
+	+	11	40
+	+	20	65
+	+	20	0
+	+	64	3
+	+	60	3
+	+	64	1
+	+	60	9
+	+	60	45
+	+	60	0
+	+	62	5
+	+	61	46
+	+	59	28
+	+	60	0
+	+	64	49
+	+	64	0
+	+	64	5
+	+	64	46
+	+	64	26
+	+	64	0
+	+	64	5
+	+	64	30
+	+	64	0
+	+	71	0
+	+	64	42
+	+	64	1
+	+	64	7
+	+	64	5
+	+	64	4
+	+	64	30
+	+	64	5
+	+	64	0
+	+	64	4
+	+	70	0
+	+	64	0
+	+	70	0
+	+	64	5
+	+	64	0
+	+	64	72
+	+	64	30
+	+	64	56
+	+	64	5
+	+	64	14
+	+	70	45
+	+	70	20
+	+	70	44
+	+	70	15
+	+	70	0
+	+	64	4
+	+	64	5
+	+	64	14
+	+	66	38
+	+	64	47
+	+	69	4
+	+	64	0
+	+	65	4
+	+	64	0
+	+	67	0
+	+	64	0
+	+	68	0
+	+	64	0
+	+	68	4
+	+	67	4
+	+	68	4
+	+	66	24
+	+	68	0
+	+	66	46
+	+	67	32
+	+	68	42
+	+	67	54
+	+	65	5
+	+	66	5
+	+	67	5
+	+	65	53
+	+	64	51
+	+	63	77
+	+	64	51
+	+	65	1
+	+	66	1
+	+	67	1
+	+	68	1
+	+	69	1
+
+> ~/lab3/xv6edk2/xv6/proc.c
+	*	1714650119	0
+	"	281	2
+	^	279	0
+	.	281	0
+	+	281	0
+	+	278	22
+	+	281	1
+	+	280	9
+	+	278	34
+	+	280	29
+	+	280	1
+	+	280	31
+	+	280	21
+	+	280	33
+	+	280	0
+	+	280	43
+	+	280	41
+	+	277	13
+	+	280	3
+	+	280	5
+	+	280	7
+	+	280	5
+	+	280	13
+	+	280	26
+	+	280	0
+	+	280	46
+	+	280	53
+	+	280	28
+	+	280	3
+	+	280	0
+	+	280	3
+	+	281	3
+	+	281	56
+	+	281	2
+	+	281	37
+	+	280	0
+	+	281	10
+	+	280	0
+	+	279	0
+	+	278	0
+	+	281	0
+
+> ~/lab3/xv6edk2/xv6/trapc.
+	*	1714649303	0
+	"	1	0
 
 > ~/lab3/xv6edk2/xv6/sysproc.c
-	*	1714632289	0
-	"	29	31
-	^	29	32
-	.	29	31
-	+	32	60
+	*	1714639684	0
+	"	29	10
+	.	29	0
+	+	29	60
 	+	28	13
-	+	32	60
+	+	29	60
 	+	28	9
 	+	28	0
 	+	28	16
@@ -1179,93 +1248,86 @@ $
 	+	28	0
 	+	28	23
 	+	27	58
-	+	33	22
+	+	30	22
 	+	29	3
 	+	28	30
-	+	31	2
-	+	31	3
-	+	32	57
+	+	29	75
+	+	29	76
+	+	29	57
 	+	29	59
-	+	32	60
-	+	33	0
-	+	32	14
-	+	33	0
+	+	29	60
+	+	30	0
+	+	29	14
+	+	30	0
 	+	29	33
 	+	27	0
-	+	32	28
+	+	29	28
 	+	29	31
+	+	29	95
+	+	29	3
+	+	29	44
+	+	29	63
+	+	29	74
+	+	29	0
+	+	29	4
+	+	31	3
+	+	31	43
+	+	29	3
+	+	31	0
+	+	29	0
+
+> ~/lab3/xv6edk2/xv6/turead.c
+	*	1714639498	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/sysproc.
+	*	1714635141	0
+	"	1	0
+
+> /usr/share/vim/vim82/doc/help.txt
+	*	1714635044	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/lapic.c
+	*	1714634528	0
+	"	69	15
+
+> ~/lab3/xv6edk2/xv6/kernelmemfs
+	*	1714633739	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/Makefile
+	*	1714633436	0
+	"	197	0
+	.	197	0
+	+	166	0
+	+	196	9
+	+	163	0
+	+	197	0
+	+	272	11
+	+	197	0
+
+> ~/lab3/xv6edk2/run.sh
+	*	1714633269	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/modified_uthread.c
+	*	1714633126	0
+	"	24	19
+	^	35	0
+	.	32	15
+	+	92	46
+	+	29	71
+	+	29	0
+	+	29	15
+	+	56	1
+	+	29	0
+	+	35	0
+	+	32	15
 
 > ~/lab3/xv6edk2/xv6/uthread.
 	*	1714630413	0
 	"	1	0
-
-> ~/lab3/xv6edk2/xv6/trap.c
-	*	1714630408	0
-	"	108	33
-	^	63	6
-	.	63	5
-	+	54	56
-	+	70	0
-	+	62	49
-	+	67	0
-	+	66	0
-	+	75	39
-	+	21	0
-	+	19	57
-	+	17	11
-	+	20	0
-	+	66	18
-	+	43	50
-	+	47	33
-	+	20	38
-	+	74	0
-	+	66	86
-	+	66	14
-	+	66	48
-	+	12	0
-	+	10	18
-	+	12	32
-	+	10	18
-	+	72	7
-	+	67	1
-	+	19	1
-	+	20	1
-	+	66	1
-	+	66	0
-	+	66	1
-	+	67	1
-	+	19	0
-	+	20	0
-	+	18	0
-	+	66	0
-	+	66	1
-	+	66	0
-	+	67	0
-	+	66	0
-	+	66	3
-	+	66	4
-	+	66	41
-	+	66	56
-	+	66	0
-	+	67	0
-	+	66	0
-	+	20	0
-	+	21	3
-	+	20	55
-	+	11	40
-	+	20	65
-	+	20	0
-	+	64	3
-	+	65	3
-	+	64	3
-	+	62	3
-	+	64	1
-	+	65	1
-	+	66	1
-	+	62	9
-	+	62	45
-	+	62	0
-	+	63	5
 
 > ~/lab3/xv6edk2/xv6/uthread
 	*	1714630210	0
@@ -1305,13 +1367,6 @@ $
 	*	1714621013	0
 	"	1	0
 
-> ~/lab3/xv6edk2/xv6/proc.h
-	*	1714620713	0
-	"	58	9
-	^	53	17
-	.	53	16
-	+	53	16
-
 > ~/lab3/xv6edk2/trap.c
 	*	1714620683	0
 	"	1	0
@@ -1319,43 +1374,6 @@ $
 > ~/lab3/xv6edk2/xv6/t
 	*	1714568885	0
 	"	1	0
-
-> ~/lab3/xv6edk2/run.sh
-	*	1714568204	0
-	"	1	0
-
-> ~/lab3/xv6edk2/xv6/uthread_switch.S
-	*	1714567931	0
-	"	5	1
-	^	14	102
-	.	5	0
-	+	1	6
-	+	18	42
-	+	3	0
-	+	16	0
-	+	7	9
-	+	16	9
-	+	17	12
-	+	16	25
-	+	6	39
-	+	16	37
-	+	16	0
-	+	8	68
-	+	9	59
-	+	11	36
-	+	12	31
-	+	7	9
-	+	7	8
-	+	7	12
-	+	17	8
-	+	16	11
-	+	18	23
-	+	7	0
-	+	6	6
-	+	17	0
-	+	16	5
-	+	14	99
-	+	5	0
 
 > ~/lab3_bak/xv6edk2/xv6/uthread.c
 	*	1714555941	0
@@ -1392,14 +1410,6 @@ $
 	*	1714549204	0
 	"	1	0
 
-> ~/lab3/xv6edk2/xv6/sysproc.
-	*	1714549201	0
-	"	1	0
-
-> /usr/share/vim/vim82/doc/help.txt
-	*	1714548523	0
-	"	1	0
-
 > ~/lab3/xv6edk2/xv6/usys.S
 	*	1714548335	0
 	"	34	20
@@ -1415,13 +1425,6 @@ $
 > ~/lab3/xv6edk2/xv6/thread.c
 	*	1714478621	0
 	"	1	0
-
-> ~/lab3/xv6edk2/xv6/user.h
-	*	1714476276	0
-	"	26	4
-	^	28	30
-	.	28	30
-	+	28	30
 
 > ~/lab3/xv6edk2/xv6/syscall.h
 	*	1714476194	0
@@ -1439,17 +1442,6 @@ $
 	*	1714474635	0
 	"	1	0
 
-> ~/lab3/xv6edk2/xv6/Makefile
-	*	1714474531	0
-	"	272	11
-	^	272	12
-	.	272	11
-	+	166	0
-	+	196	9
-	+	163	0
-	+	197	0
-	+	272	11
-
 > ~/lab2/xv6edk2/xv6/Makefile
 	*	1714474474	0
 	"	259	39
@@ -1457,20 +1449,6 @@ $
 > ~/lab2/xv6edk2/xv6/test.d
 	*	1714474417	0
 	"	1	0
-
-> ~/lab3/xv6edk2/xv6/modified_uthread.c
-	*	1714473672	0
-	"	32	15
-	^	35	0
-	.	32	15
-	+	92	46
-	+	29	71
-	+	29	0
-	+	29	15
-	+	56	1
-	+	29	0
-	+	35	0
-	+	32	15
 
 > ~/trap.c
 	*	1714466147	0
@@ -2166,31 +2144,3 @@ $
 	.	24	18
 	+	24	0
 	+	24	18
-
-> ~/lab1.bak/xv6edk2/xv6/defs.h
-	*	1712487783	0
-	"	192	0
-	^	125	0
-	.	124	23
-	+	123	0
-	+	124	23
-
-> ~/lab1.bak/xv6edk2/xv6/vm.c
-	*	1712486682	0
-	"	396	0
-
-> ~/os-lab2-public/xv6edk2/xv6/user.h
-	*	1712485021	0
-	"	5	0
-
-> ~/os-lab2-public/xv6edk2/xv6/syscall.h
-	*	1712485011	0
-	"	1	0
-
-> ~/os-lab2-public/xv6edk2/xv6/syscall.c
-	*	1712485006	0
-	"	141	15
-
-> ~/os-lab2-public/xv6edk2/xv6/defs.h
-	*	1712484987	0
-	"	14	0

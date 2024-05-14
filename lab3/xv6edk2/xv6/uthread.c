@@ -23,9 +23,9 @@ thread_p  current_thread;
 thread_p  next_thread;
 extern void thread_switch(void);
 
-void testFunc(void){
-	printf(2, "test");
-}
+//void testFunc(void){
+//	printf(2, "test");
+//}
 
 static void 
 thread_schedule(void)
@@ -64,14 +64,8 @@ thread_init(void)
   current_thread = &all_thread[0];
   current_thread->state = RUNNING;
 
-  //void (*funcPtr)() = thread_schedule; 
-  //printf(1, "ptr is %p\n", funcPtr);
-  //unsigned int a = (unsigned int)funcPtr;
-  //int a = (int)funcPtr;
-  //printf(1, "a is %d\n", a);
-  //uthread_init(a); //***********modified. new system call.$a
-  printf(2, "modified a is %d", (unsigned int)thread_schedule);
-  uthread_init((unsigned int)thread_schedule); //***********modified. new system call.
+  //uthread_init((unsigned int)thread_schedule); //PART2에선 주석 해제해야 하지만
+  //PART1 수행을 위해 주석 처리해놓았습니다.
 }
 
 
@@ -104,7 +98,8 @@ mythread(void)
   printf(1, "my thread running\n");
   for (i = 0; i < 100; i++) {
     printf(1, "my thread 0x%x\n", (int) current_thread);
-    //thread_yield(); *************** modified.
+    thread_yield(); //PART2에선 주석처리 해야하지만
+		    //PART1 수행을 위해 주석 해제했습니다.
   }
   printf(1, "my thread: exit\n");
   current_thread->state = FREE;

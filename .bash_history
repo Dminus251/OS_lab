@@ -1,401 +1,3 @@
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-vi s
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-clear
-./scheduler.py -c -p RR -l 3,2,1
-cd homework1/
-ls
-vi scheduler.py
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-vi scheduler.py
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-claer
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-claer
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clera
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-clear
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-clear
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-ls
-cp scheduler.py scheduler.py_before_editing_arrival_time
-clear
-vi scheduler.py
-ls
-cp scheduler.py_before_editing_arrival_time scheduler.py
-clear
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 3,2,1
-clear
-./scheduler.py -c -p RR, -l 10,1,1 -a 1,2,3
-clear
-vi scheduler.py
-./scheduler.py -c -p RR, -l 10,1,1 -a 1,2,3
-vi scheduler.py
-cat origin.py | tail 5
-cat origin.py | tail -20
-vi scheduler.py
-./scheduler.py -c -p RR, -l 10,1,1 -a 1,2,3
-clear
-./scheduler.py -c -p RR, -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -c -p RR, -l 10,1,1 -a 1,2,3
-vi scheduler.py
-vi origin.py 
-vi scheduler.py
-./scheduler.py -c -p RR, -l 10,1,1 -a 1,2,3
-clear
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-./scheduler.py -p RR -c -a 3,2,1
-./scheduler.py -p RR -c -l 3,2,1
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-LS
-ls
-rm scheduler.py_before_editing_arrival_time 
-cp scheduler.py scheduler.py_bak
-clear
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 3,2,1
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-claer
-clear
-./scheduler.py -p RR -c -l 3,2,1
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-vi origin.py 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-visudo 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi 
-vi scheduler.py
-clear
-vi 
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-./scheduler.py -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-ls
-vi test.txt 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-vi test.txt 
-vi scheduler.py
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-ls
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-vi 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi scheduler.py
-vi test.txt 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 0,3,2 -a 2,4,5 > test.txt
-vi test.txt 
-vi scheduler.py
-ls
-vi .gitignore
-vi .git
-vi .gitignore 
-clear
-git add .
-git commit -m "modify .gitignore"
-git remote
-git push origin main
-clear
-ls
-cd homework1/
-ls
-vi scheduler.py
-clear
-./origin.py -c -l 1,2,3
-./scheduler.py -c -l 1,2,3
-./origin.py -c -l 1,2,3 -p RR
-./scheduler.py -c -l 1,2,3 -p RR
-vi scheduler.py
-clear
-./scheduler.py -c -l 1,2,3 -p RR
-./origin.py -c -l 1,2,3 -p RR
-vi scheduler.py
-clear
-./origin.py -c -l 1,2,3 -p RR
-./scheduler.py -c -l 1,2,3 -p RR
-vi scheduler.py
-clear
-./scheduler.py -c -l 1,2,3 -p RR
-./origin.py -c -l 1,2,3 -p RR
-./scheduler.py -c -l 1,2,3 -p RR -a 1,2,3
-./scheduler.py -c -l 1,2,3 -p RR -a 1,2,4
-./scheduler.py -c -l 1,2,3 -p RR 
-./scheduler.py -c -l 1,2,3 -p RR -a 0,0,0
-./scheduler.py -c -l 1,2,3 -p RR -a 0,0,1
-vi scheduler.py
-./scheduler.py -c -l 1,2,3 -p RR -a 0,0,1
-clear
-./scheduler.py -c -l 1,2,3 -p RR -a 1,2,3
-./scheduler.py -c -l 0,3,2 -p RR -a 2,4,5
-clear
-./scheduler.py -c -l 0,3,2 -p RR -a 2,4,5
-./scheduler.py -c -l 10,1,1 -a 1,2,3
-clear
-./scheduler.py -c -l 10,1,1 -a 1,2,3 -p RR
-./scheduler.py -c -l 10,1,1 -p RR
-./origin.py -c -l 10,1,1 -p RR
-./scheduler.py -c -l 10,1,1 -p RR
-vi scheduler.py
-clear
-vi scheduler.py
-vi origin.py 
-vi scheduler.py
-clear
-./origin.py -p RR -c
-./scheduler.py -c -p RR
-vi scheduler.py
-clear
-./scheduler.py -c -p RR
-vi scheduler.py
-./scheduler.py -c -p RR
-vi scheduler.py
-clear
-./scheduler.py -c -p RR
-./origin.py -p RR -c
-./scheduler.py -c -p RR
-vi scheduler.py
-./scheduler.py -c -p RR
-clear
-./scheduler.py -c -p RR
-./origin.py -p RR -c
-./scheduler.py -c -p RR
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-clear
-./scheduler.py -c -p RR -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-ls
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-cp scheduler.py scheduler.py.bak_RR 
-rm scheduler.py_bak 
-clear
-ls
-rm scheduler.py.bak_FIFO 
-clear
-ls
-rm scheduler.py.bak
-clear
-ls
-vi scheduler.py
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-vi scheduler.py
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-./scheduler.py -c -p RR -l 0,3,2 -a 2,4,5
-vi scheduler.py
-clear
-./scheduler.py -c -p RR -l 0,3,2 -a 2,4,5
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3
-./scheduler.py -c -p RR -l 0,3,2 -a 2,4,5
-clear
-vi scheduler.py
-vi origin.py 
-clear
-./scheduler.py -c -p SJF
-./origin.py -c -p SJF
-clear
 ./origin.py -c -p SJF -a 1,2,3
 ./scheduler.py -c -p SJF -a 1,2,3
 ./scheduler.py -c -p SJF -a 1,2,3 -l 0,1,2
@@ -1998,3 +1600,401 @@ make kernelmemfs
 cp kernelmemfs ../image/kernel 
 cd ../
 ./run.sh 
+cd lab3/
+cd xv6edk2/xv6/
+vi uthread.c
+make kernelmemfs 
+vi uthread.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi utrhead.c
+vi uthread.c
+make kernelmemfs 
+vi uthread.c
+make kernelmemfs 
+cp kernelmemfs
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi uthreadf.c
+vi uthread.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi uthread.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi uthread.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi uthread.c
+vi uthread
+vi uthread.c
+vi trap.c
+vi uthread.
+vi uthread.c
+make kernelmemfs e
+make kernelmemfs
+vi uthread.c
+clear
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi uthread.c
+make kernelmemfs 
+vi uthread.c
+make kernelmemfs 
+clear
+cp kernelmemfs ../image/kernel e
+cp kernelmemfs ../image/kernel
+CD ../
+cd ../
+./run.sh 
+cd xv6/
+vi uthread.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd. ./
+cd ../
+./run.sh 
+cd xv6/
+vi uthread.c
+make kernelmemfs 
+vi uthread.c
+make kernelmemfs 
+vi uthread.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi uthread.c
+make kernelmemfs 
+vi uthread.c
+make kernelmemfs 
+clear
+vi uthread.c
+make kernelmemfs 
+vi sysproc.c
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi uthread.c
+make kernelmemfs 
+vi uthread.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi uthread.c
+clear
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi uthread.c
+clear
+vi sysproc.c
+vi proc.c
+cd ../
+./run.sh 
+cd xv6/
+CLEAR
+lcear
+clear
+vi sysproc.c
+vi proc.c
+vi sysproc.c
+vi proc.c
+make kernelmemfs 
+vi proc.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./r
+./run.sh 
+cd xv6/
+vi proc.c
+vi sysproc.c
+clear
+vi proc.c
+make kernelmemfs 
+vi uthread.c
+vi proc.c
+make kernelmemfs 
+vi proc.c
+clear
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd ~
+cd git add .
+clear
+git add .
+git commit -m "lab3 최신화"
+git push origin main
+cd lab3/xv6edk2/
+ls
+cd xv6/
+vi trap.c
+vi proc.c
+vi trap.c
+make kernelmemfs 
+vi trap.c
+make kernelmemfs 
+cp kernelmemfs
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi trap.c
+make kernelmemfs 
+vi trap.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+clear
+mv uthread.c modified_uthread.c
+vi uthread.c
+vi Makefile 
+make kernelmemfs 
+vi modified_uthread.c
+rm uthread.c
+mv modified_uthread.c uthread.c
+clear
+vi trap.c
+make kernelmemfs 
+cd ../image/ke
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+clear
+vi run.sh 
+qemu-system-x86_64 -bios /usr/share/ovmf/OVMF.fd         -drive if=ide,file=fat:rw:image,index=0,media=disk         -m 2048 -smp 1          -serial mon:stdio         -vga std
+cd xv6/
+clear
+vi trap.c
+make kernelmemfs 
+vi Makefile 
+CLEAR
+clear
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi kernelmemfs
+vi trap.c
+vi uthread.c
+vi kernelmemfs
+vi trap.c
+vi proc.c
+vi trap.c
+vi uthread.c
+vi lapic.c
+vi trap.c
+vi uthread.c
+vi proc.h
+vi uthread.c
+clear
+vi sysproc.
+vi sysproc.c
+vi proc.c
+vi trap.c
+cd lab3/xv6edk2/xv6/
+ls
+clear
+vi proc.c
+vi sysproc.c
+vi proc.c
+vi trap.c
+make kernelmemfs 
+vi trap.c
+make kernelmemfs 
+clear
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi trap.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+clear
+vi trap.c
+make kernelmemfs
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+clear
+cd xv6/
+vi trap.c
+clear
+make kernelmemfs
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi trap.c
+clear
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+clear
+cd xv6/
+vi turead.c
+vi uthread.c
+vi sysproc.c
+vi proc.c
+vi trap.c
+make kernelmemfs
+vi trap.c
+vi trapc.
+vi trap.c
+make kernelmemfs 
+vi trap.c
+clear
+make kernelmemfs 
+vi trap.c
+make kernelmemfs 
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+ls
+cd lab3/xv6edk2/
+cd xv6/
+vi trap.c
+make kernelmemfs
+vi trap.c
+make kernelmemfs
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi trap.c
+vi proc.c
+vi trap.c
+vi proc.h
+make kernelmemfs
+vi proc.c
+vi trap.c
+make kernelmemfs
+make kernelmemfs 
+vi trap.c
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi trap.c
+vi proc.c
+vi trapc.
+vi trap.c
+make kernelmemfs
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi trap.c
+make kernelmemfs
+vi trap.c
+make kernelmemfs
+vi trap.c
+make kernelmemfs
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+cd xv6/
+vi trap.c
+vi proc.c
+vi uthread.c
+ls
+make kernelmemfs 
+cd ../
+./run.sh 
+cd xv6/
+vi trap.c
+vi uthread.c
+make kernelmemfs
+cp kernelmemfs ../image/kernel 
+cd ../
+./r
+CLEAR
+clear
+ls
+cd ./r
+./run.sh 
+ls
+cd lab3/xv6edk2/
+cd xv6/
+vi user.h
+vi proc.h
+vi uthread_switch.S 
+ls
+ifconfig
+ls
+mkdir homework2
+git clone https://github.com/remzi-arpacidusseau/ostep-homework.git
+ls
+mv -r ostep-homework/ homework2
+mv -d ostep-homework/ homework2
+mv ostep-homework/ homework2
+ls
+cd homework2/
+ls
+clear
+cd ostep-homework/
+ls
+mv vm-beyondphys-policy/ ../
+cd ../
+ls
+rm -rf ostep-homework/
+cd vm-beyondphys-policy/
+ls
+vi README.md 
+clear
+ls
+mv paging-policy.py  ../
+cd. ./
+ls
+CD ../
+cd ../
+clear
+ls
+rm -rf vm-beyondphys-policy/
+clear
+vi paging-policy.py 
+clear
+vi paging-policy.py 
+clear
+./paging-policy.py 
+clear
+vi paging-policy.py 
+clear
+vi paging-policy.py 
+clear
+./paging-policy.py 
+./ -c
+./paging-policy.py -c

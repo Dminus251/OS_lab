@@ -60,14 +60,14 @@ trap(struct trapframe *tf)
     }
     lapiceoi();
 //******************   new code   ****************
-    //cprintf("****address of scheduler is %d", myproc()->scheduler);
-//    uint address = (uint)myproc()->scheduler; //************* modified
-//    scheduler_func func = (scheduler_func)(uintptr_t)address; //********* modified
-//    func(); 
+//PART 1 수행을 위해 해당 내용들을 주석처리 해놓았습니다.
+//    if (myproc() && myproc()->state == RUNNING){ 
+//      unsigned int address = myproc()->scheduler; //*********** modified
+//      void (*func)(void); //함수 포인터 선언
+//      func = (void (*)())address; //thread_schedule()의 주소를 함수 포인터에 할당
+//    func(); //thread_schedule() 함수 실행
+//    }
 //******************   new code   ****************
-
-
-
     break;
        
   case T_IRQ0 + IRQ_IDE:
