@@ -1,7 +1,3 @@
-./origin.py -c -p SJF -a 1,2,3
-./scheduler.py -c -p SJF -a 1,2,3
-./scheduler.py -c -p SJF -a 1,2,3 -l 0,1,2
-clear
 ./scheduler.py -c -p SJF -a 1,2,3 -l 0,1,2
 ./scheduler.py -c -p SJF -a 10,1,1 -l 1,2,3
 ./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
@@ -1998,3 +1994,7 @@ clear
 ./paging-policy.py 
 ./ -c
 ./paging-policy.py -c
+clear
+ls
+cd homework2/
+ls

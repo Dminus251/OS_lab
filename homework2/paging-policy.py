@@ -129,7 +129,7 @@ if options.solve == False:
     print('')
 
 else:
-    if notrace == False:
+    if notrace == False: # -N옵션 True인 경우
         print('Solving...\n')
 
     # init memory structure
@@ -161,18 +161,26 @@ else:
 
     # need to generate addresses
     addrIndex = 0
+    A = [] #access bit
+    #페이지가 참조되면 Access bit를 1로 바꾼다.
     for nStr in addrList:
         # first, lookup
         n = int(nStr)
 ###################################################
 #Cache에서 찾는 부분#############
-        try:
+        try: #cache hit
             idx = memory.index(n)
+
             hits = hits + 1
             if policy == 'LRU' or policy == 'MRU':
                 update = memory.remove(n)
                 memory.append(n) # puts it on MRU side
-        except:
+
+            if policy == 'FIFO':
+                # hit인 경우 참조했다는 뜻이니 1로 바꿈
+                A[idx] = 1
+
+        except: #cache miss
             idx = -1
             miss = miss + 1
 
@@ -182,10 +190,39 @@ else:
             # print('BUG count, cachesize:', count, cachesize)
             #########################################################
             #Victim 결정하는 부분
-            if count == cachesize:
+            if count == cachesize: #페이지 캐시가 가득 찬 경우.
                 # must replace
-                if policy == 'FIFO' or policy == 'LRU':
+                if policy == 'LRU':
                     victim = memory.pop(0)
+
+                elif policy == 'FIFO': #FIFO with second chance
+                    '''
+                    Rule 1.
+                        candidate의 A = 1이면 A = 0으로 하고
+                        다시 candidate 선정
+                    Rule 2.
+                        Candidate의 A = 0이면 victim으로 선정
+                    Rule 3.
+                        A = 0인 page가 없으면 전체 페이지 중 first-in을
+                        victim으로 선정
+                    '''
+                    flag = 0 
+                    for i in range(len(A)):
+                        if A[i] == 1:
+                            A[i] = 0
+                        else: #A[i] == 0
+                            victim = memory.pop(i)
+                            A.pop(i)
+                            #memory = [1, 7, 8]이고 i = 2이면
+                            #memory[2]인 8을 victim으로 선정 
+                            flag = 1
+                            break 
+                    # A = 0인 page가 없는 경우
+                    if flag == 0:
+                        victim = memory.pop(0)
+                        A.pop(i)
+
+
                 elif policy == 'MRU':
                     victim = memory.pop(count-1)
                 elif policy == 'RAND':
@@ -271,7 +308,10 @@ else:
                 count = count + 1
 
             # now add to memory
+            #replace 끝내고 메모리에 append 함
             memory.append(n)
+            A.append(0)
+
             if cdebug:
                 print('LEN (a)', len(memory))
             if victim != -1:

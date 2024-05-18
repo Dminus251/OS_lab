@@ -11,22 +11,38 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/cachesize
+~MSle0~/else는
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1715674459,,"q"
-:wq
-|2,0,1715674128,,"wq"
-:w
-|2,0,1715674025,,"w"
 :q!
-|2,0,1715673874,,"q!"
+|2,0,1715689555,,"q!"
+:180
+|2,0,1715689532,,"180"
+:wq
+|2,0,1715689530,,"wq"
 :set nu
-|2,0,1715671776,,"set nu"
+|2,0,1715689480,,"set nu"
+:q
+|2,0,1715687640,,"q"
+:Wq
+|2,0,1715687503,,"Wq"
+:317
+|2,0,1715686467,,"317"
+:Q
+|2,0,1715686439,,"Q"
+:295
+|2,0,1715686427,,"295"
+:168
+|2,0,1715684862,,"168"
+:290
+|2,0,1715684240,,"290"
+:w
+|2,0,1715683915,,"w"
+:268
+|2,0,1715683760,,"268"
 :ㅈㅂ
 |2,0,1714650727,,"ㅈㅂ"
 :66
@@ -39,16 +55,12 @@ $
 |2,0,1714639683,,"'<,'>wq"
 :'<
 |2,0,1714639619,,"'<"
-:Q
-|2,0,1714633596,,"Q"
 :Set nu
 |2,0,1714633126,,"Set nu"
 :47
 |2,0,1714631438,,"47"
 :68
 |2,0,1714630924,,"68"
-:Wq
-|2,0,1714630629,,"Wq"
 :'<,'>q!
 |2,0,1714629621,,"'<,'>q!"
 :'<,'>q
@@ -81,8 +93,6 @@ $
 |2,0,1713334422,,"'<,'>::Q"
 :!
 |2,0,1713332196,,"!"
-:168
-|2,0,1713331893,,"168"
 :218
 |2,0,1713269877,,"218"
 :218]
@@ -113,8 +123,6 @@ $
 |2,0,1712993560,,"192"
 :set nui
 |2,0,1712984144,,"set nui"
-:180
-|2,0,1712983341,,"180"
 :200
 |2,0,1712983336,,"200"
 :206
@@ -191,16 +199,62 @@ $
 |2,0,1711949580,,"147"
 
 # Search String History (newest to oldest):
+?/else는
+|2,1,1715689541,47,"else는"
+?/line
+|2,1,1715689539,47,"line"
+?/'\n'
+|2,1,1715689002,47,"'\\n'"
+?/\n
+|2,1,1715688990,47,"\\n"
+?/A
+|2,1,1715687614,47,"A"
+?/Access
+|2,1,1715687596,47,"Access"
+?/bit
+|2,1,1715687582,47,"bit"
+?/print
+|2,1,1715687466,47,"print"
+?/fla
+|2,1,1715686598,47,"fla"
+?/caches
+|2,1,1715686503,47,"caches"
 ?/cachesize
-|2,1,1715671881,47,"cachesize"
+|2,1,1715685248,47,"cachesize"
+?/168
+|2,1,1715684861,47,"168"
+?/addreses
+|2,1,1715684854,47,"addreses"
+?/addrList
+|2,1,1715684836,47,"addrList"
+?/##
+|2,1,1715684710,47,"##"
+?/size
+|2,1,1715684689,47,"size"
+?/count
+|2,1,1715683744,47,"count"
+?/default
+|2,1,1715683368,47,"default"
+?/deafult
+|2,1,1715683366,47,"deafult"
+? :
+|2,1,1715683213,,":"
+?/memory
+|2,1,1715682784,47,"memory"
+?/numaddrs
+|2,1,1715682750,47,"numaddrs"
+?/notrace
+|2,1,1715682404,47,"notrace"
+?/-n
+|2,1,1715682398,47,"-n"
+?/solve
+|2,1,1715682279,47,"solve"
 ?/LRU
 |2,1,1715671829,47,"LRU"
 ?/yield
 |2,1,1714650667,47,"yield"
 ?/struct
 |2,1,1714648952,47,"struct"
-?/print
-|2,1,1714639102,47,"print"
 ?/modified
 |2,1,1714635058,47,"modified"
 ?/1000000
@@ -545,52 +599,6 @@ $
 |2,1,1712304458,47,"fs.img"
 ?/ACTIVE_PLATFORM
 |2,1,1712303812,47,"ACTIVE_PLATFORM"
-?/Env
-|2,1,1712303756,47,"Env"
-?/ustack
-|2,1,1712302669,47,"ustack"
-?/argv[argc]
-|2,1,1712302660,47,"argv[argc]"
-?/new
-|2,1,1712301634,47,"new"
-?/allocproc
-|2,1,1712298641,47,"allocproc"
-?/mycpu
-|2,1,1712298619,47,"mycpu"
-?/allo
-|2,1,1712298612,47,"allo"
-?/calls
-|2,1,1712296568,47,"calls"
-?/call
-|2,1,1712296447,47,"call"
-?/proc
-|2,1,1712295249,47,"proc"
-?/exit2:q
-|2,1,1712294100,47,"exit2:q"
-?/:q
-|2,1,1712293250,47,":q"
-?/syscall
-|2,1,1712291881,47,"syscall"
-? \<21\>
-|2,1,1712291716,,"\\<21\\>"
-?/syscalls
-|2,1,1712223370,47,"syscalls"
-?/fetch
-|2,1,1712222587,47,"fetch"
-?/int
-|2,1,1712222582,47,"int"
-?/frame
-|2,1,1712222434,47,"frame"
-?/.h
-|2,1,1712221350,47,".h"
-?/./
-|2,1,1712221347,47,"./"
-?/sys_
-|2,1,1712220170,47,"sys_"
-?/SYS
-|2,1,1712220023,47,"SYS"
-?/struct proc
-|2,1,1712217773,47,"struct proc"
 
 # Expression History (newest to oldest):
 
@@ -600,282 +608,271 @@ $
 
 # Registers:
 "0	LINE	0
-	    cprintf("hello world");							   
-|3,0,0,1,1,0,1714633224,"    cprintf(\"hello world\");							   "
+	            #memory = [1, 7, 8]이고 n = 7이면 idx = 1
+|3,0,0,1,1,0,1715685186,"            #memory = [1, 7, 8]이고 n = 7이면 idx = 1"
 ""1	LINE	0
-	# -s: 랜덤 시드값 설정. default: 0
-|3,1,1,1,1,0,1715674047,"# -s: 랜덤 시드값 설정. default: 0"
+	                            #memory = [1, 7, 8]이고 i = 2이면
+	                            #memory[2]인 8을 victim으로 선정 
+|3,1,1,1,2,0,1715689552,"                            #memory = [1, 7, 8]이고 i = 2이면","                            #memory[2]인 8을 victim으로 선정 "
 "2	LINE	0
-	1486
-<# -p: policy. default: FIFO, 다음 중 선택: FIFO, LRU, OPT, UNOPT, RAND, CLOCK parser.add_option('-p', '--policy', default='FIFO',    help='replacement policy: FIFO, LRU, OPT, UNOPT, RAND, CLOCK',                action='store', type='string', dest='policy') parser.add_option('-b', '--clockbits', default=2,      help='for CLOCK policy, how many clock bits to use',                          action='store', type='int', dest='clockbits') parser.add_option('-C', '--cachesize', default='3',    help='size of the page cache, in pages',                                      action='store', type='string', dest='cachesize') parser.add_option('-m', '--maxpage', default='10',     help='if randomly generating page accesses, this is the max page number',     action='store', type='string', dest='maxpage') parser.add_option('-s', '--seed', default='0',         help='random number seed',                                                    action='store', type='string', dest='seed') parser.add_option('-N', '--notrace', default=False,    help='do not print out a detailed trace',                                     action='store_true', dest='notrace') parser.add_option('-c', '--compute', default=False,    help='compute answers for me',                                                action='store_true', dest='solve') (options, args) = parser.parse_args() print('ARG addresses', options.addresses) print('ARG addressfile', options.addressfile) print('ARG numaddrs', options.numaddrs)
-|3,0,2,1,1,0,1715673866,>1485
-|<"# -p: policy. default: FIFO, 다음 중 선택: FIFO, LRU, OPT, UNOPT, RAND, CLOCK parser.add_option('-p', '--policy', default='FIFO',    help='replacement policy: FIFO, LRU, OPT, UNOPT, RAND, CLOCK',                action='store', type='string', dest='policy') parser.add_option('-b', '--clockbits', default=2,      help='for CLOCK policy, how many clock bits to use',                          action='store', type='int', dest='clockbits') parser.add_option('-C', '--cachesize', default='3
-|<',    help='size of the page cache, in pages',                                      action='store', type='string', dest='cachesize') parser.add_option('-m', '--maxpage', default='10',     help='if randomly generating page accesses, this is the max page number',     action='store', type='string', dest='maxpage') parser.add_option('-s', '--seed', default='0',         help='random number seed',                                                    action='store', type='string', dest='seed') 
-|<parser.add_option('-N', '--notrace', default=False,    help='do not print out a detailed trace',                                     action='store_true', dest='notrace') parser.add_option('-c', '--compute', default=False,    help='compute answers for me',                                                action='store_true', dest='solve') (options, args) = parser.parse_args() print('ARG addresses', options.addresses) print('ARG addressfile', options.addressfile) print('ARG numaddrs', opti
-|<ons.numaddrs)"
+	                ## 캐시 미스지만 replace할 필요가 없음
+|3,0,2,1,1,0,1715689523,"                ## 캐시 미스지만 replace할 필요가 없음"
 "3	LINE	0
-	    cprintf("%d", address);
-|3,0,3,1,1,0,1714649714,"    cprintf(\"%d\", address);"
+	                # else는 line 285, 여기서 count 증가시키고 메모리 appnend함
+|3,0,3,1,1,0,1715689509,"                # else는 line 285, 여기서 count 증가시키고 메모리 appnend함"
 "4	LINE	0
-	    scheduler_func func = (scheduler_func)(uintptr_t)func; //********* modified
-|3,0,4,1,1,0,1714649514,"    scheduler_func func = (scheduler_func)(uintptr_t)func; //********* modified"
+	            #memory = [1, 7, 8]이고 n = 7이면 idx = 1
+|3,0,4,1,1,0,1715689504,"            #memory = [1, 7, 8]이고 n = 7이면 idx = 1"
 "5	LINE	0
-	    //func();
-|3,0,5,1,1,0,1714649484,"    //func();"
+	            print('Access bit is:', A)
+|3,0,5,1,1,0,1715689009,"            print('Access bit is:', A)"
 "6	LINE	0
-	    //scheduler_func func = (scheduler_func)(uintptr_t)func; //********* modified
-|3,0,6,1,1,0,1714649481,"    //scheduler_func func = (scheduler_func)(uintptr_t)func; //********* modified"
+	            print('\n')
+|3,0,6,1,1,0,1715689007,"            print('\\n')"
 "7	LINE	0
-	    //func = (void (*)())address;
-|3,0,7,1,1,0,1714649478,"    //func = (void (*)())address;"
+	    #A = [0 for i in range(options.cachesize)] #Access bit.
+|3,0,7,1,1,0,1715687602,"    #A = [0 for i in range(options.cachesize)] #Access bit."
 "8	LINE	0
-	    //unsigned int address = myproc()->scheduler; //************* modified
-|3,0,8,1,1,0,1714649474,"    //unsigned int address = myproc()->scheduler; //************* modified"
+	            print('\n')
+|3,0,8,1,1,0,1715687572,"            print('\\n')"
 "9	LINE	0
-	    struct
-|3,0,9,1,1,0,1714649211,"    struct"
+	                A.append(0)
+|3,0,9,1,1,0,1715686442,"                A.append(0)"
 "-	CHAR	0
-	 
-|3,0,36,0,1,0,1715673927," "
+	e
+|3,0,36,0,1,0,1715686600,"e"
 
 # File marks:
-'0  79  29  ~/homework2/paging-policy.py
-|4,48,79,29,1715674459,"~/homework2/paging-policy.py"
-'1  79  29  ~/homework2/paging-policy.py
-|4,49,79,29,1715674128,"~/homework2/paging-policy.py"
-'2  80  0  ~/homework2/paging-policy.py
-|4,50,80,0,1715673874,"~/homework2/paging-policy.py"
-'3  58  0  ~/homework2/paging-policy.py
-|4,51,58,0,1715673874,"~/homework2/paging-policy.py"
-'4  80  0  ~/homework2/paging-policy.py
-|4,52,80,0,1715673874,"~/homework2/paging-policy.py"
-'5  58  0  ~/homework2/paging-policy.py
-|4,53,58,0,1715673874,"~/homework2/paging-policy.py"
-'6  151  13  ~/homework2/paging-policy.py
-|4,54,151,13,1715671966,"~/homework2/paging-policy.py"
-'7  158  13  ~/homework2/paging-policy.py
-|4,55,158,13,1715671966,"~/homework2/paging-policy.py"
-'8  129  13  ~/homework2/paging-policy.py
-|4,56,129,13,1715671966,"~/homework2/paging-policy.py"
-'9  136  13  ~/homework2/paging-policy.py
-|4,57,136,13,1715671966,"~/homework2/paging-policy.py"
+'0  224  28  ~/homework2/paging-policy.py
+|4,48,224,28,1715689555,"~/homework2/paging-policy.py"
+'1  340  3  ~/homework2/paging-policy.py
+|4,49,340,3,1715689530,"~/homework2/paging-policy.py"
+'2  342  3  ~/homework2/paging-policy.py
+|4,50,342,3,1715689530,"~/homework2/paging-policy.py"
+'3  349  0  ~/homework2/test.py
+|4,51,349,0,1715689328,"~/homework2/test.py"
+'4  331  8  ~/homework2/paging-policy.py
+|4,52,331,8,1715689009,"~/homework2/paging-policy.py"
+'5  334  8  ~/homework2/paging-policy.py
+|4,53,334,8,1715689009,"~/homework2/paging-policy.py"
+'6  333  8  ~/homework2/paging-policy.py
+|4,54,333,8,1715689009,"~/homework2/paging-policy.py"
+'7  336  8  ~/homework2/paging-policy.py
+|4,55,336,8,1715689009,"~/homework2/paging-policy.py"
+'8  201  24  ~/homework2/paging-policy.py
+|4,56,201,24,1715687641,"~/homework2/paging-policy.py"
+'9  201  24  ~/homework2/paging-policy.py
+|4,57,201,24,1715687641,"~/homework2/paging-policy.py"
 
 # Jumplist (newest first):
--'  79  29  ~/homework2/paging-policy.py
-|4,39,79,29,1715674459,"~/homework2/paging-policy.py"
--'  79  29  ~/homework2/paging-policy.py
-|4,39,79,29,1715674128,"~/homework2/paging-policy.py"
--'  80  0  ~/homework2/paging-policy.py
-|4,39,80,0,1715673875,"~/homework2/paging-policy.py"
--'  80  0  ~/homework2/paging-policy.py
-|4,39,80,0,1715673875,"~/homework2/paging-policy.py"
--'  58  0  ~/homework2/paging-policy.py
-|4,39,58,0,1715673874,"~/homework2/paging-policy.py"
--'  58  0  ~/homework2/paging-policy.py
-|4,39,58,0,1715673874,"~/homework2/paging-policy.py"
--'  151  13  ~/homework2/paging-policy.py
-|4,39,151,13,1715673722,"~/homework2/paging-policy.py"
--'  129  13  ~/homework2/paging-policy.py
-|4,39,129,13,1715673722,"~/homework2/paging-policy.py"
--'  151  13  ~/homework2/paging-policy.py
-|4,39,151,13,1715673722,"~/homework2/paging-policy.py"
--'  129  13  ~/homework2/paging-policy.py
-|4,39,129,13,1715673722,"~/homework2/paging-policy.py"
--'  158  13  ~/homework2/paging-policy.py
-|4,39,158,13,1715671966,"~/homework2/paging-policy.py"
--'  136  13  ~/homework2/paging-policy.py
-|4,39,136,13,1715671966,"~/homework2/paging-policy.py"
--'  158  13  ~/homework2/paging-policy.py
-|4,39,158,13,1715671966,"~/homework2/paging-policy.py"
--'  136  13  ~/homework2/paging-policy.py
-|4,39,136,13,1715671966,"~/homework2/paging-policy.py"
--'  177  36  ~/homework2/paging-policy.py
-|4,39,177,36,1715671897,"~/homework2/paging-policy.py"
--'  184  36  ~/homework2/paging-policy.py
-|4,39,184,36,1715671897,"~/homework2/paging-policy.py"
--'  155  36  ~/homework2/paging-policy.py
-|4,39,155,36,1715671897,"~/homework2/paging-policy.py"
--'  162  36  ~/homework2/paging-policy.py
-|4,39,162,36,1715671897,"~/homework2/paging-policy.py"
--'  177  36  ~/homework2/paging-policy.py
-|4,39,177,36,1715671897,"~/homework2/paging-policy.py"
--'  184  36  ~/homework2/paging-policy.py
-|4,39,184,36,1715671897,"~/homework2/paging-policy.py"
--'  155  36  ~/homework2/paging-policy.py
-|4,39,155,36,1715671897,"~/homework2/paging-policy.py"
--'  162  36  ~/homework2/paging-policy.py
-|4,39,162,36,1715671897,"~/homework2/paging-policy.py"
--'  162  36  ~/homework2/paging-policy.py
-|4,39,162,36,1715671895,"~/homework2/paging-policy.py"
--'  175  52  ~/homework2/paging-policy.py
-|4,39,175,52,1715671881,"~/homework2/paging-policy.py"
--'  161  38  ~/homework2/paging-policy.py
-|4,39,161,38,1715671881,"~/homework2/paging-policy.py"
--'  182  52  ~/homework2/paging-policy.py
-|4,39,182,52,1715671881,"~/homework2/paging-policy.py"
--'  168  38  ~/homework2/paging-policy.py
-|4,39,168,38,1715671881,"~/homework2/paging-policy.py"
--'  153  52  ~/homework2/paging-policy.py
-|4,39,153,52,1715671881,"~/homework2/paging-policy.py"
--'  139  38  ~/homework2/paging-policy.py
-|4,39,139,38,1715671881,"~/homework2/paging-policy.py"
--'  160  52  ~/homework2/paging-policy.py
-|4,39,160,52,1715671881,"~/homework2/paging-policy.py"
--'  146  38  ~/homework2/paging-policy.py
-|4,39,146,38,1715671881,"~/homework2/paging-policy.py"
--'  175  52  ~/homework2/paging-policy.py
-|4,39,175,52,1715671881,"~/homework2/paging-policy.py"
--'  161  38  ~/homework2/paging-policy.py
-|4,39,161,38,1715671881,"~/homework2/paging-policy.py"
--'  182  52  ~/homework2/paging-policy.py
-|4,39,182,52,1715671881,"~/homework2/paging-policy.py"
--'  168  38  ~/homework2/paging-policy.py
-|4,39,168,38,1715671881,"~/homework2/paging-policy.py"
--'  153  52  ~/homework2/paging-policy.py
-|4,39,153,52,1715671881,"~/homework2/paging-policy.py"
--'  139  38  ~/homework2/paging-policy.py
-|4,39,139,38,1715671881,"~/homework2/paging-policy.py"
--'  160  52  ~/homework2/paging-policy.py
-|4,39,160,52,1715671881,"~/homework2/paging-policy.py"
--'  146  38  ~/homework2/paging-policy.py
-|4,39,146,38,1715671881,"~/homework2/paging-policy.py"
--'  160  52  ~/homework2/paging-policy.py
-|4,39,160,52,1715671881,"~/homework2/paging-policy.py"
--'  146  38  ~/homework2/paging-policy.py
-|4,39,146,38,1715671881,"~/homework2/paging-policy.py"
--'  141  19  ~/homework2/paging-policy.py
-|4,39,141,19,1715671848,"~/homework2/paging-policy.py"
--'  148  19  ~/homework2/paging-policy.py
-|4,39,148,19,1715671848,"~/homework2/paging-policy.py"
--'  119  19  ~/homework2/paging-policy.py
-|4,39,119,19,1715671848,"~/homework2/paging-policy.py"
--'  126  19  ~/homework2/paging-policy.py
-|4,39,126,19,1715671848,"~/homework2/paging-policy.py"
--'  141  19  ~/homework2/paging-policy.py
-|4,39,141,19,1715671848,"~/homework2/paging-policy.py"
--'  148  19  ~/homework2/paging-policy.py
-|4,39,148,19,1715671848,"~/homework2/paging-policy.py"
--'  119  19  ~/homework2/paging-policy.py
-|4,39,119,19,1715671848,"~/homework2/paging-policy.py"
--'  126  19  ~/homework2/paging-policy.py
-|4,39,126,19,1715671848,"~/homework2/paging-policy.py"
--'  126  19  ~/homework2/paging-policy.py
-|4,39,126,19,1715671848,"~/homework2/paging-policy.py"
--'  138  19  ~/homework2/paging-policy.py
-|4,39,138,19,1715671847,"~/homework2/paging-policy.py"
--'  145  19  ~/homework2/paging-policy.py
-|4,39,145,19,1715671847,"~/homework2/paging-policy.py"
--'  116  19  ~/homework2/paging-policy.py
-|4,39,116,19,1715671847,"~/homework2/paging-policy.py"
--'  123  19  ~/homework2/paging-policy.py
-|4,39,123,19,1715671847,"~/homework2/paging-policy.py"
--'  138  19  ~/homework2/paging-policy.py
-|4,39,138,19,1715671847,"~/homework2/paging-policy.py"
--'  145  19  ~/homework2/paging-policy.py
-|4,39,145,19,1715671847,"~/homework2/paging-policy.py"
--'  116  19  ~/homework2/paging-policy.py
-|4,39,116,19,1715671847,"~/homework2/paging-policy.py"
--'  123  19  ~/homework2/paging-policy.py
-|4,39,123,19,1715671847,"~/homework2/paging-policy.py"
--'  123  19  ~/homework2/paging-policy.py
-|4,39,123,19,1715671847,"~/homework2/paging-policy.py"
--'  137  20  ~/homework2/paging-policy.py
-|4,39,137,20,1715671846,"~/homework2/paging-policy.py"
--'  144  20  ~/homework2/paging-policy.py
-|4,39,144,20,1715671846,"~/homework2/paging-policy.py"
--'  115  20  ~/homework2/paging-policy.py
-|4,39,115,20,1715671846,"~/homework2/paging-policy.py"
--'  122  20  ~/homework2/paging-policy.py
-|4,39,122,20,1715671846,"~/homework2/paging-policy.py"
--'  137  20  ~/homework2/paging-policy.py
-|4,39,137,20,1715671846,"~/homework2/paging-policy.py"
--'  144  20  ~/homework2/paging-policy.py
-|4,39,144,20,1715671846,"~/homework2/paging-policy.py"
--'  115  20  ~/homework2/paging-policy.py
-|4,39,115,20,1715671846,"~/homework2/paging-policy.py"
--'  122  20  ~/homework2/paging-policy.py
-|4,39,122,20,1715671846,"~/homework2/paging-policy.py"
--'  122  20  ~/homework2/paging-policy.py
-|4,39,122,20,1715671846,"~/homework2/paging-policy.py"
--'  61  87  ~/homework2/paging-policy.py
-|4,39,61,87,1715671845,"~/homework2/paging-policy.py"
--'  52  87  ~/homework2/paging-policy.py
-|4,39,52,87,1715671845,"~/homework2/paging-policy.py"
--'  61  87  ~/homework2/paging-policy.py
-|4,39,61,87,1715671845,"~/homework2/paging-policy.py"
--'  52  87  ~/homework2/paging-policy.py
-|4,39,52,87,1715671845,"~/homework2/paging-policy.py"
--'  52  87  ~/homework2/paging-policy.py
-|4,39,52,87,1715671845,"~/homework2/paging-policy.py"
--'  180  50  ~/homework2/paging-policy.py
-|4,39,180,50,1715671844,"~/homework2/paging-policy.py"
--'  187  50  ~/homework2/paging-policy.py
-|4,39,187,50,1715671844,"~/homework2/paging-policy.py"
--'  165  50  ~/homework2/paging-policy.py
-|4,39,165,50,1715671844,"~/homework2/paging-policy.py"
--'  180  50  ~/homework2/paging-policy.py
-|4,39,180,50,1715671844,"~/homework2/paging-policy.py"
--'  187  50  ~/homework2/paging-policy.py
-|4,39,187,50,1715671844,"~/homework2/paging-policy.py"
--'  158  50  ~/homework2/paging-policy.py
-|4,39,158,50,1715671844,"~/homework2/paging-policy.py"
--'  165  50  ~/homework2/paging-policy.py
-|4,39,165,50,1715671844,"~/homework2/paging-policy.py"
--'  165  50  ~/homework2/paging-policy.py
-|4,39,165,50,1715671844,"~/homework2/paging-policy.py"
--'  172  26  ~/homework2/paging-policy.py
-|4,39,172,26,1715671840,"~/homework2/paging-policy.py"
--'  143  26  ~/homework2/paging-policy.py
-|4,39,143,26,1715671840,"~/homework2/paging-policy.py"
--'  150  26  ~/homework2/paging-policy.py
-|4,39,150,26,1715671840,"~/homework2/paging-policy.py"
--'  165  26  ~/homework2/paging-policy.py
-|4,39,165,26,1715671840,"~/homework2/paging-policy.py"
--'  172  26  ~/homework2/paging-policy.py
-|4,39,172,26,1715671840,"~/homework2/paging-policy.py"
--'  143  26  ~/homework2/paging-policy.py
-|4,39,143,26,1715671840,"~/homework2/paging-policy.py"
--'  150  26  ~/homework2/paging-policy.py
-|4,39,150,26,1715671840,"~/homework2/paging-policy.py"
--'  150  26  ~/homework2/paging-policy.py
-|4,39,150,26,1715671840,"~/homework2/paging-policy.py"
--'  181  41  ~/homework2/paging-policy.py
-|4,39,181,41,1715671829,"~/homework2/paging-policy.py"
--'  188  41  ~/homework2/paging-policy.py
-|4,39,188,41,1715671829,"~/homework2/paging-policy.py"
--'  159  41  ~/homework2/paging-policy.py
-|4,39,159,41,1715671829,"~/homework2/paging-policy.py"
--'  166  41  ~/homework2/paging-policy.py
-|4,39,166,41,1715671829,"~/homework2/paging-policy.py"
--'  181  41  ~/homework2/paging-policy.py
-|4,39,181,41,1715671829,"~/homework2/paging-policy.py"
--'  188  41  ~/homework2/paging-policy.py
-|4,39,188,41,1715671829,"~/homework2/paging-policy.py"
--'  159  41  ~/homework2/paging-policy.py
-|4,39,159,41,1715671829,"~/homework2/paging-policy.py"
--'  166  41  ~/homework2/paging-policy.py
-|4,39,166,41,1715671829,"~/homework2/paging-policy.py"
--'  166  41  ~/homework2/paging-policy.py
-|4,39,166,41,1715671829,"~/homework2/paging-policy.py"
+-'  224  28  ~/homework2/paging-policy.py
+|4,39,224,28,1715689555,"~/homework2/paging-policy.py"
+-'  110  8  ~/homework2/paging-policy.py
+|4,39,110,8,1715689539,"~/homework2/paging-policy.py"
+-'  111  28  ~/homework2/paging-policy.py
+|4,39,111,28,1715689539,"~/homework2/paging-policy.py"
+-'  244  16  ~/homework2/paging-policy.py
+|4,39,244,16,1715689539,"~/homework2/paging-policy.py"
+-'  340  3  ~/homework2/paging-policy.py
+|4,39,340,3,1715689531,"~/homework2/paging-policy.py"
+-'  342  3  ~/homework2/paging-policy.py
+|4,39,342,3,1715689530,"~/homework2/paging-policy.py"
+-'  348  0  ~/homework2/paging-policy.py
+|4,39,348,0,1715689481,"~/homework2/paging-policy.py"
+-'  323  8  ~/homework2/paging-policy.py
+|4,39,323,8,1715689481,"~/homework2/paging-policy.py"
+-'  350  0  ~/homework2/paging-policy.py
+|4,39,350,0,1715689481,"~/homework2/paging-policy.py"
+-'  325  8  ~/homework2/paging-policy.py
+|4,39,325,8,1715689481,"~/homework2/paging-policy.py"
+-'  331  8  ~/homework2/paging-policy.py
+|4,39,331,8,1715689478,"~/homework2/paging-policy.py"
+-'  333  8  ~/homework2/paging-policy.py
+|4,39,333,8,1715689478,"~/homework2/paging-policy.py"
+-'  349  0  ~/homework2/test.py
+|4,39,349,0,1715689328,"~/homework2/test.py"
+-'  349  0  ~/homework2/test.py
+|4,39,349,0,1715689328,"~/homework2/test.py"
+-'  349  0  ~/homework2/test.py
+|4,39,349,0,1715689328,"~/homework2/test.py"
+-'  349  0  ~/homework2/test.py
+|4,39,349,0,1715689328,"~/homework2/test.py"
+-'  1  0  ~/homework2/test.py
+|4,39,1,0,1715689324,"~/homework2/test.py"
+-'  1  0  ~/homework2/test.py
+|4,39,1,0,1715689324,"~/homework2/test.py"
+-'  1  0  ~/homework2/test.py
+|4,39,1,0,1715689324,"~/homework2/test.py"
+-'  1  0  ~/homework2/test.py
+|4,39,1,0,1715689324,"~/homework2/test.py"
+-'  334  8  ~/homework2/paging-policy.py
+|4,39,334,8,1715689009,"~/homework2/paging-policy.py"
+-'  336  8  ~/homework2/paging-policy.py
+|4,39,336,8,1715689009,"~/homework2/paging-policy.py"
+-'  336  8  ~/homework2/paging-policy.py
+|4,39,336,8,1715689009,"~/homework2/paging-policy.py"
 -'  1  0  ~/homework2/paging-policy.py
-|4,39,1,0,1715671824,"~/homework2/paging-policy.py"
+|4,39,1,0,1715689004,"~/homework2/paging-policy.py"
 -'  1  0  ~/homework2/paging-policy.py
-|4,39,1,0,1715671824,"~/homework2/paging-policy.py"
+|4,39,1,0,1715689004,"~/homework2/paging-policy.py"
+-'  1  0  ~/homework2/paging-policy.py
+|4,39,1,0,1715689004,"~/homework2/paging-policy.py"
+-'  1  0  ~/homework2/paging-policy.py
+|4,39,1,0,1715689004,"~/homework2/paging-policy.py"
+-'  206  80  ~/homework2/paging-policy.py
+|4,39,206,80,1715689003,"~/homework2/paging-policy.py"
+-'  208  80  ~/homework2/paging-policy.py
+|4,39,208,80,1715689003,"~/homework2/paging-policy.py"
+-'  206  80  ~/homework2/paging-policy.py
+|4,39,206,80,1715689003,"~/homework2/paging-policy.py"
+-'  208  80  ~/homework2/paging-policy.py
+|4,39,208,80,1715689003,"~/homework2/paging-policy.py"
+-'  208  80  ~/homework2/paging-policy.py
+|4,39,208,80,1715689003,"~/homework2/paging-policy.py"
+-'  205  26  ~/homework2/paging-policy.py
+|4,39,205,26,1715688992,"~/homework2/paging-policy.py"
+-'  204  65  ~/homework2/paging-policy.py
+|4,39,204,65,1715688992,"~/homework2/paging-policy.py"
+-'  203  26  ~/homework2/paging-policy.py
+|4,39,203,26,1715688992,"~/homework2/paging-policy.py"
+-'  207  26  ~/homework2/paging-policy.py
+|4,39,207,26,1715688992,"~/homework2/paging-policy.py"
+-'  205  26  ~/homework2/paging-policy.py
+|4,39,205,26,1715688992,"~/homework2/paging-policy.py"
+-'  204  65  ~/homework2/paging-policy.py
+|4,39,204,65,1715688992,"~/homework2/paging-policy.py"
+-'  203  26  ~/homework2/paging-policy.py
+|4,39,203,26,1715688992,"~/homework2/paging-policy.py"
+-'  207  26  ~/homework2/paging-policy.py
+|4,39,207,26,1715688992,"~/homework2/paging-policy.py"
+-'  206  65  ~/homework2/paging-policy.py
+|4,39,206,65,1715688992,"~/homework2/paging-policy.py"
+-'  205  26  ~/homework2/paging-policy.py
+|4,39,205,26,1715688992,"~/homework2/paging-policy.py"
+-'  207  26  ~/homework2/paging-policy.py
+|4,39,207,26,1715688992,"~/homework2/paging-policy.py"
+-'  206  65  ~/homework2/paging-policy.py
+|4,39,206,65,1715688992,"~/homework2/paging-policy.py"
+-'  205  26  ~/homework2/paging-policy.py
+|4,39,205,26,1715688992,"~/homework2/paging-policy.py"
+-'  202  44  ~/homework2/paging-policy.py
+|4,39,202,44,1715688991,"~/homework2/paging-policy.py"
+-'  201  64  ~/homework2/paging-policy.py
+|4,39,201,64,1715688991,"~/homework2/paging-policy.py"
+-'  202  44  ~/homework2/paging-policy.py
+|4,39,202,44,1715688991,"~/homework2/paging-policy.py"
+-'  201  64  ~/homework2/paging-policy.py
+|4,39,201,64,1715688991,"~/homework2/paging-policy.py"
+-'  204  44  ~/homework2/paging-policy.py
+|4,39,204,44,1715688991,"~/homework2/paging-policy.py"
+-'  203  64  ~/homework2/paging-policy.py
+|4,39,203,64,1715688991,"~/homework2/paging-policy.py"
+-'  204  44  ~/homework2/paging-policy.py
+|4,39,204,44,1715688991,"~/homework2/paging-policy.py"
+-'  203  64  ~/homework2/paging-policy.py
+|4,39,203,64,1715688991,"~/homework2/paging-policy.py"
+-'  203  24  ~/homework2/paging-policy.py
+|4,39,203,24,1715687641,"~/homework2/paging-policy.py"
+-'  203  24  ~/homework2/paging-policy.py
+|4,39,203,24,1715687641,"~/homework2/paging-policy.py"
+-'  218  22  ~/homework2/paging-policy.py
+|4,39,218,22,1715687627,"~/homework2/paging-policy.py"
+-'  217  27  ~/homework2/paging-policy.py
+|4,39,217,27,1715687627,"~/homework2/paging-policy.py"
+-'  220  22  ~/homework2/paging-policy.py
+|4,39,220,22,1715687627,"~/homework2/paging-policy.py"
+-'  219  27  ~/homework2/paging-policy.py
+|4,39,219,27,1715687627,"~/homework2/paging-policy.py"
+-'  220  22  ~/homework2/paging-policy.py
+|4,39,220,22,1715687627,"~/homework2/paging-policy.py"
+-'  219  27  ~/homework2/paging-policy.py
+|4,39,219,27,1715687627,"~/homework2/paging-policy.py"
+-'  222  22  ~/homework2/paging-policy.py
+|4,39,222,22,1715687627,"~/homework2/paging-policy.py"
+-'  221  27  ~/homework2/paging-policy.py
+|4,39,221,27,1715687627,"~/homework2/paging-policy.py"
+-'  222  22  ~/homework2/paging-policy.py
+|4,39,222,22,1715687627,"~/homework2/paging-policy.py"
+-'  221  27  ~/homework2/paging-policy.py
+|4,39,221,27,1715687627,"~/homework2/paging-policy.py"
+-'  222  22  ~/homework2/paging-policy.py
+|4,39,222,22,1715687627,"~/homework2/paging-policy.py"
+-'  221  27  ~/homework2/paging-policy.py
+|4,39,221,27,1715687627,"~/homework2/paging-policy.py"
+-'  222  22  ~/homework2/paging-policy.py
+|4,39,222,22,1715687627,"~/homework2/paging-policy.py"
+-'  221  27  ~/homework2/paging-policy.py
+|4,39,221,27,1715687627,"~/homework2/paging-policy.py"
+-'  208  24  ~/homework2/paging-policy.py
+|4,39,208,24,1715687618,"~/homework2/paging-policy.py"
+-'  208  24  ~/homework2/paging-policy.py
+|4,39,208,24,1715687618,"~/homework2/paging-policy.py"
+-'  206  37  ~/homework2/paging-policy.py
+|4,39,206,37,1715687617,"~/homework2/paging-policy.py"
+-'  206  37  ~/homework2/paging-policy.py
+|4,39,206,37,1715687617,"~/homework2/paging-policy.py"
+-'  188  20  ~/homework2/paging-policy.py
+|4,39,188,20,1715687614,"~/homework2/paging-policy.py"
+-'  189  20  ~/homework2/paging-policy.py
+|4,39,189,20,1715687614,"~/homework2/paging-policy.py"
+-'  188  20  ~/homework2/paging-policy.py
+|4,39,188,20,1715687614,"~/homework2/paging-policy.py"
+-'  189  20  ~/homework2/paging-policy.py
+|4,39,189,20,1715687614,"~/homework2/paging-policy.py"
+-'  189  20  ~/homework2/paging-policy.py
+|4,39,189,20,1715687614,"~/homework2/paging-policy.py"
+-'  189  20  ~/homework2/paging-policy.py
+|4,39,189,20,1715687614,"~/homework2/paging-policy.py"
+-'  189  20  ~/homework2/paging-policy.py
+|4,39,189,20,1715687614,"~/homework2/paging-policy.py"
+-'  128  15  ~/homework2/paging-policy.py
+|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
+-'  128  15  ~/homework2/paging-policy.py
+|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
+-'  128  15  ~/homework2/paging-policy.py
+|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
+-'  128  15  ~/homework2/paging-policy.py
+|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
+-'  1  0  ~/homework2/paging-policy.py
+|4,39,1,0,1715687596,"~/homework2/paging-policy.py"
+-'  128  15  ~/homework2/paging-policy.py
+|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
+-'  128  15  ~/homework2/paging-policy.py
+|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
+-'  1  0  ~/homework2/paging-policy.py
+|4,39,1,0,1715687596,"~/homework2/paging-policy.py"
+-'  238  50  ~/homework2/paging-policy.py
+|4,39,238,50,1715687593,"~/homework2/paging-policy.py"
+-'  240  50  ~/homework2/paging-policy.py
+|4,39,240,50,1715687593,"~/homework2/paging-policy.py"
+-'  240  50  ~/homework2/paging-policy.py
+|4,39,240,50,1715687593,"~/homework2/paging-policy.py"
+-'  242  50  ~/homework2/paging-policy.py
+|4,39,242,50,1715687593,"~/homework2/paging-policy.py"
+-'  242  50  ~/homework2/paging-policy.py
+|4,39,242,50,1715687593,"~/homework2/paging-policy.py"
+-'  242  50  ~/homework2/paging-policy.py
+|4,39,242,50,1715687593,"~/homework2/paging-policy.py"
+-'  242  50  ~/homework2/paging-policy.py
+|4,39,242,50,1715687593,"~/homework2/paging-policy.py"
+-'  165  38  ~/homework2/paging-policy.py
+|4,39,165,38,1715687587,"~/homework2/paging-policy.py"
+-'  164  55  ~/homework2/paging-policy.py
+|4,39,164,55,1715687587,"~/homework2/paging-policy.py"
+-'  165  38  ~/homework2/paging-policy.py
+|4,39,165,38,1715687587,"~/homework2/paging-policy.py"
+-'  164  55  ~/homework2/paging-policy.py
+|4,39,164,55,1715687587,"~/homework2/paging-policy.py"
+-'  165  38  ~/homework2/paging-policy.py
+|4,39,165,38,1715687587,"~/homework2/paging-policy.py"
 
 # History of marks within files (newest to oldest):
 
 > ~/homework2/paging-policy.py
-	*	1715674458	0
-	"	79	29
-	^	79	30
-	.	79	29
-	+	160	51
-	+	161	38
-	+	177	36
-	+	52	50
-	+	55	181
-	+	64	183
-	+	61	47
+	*	1715689554	0
+	"	224	28
+	^	164	22
+	.	216	0
 	+	70	64
 	+	80	82
 	+	80	261
@@ -904,6 +901,90 @@ $
 	+	69	42
 	+	76	60
 	+	79	29
+	+	132	28
+	+	305	63
+	+	193	51
+	+	309	51
+	+	195	19
+	+	223	0
+	+	164	82
+	+	208	22
+	+	202	47
+	+	207	40
+	+	200	26
+	+	203	26
+	+	205	26
+	+	222	0
+	+	199	0
+	+	165	59
+	+	194	33
+	+	199	43
+	+	199	0
+	+	210	43
+	+	214	63
+	+	217	33
+	+	222	0
+	+	218	56
+	+	219	45
+	+	210	0
+	+	164	9
+	+	307	0
+	+	164	44
+	+	181	20
+	+	173	57
+	+	173	0
+	+	173	56
+	+	178	0
+	+	180	66
+	+	209	28
+	+	219	34
+	+	220	0
+	+	219	32
+	+	216	35
+	+	218	20
+	+	213	39
+	+	216	65
+	+	216	29
+	+	216	58
+	+	210	40
+	+	214	44
+	+	216	63
+	+	197	0
+	+	214	48
+	+	171	22
+	+	183	26
+	+	182	0
+	+	164	59
+	+	164	8
+	+	307	26
+	+	215	34
+	+	221	31
+	+	307	0
+	+	311	23
+	+	312	0
+	+	164	9
+	+	219	27
+	+	331	0
+	+	330	22
+	+	164	21
+	+	330	0
+	+	331	0
+	+	173	0
+	+	194	0
+	+	305	0
+	+	216	0
+	k	194	0
+
+> ~/homework2/test.py
+	*	1715689328	0
+	"	349	0
+	^	349	0
+	.	348	0
+	+	348	0
+
+> /usr/share/vim/vim82/doc/help.txt
+	*	1715686077	0
+	"	2	0
 
 > ~/homework2/vm-beyondphys-policy/README.md
 	*	1715671267	0
@@ -1282,10 +1363,6 @@ $
 
 > ~/lab3/xv6edk2/xv6/sysproc.
 	*	1714635141	0
-	"	1	0
-
-> /usr/share/vim/vim82/doc/help.txt
-	*	1714635044	0
 	"	1	0
 
 > ~/lab3/xv6edk2/xv6/lapic.c
@@ -2136,11 +2213,3 @@ $
 > ~/lab1.bak/xv6edk2/run.sh
 	*	1712487984	0
 	"	1	0
-
-> ~/lab1.bak/xv6edk2/xv6/syscall.h
-	*	1712487849	0
-	"	24	18
-	^	24	19
-	.	24	18
-	+	24	0
-	+	24	18
