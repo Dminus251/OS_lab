@@ -1,110 +1,3 @@
-./scheduler.py -c -p SJF -a 1,2,3 -l 0,1,2
-./scheduler.py -c -p SJF -a 10,1,1 -l 1,2,3
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-clear
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-cd homework1/
-ls
-vi scheduler.py
-clear
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-./scheduler.py -c -p SJF -l 10,1,1
-vi scheduler.py
-clear
-./scheduler.py -c -p SJF -l 10,1,1
-vi scheduler.py
-clear
-./scheduler.py -c -p SJF -l 10,1,1
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-vi scheduler.py
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -c
-vi scheduler.py
-./scheduler.py -c
-./scheduler.py -c -a 1,1,1 -l 1,2,3
-./scheduler.py -c -a 0,0,0 -l 1,2,3
-./scheduler.py -c -a 0,0,0 -l 1,2,3 -p RR
-./scheduler.py -c -l 1,2,3 -p RR
-./scheduler.py -c -l 0,2,3 -p RR
-./scheduler.py -c -l 0,2,3 -p RR -a 0,0,5
-./scheduler.py -c -a 0,0,0 -l 1,2,3 -p RR
-./scheduler.py -c -a 0,0,1 -l 1,2,3 -p RR
-ls
-cd homework1/
-ls
-vi scheduler.py
-clear
-./scheduler.py -c -p RR
-./scheduler.py -c -p RR -a 1,2,3
-./scheduler.py -c -p RR -a 1,2,3 -l 1,1,1
-./scheduler.py -c -p RR -a 1,2,3 -l 1,1,2
-./scheduler.py -c -p RR -l 1,1,2
-./scheduler.py -c -p RR -l 1,1,2 -a 1,2,3
-./scheduler.py -c -p RR -l 1,1,2 -a 1,2,5
-./scheduler.py -c -p RR -l 1,1,2 -a 2,2,5
-claer
-clear
-vi scheduler.py
-./scheduler.py -c -p RR -l 1,1,2 -a 2,2,5
-clear
-ls
-cp scheduler.py scheduler.py.bak
-vi scheduler.py.bak
-clear
-ls
-clear
-cat scheduler.py.bak
-./scheduler.py -p RR -c -a 1,1,1 -l 1,2,3
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,1
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,3
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,1
-clear
-cat scheduler.py.bak
-clear
-cat scheduler.py.bak
-vi scheduler.py
-claer
-clear
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,1
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,2
-ls
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-./scheduler.py -p RR -c -l 10,1,1 -a 1,2,3
-clear
-vi scheduler.py
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-./scheduler.py -p RR -c -l 10,1,1 -a 1,2,3
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 10,1,1 -a 1,2,3
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-clear
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-clear
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
 vi scheduler.py
 ./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
 vi scheduler.py
@@ -1998,3 +1891,110 @@ clear
 ls
 cd homework2/
 ls
+git add .
+ls
+git commit -m "add homework2"
+git remote -v
+git push origin main
+exit
+ls
+cp -rf lab1 lab4
+cd lab3/
+clear
+ls
+cd xv6edk2/
+ls
+cd xv6/
+ls
+vi syscall.c
+vi proc.c
+vi sysproc.c
+vi proc.c
+ls
+cd lab4/
+ls
+cd xv6edk2/
+ls m*
+ls
+cd xv6/
+ls m*
+vi memlayout.h
+cd ~
+vi test.py
+clear
+vi test.py 
+ls
+cd lab4/
+ls
+cd xv6edk2/xv6/
+ls
+cd ~
+clear
+ls
+vi test.py 
+vi proc.h
+cd lab4/xv6edk2/xv6/
+vi proc.h
+cd ~
+vi test.py 
+vi lab4/
+cd lab4/
+ls
+cd edk2/
+ls
+clear
+ls
+LS
+ls
+cd ../
+ls
+cd xv6edk2/
+ls
+./run.sh 
+CLEAR
+clear
+LS
+ls
+cd xv6
+vi usys.S
+cd ~
+cd lab2/xv6edk2/xv6/
+vi usys.S
+cd ~
+cd lab4/xv6edk2/xv6/
+vi syscall.c
+vi sycall.h
+vi syscall.h
+vi sysproc.c
+vi proc.c
+vi defs.h
+vi proc.c
+vi syscall.c
+vi proc.c
+vi syscall.h
+vi syscall.c
+vi defs.h
+vi proc.c
+vi defs.h
+clear
+vi usys.S
+vi syscall.c
+vi syscall.h
+vi sysproc.c
+vi proc.c
+vi usys.S
+vi syscall.c
+vi syscall.h
+vi proc.c
+vi syscall.c
+vi sysproc.c
+vi proc.c
+vi defs.h
+vi user.h
+vi usys.S
+vi syscall.c
+vi usys.S
+vi syscall.h
+vi sysproc.c
+vi proc.c
+vi defs.h

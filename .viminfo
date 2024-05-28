@@ -11,22 +11,28 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/else는
+~MSle0~/$
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1716882163,,"q"
+:wq
+|2,0,1716881771,,"wq"
+:22
+|2,0,1716881396,,"22"
 :q!
-|2,0,1715689555,,"q!"
+|2,0,1716881079,,"q!"
+:'<,'>q!
+|2,0,1716881077,,"'<,'>q!"
+:Q!
+|2,0,1716880906,,"Q!"
+:set nu
+|2,0,1716879254,,"set nu"
 :180
 |2,0,1715689532,,"180"
-:wq
-|2,0,1715689530,,"wq"
-:set nu
-|2,0,1715689480,,"set nu"
-:q
-|2,0,1715687640,,"q"
 :Wq
 |2,0,1715687503,,"Wq"
 :317
@@ -47,8 +53,6 @@ $
 |2,0,1714650727,,"ㅈㅂ"
 :66
 |2,0,1714649558,,"66"
-:Q!
-|2,0,1714640380,,"Q!"
 :'<,'>
 |2,0,1714639775,,"'<,'>"
 :'<,'>wq
@@ -61,8 +65,6 @@ $
 |2,0,1714631438,,"47"
 :68
 |2,0,1714630924,,"68"
-:'<,'>q!
-|2,0,1714629621,,"'<,'>q!"
 :'<,'>q
 |2,0,1714621417,,"'<,'>q"
 :exit
@@ -199,6 +201,52 @@ $
 |2,0,1711949580,,"147"
 
 # Search String History (newest to oldest):
+?/$
+|2,1,1716882149,47,"$"
+?/recurse
+|2,1,1716882100,47,"recurse"
+?/hello
+|2,1,1716882074,47,"hello"
+?/UPROGS
+|2,1,1716882064,47,"UPROGS"
+?/uthread
+|2,1,1716882049,47,"uthread"
+?/EXTRA
+|2,1,1716882010,47,"EXTRA"
+?/printpt
+|2,1,1716881516,47,"printpt"
+?/syscalls
+|2,1,1716881399,47,"syscalls"
+?/sys_printpt
+|2,1,1716881006,47,"sys_printpt"
+?/wait
+|2,1,1716880949,47,"wait"
+?/sys
+|2,1,1716880933,47,"sys"
+?/extern
+|2,1,1716880870,47,"extern"
+?/myproc
+|2,1,1716879994,47,"myproc"
+?/pid
+|2,1,1716879986,47,"pid"
+?/curproc
+|2,1,1716879970,47,"curproc"
+?/kill
+|2,1,1716879358,47,"kill"
+?/exit
+|2,1,1716879353,47,"exit"
+? @$
+|2,1,1716878444,,"@$"
+?/pgdir
+|2,1,1716878198,47,"pgdir"
+?/struct proc
+|2,1,1716878187,47,"struct proc"
+?/grow
+|2,1,1716869066,47,"grow"
+?/sbrk
+|2,1,1716868940,47,"sbrk"
+?/wait2
+|2,1,1716868807,47,"wait2"
 ?/else는
 |2,1,1715689541,47,"else는"
 ?/line
@@ -267,14 +315,10 @@ $
 |2,1,1714633435,47,"mod"
 ?/switch
 |2,1,1714633121,47,"switch"
-?/uthread
-|2,1,1714633089,47,"uthread"
 ?/UPROG
 |2,1,1714633080,47,"UPROG"
 ?/Tmr
 |2,1,1714632476,47,"Tmr"
-?/kill
-|2,1,1714630344,47,"kill"
 ?/printf
 |2,1,1714629873,47,"printf"
 ?/%
@@ -283,10 +327,6 @@ $
 |2,1,1714621300,47,"argin"
 ?/`
 |2,1,1714620726,47,"`"
-? @$
-|2,1,1714616727,,"@$"
-?/myproc
-|2,1,1714569940,47,"myproc"
 ?/64
 |2,1,1714569370,47,"64"
 ?/sche
@@ -307,8 +347,6 @@ $
 |2,1,1714550975,47,"copy"
 ?/copyin
 |2,1,1714550944,47,"copyin"
-?/wait2
-|2,1,1714550001,47,"wait2"
 ?/thread_init
 |2,1,1714549530,47,"thread_init"
 ?/argptr
@@ -317,20 +355,14 @@ $
 |2,1,1714548727,47,"[num"
 ?/[num]
 |2,1,1714548725,47,"[num]"
-?/pgdir
-|2,1,1714548130,47,"pgdir"
 ?/uth
 |2,1,1714547960,47,"uth"
 ?/init
 |2,1,1714547951,47,"init"
 ?/schedule
 |2,1,1714490028,47,"schedule"
-?/extern
-|2,1,1714479332,47,"extern"
 ?/exit2
 |2,1,1714476275,47,"exit2"
-?/EXTRA
-|2,1,1714474485,47,"EXTRA"
 ?/test
 |2,1,1714474431,47,"test"
 ?/modi
@@ -345,8 +377,6 @@ $
 |2,1,1714466410,47,"thread_schedule"
 ?/init(vo
 |2,1,1714466396,47,"init(vo"
-?/UPROGS
-|2,1,1714459890,47,"UPROGS"
 ?/_forktest
 |2,1,1714459878,47,"_forktest"
 ?/all_threadllk
@@ -387,8 +417,6 @@ $
 |2,1,1714275661,47,"fork"
 ?/createk:set nu
 |2,1,1714275056,47,"createk:set nu"
-?/wait
-|2,1,1713837235,47,"wait"
 ?/2
 |2,1,1713837023,47,"2"
 ?/zombie
@@ -477,8 +505,6 @@ $
 |2,1,1712994636,47,"print('w"
 ?/for
 |2,1,1712990429,47,"for"
-?/hello
-|2,1,1712989406,47,"hello"
 ? \<1\>
 |2,1,1712988638,,"\\<1\\>"
 ?/cur
@@ -531,8 +557,6 @@ $
 |2,1,1712642683,47,"wiat2"
 ?/parent
 |2,1,1712588012,47,"parent"
-?/exit
-|2,1,1712587967,47,"exit"
 ?/eixt2
 |2,1,1712586914,47,"eixt2"
 ?/wati2
@@ -553,8 +577,6 @@ $
 |2,1,1712491171,47,"edk2"
 ?/xv
 |2,1,1712491165,47,"xv"
-?/sys
-|2,1,1712487524,47,"sys"
 ?/sz
 |2,1,1712487136,47,"sz"
 ?/sp
@@ -579,26 +601,6 @@ $
 |2,1,1712473858,47,"eixgt2"
 ?/exot2
 |2,1,1712473130,47,"exot2"
-?/SYS_fork
-|2,1,1712468817,47,"SYS_fork"
-?/user.h
-|2,1,1712468026,47,"user.h"
-?/sleep(
-|2,1,1712467879,47,"sleep("
-?/sys_exit2
-|2,1,1712467595,47,"sys_exit2"
-?/exit(
-|2,1,1712466151,47,"exit("
-?/pr
-|2,1,1712306809,47,"pr"
-?/EXTRA=\\
-|2,1,1712304670,47,"EXTRA=\\\\"
-?/EXTRA:
-|2,1,1712304650,47,"EXTRA:"
-?/fs.img
-|2,1,1712304458,47,"fs.img"
-?/ACTIVE_PLATFORM
-|2,1,1712303812,47,"ACTIVE_PLATFORM"
 
 # Expression History (newest to oldest):
 
@@ -608,265 +610,558 @@ $
 
 # Registers:
 "0	LINE	0
-	            #memory = [1, 7, 8]이고 n = 7이면 idx = 1
-|3,0,0,1,1,0,1715685186,"            #memory = [1, 7, 8]이고 n = 7이면 idx = 1"
-""1	LINE	0
 	                            #memory = [1, 7, 8]이고 i = 2이면
 	                            #memory[2]인 8을 victim으로 선정 
-|3,1,1,1,2,0,1715689552,"                            #memory = [1, 7, 8]이고 i = 2이면","                            #memory[2]인 8을 victim으로 선정 "
+|3,0,0,1,2,0,1716878444,"                            #memory = [1, 7, 8]이고 i = 2이면","                            #memory[2]인 8을 victim으로 선정 "
+"1	LINE	0
+	printpt(int pid)
+|3,0,1,1,1,0,1716881283,"printpt(int pid)"
 "2	LINE	0
-	                ## 캐시 미스지만 replace할 필요가 없음
-|3,0,2,1,1,0,1715689523,"                ## 캐시 미스지만 replace할 필요가 없음"
+	int
+|3,0,2,1,1,0,1716881282,"int"
 "3	LINE	0
-	                # else는 line 285, 여기서 count 증가시키고 메모리 appnend함
-|3,0,3,1,1,0,1715689509,"                # else는 line 285, 여기서 count 증가시키고 메모리 appnend함"
+	}
+|3,0,3,1,1,0,1716881053,"}"
 "4	LINE	0
-	            #memory = [1, 7, 8]이고 n = 7이면 idx = 1
-|3,0,4,1,1,0,1715689504,"            #memory = [1, 7, 8]이고 n = 7이면 idx = 1"
+	// *************************printpt()
+	int
+	printpt(int pid){
+	
+|3,0,4,1,4,0,1716881052,"// *************************printpt()","int","printpt(int pid){",""
 "5	LINE	0
-	            print('Access bit is:', A)
-|3,0,5,1,1,0,1715689009,"            print('Access bit is:', A)"
+	
+|3,0,5,1,1,0,1716880061,""
 "6	LINE	0
-	            print('\n')
-|3,0,6,1,1,0,1715689007,"            print('\\n')"
+	{
+		
+	  return
+	}
+|3,0,6,1,4,0,1716880057,"{","	","  return","}"
 "7	LINE	0
-	    #A = [0 for i in range(options.cachesize)] #Access bit.
-|3,0,7,1,1,0,1715687602,"    #A = [0 for i in range(options.cachesize)] #Access bit."
+		return  
+|3,0,7,1,1,0,1716880002,"	return  "
 "8	LINE	0
-	            print('\n')
-|3,0,8,1,1,0,1715687572,"            print('\\n')"
+	  struct proc *curproc = myproc();
+|3,0,8,1,1,0,1716880001,"  struct proc *curproc = myproc();"
 "9	LINE	0
-	                A.append(0)
-|3,0,9,1,1,0,1715686442,"                A.append(0)"
-"-	CHAR	0
-	e
-|3,0,36,0,1,0,1715686600,"e"
+	  pid = 
+|3,0,9,1,1,0,1716879982,"  pid = "
+""-	CHAR	0
+	t
+|3,1,36,0,1,0,1716881526,"t"
 
 # File marks:
-'0  224  28  ~/homework2/paging-policy.py
-|4,48,224,28,1715689555,"~/homework2/paging-policy.py"
-'1  340  3  ~/homework2/paging-policy.py
-|4,49,340,3,1715689530,"~/homework2/paging-policy.py"
-'2  342  3  ~/homework2/paging-policy.py
-|4,50,342,3,1715689530,"~/homework2/paging-policy.py"
-'3  349  0  ~/homework2/test.py
-|4,51,349,0,1715689328,"~/homework2/test.py"
-'4  331  8  ~/homework2/paging-policy.py
-|4,52,331,8,1715689009,"~/homework2/paging-policy.py"
-'5  334  8  ~/homework2/paging-policy.py
-|4,53,334,8,1715689009,"~/homework2/paging-policy.py"
-'6  333  8  ~/homework2/paging-policy.py
-|4,54,333,8,1715689009,"~/homework2/paging-policy.py"
-'7  336  8  ~/homework2/paging-policy.py
-|4,55,336,8,1715689009,"~/homework2/paging-policy.py"
-'8  201  24  ~/homework2/paging-policy.py
-|4,56,201,24,1715687641,"~/homework2/paging-policy.py"
-'9  201  24  ~/homework2/paging-policy.py
-|4,57,201,24,1715687641,"~/homework2/paging-policy.py"
+'0  94  12  ~/lab4/edk2/edksetup.sh
+|4,48,94,12,1716882163,"~/lab4/edk2/edksetup.sh"
+'1  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,49,189,2,1716882102,"~/lab4/xv6edk2/xv6/Makefile"
+'2  188  2  ~/lab2/xv6edk2/xv6/Makefile
+|4,50,188,2,1716882084,"~/lab2/xv6edk2/xv6/Makefile"
+'3  199  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,51,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
+'4  1  0  ~/lab3/xv6edk2/xv6/_uthread
+|4,52,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
+'5  263  6  ~/lab4/xv6edk2/xv6/Makefile
+|4,53,263,6,1716882014,"~/lab4/xv6edk2/xv6/Makefile"
+'6  263  6  ~/lab4/xv6edk2/xv6/Makefile
+|4,54,263,6,1716882014,"~/lab4/xv6edk2/xv6/Makefile"
+'7  200  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,55,200,0,1716881983,"~/lab3/xv6edk2/xv6/Makefile"
+'8  200  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,56,200,0,1716881983,"~/lab3/xv6edk2/xv6/Makefile"
+'9  1  0  ~/lab4/xv6edk2/xv6/_recurse
+|4,57,1,0,1716881961,"~/lab4/xv6edk2/xv6/_recurse"
 
 # Jumplist (newest first):
--'  224  28  ~/homework2/paging-policy.py
-|4,39,224,28,1715689555,"~/homework2/paging-policy.py"
--'  110  8  ~/homework2/paging-policy.py
-|4,39,110,8,1715689539,"~/homework2/paging-policy.py"
--'  111  28  ~/homework2/paging-policy.py
-|4,39,111,28,1715689539,"~/homework2/paging-policy.py"
--'  244  16  ~/homework2/paging-policy.py
-|4,39,244,16,1715689539,"~/homework2/paging-policy.py"
--'  340  3  ~/homework2/paging-policy.py
-|4,39,340,3,1715689531,"~/homework2/paging-policy.py"
--'  342  3  ~/homework2/paging-policy.py
-|4,39,342,3,1715689530,"~/homework2/paging-policy.py"
--'  348  0  ~/homework2/paging-policy.py
-|4,39,348,0,1715689481,"~/homework2/paging-policy.py"
--'  323  8  ~/homework2/paging-policy.py
-|4,39,323,8,1715689481,"~/homework2/paging-policy.py"
--'  350  0  ~/homework2/paging-policy.py
-|4,39,350,0,1715689481,"~/homework2/paging-policy.py"
--'  325  8  ~/homework2/paging-policy.py
-|4,39,325,8,1715689481,"~/homework2/paging-policy.py"
--'  331  8  ~/homework2/paging-policy.py
-|4,39,331,8,1715689478,"~/homework2/paging-policy.py"
--'  333  8  ~/homework2/paging-policy.py
-|4,39,333,8,1715689478,"~/homework2/paging-policy.py"
--'  349  0  ~/homework2/test.py
-|4,39,349,0,1715689328,"~/homework2/test.py"
--'  349  0  ~/homework2/test.py
-|4,39,349,0,1715689328,"~/homework2/test.py"
--'  349  0  ~/homework2/test.py
-|4,39,349,0,1715689328,"~/homework2/test.py"
--'  349  0  ~/homework2/test.py
-|4,39,349,0,1715689328,"~/homework2/test.py"
--'  1  0  ~/homework2/test.py
-|4,39,1,0,1715689324,"~/homework2/test.py"
--'  1  0  ~/homework2/test.py
-|4,39,1,0,1715689324,"~/homework2/test.py"
--'  1  0  ~/homework2/test.py
-|4,39,1,0,1715689324,"~/homework2/test.py"
--'  1  0  ~/homework2/test.py
-|4,39,1,0,1715689324,"~/homework2/test.py"
--'  334  8  ~/homework2/paging-policy.py
-|4,39,334,8,1715689009,"~/homework2/paging-policy.py"
--'  336  8  ~/homework2/paging-policy.py
-|4,39,336,8,1715689009,"~/homework2/paging-policy.py"
--'  336  8  ~/homework2/paging-policy.py
-|4,39,336,8,1715689009,"~/homework2/paging-policy.py"
--'  1  0  ~/homework2/paging-policy.py
-|4,39,1,0,1715689004,"~/homework2/paging-policy.py"
--'  1  0  ~/homework2/paging-policy.py
-|4,39,1,0,1715689004,"~/homework2/paging-policy.py"
--'  1  0  ~/homework2/paging-policy.py
-|4,39,1,0,1715689004,"~/homework2/paging-policy.py"
--'  1  0  ~/homework2/paging-policy.py
-|4,39,1,0,1715689004,"~/homework2/paging-policy.py"
--'  206  80  ~/homework2/paging-policy.py
-|4,39,206,80,1715689003,"~/homework2/paging-policy.py"
--'  208  80  ~/homework2/paging-policy.py
-|4,39,208,80,1715689003,"~/homework2/paging-policy.py"
--'  206  80  ~/homework2/paging-policy.py
-|4,39,206,80,1715689003,"~/homework2/paging-policy.py"
--'  208  80  ~/homework2/paging-policy.py
-|4,39,208,80,1715689003,"~/homework2/paging-policy.py"
--'  208  80  ~/homework2/paging-policy.py
-|4,39,208,80,1715689003,"~/homework2/paging-policy.py"
--'  205  26  ~/homework2/paging-policy.py
-|4,39,205,26,1715688992,"~/homework2/paging-policy.py"
--'  204  65  ~/homework2/paging-policy.py
-|4,39,204,65,1715688992,"~/homework2/paging-policy.py"
--'  203  26  ~/homework2/paging-policy.py
-|4,39,203,26,1715688992,"~/homework2/paging-policy.py"
--'  207  26  ~/homework2/paging-policy.py
-|4,39,207,26,1715688992,"~/homework2/paging-policy.py"
--'  205  26  ~/homework2/paging-policy.py
-|4,39,205,26,1715688992,"~/homework2/paging-policy.py"
--'  204  65  ~/homework2/paging-policy.py
-|4,39,204,65,1715688992,"~/homework2/paging-policy.py"
--'  203  26  ~/homework2/paging-policy.py
-|4,39,203,26,1715688992,"~/homework2/paging-policy.py"
--'  207  26  ~/homework2/paging-policy.py
-|4,39,207,26,1715688992,"~/homework2/paging-policy.py"
--'  206  65  ~/homework2/paging-policy.py
-|4,39,206,65,1715688992,"~/homework2/paging-policy.py"
--'  205  26  ~/homework2/paging-policy.py
-|4,39,205,26,1715688992,"~/homework2/paging-policy.py"
--'  207  26  ~/homework2/paging-policy.py
-|4,39,207,26,1715688992,"~/homework2/paging-policy.py"
--'  206  65  ~/homework2/paging-policy.py
-|4,39,206,65,1715688992,"~/homework2/paging-policy.py"
--'  205  26  ~/homework2/paging-policy.py
-|4,39,205,26,1715688992,"~/homework2/paging-policy.py"
--'  202  44  ~/homework2/paging-policy.py
-|4,39,202,44,1715688991,"~/homework2/paging-policy.py"
--'  201  64  ~/homework2/paging-policy.py
-|4,39,201,64,1715688991,"~/homework2/paging-policy.py"
--'  202  44  ~/homework2/paging-policy.py
-|4,39,202,44,1715688991,"~/homework2/paging-policy.py"
--'  201  64  ~/homework2/paging-policy.py
-|4,39,201,64,1715688991,"~/homework2/paging-policy.py"
--'  204  44  ~/homework2/paging-policy.py
-|4,39,204,44,1715688991,"~/homework2/paging-policy.py"
--'  203  64  ~/homework2/paging-policy.py
-|4,39,203,64,1715688991,"~/homework2/paging-policy.py"
--'  204  44  ~/homework2/paging-policy.py
-|4,39,204,44,1715688991,"~/homework2/paging-policy.py"
--'  203  64  ~/homework2/paging-policy.py
-|4,39,203,64,1715688991,"~/homework2/paging-policy.py"
--'  203  24  ~/homework2/paging-policy.py
-|4,39,203,24,1715687641,"~/homework2/paging-policy.py"
--'  203  24  ~/homework2/paging-policy.py
-|4,39,203,24,1715687641,"~/homework2/paging-policy.py"
--'  218  22  ~/homework2/paging-policy.py
-|4,39,218,22,1715687627,"~/homework2/paging-policy.py"
--'  217  27  ~/homework2/paging-policy.py
-|4,39,217,27,1715687627,"~/homework2/paging-policy.py"
--'  220  22  ~/homework2/paging-policy.py
-|4,39,220,22,1715687627,"~/homework2/paging-policy.py"
--'  219  27  ~/homework2/paging-policy.py
-|4,39,219,27,1715687627,"~/homework2/paging-policy.py"
--'  220  22  ~/homework2/paging-policy.py
-|4,39,220,22,1715687627,"~/homework2/paging-policy.py"
--'  219  27  ~/homework2/paging-policy.py
-|4,39,219,27,1715687627,"~/homework2/paging-policy.py"
--'  222  22  ~/homework2/paging-policy.py
-|4,39,222,22,1715687627,"~/homework2/paging-policy.py"
--'  221  27  ~/homework2/paging-policy.py
-|4,39,221,27,1715687627,"~/homework2/paging-policy.py"
--'  222  22  ~/homework2/paging-policy.py
-|4,39,222,22,1715687627,"~/homework2/paging-policy.py"
--'  221  27  ~/homework2/paging-policy.py
-|4,39,221,27,1715687627,"~/homework2/paging-policy.py"
--'  222  22  ~/homework2/paging-policy.py
-|4,39,222,22,1715687627,"~/homework2/paging-policy.py"
--'  221  27  ~/homework2/paging-policy.py
-|4,39,221,27,1715687627,"~/homework2/paging-policy.py"
--'  222  22  ~/homework2/paging-policy.py
-|4,39,222,22,1715687627,"~/homework2/paging-policy.py"
--'  221  27  ~/homework2/paging-policy.py
-|4,39,221,27,1715687627,"~/homework2/paging-policy.py"
--'  208  24  ~/homework2/paging-policy.py
-|4,39,208,24,1715687618,"~/homework2/paging-policy.py"
--'  208  24  ~/homework2/paging-policy.py
-|4,39,208,24,1715687618,"~/homework2/paging-policy.py"
--'  206  37  ~/homework2/paging-policy.py
-|4,39,206,37,1715687617,"~/homework2/paging-policy.py"
--'  206  37  ~/homework2/paging-policy.py
-|4,39,206,37,1715687617,"~/homework2/paging-policy.py"
--'  188  20  ~/homework2/paging-policy.py
-|4,39,188,20,1715687614,"~/homework2/paging-policy.py"
--'  189  20  ~/homework2/paging-policy.py
-|4,39,189,20,1715687614,"~/homework2/paging-policy.py"
--'  188  20  ~/homework2/paging-policy.py
-|4,39,188,20,1715687614,"~/homework2/paging-policy.py"
--'  189  20  ~/homework2/paging-policy.py
-|4,39,189,20,1715687614,"~/homework2/paging-policy.py"
--'  189  20  ~/homework2/paging-policy.py
-|4,39,189,20,1715687614,"~/homework2/paging-policy.py"
--'  189  20  ~/homework2/paging-policy.py
-|4,39,189,20,1715687614,"~/homework2/paging-policy.py"
--'  189  20  ~/homework2/paging-policy.py
-|4,39,189,20,1715687614,"~/homework2/paging-policy.py"
--'  128  15  ~/homework2/paging-policy.py
-|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
--'  128  15  ~/homework2/paging-policy.py
-|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
--'  128  15  ~/homework2/paging-policy.py
-|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
--'  128  15  ~/homework2/paging-policy.py
-|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
--'  1  0  ~/homework2/paging-policy.py
-|4,39,1,0,1715687596,"~/homework2/paging-policy.py"
--'  128  15  ~/homework2/paging-policy.py
-|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
--'  128  15  ~/homework2/paging-policy.py
-|4,39,128,15,1715687596,"~/homework2/paging-policy.py"
--'  1  0  ~/homework2/paging-policy.py
-|4,39,1,0,1715687596,"~/homework2/paging-policy.py"
--'  238  50  ~/homework2/paging-policy.py
-|4,39,238,50,1715687593,"~/homework2/paging-policy.py"
--'  240  50  ~/homework2/paging-policy.py
-|4,39,240,50,1715687593,"~/homework2/paging-policy.py"
--'  240  50  ~/homework2/paging-policy.py
-|4,39,240,50,1715687593,"~/homework2/paging-policy.py"
--'  242  50  ~/homework2/paging-policy.py
-|4,39,242,50,1715687593,"~/homework2/paging-policy.py"
--'  242  50  ~/homework2/paging-policy.py
-|4,39,242,50,1715687593,"~/homework2/paging-policy.py"
--'  242  50  ~/homework2/paging-policy.py
-|4,39,242,50,1715687593,"~/homework2/paging-policy.py"
--'  242  50  ~/homework2/paging-policy.py
-|4,39,242,50,1715687593,"~/homework2/paging-policy.py"
--'  165  38  ~/homework2/paging-policy.py
-|4,39,165,38,1715687587,"~/homework2/paging-policy.py"
--'  164  55  ~/homework2/paging-policy.py
-|4,39,164,55,1715687587,"~/homework2/paging-policy.py"
--'  165  38  ~/homework2/paging-policy.py
-|4,39,165,38,1715687587,"~/homework2/paging-policy.py"
--'  164  55  ~/homework2/paging-policy.py
-|4,39,164,55,1715687587,"~/homework2/paging-policy.py"
--'  165  38  ~/homework2/paging-policy.py
-|4,39,165,38,1715687587,"~/homework2/paging-policy.py"
+-'  94  12  ~/lab4/edk2/edksetup.sh
+|4,39,94,12,1716882163,"~/lab4/edk2/edksetup.sh"
+-'  19  0  ~/lab4/edk2/edksetup.sh
+|4,39,19,0,1716882153,"~/lab4/edk2/edksetup.sh"
+-'  18  0  ~/lab4/edk2/edksetup.sh
+|4,39,18,0,1716882153,"~/lab4/edk2/edksetup.sh"
+-'  17  152  ~/lab4/edk2/edksetup.sh
+|4,39,17,152,1716882153,"~/lab4/edk2/edksetup.sh"
+-'  16  0  ~/lab4/edk2/edksetup.sh
+|4,39,16,0,1716882153,"~/lab4/edk2/edksetup.sh"
+-'  15  15  ~/lab4/edk2/edksetup.sh
+|4,39,15,15,1716882153,"~/lab4/edk2/edksetup.sh"
+-'  14  78  ~/lab4/edk2/edksetup.sh
+|4,39,14,78,1716882153,"~/lab4/edk2/edksetup.sh"
+-'  13  77  ~/lab4/edk2/edksetup.sh
+|4,39,13,77,1716882153,"~/lab4/edk2/edksetup.sh"
+-'  12  0  ~/lab4/edk2/edksetup.sh
+|4,39,12,0,1716882153,"~/lab4/edk2/edksetup.sh"
+-'  11  78  ~/lab4/edk2/edksetup.sh
+|4,39,11,78,1716882152,"~/lab4/edk2/edksetup.sh"
+-'  10  71  ~/lab4/edk2/edksetup.sh
+|4,39,10,71,1716882152,"~/lab4/edk2/edksetup.sh"
+-'  9  0  ~/lab4/edk2/edksetup.sh
+|4,39,9,0,1716882152,"~/lab4/edk2/edksetup.sh"
+-'  8  32  ~/lab4/edk2/edksetup.sh
+|4,39,8,32,1716882152,"~/lab4/edk2/edksetup.sh"
+-'  7  114  ~/lab4/edk2/edksetup.sh
+|4,39,7,114,1716882152,"~/lab4/edk2/edksetup.sh"
+-'  6  83  ~/lab4/edk2/edksetup.sh
+|4,39,6,83,1716882152,"~/lab4/edk2/edksetup.sh"
+-'  5  0  ~/lab4/edk2/edksetup.sh
+|4,39,5,0,1716882151,"~/lab4/edk2/edksetup.sh"
+-'  4  45  ~/lab4/edk2/edksetup.sh
+|4,39,4,45,1716882151,"~/lab4/edk2/edksetup.sh"
+-'  3  57  ~/lab4/edk2/edksetup.sh
+|4,39,3,57,1716882151,"~/lab4/edk2/edksetup.sh"
+-'  2  71  ~/lab4/edk2/edksetup.sh
+|4,39,2,71,1716882150,"~/lab4/edk2/edksetup.sh"
+-'  1  0  ~/lab4/edk2/edksetup.sh
+|4,39,1,0,1716882149,"~/lab4/edk2/edksetup.sh"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1716882102,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1716882102,"~/lab4/xv6edk2/xv6/Makefile"
+-'  263  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,263,2,1716882101,"~/lab4/xv6edk2/xv6/Makefile"
+-'  263  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,263,2,1716882101,"~/lab4/xv6edk2/xv6/Makefile"
+-'  188  2  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,188,2,1716882084,"~/lab2/xv6edk2/xv6/Makefile"
+-'  188  2  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,188,2,1716882084,"~/lab2/xv6edk2/xv6/Makefile"
+-'  188  2  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,188,2,1716882084,"~/lab2/xv6edk2/xv6/Makefile"
+-'  188  2  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,188,2,1716882084,"~/lab2/xv6edk2/xv6/Makefile"
+-'  263  2  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,263,2,1716882081,"~/lab2/xv6edk2/xv6/Makefile"
+-'  263  2  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,263,2,1716882081,"~/lab2/xv6edk2/xv6/Makefile"
+-'  263  2  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,263,2,1716882081,"~/lab2/xv6edk2/xv6/Makefile"
+-'  263  2  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,263,2,1716882081,"~/lab2/xv6edk2/xv6/Makefile"
+-'  259  39  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,259,39,1716882074,"~/lab2/xv6edk2/xv6/Makefile"
+-'  259  39  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,259,39,1716882074,"~/lab2/xv6edk2/xv6/Makefile"
+-'  259  39  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,259,39,1716882074,"~/lab2/xv6edk2/xv6/Makefile"
+-'  259  39  ~/lab2/xv6edk2/xv6/Makefile
+|4,39,259,39,1716882074,"~/lab2/xv6edk2/xv6/Makefile"
+-'  199  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
+-'  199  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
+-'  199  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
+-'  199  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
+-'  199  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
+-'  199  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
+-'  199  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
+-'  199  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
+-'  272  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
+-'  272  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
+-'  272  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
+-'  272  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
+-'  272  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
+-'  272  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
+-'  272  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
+-'  272  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
+-'  196  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
+-'  196  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
+-'  196  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
+-'  196  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
+-'  196  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
+-'  196  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
+-'  196  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
+-'  196  2  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
+-'  165  26  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
+-'  165  26  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
+-'  165  26  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
+-'  165  26  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
+-'  165  26  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
+-'  165  26  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
+-'  165  26  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
+-'  165  26  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
+-'  164  60  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
+-'  164  60  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
+-'  164  60  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
+-'  164  60  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
+-'  164  60  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
+-'  164  60  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
+-'  164  60  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
+-'  164  60  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
+-'  163  20  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
+-'  163  20  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
+-'  163  20  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
+-'  163  20  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
+-'  163  20  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
+-'  163  20  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
+-'  163  20  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
+-'  163  20  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
+-'  200  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
+-'  200  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
+-'  200  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
+-'  200  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
+-'  200  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
+-'  200  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
+-'  200  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
+-'  200  0  ~/lab3/xv6edk2/xv6/Makefile
+|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
+-'  1  0  ~/lab3/xv6edk2/xv6/_uthread
+|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
+-'  1  0  ~/lab3/xv6edk2/xv6/_uthread
+|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
+-'  1  0  ~/lab3/xv6edk2/xv6/_uthread
+|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
+-'  1  0  ~/lab3/xv6edk2/xv6/_uthread
+|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
+-'  1  0  ~/lab3/xv6edk2/xv6/_uthread
+|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
+-'  1  0  ~/lab3/xv6edk2/xv6/_uthread
+|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
+-'  1  0  ~/lab3/xv6edk2/xv6/_uthread
+|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
+-'  1  0  ~/lab3/xv6edk2/xv6/_uthread
+|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
 
 # History of marks within files (newest to oldest):
+
+> ~/lab4/edk2/edksetup.sh
+	*	1716882160	0
+	"	94	12
+
+> ~/lab4/xv6edk2/xv6/Makefile
+	*	1716882102	0
+	"	189	2
+	^	263	12
+	.	263	11
+	+	189	9
+	+	263	11
+
+> ~/lab2/xv6edk2/xv6/Makefile
+	*	1716882081	0
+	"	188	2
+
+> ~/lab3/xv6edk2/xv6/Makefile
+	*	1716882066	0
+	"	199	0
+	.	197	0
+	+	166	0
+	+	196	9
+	+	163	0
+	+	197	0
+	+	272	11
+	+	197	0
+
+> ~/lab3/xv6edk2/xv6/_uthread
+	*	1716882038	0
+	"	1	0
+
+> ~/lab4/xv6edk2/xv6/_recurse
+	*	1716881856	0
+	"	1	0
+
+> ~/lab4/xv6edk2/xv6/_hello
+	*	1716881834	0
+	"	1	0
+
+> ~/lab4/xv6edk2/run.sh
+	*	1716881697	0
+	"	1	0
+
+> ~/lab4/xv6edk2/xv6/syscall.c
+	*	1716881528	0
+	"	107	26
+	^	107	27
+	.	107	26
+	+	16	1
+	+	16	0
+	+	125	25
+	+	101	27
+	+	16	0
+	+	16	1
+	+	16	52
+	+	16	57
+	+	16	86
+	+	16	88
+	+	16	0
+	+	107	26
+
+> ~/lab4/xv6edk2/xv6/usys.S
+	*	1716881499	0
+	"	32	15
+	^	32	16
+	.	32	15
+	+	32	15
+
+> ~/lab4/xv6edk2/xv6/proc.c
+	*	1716881482	0
+	"	32	30
+	^	26	29
+	.	26	28
+	+	48	1
+	+	48	0
+	+	24	36
+	+	48	1
+	+	48	7
+	+	25	14
+	+	25	2
+	+	48	1
+	+	47	0
+	+	48	0
+	+	45	0
+	+	25	0
+	+	26	28
+
+> ~/lab4/xv6edk2/xv6/sysproc.c
+	*	1716881418	0
+	"	10	10
+	^	12	11
+	.	12	10
+	+	12	0
+	+	12	7
+	+	12	10
+	+	12	8
+	+	12	22
+	+	11	24
+	+	12	10
+
+> ~/lab4/xv6edk2/xv6/_recurse.c
+	*	1716881176	0
+	"	30	1
+	^	30	2
+	.	28	3
+	+	31	0
+	+	24	2
+	+	25	3
+	+	26	3
+	+	27	3
+	+	28	3
+
+> ~/lab4/xv6edk2/xv6/syscall.h
+	*	1716880832	0
+	"	23	21
+	^	23	22
+	.	23	21
+	+	23	21
+
+> ~/lab4/xv6edk2/xv6/defs.h
+	*	1716880092	0
+	"	123	17
+	^	123	3
+	.	124	0
+	+	122	28
+	+	123	18
+	+	124	0
+
+> ~/lab4/xv6edk2/xv6/user.h
+	*	1716879812	0
+	"	1	0
+	^	27	0
+	.	27	0
+	+	27	0
+
+> ~/lab4/xv6edk2/xv6/sycall.h
+	*	1716879200	0
+	"	1	0
+
+> ~/lab2/xv6edk2/xv6/usys.S
+	*	1716879086	0
+	"	33	13
+	^	33	14
+	.	33	13
+	+	32	14
+	+	33	13
+
+> ~/test.py
+	*	1716878441	0
+	"	2	0
+	^	2	0
+	.	2	0
+	+	25	0
+	+	2	0
+
+> ~/lab4/xv6edk2/xv6/proc.h
+	*	1716878361	0
+	"	40	252
+	.	41	0
+	+	40	116
+	+	40	162
+	+	40	205
+	+	40	252
+	+	41	0
+
+> ~/proc.h
+	*	1716878176	0
+	"	1	0
+
+> ~/lab4/xv6edk2/xv6/memlayout.h
+	*	1716876213	0
+	"	1	0
+
+> ~/lab3/xv6edk2/xv6/proc.c
+	*	1716869075	0
+	"	182	0
+	^	279	0
+	.	281	0
+	+	281	0
+	+	278	22
+	+	281	1
+	+	280	9
+	+	278	34
+	+	280	29
+	+	280	1
+	+	280	31
+	+	280	21
+	+	280	33
+	+	280	0
+	+	280	43
+	+	280	41
+	+	277	13
+	+	280	3
+	+	280	5
+	+	280	7
+	+	280	5
+	+	280	13
+	+	280	26
+	+	280	0
+	+	280	46
+	+	280	53
+	+	280	28
+	+	280	3
+	+	280	0
+	+	280	3
+	+	281	3
+	+	281	56
+	+	281	2
+	+	281	37
+	+	280	0
+	+	281	10
+	+	280	0
+	+	279	0
+	+	278	0
+	+	281	0
+
+> ~/lab3/xv6edk2/xv6/sysproc.c
+	*	1716869062	0
+	"	103	5
+	.	29	0
+	+	29	60
+	+	28	13
+	+	29	60
+	+	28	9
+	+	28	0
+	+	28	16
+	+	28	1
+	+	28	0
+	+	26	13
+	+	26	0
+	+	27	31
+	+	27	0
+	+	28	22
+	+	28	0
+	+	28	8
+	+	27	36
+	+	25	32
+	+	26	0
+	+	28	0
+	+	28	2
+	+	28	9
+	+	27	0
+	+	28	3
+	+	28	5
+	+	28	2
+	+	28	4
+	+	28	0
+	+	28	23
+	+	27	58
+	+	30	22
+	+	29	3
+	+	28	30
+	+	29	75
+	+	29	76
+	+	29	57
+	+	29	59
+	+	29	60
+	+	30	0
+	+	29	14
+	+	30	0
+	+	29	33
+	+	27	0
+	+	29	28
+	+	29	31
+	+	29	95
+	+	29	3
+	+	29	44
+	+	29	63
+	+	29	74
+	+	29	0
+	+	29	4
+	+	31	3
+	+	31	43
+	+	29	3
+	+	31	0
+	+	29	0
+
+> ~/lab3/xv6edk2/xv6/syscall.c
+	*	1716868810	0
+	"	107	15
+	^	136	38
+	.	136	37
+	+	108	33
+	+	136	18
+	+	135	13
+	+	136	37
 
 > ~/homework2/paging-policy.py
 	*	1715689554	0
@@ -1249,113 +1544,9 @@ $
 	+	68	1
 	+	69	1
 
-> ~/lab3/xv6edk2/xv6/proc.c
-	*	1714650119	0
-	"	281	2
-	^	279	0
-	.	281	0
-	+	281	0
-	+	278	22
-	+	281	1
-	+	280	9
-	+	278	34
-	+	280	29
-	+	280	1
-	+	280	31
-	+	280	21
-	+	280	33
-	+	280	0
-	+	280	43
-	+	280	41
-	+	277	13
-	+	280	3
-	+	280	5
-	+	280	7
-	+	280	5
-	+	280	13
-	+	280	26
-	+	280	0
-	+	280	46
-	+	280	53
-	+	280	28
-	+	280	3
-	+	280	0
-	+	280	3
-	+	281	3
-	+	281	56
-	+	281	2
-	+	281	37
-	+	280	0
-	+	281	10
-	+	280	0
-	+	279	0
-	+	278	0
-	+	281	0
-
 > ~/lab3/xv6edk2/xv6/trapc.
 	*	1714649303	0
 	"	1	0
-
-> ~/lab3/xv6edk2/xv6/sysproc.c
-	*	1714639684	0
-	"	29	10
-	.	29	0
-	+	29	60
-	+	28	13
-	+	29	60
-	+	28	9
-	+	28	0
-	+	28	16
-	+	28	1
-	+	28	0
-	+	26	13
-	+	26	0
-	+	27	31
-	+	27	0
-	+	28	22
-	+	28	0
-	+	28	8
-	+	27	36
-	+	25	32
-	+	26	0
-	+	28	0
-	+	28	2
-	+	28	9
-	+	27	0
-	+	28	3
-	+	28	5
-	+	28	2
-	+	28	4
-	+	28	0
-	+	28	23
-	+	27	58
-	+	30	22
-	+	29	3
-	+	28	30
-	+	29	75
-	+	29	76
-	+	29	57
-	+	29	59
-	+	29	60
-	+	30	0
-	+	29	14
-	+	30	0
-	+	29	33
-	+	27	0
-	+	29	28
-	+	29	31
-	+	29	95
-	+	29	3
-	+	29	44
-	+	29	63
-	+	29	74
-	+	29	0
-	+	29	4
-	+	31	3
-	+	31	43
-	+	29	3
-	+	31	0
-	+	29	0
 
 > ~/lab3/xv6edk2/xv6/turead.c
 	*	1714639498	0
@@ -1372,17 +1563,6 @@ $
 > ~/lab3/xv6edk2/xv6/kernelmemfs
 	*	1714633739	0
 	"	1	0
-
-> ~/lab3/xv6edk2/xv6/Makefile
-	*	1714633436	0
-	"	197	0
-	.	197	0
-	+	166	0
-	+	196	9
-	+	163	0
-	+	197	0
-	+	272	11
-	+	197	0
 
 > ~/lab3/xv6edk2/run.sh
 	*	1714633269	0
@@ -1425,16 +1605,6 @@ $
 > ~/lab3/xv6edk2/uthread.c
 	*	1714624364	0
 	"	1	0
-
-> ~/lab3/xv6edk2/xv6/syscall.c
-	*	1714621300	0
-	"	50	0
-	^	136	38
-	.	136	37
-	+	108	33
-	+	136	18
-	+	135	13
-	+	136	37
 
 > ~/lab3/xv6edk2/proc.c
 	*	1714621221	0
@@ -1518,10 +1688,6 @@ $
 > ~/lab2/xv6edk2/xv6/test.o
 	*	1714474635	0
 	"	1	0
-
-> ~/lab2/xv6edk2/xv6/Makefile
-	*	1714474474	0
-	"	259	39
 
 > ~/lab2/xv6edk2/xv6/test.d
 	*	1714474417	0
@@ -1637,14 +1803,6 @@ $
 	+	388	43
 	+	387	46
 	+	388	26
-
-> ~/lab2/xv6edk2/xv6/usys.S
-	*	1713837256	0
-	"	33	13
-	^	33	14
-	.	33	13
-	+	32	14
-	+	33	13
 
 > ~/lab1/xv6edk2/xv6/proc.c
 	*	1713837242	0
@@ -2071,145 +2229,4 @@ $
 
 > ~/lab1.bak/xv6edk2/xv6/sysproc
 	*	1712583522	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/pro
-	*	1712583456	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/proc.c
-	*	1712582889	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/xv6/proc.
-	*	1712582157	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/xv6/syscall.c
-	*	1712580301	0
-	"	29	0
-	^	107	27
-	.	107	26
-	+	106	27
-	+	108	27
-	+	135	24
-	+	135	0
-	+	108	0
-	+	135	0
-	+	135	23
-	+	108	26
-	+	112	0
-	+	109	0
-	+	108	0
-	+	135	0
-	+	134	23
-	+	107	26
-
-> ~/lab1.bak/xv6edk2/xv6/exec.c
-	*	1712580197	0
-	"	87	2
-	^	76	4
-	.	76	4
-	+	76	4
-
-> ~/lab1.bak/xv6edk2/xv6/usys.S
-	*	1712579763	0
-	"	1	0
-	^	33	14
-	.	33	13
-	+	31	15
-	+	33	0
-	+	33	13
-
-> ~/lab1.bak/xv6edk2/xv6/user.h
-	*	1712573765	0
-	"	27	20
-	^	27	21
-	.	27	20
-	+	27	22
-	+	26	2
-	+	27	23
-	+	28	0
-	+	26	14
-	+	27	13
-	+	26	19
-	+	27	20
-
-> ~/lab1.bak/xv6edk2/xv6/test.c
-	*	1712573681	0
-	"	4	16
-	^	4	17
-	.	4	16
-	+	2	0
-	+	3	0
-	+	1	1
-	+	3	20
-	+	4	16
-
-> ~/lab1.bak/xv6edk2/xv6/_hello
-	*	1712564635	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/xv6/Makefile
-	*	1712564476	0
-	"	263	6
-	^	190	1
-	.	264	0
-	+	173	0
-	+	189	6
-	+	264	8
-	+	190	6
-	+	264	8
-	+	190	1
-	+	264	0
-
-> ~/lab1.bak/xv6edk2/xv6/hello.sym
-	*	1712560660	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/xv6/hello.c
-	*	1712560637	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/xv6/hello.g
-	*	1712560634	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/xv6/kernelmemfs
-	*	1712560596	0
-	"	4058	0
-
-> ~/lab1.bak/xv6edk2/xv6/_test.c
-	*	1712559987	0
-	"	3	0
-	^	4	17
-	.	3	0
-	+	1	32
-	+	40	0
-	+	6	0
-	+	2	18
-	+	16	24
-	+	19	31
-	+	24	32
-	+	30	17
-	+	36	43
-	+	37	40
-	+	3	20
-	+	4	17
-	+	3	0
-
-> ~/lab1.bak/xv6edk2/dbgrun.sh
-	*	1712559729	0
-	"	1	0
-
-> ~/lab1.bak/edk2/.gitmodules
-	*	1712491173	0
-	"	9	36
-
-> ~/lab1.bak/edk2/.gitsubmodule
-	*	1712491144	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/run.sh
-	*	1712487984	0
 	"	1	0
