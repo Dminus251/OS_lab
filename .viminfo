@@ -11,44 +11,56 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/UPROGS
+~MSle0~/call
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1717304898,,"q"
+|2,0,1717313584,,"q"
 :wq
-|2,0,1717304640,,"wq"
+|2,0,1717313098,,"wq"
+:w
+|2,0,1717311527,,"w"
 :set nu
-|2,0,1717304582,,"set nu"
+|2,0,1717311330,,"set nu"
+:q!
+|2,0,1717311312,,"q!"
+:119
+|2,0,1717311205,,"119"
+:Q
+|2,0,1717309997,,"Q"
+:Set nu
+|2,0,1717309054,,"Set nu"
+:ㅂ!
+|2,0,1717308574,,"ㅂ!"
+:Q!
+|2,0,1717308500,,"Q!"
+:63
+|2,0,1717307014,,"63"
+:Wq
+|2,0,1717306000,,"Wq"
+:52
+|2,0,1717305847,,"52"
+:W
+|2,0,1717305155,,"W"
 :18
 |2,0,1717304581,,"18"
 :22
 |2,0,1716881396,,"22"
-:q!
-|2,0,1716881079,,"q!"
 :'<,'>q!
 |2,0,1716881077,,"'<,'>q!"
-:Q!
-|2,0,1716880906,,"Q!"
 :180
 |2,0,1715689532,,"180"
-:Wq
-|2,0,1715687503,,"Wq"
 :317
 |2,0,1715686467,,"317"
-:Q
-|2,0,1715686439,,"Q"
 :295
 |2,0,1715686427,,"295"
 :168
 |2,0,1715684862,,"168"
 :290
 |2,0,1715684240,,"290"
-:w
-|2,0,1715683915,,"w"
 :268
 |2,0,1715683760,,"268"
 :ㅈㅂ
@@ -61,8 +73,6 @@ $
 |2,0,1714639683,,"'<,'>wq"
 :'<
 |2,0,1714639619,,"'<"
-:Set nu
-|2,0,1714633126,,"Set nu"
 :47
 |2,0,1714631438,,"47"
 :68
@@ -163,12 +173,8 @@ $
 |2,0,1712922666,,"96"
 :90
 |2,0,1712922368,,"90"
-:52
-|2,0,1712921121,,"52"
 :unset nu
 |2,0,1712920075,,"unset nu"
-:W
-|2,0,1712918420,,"W"
 :wait
 |2,0,1712488536,,"wait"
 :ㅈ
@@ -203,6 +209,48 @@ $
 |2,0,1711949580,,"147"
 
 # Search String History (newest to oldest):
+?/call
+|2,1,1717309361,47,"call"
+?/get
+|2,1,1717309321,47,"get"
+?/pid
+|2,1,1717309293,47,"pid"
+?/getpid
+|2,1,1717309196,47,"getpid"
+?/getpi
+|2,1,1717309182,47,"getpi"
+?/pde
+|2,1,1717309105,47,"pde"
+?/pte
+|2,1,1717309099,47,"pte"
+?/pde_
+|2,1,1717309096,47,"pde_"
+?/pde_t
+|2,1,1717308895,47,"pde_t"
+?/pde_e
+|2,1,1717308890,47,"pde_e"
+?/pgtab
+|2,1,1717308473,47,"pgtab"
+?/NPROC
+|2,1,1717308213,47,"NPROC"
+? @$
+|2,1,1717308098,,"@$"
+?/EXTRA
+|2,1,1717307768,47,"EXTRA"
+?/PTE
+|2,1,1717307424,47,"PTE"
+?/mmu
+|2,1,1717307391,47,"mmu"
+?/kpgdir
+|2,1,1717306873,47,"kpgdir"
+?/PTE_P
+|2,1,1717306579,47,"PTE_P"
+?/initproc
+|2,1,1717306157,47,"initproc"
+?/init
+|2,1,1717306143,47,"init"
+?/proc.
+|2,1,1717305893,47,"proc."
 ?/usage
 |2,1,1717304723,47,"usage"
 ?/UPROGS
@@ -217,8 +265,6 @@ $
 |2,1,1716882074,47,"hello"
 ?/uthread
 |2,1,1716882049,47,"uthread"
-?/EXTRA
-|2,1,1716882010,47,"EXTRA"
 ?/printpt
 |2,1,1716881516,47,"printpt"
 ?/syscalls
@@ -233,16 +279,12 @@ $
 |2,1,1716880870,47,"extern"
 ?/myproc
 |2,1,1716879994,47,"myproc"
-?/pid
-|2,1,1716879986,47,"pid"
 ?/curproc
 |2,1,1716879970,47,"curproc"
 ?/kill
 |2,1,1716879358,47,"kill"
 ?/exit
 |2,1,1716879353,47,"exit"
-? @$
-|2,1,1716878444,,"@$"
 ?/pgdir
 |2,1,1716878198,47,"pgdir"
 ?/struct proc
@@ -363,8 +405,6 @@ $
 |2,1,1714548725,47,"[num]"
 ?/uth
 |2,1,1714547960,47,"uth"
-?/init
-|2,1,1714547951,47,"init"
 ?/schedule
 |2,1,1714490028,47,"schedule"
 ?/exit2
@@ -569,40 +609,6 @@ $
 |2,1,1712586227,47,"wati2"
 ?/sleep
 |2,1,1712584311,47,"sleep"
-?/i
-|2,1,1712581994,47,"i"
-?/fetchint
-|2,1,1712580298,47,"fetchint"
-?/argint
-|2,1,1712580295,47,"argint"
-?/arg
-|2,1,1712580185,47,"arg"
-?/UPRO
-|2,1,1712564386,47,"UPRO"
-?/edk2
-|2,1,1712491171,47,"edk2"
-?/xv
-|2,1,1712491165,47,"xv"
-?/sz
-|2,1,1712487136,47,"sz"
-?/sp
-|2,1,1712487133,47,"sp"
-?/c
-|2,1,1712486675,47,"c"
-?/wait`
-|2,1,1712484200,47,"wait`"
-?/wiat
-|2,1,1712483126,47,"wiat"
-?/ptable
-|2,1,1712479013,47,"ptable"
-?/384
-|2,1,1712478833,47,"384"
-?/wait(
-|2,1,1712478516,47,"wait("
-?/setup
-|2,1,1712477919,47,"setup"
-?/w
-|2,1,1712477324,47,"w"
 
 # Expression History (newest to oldest):
 
@@ -612,277 +618,503 @@ $
 
 # Registers:
 "0	LINE	0
-	                            #memory = [1, 7, 8]이고 i = 2이면
-	                            #memory[2]인 8을 victim으로 선정 
-|3,0,0,1,2,0,1716878444,"                            #memory = [1, 7, 8]이고 i = 2이면","                            #memory[2]인 8을 victim으로 선정 "
+	//int printpt(int pid) {
+	//    struct proc *p = 0; 
+	    //page table에서 pid가 일치하는 프로세스 탐색
+	    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함
+	//    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
+	//        if (p->pid == pid) break;
+	//    }
+	//    if (p == 0 || p->pid != pid) return -1;
+	
+	//    pde_t *pgdir = p->pgdir;
+	//    cprintf("START PAGE TABLE (pid %d)\n", pid);
+	
+	    //페이지 디렉토리 엔트리 순회
+	    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.
+	//    for (int i = 0; i < NPDENTRIES; i++) {
+		//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인
+		//PTE_P는 present bit를 의미. mmu.h에 정의됨
+	//        if (pgdir[i] & PTE_P) {
+	
+	            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨
+		    //PTE_ADDR은 page table entry에서 물리 주소를 추출. 
+		    //mmu.h에 정의됨
+	//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));
+		    
+		    //이번엔 page table 순회.
+	//            for (int j = 0; j < NPTENTRIES; j++) {
+	//                if (pgtab[j] & PTE_P) {
+	
+		    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄
+	//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);
+	
+			    //KERNBASE는 커널 가상 주소 공간의 시작 주소
+			    //memlayout.h에 정의됨
+	//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력
+	//                    cprintf("%x P ", va >> PTXSHIFT);
+	//                    if (pgtab[j] & PTE_U) cprintf("U ");
+	//                    else cprintf("K ");
+	//                    if (pgtab[j] & PTE_W) cprintf("W ");
+	//                    else cprintf("- ");
+	//                    cprintf("%x\n", PTE_ADDR(pgtab[j]));
+	//                }
+	//            }
+	//        }
+	//    }
+	//    cprintf("END PAGE TABLE\n");
+	//    return 0;
+	//}
+|3,0,0,1,47,0,1717311389,"//int printpt(int pid) {","//    struct proc *p = 0; ","    //page table에서 pid가 일치하는 프로세스 탐색","    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함","//    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {","//        if (p->pid == pid) break;","//    }","//    if (p == 0 || p->pid != pid) return -1;","","//    pde_t *pgdir = p->pgdir;",>55
+|<"//    cprintf(\"START PAGE TABLE (pid %d)\\n\", pid);","","    //페이지 디렉토리 엔트리 순회","    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.","//    for (int i = 0; i < NPDENTRIES; i++) {","	//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인","	//PTE_P는 present bit를 의미. mmu.h에 정의됨","//        if (pgdir[i] & PTE_P) {","","            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨",>69
+|<"	    //PTE_ADDR은 page table entry에서 물리 주소를 추출. ","	    //mmu.h에 정의됨","//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));","	    ","	    //이번엔 page table 순회.","//            for (int j = 0; j < NPTENTRIES; j++) {","//                if (pgtab[j] & PTE_P) {","","	    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄","//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);","",>66
+|<"		    //KERNBASE는 커널 가상 주소 공간의 시작 주소","		    //memlayout.h에 정의됨","//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력","//                    cprintf(\"%x P \", va >> PTXSHIFT);","//                    if (pgtab[j] & PTE_U) cprintf(\"U \");","//                    else cprintf(\"K \");","//                    if (pgtab[j] & PTE_W) cprintf(\"W \");","//                    else cprintf(\"- \");",>63
+|<"//                    cprintf(\"%x\\n\", PTE_ADDR(pgtab[j]));","//                }","//            }","//        }","//    }","//    cprintf(\"END PAGE TABLE\\n\");","//    return 0;","//}"
 "1	LINE	0
-	printpt(int pid)
-|3,0,1,1,1,0,1716881283,"printpt(int pid)"
+	  int m;
+|3,0,1,1,1,0,1717312448,"  int m;"
 "2	LINE	0
-	int
-|3,0,2,1,1,0,1716881282,"int"
+	    cprintf("END PAGE TABLE\n");
+	    return 0;
+|3,0,2,1,2,0,1717311555,"    cprintf(\"END PAGE TABLE\\n\");","    return 0;"
 "3	LINE	0
-	}
-|3,0,3,1,1,0,1716881053,"}"
+	//int printpt(int pid) {
+	//    struct proc *p = 0; 
+	    //page table에서 pid가 일치하는 프로세스 탐색
+	    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함
+	//    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
+	//        if (p->pid == pid) break;
+	//    }
+	//    if (p == 0 || p->pid != pid) return -1;
+	
+	//    pde_t *pgdir = p->pgdir;
+	//    cprintf("START PAGE TABLE (pid %d)\n", pid);
+	
+	    //페이지 디렉토리 엔트리 순회
+	    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.
+	//    for (int i = 0; i < NPDENTRIES; i++) {
+		//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인
+		//PTE_P는 present bit를 의미. mmu.h에 정의됨
+	//        if (pgdir[i] & PTE_P) {
+	
+	            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨
+		    //PTE_ADDR은 page table entry에서 물리 주소를 추출. 
+		    //mmu.h에 정의됨
+	//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));
+		    
+		    //이번엔 page table 순회.
+	//            for (int j = 0; j < NPTENTRIES; j++) {
+	//                if (pgtab[j] & PTE_P) {
+	
+		    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄
+	//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);
+	
+			    //KERNBASE는 커널 가상 주소 공간의 시작 주소
+			    //memlayout.h에 정의됨
+	//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력
+	//                    cprintf("%x P ", va >> PTXSHIFT);
+	//                    if (pgtab[j] & PTE_U) cprintf("U ");
+|3,0,3,1,36,0,1717311372,"//int printpt(int pid) {","//    struct proc *p = 0; ","    //page table에서 pid가 일치하는 프로세스 탐색","    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함","//    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {","//        if (p->pid == pid) break;","//    }","//    if (p == 0 || p->pid != pid) return -1;","","//    pde_t *pgdir = p->pgdir;",>55
+|<"//    cprintf(\"START PAGE TABLE (pid %d)\\n\", pid);","","    //페이지 디렉토리 엔트리 순회","    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.","//    for (int i = 0; i < NPDENTRIES; i++) {","	//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인","	//PTE_P는 present bit를 의미. mmu.h에 정의됨","//        if (pgdir[i] & PTE_P) {","","            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨",>69
+|<"	    //PTE_ADDR은 page table entry에서 물리 주소를 추출. ","	    //mmu.h에 정의됨","//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));","	    ","	    //이번엔 page table 순회.","//            for (int j = 0; j < NPTENTRIES; j++) {","//                if (pgtab[j] & PTE_P) {","","	    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄","//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);","",>66
+|<"		    //KERNBASE는 커널 가상 주소 공간의 시작 주소","		    //memlayout.h에 정의됨","//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력","//                    cprintf(\"%x P \", va >> PTXSHIFT);","//                    if (pgtab[j] & PTE_U) cprintf(\"U \");"
 "4	LINE	0
-	// *************************printpt()
-	int
-	printpt(int pid){
-	
-|3,0,4,1,4,0,1716881052,"// *************************printpt()","int","printpt(int pid){",""
-"5	LINE	0
-	
-|3,0,5,1,1,0,1716880061,""
-"6	LINE	0
-	{
-		
-	  return
+	                }
+	            }
+	        }
 	}
-|3,0,6,1,4,0,1716880057,"{","	","  return","}"
+	
+|3,0,4,1,5,0,1717311325,"                }","            }","        }","}",""
+"5	LINE	0
+	                    if (pgtab[j] & PTE_W) cprintf("W ");
+	                    else cprintf("- ");
+	                    cprintf("%x\n", PTE_ADDR(pgtab[j]));
+	    		    cprintf("END PAGE TABLE\n");
+		            return 0;
+|3,0,5,1,5,0,1717311324,"                    if (pgtab[j] & PTE_W) cprintf(\"W \");","                    else cprintf(\"- \");","                    cprintf(\"%x\\n\", PTE_ADDR(pgtab[j]));","    		    cprintf(\"END PAGE TABLE\\n\");","	            return 0;"
+"6	LINE	0
+			    //memlayout.h에 정의됨
+	                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력
+	                    cprintf("%x P ", va >> PTXSHIFT);
+	                    if (pgtab[j] & PTE_U) cprintf("U ");
+	                    else cprintf("K ");
+|3,0,6,1,5,0,1717311323,"		    //memlayout.h에 정의됨","                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력","                    cprintf(\"%x P \", va >> PTXSHIFT);","                    if (pgtab[j] & PTE_U) cprintf(\"U \");","                    else cprintf(\"K \");"
 "7	LINE	0
-		return  
-|3,0,7,1,1,0,1716880002,"	return  "
+	
+		    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄
+	                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);
+	
+			    //KERNBASE는 커널 가상 주소 공간의 시작 주소
+|3,0,7,1,5,0,1717311323,"","	    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄","                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);","","		    //KERNBASE는 커널 가상 주소 공간의 시작 주소"
 "8	LINE	0
-	  struct proc *curproc = myproc();
-|3,0,8,1,1,0,1716880001,"  struct proc *curproc = myproc();"
+	int printpt(int pid) {
+	    struct proc *p = 0; 
+	    //page table에서 pid가 일치하는 프로세스 탐색
+	    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함
+	    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
+	        if (p->pid == pid) break;
+	    }
+	    if (p == 0 || p->pid != pid) return -1;
+	
+	    pde_t *pgdir = p->pgdir;
+	    cprintf("START PAGE TABLE (pid %d)\n", pid);
+	
+	    //페이지 디렉토리 엔트리 순회
+	    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.
+	    for (int i = 0; i < NPDENTRIES; i++) {
+		//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인
+		//PTE_P는 present bit를 의미. mmu.h에 정의됨
+	        if (pgdir[i] & PTE_P) {
+	
+	            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨
+		    //PTE_ADDR은 page table entry에서 물리 주소를 추출. 
+		    //mmu.h에 정의됨
+	            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));
+		    
+		    //이번엔 page table 순회.
+	            for (int j = NPTENTRIES; j >=0; j--) {
+	                if (pgtab[j] & PTE_P) {
+|3,0,8,1,27,0,1717311322,"int printpt(int pid) {","    struct proc *p = 0; ","    //page table에서 pid가 일치하는 프로세스 탐색","    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함","    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {","        if (p->pid == pid) break;","    }","    if (p == 0 || p->pid != pid) return -1;","","    pde_t *pgdir = p->pgdir;","    cprintf(\"START PAGE TABLE (pid %d)\\n\", pid);","",>47
+|<"    //페이지 디렉토리 엔트리 순회","    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.","    for (int i = 0; i < NPDENTRIES; i++) {","	//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인","	//PTE_P는 present bit를 의미. mmu.h에 정의됨","        if (pgdir[i] & PTE_P) {","","            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨",>69
+|<"	    //PTE_ADDR은 page table entry에서 물리 주소를 추출. ","	    //mmu.h에 정의됨","            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));","	    ","	    //이번엔 page table 순회.","            for (int j = NPTENTRIES; j >=0; j--) {","                if (pgtab[j] & PTE_P) {"
 "9	LINE	0
-	  pid = 
-|3,0,9,1,1,0,1716879982,"  pid = "
+	                }
+	            }
+	        }
+	    }
+	}
+|3,0,9,1,5,0,1717311276,"                }","            }","        }","    }","}"
 ""-	CHAR	0
 	/
-|3,1,36,0,1,0,1717304624,"/"
+|3,1,36,0,1,0,1717313096,"/"
 
 # File marks:
-'0  25  46  ~/lab4/xv6edk2/xv6/recurse.c
-|4,48,25,46,1717304898,"~/lab4/xv6edk2/xv6/recurse.c"
-'1  13  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,49,13,1,1717304640,"~/lab4/xv6edk2/xv6/recurse.c"
-'2  13  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,50,13,1,1717304640,"~/lab4/xv6edk2/xv6/recurse.c"
-'3  1  0  ~/lab4/xv6edk2/xv6/recurse.
-|4,51,1,0,1717304599,"~/lab4/xv6edk2/xv6/recurse."
-'4  19  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,52,19,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
-'5  18  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,53,18,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
-'6  19  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,54,19,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
-'7  18  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,55,18,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
-'8  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,56,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
-'9  1  0  ~/lab4/xv6edk2/xv6/MA
-|4,57,1,0,1717304507,"~/lab4/xv6edk2/xv6/MA"
+'0  86  42  ~/lab4/xv6edk2/xv6/proc.c
+|4,48,86,42,1717313584,"~/lab4/xv6edk2/xv6/proc.c"
+'1  23  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,49,23,0,1717313547,"~/lab4/xv6edk2/xv6/recurse.c"
+'2  10  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,50,10,0,1717313506,"~/lab4/xv6edk2/xv6/recurse.c"
+'3  10  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,51,10,0,1717313506,"~/lab4/xv6edk2/xv6/recurse.c"
+'4  10  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,52,10,0,1717313333,"~/lab4/xv6edk2/xv6/recurse.c"
+'5  10  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,53,10,0,1717313333,"~/lab4/xv6edk2/xv6/recurse.c"
+'6  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,54,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
+'7  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,55,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
+'8  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,56,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
+'9  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,57,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
 
 # Jumplist (newest first):
--'  25  46  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,25,46,1717304898,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,1,1717304718,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,1,1717304640,"~/lab4/xv6edk2/xv6/recurse.c"
--'  19  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,19,3,1717304599,"~/lab4/xv6edk2/xv6/recurse.c"
--'  1  0  ~/lab4/xv6edk2/xv6/recurse.
-|4,39,1,0,1717304599,"~/lab4/xv6edk2/xv6/recurse."
--'  1  0  ~/lab4/xv6edk2/xv6/recurse.
-|4,39,1,0,1717304599,"~/lab4/xv6edk2/xv6/recurse."
--'  19  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,19,3,1717304599,"~/lab4/xv6edk2/xv6/recurse.c"
--'  1  0  ~/lab4/xv6edk2/xv6/recurse.
-|4,39,1,0,1717304599,"~/lab4/xv6edk2/xv6/recurse."
--'  1  0  ~/lab4/xv6edk2/xv6/recurse.
-|4,39,1,0,1717304599,"~/lab4/xv6edk2/xv6/recurse."
--'  18  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,18,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
--'  18  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,18,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
--'  18  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,18,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
--'  1  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,1,0,1717304580,"~/lab4/xv6edk2/xv6/recurse.c"
--'  1  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,1,0,1717304580,"~/lab4/xv6edk2/xv6/recurse.c"
--'  1  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,1,0,1717304580,"~/lab4/xv6edk2/xv6/recurse.c"
--'  1  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,1,0,1717304580,"~/lab4/xv6edk2/xv6/recurse.c"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  172  0  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  201  3  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  192  24  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  191  22  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
--'  1  0  ~/lab4/xv6edk2/xv6/MA
-|4,39,1,0,1717304507,"~/lab4/xv6edk2/xv6/MA"
--'  1  0  ~/lab4/xv6edk2/xv6/MA
-|4,39,1,0,1717304507,"~/lab4/xv6edk2/xv6/MA"
--'  1  0  ~/lab4/xv6edk2/xv6/MA
-|4,39,1,0,1717304507,"~/lab4/xv6edk2/xv6/MA"
--'  1  0  ~/lab4/xv6edk2/xv6/MA
-|4,39,1,0,1717304507,"~/lab4/xv6edk2/xv6/MA"
+-'  86  42  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,86,42,1717313584,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717313548,"~/lab4/xv6edk2/xv6/proc.c"
+-'  23  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,0,1717313547,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,0,1717313547,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,10,0,1717313544,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,10,0,1717313544,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,10,0,1717313506,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,10,0,1717313506,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,10,0,1717313333,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,10,0,1717313333,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,0,1717313098,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,0,1717313098,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,2,1717313010,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,23,2,1717313010,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312724,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,30,3,1717312724,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312623,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,29,1,1717312623,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  89  50  ~/lab4/xv6edk2/xv6/proc.c
+|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
 
 # History of marks within files (newest to oldest):
 
+> ~/lab4/xv6edk2/xv6/proc.c
+	*	1717313557	0
+	"	86	42
+	^	98	93
+	.	98	92
+	+	49	39
+	+	37	78
+	+	40	50
+	+	39	64
+	+	43	87
+	+	46	5
+	+	49	71
+	+	56	32
+	+	44	67
+	+	46	0
+	+	48	34
+	+	49	0
+	+	51	0
+	+	52	9
+	+	71	0
+	+	122	0
+	+	24	1
+	+	25	1
+	+	28	1
+	+	29	1
+	+	30	1
+	+	31	1
+	+	33	1
+	+	34	1
+	+	38	1
+	+	41	1
+	+	46	1
+	+	49	1
+	+	50	1
+	+	53	1
+	+	57	1
+	+	58	1
+	+	59	1
+	+	60	1
+	+	61	1
+	+	62	1
+	+	63	1
+	+	64	1
+	+	65	1
+	+	66	1
+	+	67	1
+	+	68	1
+	+	69	1
+	+	70	1
+	+	122	46
+	+	122	0
+	+	122	9
+	+	122	8
+	+	122	0
+	+	122	1
+	+	122	0
+	+	122	3
+	+	122	0
+	+	127	0
+	+	125	0
+	+	123	0
+	+	124	0
+	+	123	0
+	+	73	0
+	+	74	0
+	+	77	0
+	+	78	0
+	+	79	0
+	+	80	0
+	+	82	0
+	+	83	0
+	+	87	0
+	+	90	0
+	+	95	0
+	+	99	0
+	+	100	0
+	+	103	0
+	+	107	0
+	+	108	0
+	+	109	0
+	+	110	0
+	+	111	0
+	+	112	0
+	+	113	0
+	+	116	0
+	+	117	0
+	+	118	0
+	+	119	0
+	+	121	0
+	+	87	40
+	+	121	0
+	+	114	9
+	+	115	2
+	+	120	12
+	+	98	92
+
 > ~/lab4/xv6edk2/xv6/recurse.c
-	*	1717304892	0
-	"	25	46
-	^	25	47
-	.	13	1
+	*	1717313546	0
+	"	23	0
+	^	29	4
+	.	13	0
 	+	19	3
 	+	8	0
 	+	7	2
@@ -894,18 +1126,161 @@ $
 	+	11	1
 	+	12	1
 	+	13	1
+	+	25	0
+	+	20	3
+	+	21	3
+	+	22	3
+	+	23	3
+	+	27	2
+	+	20	0
+	+	19	2
+	+	25	2
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	26	2
+	+	28	2
+	+	20	2
+	+	21	2
+	+	22	2
+	+	23	2
+	+	29	1
+	+	8	1
+	+	9	1
+	+	10	1
+	+	11	1
+	+	12	1
+	+	13	1
+	+	17	1
+	+	18	0
+	+	17	0
+	+	19	3
+	+	20	3
+	+	21	5
+	+	22	4
+	+	23	3
+	+	25	3
+	+	26	3
+	+	27	3
+	+	28	3
+	+	29	4
+	+	20	2
+	+	21	4
+	+	22	4
+	+	23	2
+	+	25	2
+	+	26	2
+	+	27	2
+	+	28	2
+	+	29	2
+	+	19	2
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
 
 > ~/lab4/xv6edk2/xv6/recurse.
-	*	1717304598	0
+	*	1717312405	0
+	"	1	0
+
+> ~/lab4/xv6edk2/proc.c
+	*	1717310061	0
+	"	1	0
+
+> ~/lab4/xv6edk2/xv6/trap.c
+	*	1717309382	0
+	"	42	7
+
+> ~/lab4/xv6edk2/xv6/traps.h
+	*	1717309345	0
+	"	1	0
+
+> ~/lab4/xv6edk2/xv6/usys.S
+	*	1717309342	0
+	"	28	8
+	^	32	16
+	.	32	15
+	+	32	15
+
+> ~/lab4/xv6edk2/xv6/syscall.h
+	*	1717309338	0
+	"	23	21
+	^	23	22
+	.	23	21
+	+	23	21
+
+> ~/lab4/xv6edk2/xv6/sysproc.c
+	*	1717309212	0
+	"	48	22
+	^	12	2
+	.	14	0
+	+	9	0
+	+	9	7
+	+	9	10
+	+	9	8
+	+	9	22
+	+	9	24
+	+	9	23
+	+	15	0
+	+	9	4
+	+	11	1
+	+	12	0
+	+	13	0
+	+	14	0
+
+> ~/lab4/xv6edk2/xv6/proc.h
+	*	1717309134	0
+	"	58	19
+	.	41	0
+	+	40	116
+	+	40	162
+	+	40	205
+	+	40	252
+	+	41	0
+
+> ~/lab4/xv6edk2/xv6/sysproc.h
+	*	1717309130	0
+	"	1	0
+
+> ~/lab4/xv6edk2/xv6/mmu.h
+	*	1717309106	0
+	"	146	17
+	^	228	0
+	.	227	3
+	+	227	3
+
+> ~/lab4/xv6edk2/xv6/param.h
+	*	1717308213	0
+	"	1	0
+
+> ~/lab4/xv6edk2/*re*
+	*	1717308096	0
 	"	1	0
 
 > ~/lab4/xv6edk2/xv6/Makefile
-	*	1717304545	0
-	"	172	0
+	*	1717307783	0
+	"	262	0
 	^	263	12
 	.	263	11
 	+	189	9
 	+	263	11
+
+> ~/lab4/xv6edk2/sysproc.c
+	*	1717307581	0
+	"	1	0
+
+> ~/lab4/xv6edk2/mmu.h
+	*	1717306555	0
+	"	1	0
+
+> ~/lab4/xv6edk2/xv6/recurse.asm
+	*	1717304955	0
+	"	1	0
 
 > ~/lab4/xv6edk2/xv6/MA
 	*	1717304506	0
@@ -964,45 +1339,6 @@ $
 	+	16	0
 	+	107	26
 
-> ~/lab4/xv6edk2/xv6/usys.S
-	*	1716881499	0
-	"	32	15
-	^	32	16
-	.	32	15
-	+	32	15
-
-> ~/lab4/xv6edk2/xv6/proc.c
-	*	1716881482	0
-	"	32	30
-	^	26	29
-	.	26	28
-	+	48	1
-	+	48	0
-	+	24	36
-	+	48	1
-	+	48	7
-	+	25	14
-	+	25	2
-	+	48	1
-	+	47	0
-	+	48	0
-	+	45	0
-	+	25	0
-	+	26	28
-
-> ~/lab4/xv6edk2/xv6/sysproc.c
-	*	1716881418	0
-	"	10	10
-	^	12	11
-	.	12	10
-	+	12	0
-	+	12	7
-	+	12	10
-	+	12	8
-	+	12	22
-	+	11	24
-	+	12	10
-
 > ~/lab4/xv6edk2/xv6/_recurse.c
 	*	1716881176	0
 	"	30	1
@@ -1014,13 +1350,6 @@ $
 	+	26	3
 	+	27	3
 	+	28	3
-
-> ~/lab4/xv6edk2/xv6/syscall.h
-	*	1716880832	0
-	"	23	21
-	^	23	22
-	.	23	21
-	+	23	21
 
 > ~/lab4/xv6edk2/xv6/defs.h
 	*	1716880092	0
@@ -1057,16 +1386,6 @@ $
 	.	2	0
 	+	25	0
 	+	2	0
-
-> ~/lab4/xv6edk2/xv6/proc.h
-	*	1716878361	0
-	"	40	252
-	.	41	0
-	+	40	116
-	+	40	162
-	+	40	205
-	+	40	252
-	+	41	0
 
 > ~/proc.h
 	*	1716878176	0
@@ -1997,171 +2316,3 @@ $
 	.	96	0
 	+	2	0
 	+	96	0
-
-> ~/.gitignore
-	*	1713012033	0
-	"	2	11
-	^	2	12
-	.	2	11
-	+	1	23
-	+	2	0
-	+	2	11
-
-> ~/homework1/test.txt
-	*	1713004418	0
-	"	38	18
-
-> ~/homework1/scheduler.py.bak_RR
-	*	1712986288	0
-	"	208	20
-	.	169	0
-	+	167	0
-	+	168	0
-	+	169	0
-
-> ~/homework1/scheduler.py.bak_R
-	*	1712983409	0
-	"	1	0
-
-> ~/homework1/Goal_of_homework1
-	*	1712927993	0
-	"	28	3
-	^	34	46
-	.	34	43
-	+	27	0
-	+	1	0
-	+	1	40
-	+	4	0
-	+	28	0
-	+	4	59
-	+	27	0
-	+	34	43
-
-> ~/homework1/ostep-homework/cpu-sched/scheduler.py
-	*	1712910869	0
-	"	1	0
-
-> ~/homework1/helloworld.py
-	*	1712910789	0
-	"	1	21
-	^	1	22
-	.	1	21
-	+	1	21
-
-> ~/lab2/xv6edk2/README.md
-	*	1712715479	0
-	"	1	0
-
-> ~/lab1.bak/xv6edk2/xv6/proc.c
-	*	1712642745	0
-	"	195	13
-	^	287	19
-	.	287	18
-	+	460	0
-	+	460	11
-	+	460	0
-	+	460	29
-	+	460	17
-	+	460	3
-	+	460	15
-	+	460	3
-	+	460	0
-	+	383	0
-	+	383	22
-	+	383	0
-	+	389	0
-	+	387	2
-	+	387	0
-	+	388	0
-	+	389	26
-	+	388	67
-	+	389	0
-	+	389	20
-	+	460	0
-	+	447	6
-	+	389	2
-	+	389	0
-	+	389	12
-	+	389	0
-	+	389	12
-	+	389	40
-	+	389	57
-	+	389	0
-	+	389	44
-	+	389	74
-	+	389	71
-	+	389	110
-	+	389	51
-	+	25	0
-	+	288	64
-	+	288	3
-	+	289	3
-	+	460	0
-	+	288	0
-	+	289	0
-	+	389	26
-	+	460	5
-	+	419	43
-	+	430	5
-	+	389	27
-	+	389	0
-	+	430	0
-	+	419	3
-	+	419	5
-	+	419	32
-	+	429	4
-	+	430	0
-	+	429	4
-	+	430	0
-	+	419	6
-	+	430	0
-	+	419	24
-	+	389	0
-	+	389	73
-	+	389	0
-	+	389	74
-	+	389	0
-	+	389	3
-	+	389	4
-	+	389	0
-	+	389	2
-	+	389	3
-	+	419	5
-	+	429	5
-	+	389	0
-	+	389	3
-	+	389	4
-	+	389	57
-	+	419	4
-	+	429	4
-	+	419	14
-	+	430	0
-	+	389	39
-	+	419	16
-	+	389	0
-	+	428	9
-	+	419	1
-	+	420	3
-	+	427	2
-	+	419	5
-	+	429	6
-	+	419	4
-	+	418	0
-	+	419	2
-	+	382	0
-	+	389	0
-	+	419	0
-	+	421	0
-	+	419	0
-	+	430	0
-	+	426	41
-	+	421	66
-	+	287	18
-
-> ~/lab1.bak/xv6edk2/xv6/proc.h
-	*	1712587985	0
-	"	54	0
-	^	52	13
-	.	52	12
-	+	53	0
-	+	52	12

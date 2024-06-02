@@ -6,12 +6,13 @@
 #include "memlayout.h"
 #include "mmu.h"
 #include "proc.h"
-int
-sys_printpt(void){
-  printpt(myproc()->pid);
-  return 0;
+int 
+sys_printpt(void) {
+  int pid;
+  if (argint(0, &pid) < 0)
+      return -1;
+  return printpt(pid);
 }
-
 int
 sys_fork(void)
 {
