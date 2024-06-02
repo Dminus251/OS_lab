@@ -1,120 +1,4 @@
 vi scheduler.py
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-claer
-clear
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-clear
-vi scheduler.py
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-clear
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-claer
-clear
-./scheduler.py.bak_RR -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,2
-vi scheduler.py
-clear
-vi scheduler.py
-clear
-./scheduler.py -p RR -c -l 1,2,3 -a 1,1,2
-history | grep 10
-./scheduler.py -c -p SJF -l 10,1,1 -a 1,2,3
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3 
-vi scheduler.py
-./scheduler.py -c -p RR -l 10,1,1 -a 1,2,3 
-./scheduler.py -c -p RR -l 10,1,1
-./origin.py -p RR -l 10,1,1
-./origin.py -p RR -l 10,1,1 -c
-clear
-vi scheduler.py
-clear
-./origin.py -p RR -l 10,1,1 -c
-./scheduler.py -c -p RR -l 10,1,1
-vi scheduler.py
-clear
-ls
-cd ../
-ls
-cd lab1
-ls
-cd xv6edk2/
-ls
-tree .
-clear
-ls
-./run.sh 
-clear
-ls
-cd ../
-ls
-cd ../homework1/
-ls
-vi scheduler.py
-clear
-cd ../
-ls
-cd lab2/
-cd xv6edk2/
-ls
-./run.sh 
-cd ~/homework1/
-ls
-vi scheduler.py
-clear
-ls
-./scheduler.py -c -p RR -l 1,2,3
-./scheduler.py -c -p RR -l 1,2,3 -a 0,0,0
-vi scheduler.py
-clear
-./origin.py -c -p RR
-./scheduler.py -c -p RR
-vi scheduler.py
-clear
-ls
-./scheduler.py -c -p RR
-./origin.py -c -p RR
-vi origin.py 
-vi scheduler.py
-vi origin.py 
-vi scheduler.py
-./scheduler.py -c -p RR
-vi scheduler.py
-clear
-./scheduler.py -c -p RR
-vi scheduler.py
-vi origin.py 
-vi scheduler.py
-./scheduler.py -c -p RR
-vi scheduler.py
-./scheduler.py -c -p RR
-vi scheduler.py
 vi origin.py 
 v
 vi scheduler.py
@@ -1998,3 +1882,119 @@ vi syscall.h
 vi sysproc.c
 vi proc.c
 vi defs.h
+ls
+mv test.py 0528.py
+mv 0528.py lab4/xv6edk2/xv6/
+cd lab4/xv6edk2/xv6/
+clear
+ls
+clear
+vi usys.S
+vi syscall.h
+vi syscall.c
+vi sysproc.c
+vi proc.c
+vi syscall.c
+vi proc.c
+ls 05
+ls 05*
+rm 0528.py 
+vi _recurse.c
+vi _recurse.c 
+mv _recurse.c _recurse
+vi Makefile 
+make kernelmemfs
+vi proc.c
+make kernelmemfs
+clear
+make kernelmemfs
+vi proc.c
+make kernelmemfs
+clear
+make kernelmemfs
+vi syscall.c
+vi sysproc.c
+vi syscall.c
+vi proc.c
+vi usys.S
+vi syscall.c
+make kernelmemfs
+clear
+cp kernelmemfs ../image/kernel
+cd ../
+ls
+cd ../
+ls
+cd edk2/
+source edksetup.sh 
+cd ../
+ls
+cd xv6edk2/
+ls
+./run.sh 
+clear
+ls
+cd xv6/
+vi _recurse 
+ls _*
+chmod 777 _recurse 
+ls _*
+make kernelmemfs
+cd ../
+ls
+vi run.sh 
+./run.sh 
+clear
+cd xv6/
+ls _*
+vi _hello 
+vi _recurse 
+mv _hello _hello.c
+vi Makefile 
+make kernelmemfs
+cp kernelmemfs ../image/kernel 
+cd ../
+./run.sh 
+CLEAR
+clear
+ls
+cd xv6/
+vi _recurse 
+ls
+vi _hello
+vi _recurse 
+clear
+cd ~
+cd lab3/xv6edk2/xv6/
+vi Makefile 
+ls _uth*
+cd ~
+cd lab4/xv6edk2/xv6/
+ls
+ls _re*
+vi Makefile 
+cd ~
+cd lab3/xv6edk2/xv6/
+ls _uth*
+ls -l _uth*
+vi _uthread 
+vi Makefile 
+cd ~
+cd lab2/xv6edk2/xv6/
+vi Makefile 
+cd ~
+cd lab4/xv6edk2/xv6/
+vi Makefile 
+chmod 755 _recurse
+clear
+make kernelmemfs
+cd ../../edk2/
+ls
+source edksetup.sh 
+vi edksetup.sh 
+echo $EDK_TOOLS_PATH
+cd ~
+git add .
+git commit -m "init lab4"
+git remote -v
+git push origin main

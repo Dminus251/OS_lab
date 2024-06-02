@@ -11,16 +11,20 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/$
+~MSle0~/UPROGS
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1716882163,,"q"
+|2,0,1717304898,,"q"
 :wq
-|2,0,1716881771,,"wq"
+|2,0,1717304640,,"wq"
+:set nu
+|2,0,1717304582,,"set nu"
+:18
+|2,0,1717304581,,"18"
 :22
 |2,0,1716881396,,"22"
 :q!
@@ -29,8 +33,6 @@ $
 |2,0,1716881077,,"'<,'>q!"
 :Q!
 |2,0,1716880906,,"Q!"
-:set nu
-|2,0,1716879254,,"set nu"
 :180
 |2,0,1715689532,,"180"
 :Wq
@@ -201,14 +203,18 @@ $
 |2,0,1711949580,,"147"
 
 # Search String History (newest to oldest):
+?/usage
+|2,1,1717304723,47,"usage"
+?/UPROGS
+|2,1,1717304543,47,"UPROGS"
+?/SRC
+|2,1,1717304511,47,"SRC"
 ?/$
 |2,1,1716882149,47,"$"
 ?/recurse
 |2,1,1716882100,47,"recurse"
 ?/hello
 |2,1,1716882074,47,"hello"
-?/UPROGS
-|2,1,1716882064,47,"UPROGS"
 ?/uthread
 |2,1,1716882049,47,"uthread"
 ?/EXTRA
@@ -597,10 +603,6 @@ $
 |2,1,1712477919,47,"setup"
 ?/w
 |2,1,1712477324,47,"w"
-?/eixgt2
-|2,1,1712473858,47,"eixgt2"
-?/exot2
-|2,1,1712473130,47,"exot2"
 
 # Expression History (newest to oldest):
 
@@ -647,246 +649,271 @@ $
 	  pid = 
 |3,0,9,1,1,0,1716879982,"  pid = "
 ""-	CHAR	0
-	t
-|3,1,36,0,1,0,1716881526,"t"
+	/
+|3,1,36,0,1,0,1717304624,"/"
 
 # File marks:
-'0  94  12  ~/lab4/edk2/edksetup.sh
-|4,48,94,12,1716882163,"~/lab4/edk2/edksetup.sh"
-'1  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,49,189,2,1716882102,"~/lab4/xv6edk2/xv6/Makefile"
-'2  188  2  ~/lab2/xv6edk2/xv6/Makefile
-|4,50,188,2,1716882084,"~/lab2/xv6edk2/xv6/Makefile"
-'3  199  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,51,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
-'4  1  0  ~/lab3/xv6edk2/xv6/_uthread
-|4,52,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
-'5  263  6  ~/lab4/xv6edk2/xv6/Makefile
-|4,53,263,6,1716882014,"~/lab4/xv6edk2/xv6/Makefile"
-'6  263  6  ~/lab4/xv6edk2/xv6/Makefile
-|4,54,263,6,1716882014,"~/lab4/xv6edk2/xv6/Makefile"
-'7  200  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,55,200,0,1716881983,"~/lab3/xv6edk2/xv6/Makefile"
-'8  200  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,56,200,0,1716881983,"~/lab3/xv6edk2/xv6/Makefile"
-'9  1  0  ~/lab4/xv6edk2/xv6/_recurse
-|4,57,1,0,1716881961,"~/lab4/xv6edk2/xv6/_recurse"
+'0  25  46  ~/lab4/xv6edk2/xv6/recurse.c
+|4,48,25,46,1717304898,"~/lab4/xv6edk2/xv6/recurse.c"
+'1  13  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,49,13,1,1717304640,"~/lab4/xv6edk2/xv6/recurse.c"
+'2  13  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,50,13,1,1717304640,"~/lab4/xv6edk2/xv6/recurse.c"
+'3  1  0  ~/lab4/xv6edk2/xv6/recurse.
+|4,51,1,0,1717304599,"~/lab4/xv6edk2/xv6/recurse."
+'4  19  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,52,19,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
+'5  18  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,53,18,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
+'6  19  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,54,19,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
+'7  18  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,55,18,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
+'8  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,56,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+'9  1  0  ~/lab4/xv6edk2/xv6/MA
+|4,57,1,0,1717304507,"~/lab4/xv6edk2/xv6/MA"
 
 # Jumplist (newest first):
--'  94  12  ~/lab4/edk2/edksetup.sh
-|4,39,94,12,1716882163,"~/lab4/edk2/edksetup.sh"
--'  19  0  ~/lab4/edk2/edksetup.sh
-|4,39,19,0,1716882153,"~/lab4/edk2/edksetup.sh"
--'  18  0  ~/lab4/edk2/edksetup.sh
-|4,39,18,0,1716882153,"~/lab4/edk2/edksetup.sh"
--'  17  152  ~/lab4/edk2/edksetup.sh
-|4,39,17,152,1716882153,"~/lab4/edk2/edksetup.sh"
--'  16  0  ~/lab4/edk2/edksetup.sh
-|4,39,16,0,1716882153,"~/lab4/edk2/edksetup.sh"
--'  15  15  ~/lab4/edk2/edksetup.sh
-|4,39,15,15,1716882153,"~/lab4/edk2/edksetup.sh"
--'  14  78  ~/lab4/edk2/edksetup.sh
-|4,39,14,78,1716882153,"~/lab4/edk2/edksetup.sh"
--'  13  77  ~/lab4/edk2/edksetup.sh
-|4,39,13,77,1716882153,"~/lab4/edk2/edksetup.sh"
--'  12  0  ~/lab4/edk2/edksetup.sh
-|4,39,12,0,1716882153,"~/lab4/edk2/edksetup.sh"
--'  11  78  ~/lab4/edk2/edksetup.sh
-|4,39,11,78,1716882152,"~/lab4/edk2/edksetup.sh"
--'  10  71  ~/lab4/edk2/edksetup.sh
-|4,39,10,71,1716882152,"~/lab4/edk2/edksetup.sh"
--'  9  0  ~/lab4/edk2/edksetup.sh
-|4,39,9,0,1716882152,"~/lab4/edk2/edksetup.sh"
--'  8  32  ~/lab4/edk2/edksetup.sh
-|4,39,8,32,1716882152,"~/lab4/edk2/edksetup.sh"
--'  7  114  ~/lab4/edk2/edksetup.sh
-|4,39,7,114,1716882152,"~/lab4/edk2/edksetup.sh"
--'  6  83  ~/lab4/edk2/edksetup.sh
-|4,39,6,83,1716882152,"~/lab4/edk2/edksetup.sh"
--'  5  0  ~/lab4/edk2/edksetup.sh
-|4,39,5,0,1716882151,"~/lab4/edk2/edksetup.sh"
--'  4  45  ~/lab4/edk2/edksetup.sh
-|4,39,4,45,1716882151,"~/lab4/edk2/edksetup.sh"
--'  3  57  ~/lab4/edk2/edksetup.sh
-|4,39,3,57,1716882151,"~/lab4/edk2/edksetup.sh"
--'  2  71  ~/lab4/edk2/edksetup.sh
-|4,39,2,71,1716882150,"~/lab4/edk2/edksetup.sh"
--'  1  0  ~/lab4/edk2/edksetup.sh
-|4,39,1,0,1716882149,"~/lab4/edk2/edksetup.sh"
+-'  25  46  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,25,46,1717304898,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,1,1717304718,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  13  1  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,13,1,1717304640,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  19  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,19,3,1717304599,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  1  0  ~/lab4/xv6edk2/xv6/recurse.
+|4,39,1,0,1717304599,"~/lab4/xv6edk2/xv6/recurse."
+-'  1  0  ~/lab4/xv6edk2/xv6/recurse.
+|4,39,1,0,1717304599,"~/lab4/xv6edk2/xv6/recurse."
+-'  19  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,19,3,1717304599,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  1  0  ~/lab4/xv6edk2/xv6/recurse.
+|4,39,1,0,1717304599,"~/lab4/xv6edk2/xv6/recurse."
+-'  1  0  ~/lab4/xv6edk2/xv6/recurse.
+|4,39,1,0,1717304599,"~/lab4/xv6edk2/xv6/recurse."
+-'  18  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,18,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  18  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,18,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  18  3  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,18,3,1717304589,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  1  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,1,0,1717304580,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  1  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,1,0,1717304580,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  1  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,1,0,1717304580,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  1  0  ~/lab4/xv6edk2/xv6/recurse.c
+|4,39,1,0,1717304580,"~/lab4/xv6edk2/xv6/recurse.c"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  172  0  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,172,0,1717304549,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  201  3  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,201,3,1717304545,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  192  24  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,192,24,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
+-'  191  22  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,191,22,1717304544,"~/lab4/xv6edk2/xv6/Makefile"
 -'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1716882102,"~/lab4/xv6edk2/xv6/Makefile"
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
 -'  189  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,189,2,1716882102,"~/lab4/xv6edk2/xv6/Makefile"
--'  263  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,263,2,1716882101,"~/lab4/xv6edk2/xv6/Makefile"
--'  263  2  ~/lab4/xv6edk2/xv6/Makefile
-|4,39,263,2,1716882101,"~/lab4/xv6edk2/xv6/Makefile"
--'  188  2  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,188,2,1716882084,"~/lab2/xv6edk2/xv6/Makefile"
--'  188  2  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,188,2,1716882084,"~/lab2/xv6edk2/xv6/Makefile"
--'  188  2  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,188,2,1716882084,"~/lab2/xv6edk2/xv6/Makefile"
--'  188  2  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,188,2,1716882084,"~/lab2/xv6edk2/xv6/Makefile"
--'  263  2  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,263,2,1716882081,"~/lab2/xv6edk2/xv6/Makefile"
--'  263  2  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,263,2,1716882081,"~/lab2/xv6edk2/xv6/Makefile"
--'  263  2  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,263,2,1716882081,"~/lab2/xv6edk2/xv6/Makefile"
--'  263  2  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,263,2,1716882081,"~/lab2/xv6edk2/xv6/Makefile"
--'  259  39  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,259,39,1716882074,"~/lab2/xv6edk2/xv6/Makefile"
--'  259  39  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,259,39,1716882074,"~/lab2/xv6edk2/xv6/Makefile"
--'  259  39  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,259,39,1716882074,"~/lab2/xv6edk2/xv6/Makefile"
--'  259  39  ~/lab2/xv6edk2/xv6/Makefile
-|4,39,259,39,1716882074,"~/lab2/xv6edk2/xv6/Makefile"
--'  199  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
--'  199  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
--'  199  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
--'  199  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
--'  199  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
--'  199  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
--'  199  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
--'  199  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,199,0,1716882066,"~/lab3/xv6edk2/xv6/Makefile"
--'  272  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
--'  272  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
--'  272  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
--'  272  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
--'  272  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
--'  272  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
--'  272  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
--'  272  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,272,2,1716882064,"~/lab3/xv6edk2/xv6/Makefile"
--'  196  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
--'  196  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
--'  196  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
--'  196  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
--'  196  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
--'  196  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
--'  196  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
--'  196  2  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,196,2,1716882061,"~/lab3/xv6edk2/xv6/Makefile"
--'  165  26  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
--'  165  26  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
--'  165  26  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
--'  165  26  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
--'  165  26  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
--'  165  26  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
--'  165  26  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
--'  165  26  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,165,26,1716882060,"~/lab3/xv6edk2/xv6/Makefile"
--'  164  60  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
--'  164  60  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
--'  164  60  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
--'  164  60  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
--'  164  60  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
--'  164  60  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
--'  164  60  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
--'  164  60  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,164,60,1716882059,"~/lab3/xv6edk2/xv6/Makefile"
--'  163  20  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
--'  163  20  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
--'  163  20  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
--'  163  20  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
--'  163  20  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
--'  163  20  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
--'  163  20  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
--'  163  20  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,163,20,1716882058,"~/lab3/xv6edk2/xv6/Makefile"
--'  200  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
--'  200  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
--'  200  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
--'  200  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
--'  200  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
--'  200  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
--'  200  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
--'  200  0  ~/lab3/xv6edk2/xv6/Makefile
-|4,39,200,0,1716882049,"~/lab3/xv6edk2/xv6/Makefile"
--'  1  0  ~/lab3/xv6edk2/xv6/_uthread
-|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
--'  1  0  ~/lab3/xv6edk2/xv6/_uthread
-|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
--'  1  0  ~/lab3/xv6edk2/xv6/_uthread
-|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
--'  1  0  ~/lab3/xv6edk2/xv6/_uthread
-|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
--'  1  0  ~/lab3/xv6edk2/xv6/_uthread
-|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
--'  1  0  ~/lab3/xv6edk2/xv6/_uthread
-|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
--'  1  0  ~/lab3/xv6edk2/xv6/_uthread
-|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
--'  1  0  ~/lab3/xv6edk2/xv6/_uthread
-|4,39,1,0,1716882039,"~/lab3/xv6edk2/xv6/_uthread"
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  189  2  ~/lab4/xv6edk2/xv6/Makefile
+|4,39,189,2,1717304543,"~/lab4/xv6edk2/xv6/Makefile"
+-'  1  0  ~/lab4/xv6edk2/xv6/MA
+|4,39,1,0,1717304507,"~/lab4/xv6edk2/xv6/MA"
+-'  1  0  ~/lab4/xv6edk2/xv6/MA
+|4,39,1,0,1717304507,"~/lab4/xv6edk2/xv6/MA"
+-'  1  0  ~/lab4/xv6edk2/xv6/MA
+|4,39,1,0,1717304507,"~/lab4/xv6edk2/xv6/MA"
+-'  1  0  ~/lab4/xv6edk2/xv6/MA
+|4,39,1,0,1717304507,"~/lab4/xv6edk2/xv6/MA"
 
 # History of marks within files (newest to oldest):
 
-> ~/lab4/edk2/edksetup.sh
-	*	1716882160	0
-	"	94	12
+> ~/lab4/xv6edk2/xv6/recurse.c
+	*	1717304892	0
+	"	25	46
+	^	25	47
+	.	13	1
+	+	19	3
+	+	8	0
+	+	7	2
+	+	14	0
+	+	7	0
+	+	8	1
+	+	9	1
+	+	10	1
+	+	11	1
+	+	12	1
+	+	13	1
+
+> ~/lab4/xv6edk2/xv6/recurse.
+	*	1717304598	0
+	"	1	0
 
 > ~/lab4/xv6edk2/xv6/Makefile
-	*	1716882102	0
-	"	189	2
+	*	1717304545	0
+	"	172	0
 	^	263	12
 	.	263	11
 	+	189	9
 	+	263	11
+
+> ~/lab4/xv6edk2/xv6/MA
+	*	1717304506	0
+	"	1	0
+
+> ~/lab4/edk2/edksetup.sh
+	*	1716882160	0
+	"	94	12
 
 > ~/lab2/xv6edk2/xv6/Makefile
 	*	1716882081	0
@@ -2138,95 +2165,3 @@ $
 	.	52	12
 	+	53	0
 	+	52	12
-
-> ~/lab1.bak/xv6edk2/xv6/sysproc.c
-	*	1712587472	0
-	"	63	0
-	^	36	4
-	.	36	3
-	+	65	0
-	+	65	4
-	+	65	0
-	+	65	2
-	+	65	7
-	+	65	11
-	+	65	0
-	+	65	21
-	+	65	69
-	+	26	31
-	+	36	0
-	+	35	49
-	+	26	16
-	+	35	17
-	+	34	2
-	+	36	0
-	+	32	2
-	+	65	0
-	+	34	2
-	+	28	3
-	+	34	2
-	+	32	18
-	+	50	0
-	+	50	17
-	+	50	10
-	+	50	2
-	+	50	3
-	+	63	0
-	+	10	17
-	+	63	0
-	+	62	0
-	+	47	33
-	+	48	0
-	+	49	0
-	+	48	34
-	+	64	0
-	+	65	0
-	+	50	1
-	+	52	1
-	+	53	1
-	+	63	1
-	+	50	0
-	+	52	0
-	+	53	0
-	+	63	1
-	+	51	0
-	+	62	0
-	+	63	14
-	+	63	22
-	+	63	0
-	+	61	21
-	+	56	57
-	+	60	29
-	+	61	15
-	+	52	13
-	+	65	69
-	+	66	0
-	+	52	13
-	+	54	0
-	+	55	0
-	+	30	64
-	+	28	0
-	+	32	29
-	+	33	12
-	+	31	35
-	+	36	14
-	+	37	14
-	+	36	3
-
-> ~/lab1.bak/xv6edk2/xv6/_test
-	*	1712587123	0
-	"	6	7
-	^	3	17
-	.	4	0
-	+	40	0
-	+	1	16
-	+	1	17
-	+	36	0
-	+	39	0
-	+	5	0
-	+	3	16
-	+	4	0
-
-> ~/lab1.bak/xv6edk2/xv6/sysproc
-	*	1712583522	0
-	"	1	0
