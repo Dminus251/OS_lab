@@ -21,55 +21,6 @@ extern void trapret(void);
 
 static void wakeup1(void *chan);
 
-//int printpt(int pid) {
-//    struct proc *p = 0; 
-    //page table에서 pid가 일치하는 프로세스 탐색
-    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함
-//    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
-//        if (p->pid == pid) break;
-//    }
-//    if (p == 0 || p->pid != pid) return -1;
-
-//    pde_t *pgdir = p->pgdir;
-//    cprintf("START PAGE TABLE (pid %d)\n", pid);
-
-    //페이지 디렉토리 엔트리 순회
-    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.
-//    for (int i = 0; i < NPDENTRIES; i++) {
-	//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인
-	//PTE_P는 present bit를 의미. mmu.h에 정의됨
-//        if (pgdir[i] & PTE_P) {
-
-            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨
-	    //PTE_ADDR은 page table entry에서 물리 주소를 추출. 
-	    //mmu.h에 정의됨
-//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));
-	    
-	    //이번엔 page table 순회.
-//            for (int j = 0; j < NPTENTRIES; j++) {
-//                if (pgtab[j] & PTE_P) {
-
-	    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄
-//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);
-
-		    //KERNBASE는 커널 가상 주소 공간의 시작 주소
-		    //memlayout.h에 정의됨
-//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력
-//                    cprintf("%x P ", va >> PTXSHIFT);
-//                    if (pgtab[j] & PTE_U) cprintf("U ");
-//                    else cprintf("K ");
-//                    if (pgtab[j] & PTE_W) cprintf("W ");
-//                    else cprintf("- ");
-//                    cprintf("%x\n", PTE_ADDR(pgtab[j]));
-//                }
-//            }
-//        }
-//    }
-//    cprintf("END PAGE TABLE\n");
-//    return 0;
-//}
-
-
 int printpt(int pid) {
     struct proc *p = 0; 
     //page table에서 pid가 일치하는 프로세스 탐색
@@ -111,17 +62,14 @@ int printpt(int pid) {
                     if (pgtab[j] & PTE_W) cprintf("W ");
                     else cprintf("- ");
                     cprintf("%x\n", PTE_ADDR(pgtab[j]));
-    		    cprintf("END PAGE TABLE\n");
-		    return 0;
                 }
             }
+    	    cprintf("END PAGE TABLE\n");
+	    return 0;
         }
     }
     return 0;
 }
-
-
-
 
 
 void

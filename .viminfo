@@ -11,32 +11,36 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/call
+~MSle0~/printpt
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1717313584,,"q"
 :wq
-|2,0,1717313098,,"wq"
+|2,0,1717658525,,"wq"
+:q
+|2,0,1717658524,,"q"
 :w
-|2,0,1717311527,,"w"
+|2,0,1717658161,,"w"
 :set nu
-|2,0,1717311330,,"set nu"
+|2,0,1717658154,,"set nu"
+:60
+|2,0,1717658153,,"60"
+:6
+|2,0,1717658151,,"6"
 :q!
-|2,0,1717311312,,"q!"
+|2,0,1717657804,,"q!"
+:Q
+|2,0,1717320774,,"Q"
+:Q!
+|2,0,1717317305,,"Q!"
 :119
 |2,0,1717311205,,"119"
-:Q
-|2,0,1717309997,,"Q"
 :Set nu
 |2,0,1717309054,,"Set nu"
 :ㅂ!
 |2,0,1717308574,,"ㅂ!"
-:Q!
-|2,0,1717308500,,"Q!"
 :63
 |2,0,1717307014,,"63"
 :Wq
@@ -91,8 +95,6 @@ $
 |2,0,1714472827,,"279"
 :30
 |2,0,1714464330,,"30"
-:60
-|2,0,1714459965,,"60"
 :21
 |2,0,1714457660,,"21"
 :wait2
@@ -209,6 +211,8 @@ $
 |2,0,1711949580,,"147"
 
 # Search String History (newest to oldest):
+?/printpt
+|2,1,1717316659,47,"printpt"
 ?/call
 |2,1,1717309361,47,"call"
 ?/get
@@ -265,8 +269,6 @@ $
 |2,1,1716882074,47,"hello"
 ?/uthread
 |2,1,1716882049,47,"uthread"
-?/printpt
-|2,1,1716881516,47,"printpt"
 ?/syscalls
 |2,1,1716881399,47,"syscalls"
 ?/sys_printpt
@@ -671,13 +673,56 @@ $
 |<"		    //KERNBASE는 커널 가상 주소 공간의 시작 주소","		    //memlayout.h에 정의됨","//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력","//                    cprintf(\"%x P \", va >> PTXSHIFT);","//                    if (pgtab[j] & PTE_U) cprintf(\"U \");","//                    else cprintf(\"K \");","//                    if (pgtab[j] & PTE_W) cprintf(\"W \");","//                    else cprintf(\"- \");",>63
 |<"//                    cprintf(\"%x\\n\", PTE_ADDR(pgtab[j]));","//                }","//            }","//        }","//    }","//    cprintf(\"END PAGE TABLE\\n\");","//    return 0;","//}"
 "1	LINE	0
-	  int m;
-|3,0,1,1,1,0,1717312448,"  int m;"
+	    	    cprintf("END PAGE TABLE\n");
+		    return 0;
+|3,0,1,1,2,0,1717326842,"    	    cprintf(\"END PAGE TABLE\\n\");","	    return 0;"
 "2	LINE	0
-	    cprintf("END PAGE TABLE\n");
-	    return 0;
-|3,0,2,1,2,0,1717311555,"    cprintf(\"END PAGE TABLE\\n\");","    return 0;"
+	    		    cprintf("END PAGE TABLE\n");
+			    return 0;
+|3,0,2,1,2,0,1717320347,"    		    cprintf(\"END PAGE TABLE\\n\");","		    return 0;"
 "3	LINE	0
+	
+|3,0,3,1,1,0,1717313947,""
+"4	LINE	0
+	
+|3,0,4,1,1,0,1717313945,""
+"5	LINE	0
+	//    return 0;
+	//}
+|3,0,5,1,2,0,1717313943,"//    return 0;","//}"
+"6	LINE	0
+	//                }
+	//            }
+	//        }
+	//    }
+	//    cprintf("END PAGE TABLE\n");
+|3,0,6,1,5,0,1717313942,"//                }","//            }","//        }","//    }","//    cprintf(\"END PAGE TABLE\\n\");"
+"7	LINE	0
+	//                    if (pgtab[j] & PTE_U) cprintf("U ");
+	//                    else cprintf("K ");
+	//                    if (pgtab[j] & PTE_W) cprintf("W ");
+	//                    else cprintf("- ");
+	//                    cprintf("%x\n", PTE_ADDR(pgtab[j]));
+|3,0,7,1,5,0,1717313942,"//                    if (pgtab[j] & PTE_U) cprintf(\"U \");","//                    else cprintf(\"K \");","//                    if (pgtab[j] & PTE_W) cprintf(\"W \");","//                    else cprintf(\"- \");","//                    cprintf(\"%x\\n\", PTE_ADDR(pgtab[j]));"
+"8	LINE	0
+		    //PTE_ADDR은 page table entry에서 물리 주소를 추출. 
+		    //mmu.h에 정의됨
+	//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));
+		    
+		    //이번엔 page table 순회.
+	//            for (int j = 0; j < NPTENTRIES; j++) {
+	//                if (pgtab[j] & PTE_P) {
+	
+		    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄
+	//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);
+	
+			    //KERNBASE는 커널 가상 주소 공간의 시작 주소
+			    //memlayout.h에 정의됨
+	//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력
+	//                    cprintf("%x P ", va >> PTXSHIFT);
+|3,0,8,1,15,0,1717313940,"	    //PTE_ADDR은 page table entry에서 물리 주소를 추출. ","	    //mmu.h에 정의됨","//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));","	    ","	    //이번엔 page table 순회.","//            for (int j = 0; j < NPTENTRIES; j++) {","//                if (pgtab[j] & PTE_P) {","","	    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄",>68
+|<"//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);","","		    //KERNBASE는 커널 가상 주소 공간의 시작 주소","		    //memlayout.h에 정의됨","//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력","//                    cprintf(\"%x P \", va >> PTXSHIFT);"
+"9	LINE	0
 	//int printpt(int pid) {
 	//    struct proc *p = 0; 
 	    //page table에서 pid가 일치하는 프로세스 탐색
@@ -698,417 +743,379 @@ $
 	//        if (pgdir[i] & PTE_P) {
 	
 	            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨
-		    //PTE_ADDR은 page table entry에서 물리 주소를 추출. 
-		    //mmu.h에 정의됨
-	//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));
-		    
-		    //이번엔 page table 순회.
-	//            for (int j = 0; j < NPTENTRIES; j++) {
-	//                if (pgtab[j] & PTE_P) {
-	
-		    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄
-	//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);
-	
-			    //KERNBASE는 커널 가상 주소 공간의 시작 주소
-			    //memlayout.h에 정의됨
-	//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력
-	//                    cprintf("%x P ", va >> PTXSHIFT);
-	//                    if (pgtab[j] & PTE_U) cprintf("U ");
-|3,0,3,1,36,0,1717311372,"//int printpt(int pid) {","//    struct proc *p = 0; ","    //page table에서 pid가 일치하는 프로세스 탐색","    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함","//    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {","//        if (p->pid == pid) break;","//    }","//    if (p == 0 || p->pid != pid) return -1;","","//    pde_t *pgdir = p->pgdir;",>55
-|<"//    cprintf(\"START PAGE TABLE (pid %d)\\n\", pid);","","    //페이지 디렉토리 엔트리 순회","    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.","//    for (int i = 0; i < NPDENTRIES; i++) {","	//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인","	//PTE_P는 present bit를 의미. mmu.h에 정의됨","//        if (pgdir[i] & PTE_P) {","","            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨",>69
-|<"	    //PTE_ADDR은 page table entry에서 물리 주소를 추출. ","	    //mmu.h에 정의됨","//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));","	    ","	    //이번엔 page table 순회.","//            for (int j = 0; j < NPTENTRIES; j++) {","//                if (pgtab[j] & PTE_P) {","","	    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄","//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);","",>66
-|<"		    //KERNBASE는 커널 가상 주소 공간의 시작 주소","		    //memlayout.h에 정의됨","//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력","//                    cprintf(\"%x P \", va >> PTXSHIFT);","//                    if (pgtab[j] & PTE_U) cprintf(\"U \");"
-"4	LINE	0
-	                }
-	            }
-	        }
-	}
-	
-|3,0,4,1,5,0,1717311325,"                }","            }","        }","}",""
-"5	LINE	0
-	                    if (pgtab[j] & PTE_W) cprintf("W ");
-	                    else cprintf("- ");
-	                    cprintf("%x\n", PTE_ADDR(pgtab[j]));
-	    		    cprintf("END PAGE TABLE\n");
-		            return 0;
-|3,0,5,1,5,0,1717311324,"                    if (pgtab[j] & PTE_W) cprintf(\"W \");","                    else cprintf(\"- \");","                    cprintf(\"%x\\n\", PTE_ADDR(pgtab[j]));","    		    cprintf(\"END PAGE TABLE\\n\");","	            return 0;"
-"6	LINE	0
-			    //memlayout.h에 정의됨
-	                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력
-	                    cprintf("%x P ", va >> PTXSHIFT);
-	                    if (pgtab[j] & PTE_U) cprintf("U ");
-	                    else cprintf("K ");
-|3,0,6,1,5,0,1717311323,"		    //memlayout.h에 정의됨","                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력","                    cprintf(\"%x P \", va >> PTXSHIFT);","                    if (pgtab[j] & PTE_U) cprintf(\"U \");","                    else cprintf(\"K \");"
-"7	LINE	0
-	
-		    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄
-	                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);
-	
-			    //KERNBASE는 커널 가상 주소 공간의 시작 주소
-|3,0,7,1,5,0,1717311323,"","	    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄","                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);","","		    //KERNBASE는 커널 가상 주소 공간의 시작 주소"
-"8	LINE	0
-	int printpt(int pid) {
-	    struct proc *p = 0; 
-	    //page table에서 pid가 일치하는 프로세스 탐색
-	    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함
-	    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
-	        if (p->pid == pid) break;
-	    }
-	    if (p == 0 || p->pid != pid) return -1;
-	
-	    pde_t *pgdir = p->pgdir;
-	    cprintf("START PAGE TABLE (pid %d)\n", pid);
-	
-	    //페이지 디렉토리 엔트리 순회
-	    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.
-	    for (int i = 0; i < NPDENTRIES; i++) {
-		//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인
-		//PTE_P는 present bit를 의미. mmu.h에 정의됨
-	        if (pgdir[i] & PTE_P) {
-	
-	            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨
-		    //PTE_ADDR은 page table entry에서 물리 주소를 추출. 
-		    //mmu.h에 정의됨
-	            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));
-		    
-		    //이번엔 page table 순회.
-	            for (int j = NPTENTRIES; j >=0; j--) {
-	                if (pgtab[j] & PTE_P) {
-|3,0,8,1,27,0,1717311322,"int printpt(int pid) {","    struct proc *p = 0; ","    //page table에서 pid가 일치하는 프로세스 탐색","    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함","    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {","        if (p->pid == pid) break;","    }","    if (p == 0 || p->pid != pid) return -1;","","    pde_t *pgdir = p->pgdir;","    cprintf(\"START PAGE TABLE (pid %d)\\n\", pid);","",>47
-|<"    //페이지 디렉토리 엔트리 순회","    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.","    for (int i = 0; i < NPDENTRIES; i++) {","	//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인","	//PTE_P는 present bit를 의미. mmu.h에 정의됨","        if (pgdir[i] & PTE_P) {","","            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨",>69
-|<"	    //PTE_ADDR은 page table entry에서 물리 주소를 추출. ","	    //mmu.h에 정의됨","            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));","	    ","	    //이번엔 page table 순회.","            for (int j = NPTENTRIES; j >=0; j--) {","                if (pgtab[j] & PTE_P) {"
-"9	LINE	0
-	                }
-	            }
-	        }
-	    }
-	}
-|3,0,9,1,5,0,1717311276,"                }","            }","        }","    }","}"
+|3,0,9,1,20,0,1717313938,"//int printpt(int pid) {","//    struct proc *p = 0; ","    //page table에서 pid가 일치하는 프로세스 탐색","    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함","//    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {","//        if (p->pid == pid) break;","//    }","//    if (p == 0 || p->pid != pid) return -1;","","//    pde_t *pgdir = p->pgdir;",>55
+|<"//    cprintf(\"START PAGE TABLE (pid %d)\\n\", pid);","","    //페이지 디렉토리 엔트리 순회","    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.","//    for (int i = 0; i < NPDENTRIES; i++) {","	//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인","	//PTE_P는 present bit를 의미. mmu.h에 정의됨","//        if (pgdir[i] & PTE_P) {","","            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨"
 ""-	CHAR	0
 	/
-|3,1,36,0,1,0,1717313096,"/"
+|3,1,36,0,1,0,1717657800,"/"
 
 # File marks:
-'0  86  42  ~/lab4/xv6edk2/xv6/proc.c
-|4,48,86,42,1717313584,"~/lab4/xv6edk2/xv6/proc.c"
-'1  23  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,49,23,0,1717313547,"~/lab4/xv6edk2/xv6/recurse.c"
-'2  10  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,50,10,0,1717313506,"~/lab4/xv6edk2/xv6/recurse.c"
-'3  10  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,51,10,0,1717313506,"~/lab4/xv6edk2/xv6/recurse.c"
-'4  10  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,52,10,0,1717313333,"~/lab4/xv6edk2/xv6/recurse.c"
-'5  10  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,53,10,0,1717313333,"~/lab4/xv6edk2/xv6/recurse.c"
-'6  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,54,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
-'7  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,55,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
-'8  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,56,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
-'9  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,57,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
+'0  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,48,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+'1  66  0  ~/homework3/threads-sema/test.c
+|4,49,66,0,1717658163,"~/homework3/threads-sema/test.c"
+'2  1  0  ~/homework3/threads-sema/test
+|4,50,1,0,1717658151,"~/homework3/threads-sema/test"
+'3  1  0  ~/homework3/common_threads.h
+|4,51,1,0,1717658051,"~/homework3/common_threads.h"
+'4  7  0  ~/homework3/hello.c
+|4,52,7,0,1717658011,"~/homework3/hello.c"
+'5  7  0  ~/homework3/test.c
+|4,53,7,0,1717657804,"~/homework3/test.c"
+'6  6  0  ~/homework3/test.c
+|4,54,6,0,1717657794,"~/homework3/test.c"
+'7  6  0  ~/homework3/test.c
+|4,55,6,0,1717657794,"~/homework3/test.c"
+'8  15  0  ~/homework3/test.py
+|4,56,15,0,1717657774,"~/homework3/test.py"
+'9  86  0  ~/homework3/test.py
+|4,57,86,0,1717657739,"~/homework3/test.py"
 
 # Jumplist (newest first):
--'  86  42  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,86,42,1717313584,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717313548,"~/lab4/xv6edk2/xv6/proc.c"
--'  23  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,0,1717313547,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,0,1717313547,"~/lab4/xv6edk2/xv6/recurse.c"
--'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,10,0,1717313544,"~/lab4/xv6edk2/xv6/recurse.c"
--'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,10,0,1717313544,"~/lab4/xv6edk2/xv6/recurse.c"
--'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,10,0,1717313506,"~/lab4/xv6edk2/xv6/recurse.c"
--'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,10,0,1717313506,"~/lab4/xv6edk2/xv6/recurse.c"
--'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,10,0,1717313333,"~/lab4/xv6edk2/xv6/recurse.c"
--'  10  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,10,0,1717313333,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,0,1717313309,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,0,1717313172,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,0,1717313098,"~/lab4/xv6edk2/xv6/recurse.c"
--'  13  0  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,13,0,1717313098,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,2,1717313071,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,2,1717313010,"~/lab4/xv6edk2/xv6/recurse.c"
--'  23  2  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,23,2,1717313010,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312789,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312724,"~/lab4/xv6edk2/xv6/recurse.c"
--'  30  3  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,30,3,1717312724,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312660,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312623,"~/lab4/xv6edk2/xv6/recurse.c"
--'  29  1  ~/lab4/xv6edk2/xv6/recurse.c
-|4,39,29,1,1717312623,"~/lab4/xv6edk2/xv6/recurse.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
--'  89  50  ~/lab4/xv6edk2/xv6/proc.c
-|4,39,89,50,1717312601,"~/lab4/xv6edk2/xv6/proc.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  1  0  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,1,0,1717658419,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  66  0  ~/homework3/threads-sema/test.c
+|4,39,66,0,1717658163,"~/homework3/threads-sema/test.c"
+-'  66  0  ~/homework3/threads-sema/test.c
+|4,39,66,0,1717658163,"~/homework3/threads-sema/test.c"
+-'  1  0  ~/homework3/threads-sema/test.c
+|4,39,1,0,1717658153,"~/homework3/threads-sema/test.c"
+-'  1  0  ~/homework3/threads-sema/test.c
+|4,39,1,0,1717658153,"~/homework3/threads-sema/test.c"
+-'  1  0  ~/homework3/threads-sema/test
+|4,39,1,0,1717658151,"~/homework3/threads-sema/test"
+-'  1  0  ~/homework3/threads-sema/test
+|4,39,1,0,1717658151,"~/homework3/threads-sema/test"
+-'  1  0  ~/homework3/threads-sema/test
+|4,39,1,0,1717658151,"~/homework3/threads-sema/test"
+-'  1  0  ~/homework3/threads-sema/test
+|4,39,1,0,1717658151,"~/homework3/threads-sema/test"
+-'  1  0  ~/homework3/common_threads.h
+|4,39,1,0,1717658051,"~/homework3/common_threads.h"
+-'  1  0  ~/homework3/common_threads.h
+|4,39,1,0,1717658051,"~/homework3/common_threads.h"
+-'  1  0  ~/homework3/common_threads.h
+|4,39,1,0,1717658051,"~/homework3/common_threads.h"
+-'  1  0  ~/homework3/common_threads.h
+|4,39,1,0,1717658051,"~/homework3/common_threads.h"
+-'  1  0  ~/homework3/common_threads.h
+|4,39,1,0,1717658051,"~/homework3/common_threads.h"
+-'  1  0  ~/homework3/common_threads.h
+|4,39,1,0,1717658051,"~/homework3/common_threads.h"
+-'  1  0  ~/homework3/common_threads.h
+|4,39,1,0,1717658051,"~/homework3/common_threads.h"
+-'  1  0  ~/homework3/common_threads.h
+|4,39,1,0,1717658051,"~/homework3/common_threads.h"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  7  0  ~/homework3/hello.c
+|4,39,7,0,1717658011,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  1  0  ~/homework3/hello.c
+|4,39,1,0,1717658009,"~/homework3/hello.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  7  0  ~/homework3/test.c
+|4,39,7,0,1717657804,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  6  0  ~/homework3/test.c
+|4,39,6,0,1717657796,"~/homework3/test.c"
 
 # History of marks within files (newest to oldest):
 
+> ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+	*	1717658461	0
+	"	54	32
+	^	10	51
+	.	10	48
+	+	10	48
+
+> ~/homework3/threads-sema/test.c
+	*	1717658161	0
+	"	66	0
+
+> ~/homework3/threads-sema/test
+	*	1717658151	0
+	"	1	0
+
+> ~/homework3/common_threads.h
+	*	1717658042	0
+	"	1	0
+
+> ~/homework3/hello.c
+	*	1717658011	0
+	"	7	0
+	^	7	0
+	.	6	1
+	+	6	1
+
+> ~/homework3/test.c
+	*	1717657803	0
+	"	7	0
+	^	7	1
+	.	7	0
+	+	6	0
+	+	7	0
+
+> ~/homework3/test.py
+	*	1717657773	0
+	"	15	0
+	^	86	0
+	.	85	1
+	+	85	1
+
+> ~/lab4/xv6edk2/xv6.tmp/lab4/proc.c
+	*	1717326848	0
+	"	66	0
+	^	66	1
+	.	66	0
+	+	69	0
+	+	65	13
+	+	66	0
+
 > ~/lab4/xv6edk2/xv6/proc.c
-	*	1717313557	0
-	"	86	42
-	^	98	93
-	.	98	92
-	+	49	39
-	+	37	78
-	+	40	50
-	+	39	64
-	+	43	87
-	+	46	5
-	+	49	71
-	+	56	32
-	+	44	67
-	+	46	0
-	+	48	34
-	+	49	0
-	+	51	0
-	+	52	9
-	+	71	0
-	+	122	0
+	*	1717320805	0
+	"	60	36
+	^	67	2
+	.	43	0
+	+	24	39
+	+	24	78
+	+	24	50
+	+	24	64
+	+	24	87
+	+	24	5
+	+	24	71
+	+	24	32
+	+	24	67
+	+	24	0
+	+	24	34
+	+	24	0
+	+	24	9
+	+	24	0
+	+	72	0
 	+	24	1
-	+	25	1
-	+	28	1
-	+	29	1
-	+	30	1
-	+	31	1
-	+	33	1
-	+	34	1
-	+	38	1
-	+	41	1
-	+	46	1
-	+	49	1
-	+	50	1
-	+	53	1
-	+	57	1
-	+	58	1
-	+	59	1
-	+	60	1
-	+	61	1
-	+	62	1
-	+	63	1
-	+	64	1
-	+	65	1
-	+	66	1
-	+	67	1
-	+	68	1
-	+	69	1
-	+	70	1
-	+	122	46
-	+	122	0
-	+	122	9
-	+	122	8
-	+	122	0
-	+	122	1
-	+	122	0
-	+	122	3
-	+	122	0
-	+	127	0
-	+	125	0
-	+	123	0
-	+	124	0
-	+	123	0
-	+	73	0
+	+	72	46
+	+	72	0
+	+	72	9
+	+	72	8
+	+	72	0
+	+	72	1
+	+	72	0
+	+	72	3
+	+	72	0
 	+	74	0
-	+	77	0
-	+	78	0
-	+	79	0
-	+	80	0
-	+	82	0
-	+	83	0
-	+	87	0
-	+	90	0
-	+	95	0
-	+	99	0
-	+	100	0
-	+	103	0
-	+	107	0
-	+	108	0
-	+	109	0
-	+	110	0
-	+	111	0
-	+	112	0
-	+	113	0
-	+	116	0
-	+	117	0
-	+	118	0
-	+	119	0
-	+	121	0
-	+	87	40
-	+	121	0
-	+	114	9
-	+	115	2
-	+	120	12
-	+	98	92
+	+	73	0
+	+	24	0
+	+	25	0
+	+	28	0
+	+	29	0
+	+	30	0
+	+	31	0
+	+	33	0
+	+	34	0
+	+	38	0
+	+	41	0
+	+	45	0
+	+	49	0
+	+	50	0
+	+	53	0
+	+	57	0
+	+	58	0
+	+	59	0
+	+	60	0
+	+	61	0
+	+	62	0
+	+	63	0
+	+	64	0
+	+	65	0
+	+	68	0
+	+	69	0
+	+	71	0
+	+	38	40
+	+	71	0
+	+	64	9
+	+	64	2
+	+	70	12
+	+	48	92
+	+	73	0
+	+	24	0
+	+	49	46
+	+	38	17
+	+	64	0
+	+	66	8
+	+	67	1
+	+	43	0
+
+> ~/lab4/xv6edk2/xv6/sysproc.c
+	*	1717316665	0
+	"	4	4
+	^	12	2
+	.	14	0
+	+	9	0
+	+	9	7
+	+	9	10
+	+	9	8
+	+	9	22
+	+	9	24
+	+	9	23
+	+	15	0
+	+	9	4
+	+	11	1
+	+	12	0
+	+	13	0
+	+	14	0
 
 > ~/lab4/xv6edk2/xv6/recurse.c
 	*	1717313546	0
@@ -1213,25 +1220,6 @@ $
 	^	23	22
 	.	23	21
 	+	23	21
-
-> ~/lab4/xv6edk2/xv6/sysproc.c
-	*	1717309212	0
-	"	48	22
-	^	12	2
-	.	14	0
-	+	9	0
-	+	9	7
-	+	9	10
-	+	9	8
-	+	9	22
-	+	9	24
-	+	9	23
-	+	15	0
-	+	9	4
-	+	11	1
-	+	12	0
-	+	13	0
-	+	14	0
 
 > ~/lab4/xv6edk2/xv6/proc.h
 	*	1717309134	0
@@ -2165,154 +2153,3 @@ $
 > ~/lab1/xv6edk2/xv6/syscall.h
 	*	1713837168	0
 	"	1	0
-
-> ~/lab2/xv6edk2/xv6/proc.h
-	*	1713836458	0
-	"	31	2
-	^	52	13
-	.	52	12
-	+	51	58
-	+	54	12
-	+	53	58
-	+	52	12
-
-> ~/homework1/scheduler.py
-	*	1713527389	0
-	"	149	36
-	^	149	37
-	.	149	36
-	+	151	0
-	+	102	35
-	+	151	82
-	+	151	0
-	+	103	70
-	+	103	0
-	+	103	70
-	+	141	0
-	+	96	89
-	+	97	0
-	+	103	32
-	+	114	12
-	+	103	12
-	+	109	34
-	+	114	26
-	+	151	0
-	+	114	0
-	+	111	12
-	+	114	0
-	+	111	78
-	+	104	23
-	+	115	33
-	+	115	40
-	+	115	68
-	+	115	0
-	+	141	130
-	+	151	20
-	+	115	37
-	+	115	89
-	+	151	43
-	+	115	48
-	+	115	0
-	+	115	24
-	+	115	36
-	+	115	0
-	+	115	32
-	+	115	38
-	+	115	0
-	+	115	127
-	+	141	22
-	+	151	19
-	+	151	0
-	+	151	22
-	+	151	0
-	+	143	0
-	+	105	0
-	+	110	0
-	+	112	53
-	+	113	0
-	+	112	85
-	+	114	0
-	+	140	21
-	+	126	38
-	+	121	0
-	+	141	0
-	+	121	0
-	+	121	36
-	+	126	16
-	+	115	0
-	+	117	19
-	+	118	23
-	+	119	27
-	+	120	3
-	+	121	0
-	+	141	0
-	+	136	20
-	+	138	20
-	+	134	0
-	+	130	38
-	+	133	58
-	+	129	22
-	+	128	77
-	+	133	26
-	+	134	44
-	+	136	119
-	+	229	11
-	+	136	127
-	+	135	43
-	+	133	51
-	+	132	45
-	+	133	147
-	+	136	109
-	+	125	94
-	+	125	0
-	+	122	36
-	+	137	27
-	+	122	56
-	+	123	41
-	+	122	144
-	+	124	27
-	+	140	58
-	+	126	112
-	+	150	20
-	+	144	40
-	+	143	26
-	+	144	44
-	+	143	138
-	+	149	36
-	j	222	23
-
-> ~/homework1/origin.py
-	*	1713520994	0
-	"	160	0
-	.	3	0
-	+	2	0
-	+	3	0
-
-> ~/homework1/test2.py
-	*	1713450005	0
-	"	230	0
-	^	230	0
-	.	229	13
-	+	229	13
-
-> ~/homework1/hsiory.txt
-	*	1713449917	0
-	"	1	0
-
-> ~/homework1/test
-	*	1713449886	0
-	"	1	0
-	^	1	15
-	.	1	14
-	+	1	14
-
-> ~/homework1/s
-	*	1713335860	0
-	"	1	0
-
-> ~/homework1/scheduler.py.bak
-	*	1713259147	0
-	"	96	20
-	.	96	0
-	+	2	0
-	+	96	0
