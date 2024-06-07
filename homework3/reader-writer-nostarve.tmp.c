@@ -26,38 +26,39 @@ void rwlock_init(rwlock_t *rw) {
 }
 
 void rwlock_acquire_readlock(rwlock_t *rw) {
-    while (true) {
-        sem_wait(&rw->lock);       // lock 세마포어 획득
-        if (rw->waiting_writers == 0) { // 대기 중인 writer가 없을 경우
-            rw->readers++;
-            if (rw->readers == 1) {  // 첫 번째 reader가 writelock을 획득
-                sem_wait(&rw->writelock);
-            }
-            sem_post(&rw->lock);   // lock 세마포어 해제
-            break;
-        }
-        sem_post(&rw->lock);       // lock 세마포어 해제
-        usleep(1);                 // 잠시 대기
-    }
+  sem_wait(&rw->lock); //이진 락 세마포어획득. decrement lock 세마포어
+  rw->readers++;
+  //********************추가
+  while (rw->waiting_writers>0){
+    sem_post(&rw->lock); //대기중인 wirter가 있으면 lock 세마포어 해제
+    usleep(1); //이 동안 writer 스레드가 임계 영역 처리
+    sem_wait(&rw->lock); //잠깐 쉬고 다시 lock 세마포어 획득	    
+  }
+  //********************
+  if (rw->readers == 1) // 첫번째 reader가 writelock을 획득
+      sem_wait(&rw->writelock); //쓸 수 없도록 writelock을 가짐
+  sem_post(&rw->lock); //이진 락 세마포어 해제
 }
 
 void rwlock_release_readlock(rwlock_t *rw) {
-    sem_wait(&rw->lock);           // lock 세마포어 획득
-    rw->readers--;
-    if (rw->readers == 0) {        // 마지막 reader가 writelock을 해제
-        sem_post(&rw->writelock);
-    }
-    sem_post(&rw->lock);           // lock 세마포어 해제
+  sem_wait(&rw->lock);
+  rw->readers--;
+  if (rw->readers == 0) // 마지막 reader가 writelock 해제
+      sem_post(&rw->writelock);
+  sem_post(&rw->lock);
 }
 
 void rwlock_acquire_writelock(rwlock_t *rw) {
-    sem_wait(&rw->lock);           // lock 세마포어 획득
-    rw->waiting_writers++;         // 대기 중인 writer의 수 증가
-    sem_post(&rw->lock);           // lock 세마포어 해제
-    sem_wait(&rw->writelock);      // writelock 세마포어 획득 (다른 모든 reader와 writer 접근 불가)
-    sem_wait(&rw->lock);           // lock 세마포어 재획득
-    rw->waiting_writers--;         // 대기 중인 writer의 수 감소
-    sem_post(&rw->lock);           // lock 세마포어 해제
+  sem_wait(&rw->lock); //lock 세마포어 획득
+  rw->waiting_writers++; //wating_writers 증가
+  sem_post(&rw->lock); //lock 세마포어 해제
+
+  sem_wait(&rw->writelock); //writelock 세마포어 획득 
+
+  sem_wait(&rw->lock); //wating_writers++했으므로 readlock에서 lock 세마포어
+		       //해제함. 이때 애가 lock 획득
+  rw->waiting_writers--; //wating_writers 감소
+  sem_post(&rw->lock); //lock 세마포어 해제
 }
 
 void rwlock_release_writelock(rwlock_t *rw) {

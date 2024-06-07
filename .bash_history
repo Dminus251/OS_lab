@@ -1,38 +1,3 @@
-ls
-cd lab3
-ls
-cd xv6edk2/
-vi trap.c
-cd xv6/
-vi trap.c
-vi modified_uthread.c 
-cd ~
-ls
-rm -rf lab3.bak
-git add .
-git commit -m "lab3 최신화"
-git push origin main
-cd lab2
-cd ../lab3
-clear
-cd xv6edk2/xv6/
-vi uthread.c
-vi uthread_switch.S 
-vi uthread.c
-vi uthread_switch.S
-vi uthread.c
-vi uthrear_S
-vi uthread_S
-vi uthread_switch.S 
-vi uthread.c
-vi uthread_switch.S 
-cd lab3/xv6edk2/xv6/
-ls
-vi uthread.c
-clear
-ls *uth*
-vi uthread_switch.S
-vi uthread.c
 vi uthread_switch.S
 vi Makefile 
 clear
@@ -1998,3 +1963,38 @@ vi reader-writer-nostarve.c
 vi 407p
 vi reader-writer-nostarve.c 
 :q
+l
+git add .
+git commit -m "homework3 주석"
+git push origin main
+clear
+ls
+cd homework3/
+ls
+vi reader-writer-nostarve.c 
+clear
+cat reader-writer-nostarve.c 
+vi reader-writer-nostarve.c 
+clear
+ls
+vi common_threads.h 
+ls
+rm reader-writer.c
+rm test
+rm -rf threads-sema.tmp/
+clear
+ls
+ls -l
+vi 407p 
+rm 407p 
+clear
+ls
+vi reader-writer-nostarve.c 
+cp reader-writer-nostarve.c reader-writer-nostarve.c.tmp
+ls
+vi reader-writer-nostarve.c
+clear
+ls
+mv reader-writer-nostarve.c reader-writer-nostarve-byGPT.c
+ls
+vi reader-writer-nostarve-byGPT.c 
