@@ -18,27 +18,29 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1717658525,,"wq"
-:q
-|2,0,1717658524,,"q"
-:w
-|2,0,1717658161,,"w"
+|2,0,1717679390,,"wq"
+:q!
+|2,0,1717679239,,"q!"
 :set nu
-|2,0,1717658154,,"set nu"
+|2,0,1717679202,,"set nu"
+:q
+|2,0,1717679125,,"q"
+:w
+|2,0,1717678688,,"w"
 :60
-|2,0,1717658153,,"60"
+|2,0,1717678598,,"60"
+:Set nu
+|2,0,1717678596,,"Set nu"
+:35
+|2,0,1717678533,,"35"
 :6
 |2,0,1717658151,,"6"
-:q!
-|2,0,1717657804,,"q!"
 :Q
 |2,0,1717320774,,"Q"
 :Q!
 |2,0,1717317305,,"Q!"
 :119
 |2,0,1717311205,,"119"
-:Set nu
-|2,0,1717309054,,"Set nu"
 :ㅂ!
 |2,0,1717308574,,"ㅂ!"
 :63
@@ -672,39 +674,43 @@ $
 |<"	    //PTE_ADDR은 page table entry에서 물리 주소를 추출. ","	    //mmu.h에 정의됨","//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));","	    ","	    //이번엔 page table 순회.","//            for (int j = 0; j < NPTENTRIES; j++) {","//                if (pgtab[j] & PTE_P) {","","	    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄","//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);","",>66
 |<"		    //KERNBASE는 커널 가상 주소 공간의 시작 주소","		    //memlayout.h에 정의됨","//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력","//                    cprintf(\"%x P \", va >> PTXSHIFT);","//                    if (pgtab[j] & PTE_U) cprintf(\"U \");","//                    else cprintf(\"K \");","//                    if (pgtab[j] & PTE_W) cprintf(\"W \");","//                    else cprintf(\"- \");",>63
 |<"//                    cprintf(\"%x\\n\", PTE_ADDR(pgtab[j]));","//                }","//            }","//        }","//    }","//    cprintf(\"END PAGE TABLE\\n\");","//    return 0;","//}"
-"1	LINE	0
+""1	LINE	0
+		Pthread_join(pw[i], NULL);
+	
+|3,1,1,1,2,0,1717679237,"	Pthread_join(pw[i], NULL);",""
+"2	LINE	0
 	    	    cprintf("END PAGE TABLE\n");
 		    return 0;
-|3,0,1,1,2,0,1717326842,"    	    cprintf(\"END PAGE TABLE\\n\");","	    return 0;"
-"2	LINE	0
+|3,0,2,1,2,0,1717326842,"    	    cprintf(\"END PAGE TABLE\\n\");","	    return 0;"
+"3	LINE	0
 	    		    cprintf("END PAGE TABLE\n");
 			    return 0;
-|3,0,2,1,2,0,1717320347,"    		    cprintf(\"END PAGE TABLE\\n\");","		    return 0;"
-"3	LINE	0
-	
-|3,0,3,1,1,0,1717313947,""
+|3,0,3,1,2,0,1717320347,"    		    cprintf(\"END PAGE TABLE\\n\");","		    return 0;"
 "4	LINE	0
 	
-|3,0,4,1,1,0,1717313945,""
+|3,0,4,1,1,0,1717313947,""
 "5	LINE	0
+	
+|3,0,5,1,1,0,1717313945,""
+"6	LINE	0
 	//    return 0;
 	//}
-|3,0,5,1,2,0,1717313943,"//    return 0;","//}"
-"6	LINE	0
+|3,0,6,1,2,0,1717313943,"//    return 0;","//}"
+"7	LINE	0
 	//                }
 	//            }
 	//        }
 	//    }
 	//    cprintf("END PAGE TABLE\n");
-|3,0,6,1,5,0,1717313942,"//                }","//            }","//        }","//    }","//    cprintf(\"END PAGE TABLE\\n\");"
-"7	LINE	0
+|3,0,7,1,5,0,1717313942,"//                }","//            }","//        }","//    }","//    cprintf(\"END PAGE TABLE\\n\");"
+"8	LINE	0
 	//                    if (pgtab[j] & PTE_U) cprintf("U ");
 	//                    else cprintf("K ");
 	//                    if (pgtab[j] & PTE_W) cprintf("W ");
 	//                    else cprintf("- ");
 	//                    cprintf("%x\n", PTE_ADDR(pgtab[j]));
-|3,0,7,1,5,0,1717313942,"//                    if (pgtab[j] & PTE_U) cprintf(\"U \");","//                    else cprintf(\"K \");","//                    if (pgtab[j] & PTE_W) cprintf(\"W \");","//                    else cprintf(\"- \");","//                    cprintf(\"%x\\n\", PTE_ADDR(pgtab[j]));"
-"8	LINE	0
+|3,0,8,1,5,0,1717313942,"//                    if (pgtab[j] & PTE_U) cprintf(\"U \");","//                    else cprintf(\"K \");","//                    if (pgtab[j] & PTE_W) cprintf(\"W \");","//                    else cprintf(\"- \");","//                    cprintf(\"%x\\n\", PTE_ADDR(pgtab[j]));"
+"9	LINE	0
 		    //PTE_ADDR은 page table entry에서 물리 주소를 추출. 
 		    //mmu.h에 정의됨
 	//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));
@@ -720,260 +726,262 @@ $
 			    //memlayout.h에 정의됨
 	//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력
 	//                    cprintf("%x P ", va >> PTXSHIFT);
-|3,0,8,1,15,0,1717313940,"	    //PTE_ADDR은 page table entry에서 물리 주소를 추출. ","	    //mmu.h에 정의됨","//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));","	    ","	    //이번엔 page table 순회.","//            for (int j = 0; j < NPTENTRIES; j++) {","//                if (pgtab[j] & PTE_P) {","","	    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄",>68
+|3,0,9,1,15,0,1717313940,"	    //PTE_ADDR은 page table entry에서 물리 주소를 추출. ","	    //mmu.h에 정의됨","//            pte_t *pgtab = (pte_t*)P2V(PTE_ADDR(pgdir[i]));","	    ","	    //이번엔 page table 순회.","//            for (int j = 0; j < NPTENTRIES; j++) {","//                if (pgtab[j] & PTE_P) {","","	    	    //PDXSHIFT는 페이지 디렉토리 인덱스 시프트를 나타냄",>68
 |<"//                    uint va = (i << PDXSHIFT) | (j << PTXSHIFT);","","		    //KERNBASE는 커널 가상 주소 공간의 시작 주소","		    //memlayout.h에 정의됨","//                    if (va >= KERNBASE) continue; // 유저 모드 메모리만 출력","//                    cprintf(\"%x P \", va >> PTXSHIFT);"
-"9	LINE	0
-	//int printpt(int pid) {
-	//    struct proc *p = 0; 
-	    //page table에서 pid가 일치하는 프로세스 탐색
-	    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함
-	//    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
-	//        if (p->pid == pid) break;
-	//    }
-	//    if (p == 0 || p->pid != pid) return -1;
-	
-	//    pde_t *pgdir = p->pgdir;
-	//    cprintf("START PAGE TABLE (pid %d)\n", pid);
-	
-	    //페이지 디렉토리 엔트리 순회
-	    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.
-	//    for (int i = 0; i < NPDENTRIES; i++) {
-		//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인
-		//PTE_P는 present bit를 의미. mmu.h에 정의됨
-	//        if (pgdir[i] & PTE_P) {
-	
-	            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨
-|3,0,9,1,20,0,1717313938,"//int printpt(int pid) {","//    struct proc *p = 0; ","    //page table에서 pid가 일치하는 프로세스 탐색","    //NPROC은 param.h에 정의됨. 최대 프로세스 수(64)를 뜻함","//    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {","//        if (p->pid == pid) break;","//    }","//    if (p == 0 || p->pid != pid) return -1;","","//    pde_t *pgdir = p->pgdir;",>55
-|<"//    cprintf(\"START PAGE TABLE (pid %d)\\n\", pid);","","    //페이지 디렉토리 엔트리 순회","    //NPDENTRIES는 페이지 디렉토리 수(1024)의미. mmh.h에 정의됨.","//    for (int i = 0; i < NPDENTRIES; i++) {","	//해당 엔트리가 유효한지 (=PTE_P가 있는지) 확인","	//PTE_P는 present bit를 의미. mmu.h에 정의됨","//        if (pgdir[i] & PTE_P) {","","            //P2V는 물리 수로를 가상 주소로 변환. memlayout.h에 정의됨"
-""-	CHAR	0
-	/
-|3,1,36,0,1,0,1717657800,"/"
+"-	CHAR	0
+	4
+|3,0,36,0,1,0,1717678687,"4"
 
 # File marks:
-'0  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
-|4,48,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
-'1  66  0  ~/homework3/threads-sema/test.c
-|4,49,66,0,1717658163,"~/homework3/threads-sema/test.c"
-'2  1  0  ~/homework3/threads-sema/test
-|4,50,1,0,1717658151,"~/homework3/threads-sema/test"
-'3  1  0  ~/homework3/common_threads.h
-|4,51,1,0,1717658051,"~/homework3/common_threads.h"
-'4  7  0  ~/homework3/hello.c
-|4,52,7,0,1717658011,"~/homework3/hello.c"
-'5  7  0  ~/homework3/test.c
-|4,53,7,0,1717657804,"~/homework3/test.c"
-'6  6  0  ~/homework3/test.c
-|4,54,6,0,1717657794,"~/homework3/test.c"
-'7  6  0  ~/homework3/test.c
-|4,55,6,0,1717657794,"~/homework3/test.c"
-'8  15  0  ~/homework3/test.py
-|4,56,15,0,1717657774,"~/homework3/test.py"
-'9  86  0  ~/homework3/test.py
-|4,57,86,0,1717657739,"~/homework3/test.py"
+'0  70  0  ~/homework3/reader-writer-nostarve.c
+|4,48,70,0,1717679390,"~/homework3/reader-writer-nostarve.c"
+'1  82  4  ~/homework3/reader-writer-nostarve.c
+|4,49,82,4,1717679239,"~/homework3/reader-writer-nostarve.c"
+'2  82  4  ~/homework3/reader-writer-nostarve.c
+|4,50,82,4,1717679239,"~/homework3/reader-writer-nostarve.c"
+'3  36  0  ~/homework3/407p
+|4,51,36,0,1717679132,"~/homework3/407p"
+'4  65  56  ~/homework3/reader-writer-nostarve.c
+|4,52,65,56,1717679126,"~/homework3/reader-writer-nostarve.c"
+'5  65  56  ~/homework3/reader-writer-nostarve.c
+|4,53,65,56,1717679126,"~/homework3/reader-writer-nostarve.c"
+'6  65  56  ~/homework3/reader-writer-nostarve.c
+|4,54,65,56,1717679126,"~/homework3/reader-writer-nostarve.c"
+'7  65  56  ~/homework3/reader-writer-nostarve.c
+|4,55,65,56,1717679126,"~/homework3/reader-writer-nostarve.c"
+'8  62  53  ~/homework3/reader-writer-nostarve.c
+|4,56,62,53,1717678666,"~/homework3/reader-writer-nostarve.c"
+'9  62  53  ~/homework3/reader-writer-nostarve.c
+|4,57,62,53,1717678666,"~/homework3/reader-writer-nostarve.c"
 
 # Jumplist (newest first):
+-'  70  0  ~/homework3/reader-writer-nostarve.c
+|4,39,70,0,1717679390,"~/homework3/reader-writer-nostarve.c"
+-'  82  4  ~/homework3/reader-writer-nostarve.c
+|4,39,82,4,1717679239,"~/homework3/reader-writer-nostarve.c"
+-'  82  4  ~/homework3/reader-writer-nostarve.c
+|4,39,82,4,1717679239,"~/homework3/reader-writer-nostarve.c"
+-'  65  56  ~/homework3/reader-writer-nostarve.c
+|4,39,65,56,1717679200,"~/homework3/reader-writer-nostarve.c"
+-'  65  56  ~/homework3/reader-writer-nostarve.c
+|4,39,65,56,1717679200,"~/homework3/reader-writer-nostarve.c"
+-'  36  0  ~/homework3/407p
+|4,39,36,0,1717679132,"~/homework3/407p"
+-'  36  0  ~/homework3/407p
+|4,39,36,0,1717679132,"~/homework3/407p"
+-'  36  0  ~/homework3/407p
+|4,39,36,0,1717679132,"~/homework3/407p"
+-'  36  0  ~/homework3/407p
+|4,39,36,0,1717679132,"~/homework3/407p"
+-'  1  0  ~/homework3/407p
+|4,39,1,0,1717679130,"~/homework3/407p"
+-'  1  0  ~/homework3/407p
+|4,39,1,0,1717679130,"~/homework3/407p"
+-'  1  0  ~/homework3/407p
+|4,39,1,0,1717679130,"~/homework3/407p"
+-'  1  0  ~/homework3/407p
+|4,39,1,0,1717679130,"~/homework3/407p"
+-'  65  56  ~/homework3/reader-writer-nostarve.c
+|4,39,65,56,1717679126,"~/homework3/reader-writer-nostarve.c"
+-'  65  56  ~/homework3/reader-writer-nostarve.c
+|4,39,65,56,1717679126,"~/homework3/reader-writer-nostarve.c"
+-'  62  53  ~/homework3/reader-writer-nostarve.c
+|4,39,62,53,1717678682,"~/homework3/reader-writer-nostarve.c"
+-'  62  53  ~/homework3/reader-writer-nostarve.c
+|4,39,62,53,1717678682,"~/homework3/reader-writer-nostarve.c"
+-'  62  53  ~/homework3/reader-writer-nostarve.c
+|4,39,62,53,1717678682,"~/homework3/reader-writer-nostarve.c"
+-'  62  53  ~/homework3/reader-writer-nostarve.c
+|4,39,62,53,1717678682,"~/homework3/reader-writer-nostarve.c"
+-'  62  53  ~/homework3/reader-writer-nostarve.c
+|4,39,62,53,1717678666,"~/homework3/reader-writer-nostarve.c"
+-'  62  53  ~/homework3/reader-writer-nostarve.c
+|4,39,62,53,1717678666,"~/homework3/reader-writer-nostarve.c"
+-'  50  68  ~/homework3/reader-writer-nostarve.c
+|4,39,50,68,1717678594,"~/homework3/reader-writer-nostarve.c"
+-'  50  68  ~/homework3/reader-writer-nostarve.c
+|4,39,50,68,1717678594,"~/homework3/reader-writer-nostarve.c"
+-'  50  68  ~/homework3/reader-writer-nostarve.c
+|4,39,50,68,1717678594,"~/homework3/reader-writer-nostarve.c"
+-'  50  68  ~/homework3/reader-writer-nostarve.c
+|4,39,50,68,1717678594,"~/homework3/reader-writer-nostarve.c"
+-'  50  68  ~/homework3/reader-writer-nostarve.c
+|4,39,50,68,1717678594,"~/homework3/reader-writer-nostarve.c"
+-'  50  68  ~/homework3/reader-writer-nostarve.c
+|4,39,50,68,1717678594,"~/homework3/reader-writer-nostarve.c"
+-'  50  68  ~/homework3/reader-writer-nostarve.c
+|4,39,50,68,1717678593,"~/homework3/reader-writer-nostarve.c"
+-'  50  68  ~/homework3/reader-writer-nostarve.c
+|4,39,50,68,1717678593,"~/homework3/reader-writer-nostarve.c"
+-'  1  0  ~/homework3/reader-writer-nostarve.c
+|4,39,1,0,1717678381,"~/homework3/reader-writer-nostarve.c"
+-'  1  0  ~/homework3/reader-writer-nostarve.c
+|4,39,1,0,1717678381,"~/homework3/reader-writer-nostarve.c"
+-'  1  0  ~/homework3/reader-writer-nostarve.c
+|4,39,1,0,1717678381,"~/homework3/reader-writer-nostarve.c"
+-'  1  0  ~/homework3/reader-writer-nostarve.c
+|4,39,1,0,1717678381,"~/homework3/reader-writer-nostarve.c"
+-'  1  0  ~/homework3/reader-writer-nostarve.c
+|4,39,1,0,1717678381,"~/homework3/reader-writer-nostarve.c"
+-'  1  0  ~/homework3/reader-writer-nostarve.c
+|4,39,1,0,1717678381,"~/homework3/reader-writer-nostarve.c"
+-'  1  0  ~/homework3/reader-writer-nostarve.c
+|4,39,1,0,1717678381,"~/homework3/reader-writer-nostarve.c"
+-'  1  0  ~/homework3/reader-writer-nostarve.c
+|4,39,1,0,1717678381,"~/homework3/reader-writer-nostarve.c"
 -'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
 |4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
--'  1  0  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
-|4,39,1,0,1717658419,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
--'  66  0  ~/homework3/threads-sema/test.c
-|4,39,66,0,1717658163,"~/homework3/threads-sema/test.c"
--'  66  0  ~/homework3/threads-sema/test.c
-|4,39,66,0,1717658163,"~/homework3/threads-sema/test.c"
--'  1  0  ~/homework3/threads-sema/test.c
-|4,39,1,0,1717658153,"~/homework3/threads-sema/test.c"
--'  1  0  ~/homework3/threads-sema/test.c
-|4,39,1,0,1717658153,"~/homework3/threads-sema/test.c"
--'  1  0  ~/homework3/threads-sema/test
-|4,39,1,0,1717658151,"~/homework3/threads-sema/test"
--'  1  0  ~/homework3/threads-sema/test
-|4,39,1,0,1717658151,"~/homework3/threads-sema/test"
--'  1  0  ~/homework3/threads-sema/test
-|4,39,1,0,1717658151,"~/homework3/threads-sema/test"
--'  1  0  ~/homework3/threads-sema/test
-|4,39,1,0,1717658151,"~/homework3/threads-sema/test"
--'  1  0  ~/homework3/common_threads.h
-|4,39,1,0,1717658051,"~/homework3/common_threads.h"
--'  1  0  ~/homework3/common_threads.h
-|4,39,1,0,1717658051,"~/homework3/common_threads.h"
--'  1  0  ~/homework3/common_threads.h
-|4,39,1,0,1717658051,"~/homework3/common_threads.h"
--'  1  0  ~/homework3/common_threads.h
-|4,39,1,0,1717658051,"~/homework3/common_threads.h"
--'  1  0  ~/homework3/common_threads.h
-|4,39,1,0,1717658051,"~/homework3/common_threads.h"
--'  1  0  ~/homework3/common_threads.h
-|4,39,1,0,1717658051,"~/homework3/common_threads.h"
--'  1  0  ~/homework3/common_threads.h
-|4,39,1,0,1717658051,"~/homework3/common_threads.h"
--'  1  0  ~/homework3/common_threads.h
-|4,39,1,0,1717658051,"~/homework3/common_threads.h"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  7  0  ~/homework3/hello.c
-|4,39,7,0,1717658011,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  1  0  ~/homework3/hello.c
-|4,39,1,0,1717658009,"~/homework3/hello.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  7  0  ~/homework3/test.c
-|4,39,7,0,1717657804,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
--'  6  0  ~/homework3/test.c
-|4,39,6,0,1717657796,"~/homework3/test.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
+-'  54  32  ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
+|4,39,54,32,1717658525,"~/homework3/threads-sema.tmp/reader-writer-nostarve.c"
 
 # History of marks within files (newest to oldest):
+
+> ~/homework3/reader-writer-nostarve.c
+	*	1717679389	0
+	"	70	0
+	^	65	59
+	.	82	0
+	+	12	28
+	+	11	0
+	+	35	43
+	+	36	45
+	+	38	39
+	+	40	59
+	+	50	68
+	+	62	25
+	+	63	77
+	+	64	77
+	+	65	56
+	+	82	0
+
+> ~/homework3/407p
+	*	1717679132	0
+	"	36	0
+	^	36	0
+	.	35	1
+	+	35	1
 
 > ~/homework3/threads-sema.tmp/reader-writer-nostarve.c
 	*	1717658461	0
@@ -2145,11 +2153,3 @@ $
 > ~/lab1/xv6edk2/xv6/syscall.c
 	*	1713837229	0
 	"	139	0
-
-> ~/lab1/xv6edk2/xv6/usys.S
-	*	1713837180	0
-	"	1	0
-
-> ~/lab1/xv6edk2/xv6/syscall.h
-	*	1713837168	0
-	"	1	0

@@ -1,111 +1,3 @@
-cd xv6/
-ls
-clear
-ls *th*
-vi modified_uthread.c 
-ls *.S
-vi uthread_switch.S 
-vi modified_uthread.c 
-vi uthread_switch.S 
-vi modified_uthread.c 
-vi lapic.c
-vi modified_uthread.c 
-vi trap.c
-vi proc.c
-clear
-vi modified_uthread.c 
-vi trap.c
-vi modified_uthread.c 
-vi trap.c
-vi proc.h
-vi trap.c
-vi x86.h
-vi trap.c
-vi proc.c
-vi proc.h
-vi trap.c
-vi proc.c
-vi trapc.
-vi trap.c
-vi uthread_switch.S 
-vi trap.c
-vi proc.c
-vi m
-vi modified_uthread.c 
-vi trap.c
-vi uthread_switch.S 
-vi modified_uthread.c 
-vi trap.c
-clear
-vi trap.c
-vi modified_uthread.c 
-vi trap.c
-vi modified_uthread.c 
-vi uthread.c
-vi modified_uthread.c 
-vi proc.h
-vi proc.c
-vi m
-vi modified_uthread.c 
-cd ~
-ls -a
-git remote
-git branch
-git add .
-git commit -m "lab3 최신화"
-git push origin main
-l
-ls
-git add .
-git commit -m "lab3 최신화"
-git remote
-git checkout
-git log
-git add .
-git push origin main
-git remote
-git remote -V
-clear
-git remote -v
-git add .
-git commit -m "lab3 최신화"
-git log
-git checkout731035736551c0a96f80ef40e3dab04df2b162ab
-git checkout 731035736551c0a96f80ef40e3dab04df2b162ab
-git add .
-git commit -m "latest"
-git branch
-git branch main
-git checkout main
-git add .
-git commit -m "lab3 최신화"
-git push origin main
-git branch
-git log
-git commit -m "최신화"
-git add .
-git commit -m "최신화"
-ls
-cd lab3
-ls
-cd xv6edk2/
-cd xv6/
-vi trap.c
-clear
-ls
-git log
-git branch
-ls
-clear
-vi uthread.c
-cp uthread.c modified_uthread.c
-vi modified_uthread.c 
-cd lab3/xv6edk2/xv6/
-vi modified_uthread.c 
-vi proc.h
-vi trap.c
-vi modified_uthread.c 
-vi trap.c
 ls
 cd lab3
 ls
@@ -1998,3 +1890,111 @@ clear
 ls
 vi proc.c
 ifconfig
+ls
+mkdir homework3
+ls
+cd homework3/
+clear
+ls
+touch test.py
+vi test.py 
+mv test.py test.c
+./t
+chmod 777 test.c
+./test.c 
+vi test.c 
+gcc test.c -o test
+sudo apt update
+sudo apt install build-essential
+gcc test.c -o test
+touch hello.c
+vi hello.c 
+chmod 777 hello.c 
+gcc hello.c -o hello
+./hello
+vi common_threads.h
+ls
+rm hello hello.c test.c 
+clear
+git clone https://github.com/remzi-arpacidusseau/ostep-homework.git
+ls
+cd ostep-homework/
+ls
+mv -r threads-sema/ ../
+mv threads-sema/ ../
+clear
+ls
+cd ../
+ls
+rm -rf ostep-homework/
+clear
+cd threads-sema/
+ls
+mv reader-writer.c test.c
+gcc test.c -o test
+./test 
+vi test
+vi test.c
+rm test
+mv test.c reader-writer.c
+gcc -o reader-writer.c reader-writer
+;s
+ls
+cd ../
+ls
+rm -rf threads-sema/
+git clone https://github.com/remzi-arpacidusseau/ostep-homework.git
+ls
+cd ostep-homework/
+ls
+mv threads-sema/ ../
+ls
+cd ../
+cd threads-sema/
+cleat
+clear
+ls
+cd ../
+ls
+rm -rf ostep-homework/
+cp -r threads-sema/ threads-sema.tmp/
+ls
+cd threads-sema
+gcc -o reader-writer-nostarve.c test
+ls
+gcc -o reader-writer-nostarve.c test
+clear
+ls
+cd ../
+ls
+rm threads-sema
+rm -rf threads-sema
+cd threads-sema.tmp/
+ls
+gcc reader-writer-nostarve.c -o test
+./test 
+vi reader-writer-nostarve.c 
+clear
+cd ~
+git add .
+git commit -m "add homework3"
+git push origin main
+ls
+cd homework3/
+ls
+cd threads-sema.tmp/
+ls
+mv test reader-writer.c common_threads.h reader-writer-nostarve.c ../
+clear
+ls
+cd ../
+./t
+ls
+./test 
+vi reader-writer-nostarve.c 
+./test 4 3 2 1
+./test 4 3 2 
+vi reader-writer-nostarve.c 
+vi 407p
+vi reader-writer-nostarve.c 
+:q
